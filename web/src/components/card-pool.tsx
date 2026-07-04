@@ -31,34 +31,58 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
     console.log('historyList:::', historyList);
   }, []);
 
+  const normalList = mergedList.filter((item) => !isPermanentPool(item));
+  const permanentList = mergedList.filter(isPermanentPool);
+
   return (
-    <div className="columns-1 md:columns-2 lg:columns-2 gap-3 space-y-4">
-      {mergedList.map((item: any, index: number) => (
-        <Card
-          className=""
-          key={index}
-          isFooterBlurred
-          isPressable
-          shadow="sm"
-          onPress={() => console.log('item pressed')}
-        >
-          <CardBody className="p-0">
-            <Image
-              alt={item.title}
-              className="w-full"
-              shadow="sm"
-              src={item.img}
-            />
-          </CardBody>
-          <CardFooter className="shadow-large justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] ml-1 z-10">
-            <p className="text-base text-white/80">{item.title}</p>
-            {/* <p className="text-default-500">{item.price}</p> */}
-          </CardFooter>
-        </Card>
-      ))}
+    <div className="flex flex-col gap-4">
+      {normalList.length > 0 && <PoolGrid historyList={normalList} />}
+
+      {permanentList.length > 0 && (
+        <section className="flex flex-col gap-3 border-t border-default-200 pt-3">
+          <p className="rounded-medium bg-default-100 px-3 py-2 text-sm text-default-600">
+            以下为永久卡池，开放后长期常驻，不参与当前限时卡池倒计时。
+          </p>
+          <PoolGrid historyList={permanentList} />
+        </section>
+      )}
     </div>
   );
 };
+
+const PoolGrid = ({ historyList }: { historyList: any[] }) => (
+  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+    {historyList.map((item: any, index: number) => (
+      <Card
+        className=""
+        key={`${item.title}-${index}`}
+        isFooterBlurred
+        isPressable
+        shadow="sm"
+        onPress={() => console.log('item pressed')}
+      >
+        <CardBody className="p-0">
+          <Image
+            alt={item.title}
+            className="w-full"
+            shadow="sm"
+            src={item.img}
+          />
+        </CardBody>
+        <CardFooter className="shadow-large justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] ml-1 z-10">
+          <p className="text-base text-white/80">{item.title}</p>
+          {/* <p className="text-default-500">{item.price}</p> */}
+        </CardFooter>
+      </Card>
+    ))}
+  </div>
+);
+
+function isPermanentPool(item: any) {
+  const endTimer = `${item?.timer ?? ''}`.split('~')[1]?.trim();
+
+  return endTimer === '长期';
+}
 
 interface CountdownTimerProps {
   date: string;
