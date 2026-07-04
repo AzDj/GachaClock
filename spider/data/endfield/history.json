@@ -1,12 +1,22 @@
 [
     {
-        "img": "https://web.hycdn.cn/endfield/official-v4/_next/static/media/content.8993ec05.jpg",
-        "title": "终末地版本日历",
-        "type": "版本",
-        "version": "终末地版本日历",
-        "timer": "2026/01/01 00:00 ~ 2099/12/31 23:59",
-        "s": "版本日历",
+        "img": "https://i2.hdslb.com/bfs/new_dyn/0650b8679ed4aff6d0b8cd92c2d2dbef1265652806.jpg",
+        "title": "拳出无悔",
+        "type": "角色",
+        "version": "拳出无悔",
+        "timer": "2026/06/05 12:00:00 ~ 2026/06/26 11:59:00",
+        "s": "弭弗",
         "a": [],
-        "img_path": "img/endfield/history/终末地版本日历.png"
+        "img_path": "img/endfield/history/拳出无悔.jpg"
+    },
+    {
+        "img": "https://i2.hdslb.com/bfs/new_dyn/fb14fe492b90f5b543795050213ba83d1265652806.jpg",
+        "title": "逐罪者",
+        "type": "角色",
+        "version": "逐罪者",
+        "timer": "2026/06/26 12:00:00 ~ 2026/07/16 11:59:00",
+        "s": "卡缪",
+        "a": [],
+        "img_path": "img/endfield/history/逐罪者.jpg"
     }
 ]
