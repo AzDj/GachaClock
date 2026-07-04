@@ -8,10 +8,6 @@ export const siteConfig = {
       label: "当前卡池",
       href: "/",
     },
-    {
-      label: "手动维护",
-      href: "/manual",
-    },
     // {
     //   label: "Pricing",
     //   href: "/pricing",
@@ -29,10 +25,6 @@ export const siteConfig = {
     {
       label: "当前卡池",
       href: "/",
-    },
-    {
-      label: "手动维护",
-      href: "/manual",
     },
   ],
   links: {
