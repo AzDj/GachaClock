@@ -1,5 +1,161 @@
 [
     {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/5a/ol70jq73tzraal1ny3dr5xiis2xsksd.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5033-1%E6%9C%9F.png",
+        "title": "「凛风吟仪」033-1期独家频段",
+        "type": "角色",
+        "version": "3.0上半",
+        "timer": "3.0版本更新后 ~ 2026/07/08 11:59:59",
+        "s": "维琳娜",
+        "a": [
+            "妮可",
+            "派派"
+        ],
+        "img_path": "img/zzz/history/「凛风吟仪」033-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/bf/g2u7szy6rxwxorn2r6o0v8ve26qjfrh.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5033-1%E6%9C%9F.png",
+        "title": "「琳琅鎏心」033-1期音擎频段",
+        "type": "武器",
+        "version": "3.0上半",
+        "timer": "3.0版本更新后 ~ 2026/07/08 11:59:59",
+        "s": "琳琅鎏心（页面不存在）",
+        "a": [
+            "聚宝箱",
+            "轰鸣座驾"
+        ],
+        "img_path": "img/zzz/history/「琳琅鎏心」033-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/c/c5/lmsqum83dva73nqlmkpfkdognio404i.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5033-2%E6%9C%9F.png",
+        "title": "「光落于指尖」033-2期独家频段",
+        "type": "角色",
+        "version": "3.0上半",
+        "timer": "3.0版本更新后 ~ 2026/07/08 11:59:59",
+        "s": "叶瞬光",
+        "a": [
+            "妮可",
+            "派派"
+        ],
+        "img_path": "img/zzz/history/「光落于指尖」033-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/0/02/jkfkm3cm4h14xwvzu3odocqfilzliq7.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5033-2%E6%9C%9F.png",
+        "title": "「云霓孤光」033-2期音擎频段",
+        "type": "武器",
+        "version": "3.0上半",
+        "timer": "3.0版本更新后 ~ 2026/07/08 11:59:59",
+        "s": "云霓孤光",
+        "a": [
+            "聚宝箱",
+            "轰鸣座驾"
+        ],
+        "img_path": "img/zzz/history/「云霓孤光」033-2期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/f/fb/50ccjc4dxoigg4wamlv422mkfe67z6b.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5032-1%E6%9C%9F.png",
+        "title": "「星徽于此闪耀」032-1期独家频段",
+        "type": "角色",
+        "version": "2.8下半",
+        "timer": "2026/05/27 12:00:00 ~ 2026/06/16 14:59:59",
+        "s": "星徽·比利",
+        "a": [
+            "潘引壶",
+            "真斗"
+        ],
+        "img_path": "img/zzz/history/「星徽于此闪耀」032-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/a1/c62ufa5tn7a3neo7u260sfd8mt0ovfu.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5032-1%E6%9C%9F.png",
+        "title": "「辉骑面铠」032-1期音擎频段",
+        "type": "武器",
+        "version": "2.8下半",
+        "timer": "2026/05/27 12:00:00 ~ 2026/06/16 14:59:59",
+        "s": "辉骑面铠",
+        "a": [
+            "燔火胧夜",
+            "震元奇枢"
+        ],
+        "img_path": "img/zzz/history/「辉骑面铠」032-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/0/03/sremzg98os92hjuok44qh1uabolmxqk.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5032-2%E6%9C%9F.png",
+        "title": "「孽火两畔」032-2期独家频段",
+        "type": "角色",
+        "version": "2.8下半",
+        "timer": "2026/05/27 12:00:00 ~ 2026/06/16 14:59:59",
+        "s": "奥菲丝&「鬼火」",
+        "a": [
+            "潘引壶",
+            "真斗"
+        ],
+        "img_path": "img/zzz/history/「孽火两畔」032-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/a/aa/m8whsxkwe6vjkx5lk7rvmr3jr6skn5g.png",
+        "title": "「嚣枪喧焰」032-2期音擎频段",
+        "type": "武器",
+        "version": "2.8下半",
+        "timer": "2026/05/27 12:00:00 ~ 2026/06/16 14:59:59",
+        "s": "嚣枪喧焰",
+        "a": [
+            "燔火胧夜",
+            "震元奇枢"
+        ],
+        "img_path": "img/zzz/history/「嚣枪喧焰」032-2期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/5f/pmn0hh7l61gnt3us8c0fr1vddj0tm4n.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5031-1%E6%9C%9F.png",
+        "title": "「冷雨将尽之夜」031-1期独家频段",
+        "type": "角色",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2026/05/27 11:59:59",
+        "s": "普罗米娅",
+        "a": [
+            "苍角",
+            "露西"
+        ],
+        "img_path": "img/zzz/history/「冷雨将尽之夜」031-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/bf/n5y2z8i8cbfcankl9b771dnh9d9047s.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5031-1%E6%9C%9F.png",
+        "title": "「朔月裁霜」031-1期音擎频段",
+        "type": "武器",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2026/05/27 11:59:59",
+        "s": "朔月裁霜",
+        "a": [
+            "含羞恶面",
+            "好斗的阿炮"
+        ],
+        "img_path": "img/zzz/history/「朔月裁霜」031-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/3/3e/qt8psbws3zy94g6v072vk9yyzps0lhp.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5031-2%E6%9C%9F.png",
+        "title": "「绮夜游灯」031-2期独家频段",
+        "type": "角色",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2026/05/27 11:59:59",
+        "s": "卢西娅",
+        "a": [
+            "苍角",
+            "露西"
+        ],
+        "img_path": "img/zzz/history/「绮夜游灯」031-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/d/d8/hge5mew9qk1zz0y4yv0n3sag2vj91ax.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5031-2%E6%9C%9F.png",
+        "title": "「铸梦炉歌」031-2期音擎频段",
+        "type": "武器",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2026/05/27 11:59:59",
+        "s": "铸梦炉歌",
+        "a": [
+            "含羞恶面",
+            "好斗的阿炮"
+        ],
+        "img_path": "img/zzz/history/「铸梦炉歌」031-2期音擎频段.png"
+    },
+    {
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/1/14/cn451e9lezpqkq5044vu63vr3pd2alb.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5030-1%E6%9C%9F.png",
         "title": "「贪食进化论」030-1期独家频段",
         "type": "角色",
@@ -42,7 +198,7 @@
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/9/9b/ojd8blu9njqzmeq2labzoct1tbp8cwd.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5030-2%E6%9C%9F.png",
         "title": "「机巧心种」030-2期音擎频段",
         "type": "武器",
-        "version": "2.6下半",
+        "version": "2.7下半",
         "timer": "2026/04/15 12:00:00 ~ 2026/05/05 14:59:59",
         "s": "机巧心种",
         "a": [

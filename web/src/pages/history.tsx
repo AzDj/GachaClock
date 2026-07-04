@@ -1,4 +1,4 @@
-import { CountdownTimer, CardPool } from '@/components/card-pool';
+import { CardPool, getHistoryEndTime } from '@/components/card-pool';
 import DefaultLayout from '@/layouts/default';
 import { Accordion, AccordionItem } from '@heroui/react';
 import { groupBy } from 'lodash';
@@ -10,6 +10,7 @@ export default function HistoryPage() {
   const [cardGroup, setCardGroup] = useState<any>({});
   const [titleMap, setTitleMap] = useState<any>({});
   const [expandedKeys, setExpandedKeys] = useLocalStorage('history/expandedKeys', null); // 初始值为空
+  const accordionExpandedKeys = expandedKeys ?? [];
   const roleCache = useRef<Record<string, any>>({});
 
   let { key } = useParams();
@@ -29,7 +30,7 @@ export default function HistoryPage() {
         .then((data) => {
           console.log('data:::', data);
           data.forEach((element) => {
-            element.img_path = '/' + element.img_path;
+            element.img_path = normalizeAssetUrl(element.img_path);
           });
           let versionGroup = groupBy(data, 'version');
           console.log('versionGroup:::', versionGroup);
@@ -42,12 +43,10 @@ export default function HistoryPage() {
             // console.log(`key::: ${key}`, versionGroup[key]);
             versionGroup[key].forEach((item) => {
               // console.log(`item::: ${item.s}`, item);
-              if (item['img'] === '' || !item.img) {
-                console.log(`role::: ${key}`, role);
-                const promotionImg = role?.[item['s']]?.['promotion_img'];
-                const simpleImg = role?.[item['s']]?.['simple_img'];
-                item['img'] = promotionImg?.[1] ?? promotionImg?.[0] ?? simpleImg;
-              }
+              console.log(`role::: ${key}`, role);
+              const promotionImg = role?.[item['s']]?.['promotion_img'];
+              const simpleImg = role?.[item['s']]?.['simple_img'];
+              item['img'] = promotionImg?.[1] || promotionImg?.[0] || item['img_path'] || item['img'] || simpleImg;
             });
 
             // 没有图片的再排除
@@ -55,12 +54,18 @@ export default function HistoryPage() {
 
             // 设置title
             setTitleMap((pre) => {
+              const roleNames = versionGroup[key]
+                .filter((item) => item.type === '角色')
+                .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s]))
+                .filter(Boolean);
+              const fallbackNames = versionGroup[key]
+                .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s || item.title]))
+                .filter(Boolean);
+              const displayNames = roleNames.length > 0 ? roleNames : fallbackNames;
+
               return {
                 ...pre,
-                [key]: `${versionGroup[key][0].timer} ${versionGroup[key]
-                  .filter((item) => item.type === '角色')
-                  .map((item) => item.s)
-                  .join('、')}`,
+                [key]: `${versionGroup[key][0]?.timer ?? ''} ${displayNames.join('、')}`.trim(),
               };
             });
           });
@@ -94,20 +99,23 @@ export default function HistoryPage() {
       });
   }
 
-  if (key == 'ww') {
-    return (
-      <DefaultLayout>
-        <div>暂未支持</div>
-      </DefaultLayout>
-    );
+  function normalizeAssetUrl(value?: string) {
+    if (!value) {
+      return '';
+    }
+
+    if (/^https?:\/\//.test(value) || value.startsWith('/')) {
+      return value;
+    }
+
+    return `/${value}`;
   }
 
   return (
     <DefaultLayout>
       <div>
         <Accordion
-          expandedKeys={expandedKeys}
-          defaultExpandedKeys={expandedKeys}
+          expandedKeys={accordionExpandedKeys}
           selectionMode="multiple"
           variant="splitted"
           onExpandedChange={(keys) => {
@@ -115,7 +123,10 @@ export default function HistoryPage() {
           }}
         >
           {Object.keys(cardGroup)
-            .sort((a, b) => b.localeCompare(a))
+            .sort((a, b) => {
+              const endDiff = getGroupEndTime(cardGroup[a]) - getGroupEndTime(cardGroup[b]);
+              return endDiff || a.localeCompare(b);
+            })
             .map((key) => (
               <AccordionItem key={key} aria-label={key} startContent={key} subtitle={titleMap[key]}>
                 <CardPool historyList={cardGroup[key]} />
@@ -125,4 +136,9 @@ export default function HistoryPage() {
       </div>
     </DefaultLayout>
   );
+
+  function getGroupEndTime(historyList: any[]) {
+    const endTimeList = historyList.map((item) => getHistoryEndTime(item.timer));
+    return Math.min(...endTimeList);
+  }
 }

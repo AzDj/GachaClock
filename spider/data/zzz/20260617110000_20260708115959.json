@@ -1,0 +1,97 @@
+[
+    {
+        "title": "「凛风吟仪」独家频段",
+        "type": "角色",
+        "timer": [
+            "2026/06/17 11:00:00",
+            "2026/07/08 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "维琳娜",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/57/mx76kgxa236v2qpp4amzs8ned9hc964.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E7%BB%B4%E7%90%B3%E5%A8%9C.png",
+                "img_path": "img/zzz/维琳娜.png"
+            },
+            {
+                "title": "妮可",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/ae/posa7yw93z9vnzep092rtnrqxksdx4k.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E5%A6%AE%E5%8F%AF.png",
+                "img_path": "img/zzz/妮可.png"
+            },
+            {
+                "title": "派派",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/9/97/pfu4zzfl1h0cwia744at26rwtzi0997.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E6%B4%BE%E6%B4%BE.png",
+                "img_path": "img/zzz/派派.png"
+            }
+        ]
+    },
+    {
+        "title": "「光落于指尖」独家频段",
+        "type": "角色",
+        "timer": [
+            "2026/06/17 11:00:00",
+            "2026/07/08 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "叶瞬光",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/aa/k2flhkxogiuzi1wdo0jrifxvy6z3ux8.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E5%8F%B6%E7%9E%AC%E5%85%89.png",
+                "img_path": "img/zzz/叶瞬光.png"
+            },
+            {
+                "title": "妮可",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/ae/posa7yw93z9vnzep092rtnrqxksdx4k.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E5%A6%AE%E5%8F%AF.png",
+                "img_path": "img/zzz/妮可.png"
+            },
+            {
+                "title": "派派",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/9/97/pfu4zzfl1h0cwia744at26rwtzi0997.png/112px-%E8%A7%92%E8%89%B2%E5%A4%B4%E5%83%8F-%E6%B4%BE%E6%B4%BE.png",
+                "img_path": "img/zzz/派派.png"
+            }
+        ]
+    },
+    {
+        "title": "「琳琅鎏心」音擎频段",
+        "type": "武器",
+        "timer": [
+            "2026/06/17 11:00:00",
+            "2026/07/08 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "聚宝箱",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/3/36/phqx7sl433jtkm5fswar7en75rs8i5o.png/112px-%E6%AD%A6%E5%99%A8%E5%9B%BE%E6%A0%87-%E8%81%9A%E5%AE%9D%E7%AE%B1.png",
+                "img_path": "img/zzz/聚宝箱.png"
+            },
+            {
+                "title": "轰鸣座驾",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/2/27/aomgkrvq250gqb6o3xkzs38anj95rlo.png/112px-%E6%AD%A6%E5%99%A8%E5%9B%BE%E6%A0%87-%E8%BD%B0%E9%B8%A3%E5%BA%A7%E9%A9%BE.png",
+                "img_path": "img/zzz/轰鸣座驾.png"
+            }
+        ]
+    },
+    {
+        "title": "「云霓孤光」音擎频段",
+        "type": "武器",
+        "timer": [
+            "2026/06/17 11:00:00",
+            "2026/07/08 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "云霓孤光",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/8/83/0eubu9cq0z88402k5lv8zglhxjj2lj9.png/112px-%E6%AD%A6%E5%99%A8%E5%9B%BE%E6%A0%87-%E4%BA%91%E9%9C%93%E5%AD%A4%E5%85%89.png",
+                "img_path": ""
+            },
+            {
+                "title": "聚宝箱",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/3/36/phqx7sl433jtkm5fswar7en75rs8i5o.png/112px-%E6%AD%A6%E5%99%A8%E5%9B%BE%E6%A0%87-%E8%81%9A%E5%AE%9D%E7%AE%B1.png",
+                "img_path": "img/zzz/聚宝箱.png"
+            },
+            {
+                "title": "轰鸣座驾",
+                "img": "https://patchwiki.biligame.com/images/zzz/thumb/2/27/aomgkrvq250gqb6o3xkzs38anj95rlo.png/112px-%E6%AD%A6%E5%99%A8%E5%9B%BE%E6%A0%87-%E8%BD%B0%E9%B8%A3%E5%BA%A7%E9%A9%BE.png",
+                "img_path": "img/zzz/轰鸣座驾.png"
+            }
+        ]
+    }
+]

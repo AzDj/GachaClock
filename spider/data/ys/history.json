@@ -1,0 +1,5766 @@
+[
+    {
+        "img": "",
+        "title": "「伴月同眠」103期角色活动祈愿",
+        "type": "角色",
+        "version": "月之八下半",
+        "timer": "2026/07/21 18:00 ~ 2026/08/11 14:59",
+        "s": "哥伦比娅",
+        "a": [],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「影寂天下人」103-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之八下半",
+        "timer": "2026/07/21 18:00 ~ 2026/08/11 14:59",
+        "s": "雷电将军",
+        "a": [],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「神铸赋形」103期武器活动祈愿",
+        "type": "武器",
+        "version": "月之八下半",
+        "timer": "2026/07/21 18:00 ~ 2026/08/11 14:59",
+        "s": "帷间夜曲",
+        "a": [],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「神铸赋形」103期武器活动祈愿",
+        "type": "武器",
+        "version": "月之八下半",
+        "timer": "2026/07/21 18:00 ~ 2026/08/11 14:59",
+        "s": "薙草之稻光",
+        "a": [],
+        "img_path": ""
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/7a/e8k5d0ievyoosy2bh4auiy52spp58jb.png/900px-%E7%A5%88%E6%84%BF102%E6%9C%9F.png.jpeg",
+        "title": "「镜中的茶宴」102期角色活动祈愿",
+        "type": "角色",
+        "version": "月之八上半",
+        "timer": "2026/07/01 06:00 ~ 2026/07/21 17:59",
+        "s": "桑多涅",
+        "a": [
+            "北斗",
+            "菲米尼",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「镜中的茶宴」102期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f3/dz1skf8u020ho7x2vlen5itm5ej65vp.png/900px-%E7%A5%88%E6%84%BF102-2%E6%9C%9F.png.jpeg",
+        "title": "「星边夜语」102-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之八上半",
+        "timer": "2026/07/01 06:00 ~ 2026/07/21 17:59",
+        "s": "茜特菈莉",
+        "a": [
+            "北斗",
+            "菲米尼",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「星边夜语」102-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ec/tecfmw69w2wdt9etkm9jo7znveb7d68.png/900px-%E7%A5%88%E6%84%BF102%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」102期武器活动祈愿",
+        "type": "武器",
+        "version": "月之八上半",
+        "timer": "2026/07/01 06:00 ~ 2026/07/21 17:59",
+        "s": "祭星者之望",
+        "a": [
+            "匣里灭辰",
+            "祭礼弓",
+            "祭礼残章",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」102期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ec/tecfmw69w2wdt9etkm9jo7znveb7d68.png/900px-%E7%A5%88%E6%84%BF102%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」102期武器活动祈愿",
+        "type": "武器",
+        "version": "月之八上半",
+        "timer": "2026/07/01 06:00 ~ 2026/07/21 17:59",
+        "s": "超越之匙",
+        "a": [
+            "匣里灭辰",
+            "祭礼弓",
+            "祭礼残章",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」102期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/97/9x1xqu2izecfpf0ftlquwdvvkgudfg9.png/900px-%E7%A5%88%E6%84%BF101%E6%9C%9F.png",
+        "title": "「霜锋夜白」101期角色活动祈愿",
+        "type": "角色",
+        "version": "月之七下半",
+        "timer": "2026/06/09 18:00 ~ 2026/06/30 14:59",
+        "s": "洛恩",
+        "a": [
+            "班尼特",
+            "米卡",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「霜锋夜白」101期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/0f/lv16owxc3pj20xlxi2hpylutoszbv32.png/900px-%E7%A5%88%E6%84%BF101-2%E6%9C%9F.png",
+        "title": "「宿古的赫炎」101-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之七下半",
+        "timer": "2026/06/09 18:00 ~ 2026/06/30 14:59",
+        "s": "玛薇卡",
+        "a": [
+            "班尼特",
+            "米卡",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「宿古的赫炎」101-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/52/qj9e8akji44nuszx7grzl50a8rgyvp7.png/900px-%E7%A5%88%E6%84%BF101%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」101期武器活动祈愿",
+        "type": "武器",
+        "version": "月之七下半",
+        "timer": "2026/06/09 18:00 ~ 2026/06/30 14:59",
+        "s": "灾悔",
+        "a": [
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」101期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/52/qj9e8akji44nuszx7grzl50a8rgyvp7.png/900px-%E7%A5%88%E6%84%BF101%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」101期武器活动祈愿",
+        "type": "武器",
+        "version": "月之七下半",
+        "timer": "2026/06/09 18:00 ~ 2026/06/30 14:59",
+        "s": "焚曜千阳",
+        "a": [
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」101期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d7/dc7po2xs8ilqb5t5dwtxuu5gtv700fr.png/900px-%E7%A5%88%E6%84%BF100%E6%9C%9F.png",
+        "title": "「炽天的默想曲」100期角色活动祈愿",
+        "type": "角色",
+        "version": "月之七上半",
+        "timer": "2026/05/20 06:00 ~ 2026/06/09 17:59",
+        "s": "尼可",
+        "a": [
+            "布伦妮",
+            "菲谢尔",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「炽天的默想曲」100期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/02/2betrduc3z3m2ytsqvluuoqimu2fv7g.png/900px-%E7%A5%88%E6%84%BF100-2%E6%9C%9F.png",
+        "title": "「白礜赤成」100-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之七上半",
+        "timer": "2026/05/20 06:00 ~ 2026/06/09 17:59",
+        "s": "杜林",
+        "a": [
+            "布伦妮",
+            "菲谢尔",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「白礜赤成」100-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/83/e91ohfrjtyzu1w0cvkb1fdoia1b95ih.png/900px-%E7%A5%88%E6%84%BF100%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」100期武器活动祈愿",
+        "type": "武器",
+        "version": "月之七上半",
+        "timer": "2026/05/20 06:00 ~ 2026/06/09 17:59",
+        "s": "尘光七谕",
+        "a": [
+            "匣里灭辰",
+            "幽夜华尔兹",
+            "流浪乐章",
+            "织月者的曙色",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」100期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/83/e91ohfrjtyzu1w0cvkb1fdoia1b95ih.png/900px-%E7%A5%88%E6%84%BF100%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」100期武器活动祈愿",
+        "type": "武器",
+        "version": "月之七上半",
+        "timer": "2026/05/20 06:00 ~ 2026/06/09 17:59",
+        "s": "黑蚀",
+        "a": [
+            "匣里灭辰",
+            "幽夜华尔兹",
+            "流浪乐章",
+            "织月者的曙色",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」100期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/65/k89zr04eqpf5w7pp9zbceuzxxg1zgxz.png/900px-%E7%A5%88%E6%84%BF099%E6%9C%9F.png",
+        "title": "「苍林月祷」099期角色活动祈愿",
+        "type": "角色",
+        "version": "月之六下半",
+        "timer": "2026/04/28 18:00 ~ 2026/05/19 14:59",
+        "s": "菈乌玛",
+        "a": [
+            "绮良良",
+            "行秋",
+            "雅珂达"
+        ],
+        "img_path": "img/ys/history/「苍林月祷」099期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/48/5fpx0j5z4ux13rx3onnmo98c2i5y5l4.png/900px-%E7%A5%88%E6%84%BF099-2%E6%9C%9F.png",
+        "title": "「赤砂的诱言」099-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之六下半",
+        "timer": "2026/04/28 18:00 ~ 2026/05/19 14:59",
+        "s": "奈芙尔",
+        "a": [
+            "绮良良",
+            "行秋",
+            "雅珂达"
+        ],
+        "img_path": "img/ys/history/「赤砂的诱言」099-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/95/7totipsjgrnklkkamoguynnr51ov0dw.png/900px-%E7%A5%88%E6%84%BF099%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」099期武器活动祈愿",
+        "type": "武器",
+        "version": "月之六下半",
+        "timer": "2026/04/28 18:00 ~ 2026/05/19 14:59",
+        "s": "真语秘匣",
+        "a": [
+            "祭礼剑",
+            "西风猎弓",
+            "西风长枪",
+            "雨裁",
+            "霜辰"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」099期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/95/7totipsjgrnklkkamoguynnr51ov0dw.png/900px-%E7%A5%88%E6%84%BF099%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」099期武器活动祈愿",
+        "type": "武器",
+        "version": "月之六下半",
+        "timer": "2026/04/28 18:00 ~ 2026/05/19 14:59",
+        "s": "纺夜天镜",
+        "a": [
+            "祭礼剑",
+            "西风猎弓",
+            "西风长枪",
+            "雨裁",
+            "霜辰"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」099期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/ab/ngzxszdvzy7yuwcdkovpdsf6flhfq8w.png/900px-%E7%A5%88%E6%84%BF098%E6%9C%9F.png",
+        "title": "「呀吼吼博物志」098期角色活动祈愿",
+        "type": "角色",
+        "version": "月之六上半",
+        "timer": "2026/04/08 06:00 ~ 2026/04/28 17:59",
+        "s": "莉奈娅",
+        "a": [
+            "叶洛亚",
+            "爱诺",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「呀吼吼博物志」098期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ef/py4pw80kw5uknhpg2j5ldenpbx7nf2m.png/900px-%E7%A5%88%E6%84%BF098-2%E6%9C%9F.png",
+        "title": "「饮羽散红」098-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之六上半",
+        "timer": "2026/04/08 06:00 ~ 2026/04/28 17:59",
+        "s": "恰斯卡",
+        "a": [
+            "叶洛亚",
+            "爱诺",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「饮羽散红」098-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bd/e3pzykzoz0vyoa4abl90f6wwssbvg75.png/900px-%E7%A5%88%E6%84%BF098%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」098期武器活动祈愿",
+        "type": "武器",
+        "version": "月之六上半",
+        "timer": "2026/04/08 06:00 ~ 2026/04/28 17:59",
+        "s": "星鹫赤羽",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "祭礼大剑",
+            "缀花之翎"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」098期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bd/e3pzykzoz0vyoa4abl90f6wwssbvg75.png/900px-%E7%A5%88%E6%84%BF098%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」098期武器活动祈愿",
+        "type": "武器",
+        "version": "月之六上半",
+        "timer": "2026/04/08 06:00 ~ 2026/04/28 17:59",
+        "s": "霜结的誓金枝",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "祭礼大剑",
+            "缀花之翎"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」098期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/46/ab9df2ah4a6iamgd359yxqiy36m7vkl.png/900px-%E7%A5%88%E6%84%BF097%E6%9C%9F.png.jpeg",
+        "title": "「虚星临渡」097期角色活动祈愿",
+        "type": "角色",
+        "version": "月之五下半",
+        "timer": "2026/03/17 18:00 ~ 2026/04/07 14:59",
+        "s": "丝柯克",
+        "a": [
+            "坎蒂丝",
+            "塔利雅",
+            "夏洛蒂"
+        ],
+        "img_path": "img/ys/history/「虚星临渡」097期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b6/hk010ewegxk836778jc789t0d9yoqbh.png/900px-%E7%A5%88%E6%84%BF097-2%E6%9C%9F.png.jpeg",
+        "title": "「莓色香颂」097-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之五下半",
+        "timer": "2026/03/17 18:00 ~ 2026/04/07 14:59",
+        "s": "爱可菲",
+        "a": [
+            "坎蒂丝",
+            "塔利雅",
+            "夏洛蒂"
+        ],
+        "img_path": "img/ys/history/「莓色香颂」097-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/73/gjep5cnskzpmcxamanmiox7cjgpbwcj.png/900px-%E7%A5%88%E6%84%BF097%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」097期武器活动祈愿",
+        "type": "武器",
+        "version": "月之五下半",
+        "timer": "2026/03/17 18:00 ~ 2026/04/07 14:59",
+        "s": "苍耀",
+        "a": [
+            "弓藏",
+            "笛剑",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」097期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/73/gjep5cnskzpmcxamanmiox7cjgpbwcj.png/900px-%E7%A5%88%E6%84%BF097%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」097期武器活动祈愿",
+        "type": "武器",
+        "version": "月之五下半",
+        "timer": "2026/03/17 18:00 ~ 2026/04/07 14:59",
+        "s": "香韵奏者",
+        "a": [
+            "弓藏",
+            "笛剑",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」097期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8a/nurkniimprck4ll2sf6ikb45ehp6gik.png/900px-%E7%A5%88%E6%84%BF096%E6%9C%9F.png",
+        "title": "「北风的凯旋歌」096期角色活动祈愿",
+        "type": "角色",
+        "version": "月之五上半",
+        "timer": "2026/02/25 06:00 ~ 2026/03/17 17:59",
+        "s": "法尔伽",
+        "a": [
+            "班尼特",
+            "砂糖",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「北风的凯旋歌」096期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9f/knoqt74qskalqsmzvjisx0oocs4nk9j.png/900px-%E7%A5%88%E6%84%BF096-2%E6%9C%9F.png",
+        "title": "「孤灯夜访」096-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之五上半",
+        "timer": "2026/02/25 06:00 ~ 2026/03/17 17:59",
+        "s": "菲林斯",
+        "a": [
+            "班尼特",
+            "砂糖",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「孤灯夜访」096-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6a/4sjaiv5ouxqeviu9ye2v4utyqltzl7r.png/900px-%E7%A5%88%E6%84%BF096%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」096期武器活动祈愿",
+        "type": "武器",
+        "version": "月之五上半",
+        "timer": "2026/02/25 06:00 ~ 2026/03/17 17:59",
+        "s": "狼的武功歌",
+        "a": [
+            "圣祭者的辉杖",
+            "祭礼弓",
+            "祭礼残章",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」096期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6a/4sjaiv5ouxqeviu9ye2v4utyqltzl7r.png/900px-%E7%A5%88%E6%84%BF096%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」096期武器活动祈愿",
+        "type": "武器",
+        "version": "月之五上半",
+        "timer": "2026/02/25 06:00 ~ 2026/03/17 17:59",
+        "s": "血染荒城",
+        "a": [
+            "圣祭者的辉杖",
+            "祭礼弓",
+            "祭礼残章",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」096期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f2/iftcfadysxp2ni13m56f50rddglrk9w.png",
+        "title": "「华黍由仪」095期角色活动祈愿",
+        "type": "角色",
+        "version": "月之四下半",
+        "timer": "2026/02/03 18:00 ~ 2026/02/24 14:59",
+        "s": "兹白",
+        "a": [
+            "五郎",
+            "叶洛亚",
+            "爱诺"
+        ],
+        "img_path": "img/ys/history/「华黍由仪」095期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/5d/cebib8c5ug5uj6jcwvtwdejandey06z.png",
+        "title": "「渊海界令」095-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之四下半",
+        "timer": "2026/02/03 18:00 ~ 2026/02/24 14:59",
+        "s": "那维莱特",
+        "a": [
+            "五郎",
+            "叶洛亚",
+            "爱诺"
+        ],
+        "img_path": "img/ys/history/「渊海界令」095-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/d/d1/73ar6yql29qz1sjkdx13zrbhraihnuh.png",
+        "title": "「神铸赋形」095期武器活动祈愿",
+        "type": "武器",
+        "version": "月之四下半",
+        "timer": "2026/02/03 18:00 ~ 2026/02/24 14:59",
+        "s": "万世流涌大典",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "西福斯的月光",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」095期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/d/d1/73ar6yql29qz1sjkdx13zrbhraihnuh.png",
+        "title": "「神铸赋形」095期武器活动祈愿",
+        "type": "武器",
+        "version": "月之四下半",
+        "timer": "2026/02/03 18:00 ~ 2026/02/24 14:59",
+        "s": "朏魄含光",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "西福斯的月光",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」095期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/8/85/76vvzctwaaaizhn91fypn7nxcp48tck.png",
+        "title": "「伴月同眠」094期角色活动祈愿",
+        "type": "角色",
+        "version": "月之四上半",
+        "timer": "月之四版本更新后 ~ 2026/02/03 17:59",
+        "s": "哥伦比娅",
+        "a": [
+            "伊法",
+            "菲谢尔",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「伴月同眠」094期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4a/2nuhz0jxy3vtepu2sttkiivuvfq9pdi.png/900px-%E7%A5%88%E6%84%BF094-2%E6%9C%9F.png.jpeg",
+        "title": "「聚星源动」094-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之四上半",
+        "timer": "月之四版本更新后 ~ 2026/02/03 17:59",
+        "s": "伊涅芙",
+        "a": [
+            "伊法",
+            "菲谢尔",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「聚星源动」094-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/40/ckfatrql6a2ju8qksq87k09g7xdebat.png/900px-%E7%A5%88%E6%84%BF094%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」094期武器活动祈愿",
+        "type": "武器",
+        "version": "月之四上半",
+        "timer": "月之四版本更新后 ~ 2026/02/03 17:59",
+        "s": "帷间夜曲",
+        "a": [
+            "乘浪的回旋",
+            "幽夜华尔兹",
+            "祭礼大剑",
+            "笛剑",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」094期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/40/ckfatrql6a2ju8qksq87k09g7xdebat.png/900px-%E7%A5%88%E6%84%BF094%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」094期武器活动祈愿",
+        "type": "武器",
+        "version": "月之四上半",
+        "timer": "月之四版本更新后 ~ 2026/02/03 17:59",
+        "s": "支离轮光",
+        "a": [
+            "乘浪的回旋",
+            "幽夜华尔兹",
+            "祭礼大剑",
+            "笛剑",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」094期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bc/bzfje8lr13u4k1mv9xlb6ki8vta3s8j.png/900px-%E7%A5%88%E6%84%BF093%E6%9C%9F.png.jpeg",
+        "title": "「饫宴角戏」093期角色活动祈愿",
+        "type": "角色",
+        "version": "月之三下半",
+        "timer": "2025/12/23 18:00 ~ 2026/01/13 14:59",
+        "s": "瓦雷莎",
+        "a": [
+            "伊安珊",
+            "嘉明",
+            "夏沃蕾"
+        ],
+        "img_path": "img/ys/history/「饫宴角戏」093期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/88/k4gsjnyo0xa98rw851imnamexvufkv7.png/900px-%E7%A5%88%E6%84%BF093-2%E6%9C%9F.png.jpeg",
+        "title": "「煅火的祝赐」093-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之三下半",
+        "timer": "2025/12/23 18:00 ~ 2026/01/13 14:59",
+        "s": "希诺宁",
+        "a": [
+            "伊安珊",
+            "嘉明",
+            "夏沃蕾"
+        ],
+        "img_path": "img/ys/history/「煅火的祝赐」093-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c2/rm3covo2gyxc4u7zo3sadj9eh5wg1b0.png/900px-%E7%A5%88%E6%84%BF093%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」093期武器活动祈愿",
+        "type": "武器",
+        "version": "月之三下半",
+        "timer": "2025/12/23 18:00 ~ 2026/01/13 14:59",
+        "s": "岩峰巡歌",
+        "a": [
+            "暗巷猎手",
+            "流浪乐章",
+            "硕果钩",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」093期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c2/rm3covo2gyxc4u7zo3sadj9eh5wg1b0.png/900px-%E7%A5%88%E6%84%BF093%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」093期武器活动祈愿",
+        "type": "武器",
+        "version": "月之三下半",
+        "timer": "2025/12/23 18:00 ~ 2026/01/13 14:59",
+        "s": "溢彩心念",
+        "a": [
+            "暗巷猎手",
+            "流浪乐章",
+            "硕果钩",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」093期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/64/ak7yt15gubn25k1on4k5eyfspbvr6k9.png",
+        "title": "「白礜赤成」092期角色活动祈愿",
+        "type": "角色",
+        "version": "月之三上半",
+        "timer": "2025/12/03 10:00 ~ 2025/12/23 17:59",
+        "s": "杜林",
+        "a": [
+            "珐露珊",
+            "班尼特",
+            "雅珂达"
+        ],
+        "img_path": "img/ys/history/「白礜赤成」092期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/d/d0/l74mi5474t429pcw9kqheyy6kl0ranz.png",
+        "title": "「杯装之诗」092-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之三上半",
+        "timer": "2025/12/03 10:00 ~ 2025/12/23 17:59",
+        "s": "温迪",
+        "a": [
+            "珐露珊",
+            "班尼特",
+            "雅珂达"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」092-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b0/dkrwelr8huvqbugdfg6d9ly4yrnp9yx.png/900px-%E7%A5%88%E6%84%BF092%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」092期武器活动祈愿",
+        "type": "武器",
+        "version": "月之三上半",
+        "timer": "2025/12/03 10:00 ~ 2025/12/23 17:59",
+        "s": "黎明破晓之史",
+        "a": [
+            "勘探钻机",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "绝弦",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」092期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b0/dkrwelr8huvqbugdfg6d9ly4yrnp9yx.png/900px-%E7%A5%88%E6%84%BF092%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」092期武器活动祈愿",
+        "type": "武器",
+        "version": "月之三上半",
+        "timer": "2025/12/03 10:00 ~ 2025/12/23 17:59",
+        "s": "黑蚀",
+        "a": [
+            "勘探钻机",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "绝弦",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」092期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/a4/ofrk4884kn9y8blb96hzaus3iqei0dz.png",
+        "title": "「炉边烬影」091期角色活动祈愿",
+        "type": "角色",
+        "version": "月之二下半",
+        "timer": "2025/11/11 18:00 ~ 2025/12/02 14:59",
+        "s": "阿蕾奇诺",
+        "a": [
+            "云堇",
+            "罗莎莉亚",
+            "蓝砚"
+        ],
+        "img_path": "img/ys/history/「炉边烬影」091期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6d/cn2jna7qgot91a6vm4bddr8ahqoqojm.png",
+        "title": "「陵薮市朝」091-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之二下半",
+        "timer": "2025/11/11 18:00 ~ 2025/12/02 14:59",
+        "s": "钟离",
+        "a": [
+            "云堇",
+            "罗莎莉亚",
+            "蓝砚"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」091-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f6/sue0t87ba3u6upokk7m648rdfs4mnbq.png",
+        "title": "「神铸赋形」091期武器活动祈愿",
+        "type": "武器",
+        "version": "月之二下半",
+        "timer": "2025/11/11 18:00 ~ 2025/12/02 14:59",
+        "s": "贯虹之槊",
+        "a": [
+            "便携动力锯",
+            "匣里灭辰",
+            "测距规",
+            "祭礼残章",
+            "船坞长剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」091期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f6/sue0t87ba3u6upokk7m648rdfs4mnbq.png",
+        "title": "「神铸赋形」091期武器活动祈愿",
+        "type": "武器",
+        "version": "月之二下半",
+        "timer": "2025/11/11 18:00 ~ 2025/12/02 14:59",
+        "s": "赤月之形",
+        "a": [
+            "便携动力锯",
+            "匣里灭辰",
+            "测距规",
+            "祭礼残章",
+            "船坞长剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」091期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/7b/m9yg22rxq6bmo8esa0orn44idbpu4tb.png",
+        "title": "「赤沙的诱言」090期角色活动祈愿",
+        "type": "角色",
+        "version": "月之二上半",
+        "timer": "月之二版本更新后 ~ 2025/11/11 17:59",
+        "s": "奈芙尔",
+        "a": [
+            "柯莱",
+            "瑶瑶",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「赤沙的诱言」090期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c4/98onlfzz8aguq54w53xt0wqxo6btfcl.png/900px-%E7%A5%88%E6%84%BF090-2%E6%9C%9F.png.jpeg",
+        "title": "「众水的颂诗」090-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之二上半",
+        "timer": "月之二版本更新后 ~ 2025/11/11 17:59",
+        "s": "芙宁娜",
+        "a": [
+            "柯莱",
+            "瑶瑶",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「众水的颂诗」090-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2c/oso1im2kthqb76cgal8y83qgty6flth.png/900px-%E7%A5%88%E6%84%BF090%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」090期武器活动祈愿",
+        "type": "武器",
+        "version": "月之二上半",
+        "timer": "月之二版本更新后 ~ 2025/11/11 17:59",
+        "s": "真语秘匣",
+        "a": [
+            "圣祭者的辉杖",
+            "织月者的曙色",
+            "西风猎弓",
+            "钟剑",
+            "霜辰"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」090期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2c/oso1im2kthqb76cgal8y83qgty6flth.png/900px-%E7%A5%88%E6%84%BF090%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」090期武器活动祈愿",
+        "type": "武器",
+        "version": "月之二上半",
+        "timer": "月之二版本更新后 ~ 2025/11/11 17:59",
+        "s": "静水流涌之辉",
+        "a": [
+            "圣祭者的辉杖",
+            "织月者的曙色",
+            "西风猎弓",
+            "钟剑",
+            "霜辰"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」090期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/fe/2uu87wqzvnt1qxxtr29ixxz96t35ceb.png/900px-%E7%A5%88%E6%84%BF089%E6%9C%9F.png.jpeg",
+        "title": "「孤灯夜访」089期角色活动祈愿",
+        "type": "角色",
+        "version": "月之一下半",
+        "timer": "2025/09/30 18:00 ~ 2025/10/21 14:59",
+        "s": "菲林斯",
+        "a": [
+            "多莉",
+            "爱诺",
+            "砂糖"
+        ],
+        "img_path": "img/ys/history/「孤灯夜访」089期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f8/2kw4pnq80jx55tpfryrh4exmpyqf103.png/900px-%E7%A5%88%E6%84%BF089-2%E6%9C%9F.png.jpeg",
+        "title": "「素霓伣天」089-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之一下半",
+        "timer": "2025/09/30 18:00 ~ 2025/10/21 14:59",
+        "s": "夜兰",
+        "a": [
+            "多莉",
+            "爱诺",
+            "砂糖"
+        ],
+        "img_path": "img/ys/history/「素霓伣天」089-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/64/3r6g6ks0darjnoy6x9ob8dkl6zd28d3.png",
+        "title": "「神铸赋形」089期武器活动祈愿",
+        "type": "武器",
+        "version": "月之一下半",
+        "timer": "2025/09/30 18:00 ~ 2025/10/21 14:59",
+        "s": "若水",
+        "a": [
+            "匣里龙吟",
+            "祭礼弓",
+            "西风大剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」089期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/64/3r6g6ks0darjnoy6x9ob8dkl6zd28d3.png",
+        "title": "「神铸赋形」089期武器活动祈愿",
+        "type": "武器",
+        "version": "月之一下半",
+        "timer": "2025/09/30 18:00 ~ 2025/10/21 14:59",
+        "s": "血染荒城",
+        "a": [
+            "匣里龙吟",
+            "祭礼弓",
+            "西风大剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」089期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4b/slj8siboubs3ahf3ibsy7mpn7rp461e.png/900px-%E7%A5%88%E6%84%BF088%E6%9C%9F.png.jpeg",
+        "title": "「苍林月祷」088期角色活动祈愿",
+        "type": "角色",
+        "version": "月之一上半",
+        "timer": "月之一版本更新后 ~ 2025/09/30 17:59",
+        "s": "菈乌玛",
+        "a": [
+            "久岐忍",
+            "卡维",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「苍林月祷」088期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/00/qcmv5lu81k1wypccia3tdkcppl407qh.png",
+        "title": "「月草的赐慧」088-2期角色活动祈愿",
+        "type": "角色",
+        "version": "月之一上半",
+        "timer": "月之一版本更新后 ~ 2025/09/30 17:59",
+        "s": "纳西妲",
+        "a": [
+            "久岐忍",
+            "卡维",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「月草的赐慧」088-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/07/j94g8v3s86qjyzr7r2jvxl0qfdc5rmg.png",
+        "title": "「神铸赋形」088期武器活动祈愿",
+        "type": "武器",
+        "version": "月之一上半",
+        "timer": "月之一版本更新后 ~ 2025/09/30 17:59",
+        "s": "千夜浮梦",
+        "a": [
+            "匣里灭辰",
+            "祭礼大剑",
+            "祭礼残章",
+            "笛剑",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」088期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/07/j94g8v3s86qjyzr7r2jvxl0qfdc5rmg.png",
+        "title": "「神铸赋形」088期武器活动祈愿",
+        "type": "武器",
+        "version": "月之一上半",
+        "timer": "月之一版本更新后 ~ 2025/09/30 17:59",
+        "s": "纺夜天镜",
+        "a": [
+            "匣里灭辰",
+            "祭礼大剑",
+            "祭礼残章",
+            "笛剑",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」088期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/70/lwvscgoefhoos54xp74z00vphwv384n.png/900px-%E7%A5%88%E6%84%BF087%E6%9C%9F.png",
+        "title": "「鲨鲨逐浪游」087期角色活动祈愿",
+        "type": "角色",
+        "version": "5.8下半",
+        "timer": "2025/08/19 18:00 ~ 2025/09/09 14:59",
+        "s": "玛拉妮",
+        "a": [
+            "伊法",
+            "欧洛伦",
+            "班尼特"
+        ],
+        "img_path": "img/ys/history/「鲨鲨逐浪游」087期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a4/qul6o98telpsqq8lhtm2k2ezpgcegkc.png/900px-%E7%A5%88%E6%84%BF087-2%E6%9C%9F.png",
+        "title": "「饮羽散红」087-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.8下半",
+        "timer": "2025/08/19 18:00 ~ 2025/09/09 14:59",
+        "s": "恰斯卡",
+        "a": [
+            "伊法",
+            "欧洛伦",
+            "班尼特"
+        ],
+        "img_path": "img/ys/history/「饮羽散红」087-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/b/b9/qlxjmvkjsx157mmzzr9c30p616is5vm.png",
+        "title": "「神铸赋形」087期武器活动祈愿",
+        "type": "武器",
+        "version": "5.8下半",
+        "timer": "2025/08/19 18:00 ~ 2025/09/09 14:59",
+        "s": "冲浪时光",
+        "a": [
+            "乘浪的回旋",
+            "硕果钩",
+            "缀花之翎",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」087期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/b/b9/qlxjmvkjsx157mmzzr9c30p616is5vm.png",
+        "title": "「神铸赋形」087期武器活动祈愿",
+        "type": "武器",
+        "version": "5.8下半",
+        "timer": "2025/08/19 18:00 ~ 2025/09/09 14:59",
+        "s": "星鹫赤羽",
+        "a": [
+            "乘浪的回旋",
+            "硕果钩",
+            "缀花之翎",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」087期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/02/3xobhxavms4b9i2t24614it5c2tp1fa.png",
+        "title": "「聚星源动」086期角色活动祈愿",
+        "type": "角色",
+        "version": "5.8上半",
+        "timer": "5.8版本更新后 ~ 2025/08/19 17:59",
+        "s": "伊涅芙",
+        "a": [
+            "菲谢尔",
+            "行秋",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「聚星源动」086期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/94/cilvpb9vrdlht3kjx7ds6cgy36qdmee.png/900px-%E7%A5%88%E6%84%BF086-2%E6%9C%9F.png.jpeg",
+        "title": "「星边夜语」086-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.8上半",
+        "timer": "5.8版本更新后 ~ 2025/08/19 17:59",
+        "s": "茜特菈莉",
+        "a": [
+            "菲谢尔",
+            "行秋",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「星边夜语」086-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/3e/pbf5y1qc5yo9kf0tjh49a7wcn7khuib.png",
+        "title": "「神铸赋形」086期武器活动祈愿",
+        "type": "武器",
+        "version": "5.8上半",
+        "timer": "5.8版本更新后 ~ 2025/08/19 17:59",
+        "s": "支离轮光",
+        "a": [
+            "弥坚骨",
+            "祭礼大剑",
+            "西风猎弓",
+            "西风秘典",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」086期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/3e/pbf5y1qc5yo9kf0tjh49a7wcn7khuib.png",
+        "title": "「神铸赋形」086期武器活动祈愿",
+        "type": "武器",
+        "version": "5.8上半",
+        "timer": "5.8版本更新后 ~ 2025/08/19 17:59",
+        "s": "祭星者之望",
+        "a": [
+            "弥坚骨",
+            "祭礼大剑",
+            "西风猎弓",
+            "西风秘典",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」086期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b6/3rne0puclpcdffk2o4i57d7mfmgi4tx.png/900px-%E7%A5%88%E6%84%BF085%E6%9C%9F.png",
+        "title": "「宿古的赫炎」085期角色活动祈愿",
+        "type": "角色",
+        "version": "5.7下半",
+        "timer": "2025/07/08 18:00 ~ 2025/07/29 14:59",
+        "s": "玛薇卡",
+        "a": [
+            "伊安珊",
+            "瑶瑶",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「宿古的赫炎」085期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/69/i4u14351l6zq9fubc893nq0ma3gn6ny.png/900px-%E7%A5%88%E6%84%BF085-2%E6%9C%9F.png",
+        "title": "「凝露轻芳」085-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.7下半",
+        "timer": "2025/07/08 18:00 ~ 2025/07/29 14:59",
+        "s": "艾梅莉埃",
+        "a": [
+            "伊安珊",
+            "瑶瑶",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「凝露轻芳」085-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/ae/gaveg6ywnb2cziu95mdawzk6lfzytzt.png/900px-%E7%A5%88%E6%84%BF085%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」085期武器活动祈愿",
+        "type": "武器",
+        "version": "5.7下半",
+        "timer": "2025/07/08 18:00 ~ 2025/07/29 14:59",
+        "s": "柔灯挽歌",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼残章",
+            "笛剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」085期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/ae/gaveg6ywnb2cziu95mdawzk6lfzytzt.png/900px-%E7%A5%88%E6%84%BF085%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」085期武器活动祈愿",
+        "type": "武器",
+        "version": "5.7下半",
+        "timer": "2025/07/08 18:00 ~ 2025/07/29 14:59",
+        "s": "焚曜千阳",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼残章",
+            "笛剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」085期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9d/troc8y8ap4qjabbl6y726y0n63j42lg.png",
+        "title": "「虚星临渡」084期角色活动祈愿",
+        "type": "角色",
+        "version": "5.7上半",
+        "timer": "5.7版本更新后 ~ 2025/07/08 17:59",
+        "s": "丝柯克",
+        "a": [
+            "坎蒂丝",
+            "塔利雅",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「虚星临渡」084期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/01/czfheks7w5qvrkfatelk3gxqji26znr.png",
+        "title": "「出尘入世」084-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.7上半",
+        "timer": "5.7版本更新后 ~ 2025/07/08 17:59",
+        "s": "申鹤",
+        "a": [
+            "坎蒂丝",
+            "塔利雅",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「出尘入世」084-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/76/j5ulok1dq71ebxehmaxb47g1le72y8p.png/900px-%E7%A5%88%E6%84%BF084%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」084期武器活动祈愿",
+        "type": "武器",
+        "version": "5.7上半",
+        "timer": "5.7版本更新后 ~ 2025/07/08 17:59",
+        "s": "息灾",
+        "a": [
+            "流浪的晚星",
+            "玛海菈的水色",
+            "祭礼弓",
+            "西福斯的月光",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」084期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/76/j5ulok1dq71ebxehmaxb47g1le72y8p.png/900px-%E7%A5%88%E6%84%BF084%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」084期武器活动祈愿",
+        "type": "武器",
+        "version": "5.7上半",
+        "timer": "5.7版本更新后 ~ 2025/07/08 17:59",
+        "s": "苍耀",
+        "a": [
+            "流浪的晚星",
+            "玛海菈的水色",
+            "祭礼弓",
+            "西福斯的月光",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」084期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/41/aat1adayb777r0ol7jz8almpccpx63l.png/900px-%E7%A5%88%E6%84%BF083%E6%9C%9F.png.jpeg",
+        "title": "「巡火猎秘」083期角色活动祈愿",
+        "type": "角色",
+        "version": "5.6下半",
+        "timer": "2025/05/27 18:00 ~ 2025/06/17 14:59",
+        "s": "基尼奇",
+        "a": [
+            "九条裟罗",
+            "托马",
+            "琳妮特"
+        ],
+        "img_path": "img/ys/history/「巡火猎秘」083期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f2/dehrcpsugwcmzxer65xohsgx5r50y7i.png/900px-%E7%A5%88%E6%84%BF083-2%E6%9C%9F.png.jpeg",
+        "title": "「影寂天下人」083-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.6下半",
+        "timer": "2025/05/27 18:00 ~ 2025/06/17 14:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "托马",
+            "琳妮特"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」083-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/32/aif2qvbbrugjl9z3tlelpfwvt1pts7u.png/900px-%E7%A5%88%E6%84%BF083%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」083期武器活动祈愿",
+        "type": "武器",
+        "version": "5.6下半",
+        "timer": "2025/05/27 18:00 ~ 2025/06/17 14:59",
+        "s": "山王长牙",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "绝弦",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」083期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/32/aif2qvbbrugjl9z3tlelpfwvt1pts7u.png/900px-%E7%A5%88%E6%84%BF083%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」083期武器活动祈愿",
+        "type": "武器",
+        "version": "5.6下半",
+        "timer": "2025/05/27 18:00 ~ 2025/06/17 14:59",
+        "s": "薙草之稻光",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "绝弦",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」083期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/1/12/mn1p7q1cszmvdfe4naz0w59j4obvzzx.png",
+        "title": "「莓色香颂」082期角色活动祈愿",
+        "type": "角色",
+        "version": "5.6上半",
+        "timer": "5.6版本更新后 ~ 2025/05/27 17:59",
+        "s": "爱可菲",
+        "a": [
+            "伊法",
+            "欧洛伦",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「莓色香颂」082期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6b/ri9shg5zsd5b9kmamth8e6a1zqffrqq.png",
+        "title": "「刺玫的铭誓」082-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.6上半",
+        "timer": "5.6版本更新后 ~ 2025/05/27 17:59",
+        "s": "娜维娅",
+        "a": [
+            "伊法",
+            "欧洛伦",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「刺玫的铭誓」082-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4a/ghcb1j0nmifavix5qnhm8mwykmiqr4o.png",
+        "title": "「神铸赋形」082期武器活动祈愿",
+        "type": "武器",
+        "version": "5.6上半",
+        "timer": "5.6版本更新后 ~ 2025/05/27 17:59",
+        "s": "裁断",
+        "a": [
+            "便携动力锯",
+            "勘探钻机",
+            "流浪乐章",
+            "测距规",
+            "船坞长剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」082期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4a/ghcb1j0nmifavix5qnhm8mwykmiqr4o.png",
+        "title": "「神铸赋形」082期武器活动祈愿",
+        "type": "武器",
+        "version": "5.6上半",
+        "timer": "5.6版本更新后 ~ 2025/05/27 17:59",
+        "s": "香韵奏者",
+        "a": [
+            "便携动力锯",
+            "勘探钻机",
+            "流浪乐章",
+            "测距规",
+            "船坞长剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」082期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/1/14/h8c809hcqcpe5d2lugyqmpqucrnd6cx.png",
+        "title": "「煅火的祝赐」081期角色活动祈愿",
+        "type": "角色",
+        "version": "5.5下半",
+        "timer": "2025/04/15 18:00 ~ 2025/05/06 14:59",
+        "s": "希诺宁",
+        "a": [
+            "北斗",
+            "烟绯",
+            "珐露珊"
+        ],
+        "img_path": "img/ys/history/「煅火的祝赐」081期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b2/38brtcpi88vmm808bhq0oxr0mio6uid.png/900px-%E7%A5%88%E6%84%BF081-2%E6%9C%9F.png.jpeg",
+        "title": "「杯装之诗」081-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.5下半",
+        "timer": "2025/04/15 18:00 ~ 2025/05/06 14:59",
+        "s": "温迪",
+        "a": [
+            "北斗",
+            "烟绯",
+            "珐露珊"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」081-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d7/itfd0tb69r623wgfo7flpyxq37fedd3.png/900px-%E7%A5%88%E6%84%BF081%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」081期武器活动祈愿",
+        "type": "武器",
+        "version": "5.5下半",
+        "timer": "2025/04/15 18:00 ~ 2025/05/06 14:59",
+        "s": "岩峰巡歌",
+        "a": [
+            "祭礼剑",
+            "西风猎弓",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」081期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d7/itfd0tb69r623wgfo7flpyxq37fedd3.png/900px-%E7%A5%88%E6%84%BF081%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」081期武器活动祈愿",
+        "type": "武器",
+        "version": "5.5下半",
+        "timer": "2025/04/15 18:00 ~ 2025/05/06 14:59",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "祭礼剑",
+            "西风猎弓",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」081期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/c/c5/erftpgloei57slz7qjror11z35kgvdc.png",
+        "title": "「饫宴角戏」080期角色活动祈愿",
+        "type": "角色",
+        "version": "5.5上半",
+        "timer": "5.5版本更新后 ~ 2025/04/15 17:59",
+        "s": "瓦雷莎",
+        "a": [
+            "伊安珊",
+            "嘉明",
+            "夏沃蕾"
+        ],
+        "img_path": "img/ys/history/「饫宴角戏」080期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/2e/43i9yk7y3fx0yqtiziaesa1xusciffh.png",
+        "title": "「云府鹤行」080-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.5上半",
+        "timer": "5.5版本更新后 ~ 2025/04/15 17:59",
+        "s": "闲云",
+        "a": [
+            "伊安珊",
+            "嘉明",
+            "夏沃蕾"
+        ],
+        "img_path": "img/ys/history/「云府鹤行」080-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/a8/entv2nypmz72trufet448tkm5nio9zx.png",
+        "title": "「神铸赋形」080期武器活动祈愿",
+        "type": "武器",
+        "version": "5.5上半",
+        "timer": "5.5版本更新后 ~ 2025/04/15 17:59",
+        "s": "溢彩心念",
+        "a": [
+            "乘浪的回旋",
+            "弥坚骨",
+            "硕果钩",
+            "缀花之翎",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」080期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/a8/entv2nypmz72trufet448tkm5nio9zx.png",
+        "title": "「神铸赋形」080期武器活动祈愿",
+        "type": "武器",
+        "version": "5.5上半",
+        "timer": "5.5版本更新后 ~ 2025/04/15 17:59",
+        "s": "鹤鸣余音",
+        "a": [
+            "乘浪的回旋",
+            "弥坚骨",
+            "硕果钩",
+            "缀花之翎",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」080期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/5c/8tvewpm434fibbrsn1yamszbbcwtd6t.png",
+        "title": "「众水的颂诗」079期角色活动祈愿",
+        "type": "角色",
+        "version": "5.4下半",
+        "timer": "2025/03/04 18:00 ~ 2025/03/25 14:59",
+        "s": "芙宁娜",
+        "a": [
+            "夏洛蒂",
+            "米卡",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「众水的颂诗」079期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/a2/833mthmki8jom7ga6eygndag1qncpkg.png",
+        "title": "「劫中泛滥」079-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.4下半",
+        "timer": "2025/03/04 18:00 ~ 2025/03/25 14:59",
+        "s": "莱欧斯利",
+        "a": [
+            "夏洛蒂",
+            "米卡",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「劫中泛滥」079-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/5f/j95bsgnkppugvnteu210sz6iu7khtal.png",
+        "title": "「神铸赋形」079期武器活动祈愿",
+        "type": "武器",
+        "version": "5.4下半",
+        "timer": "2025/03/04 18:00 ~ 2025/03/25 14:59",
+        "s": "金流监督",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼大剑",
+            "祭礼残章",
+            "西风剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」079期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/5f/j95bsgnkppugvnteu210sz6iu7khtal.png",
+        "title": "「神铸赋形」079期武器活动祈愿",
+        "type": "武器",
+        "version": "5.4下半",
+        "timer": "2025/03/04 18:00 ~ 2025/03/25 14:59",
+        "s": "静水流涌之辉",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼大剑",
+            "祭礼残章",
+            "西风剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」079期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/96/2maku6jfy2ytq6ui3rrxe6v98cjqfa6.png/900px-%E7%A5%88%E6%84%BF078%E6%9C%9F.png.jpeg",
+        "title": "「浮枕朝颜」078期角色活动祈愿",
+        "type": "角色",
+        "version": "5.4上半",
+        "timer": "5.4版本更新后 ~ 2025/03/04 17:59",
+        "s": "梦见月瑞希",
+        "a": [
+            "五郎",
+            "早柚",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「浮枕朝颜」078期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/df/8smkt4jtqochrpl4yqf4zzzer3h7pnt.png/900px-%E7%A5%88%E6%84%BF078-2%E6%9C%9F.png.jpeg",
+        "title": "「柔柔海露心」078-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.4上半",
+        "timer": "5.4版本更新后 ~ 2025/03/04 17:59",
+        "s": "希格雯",
+        "a": [
+            "五郎",
+            "早柚",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「柔柔海露心」078-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8f/rmlrns5dczpc9ioqny2jr6ovlmnituf.png/900px-%E7%A5%88%E6%84%BF078%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」078期武器活动祈愿",
+        "type": "武器",
+        "version": "5.4上半",
+        "timer": "5.4版本更新后 ~ 2025/03/04 17:59",
+        "s": "寝正月初晴",
+        "a": [
+            "恶王丸",
+            "断浪长鳍",
+            "昭心",
+            "曚云之月",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」078期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8f/rmlrns5dczpc9ioqny2jr6ovlmnituf.png/900px-%E7%A5%88%E6%84%BF078%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」078期武器活动祈愿",
+        "type": "武器",
+        "version": "5.4上半",
+        "timer": "5.4版本更新后 ~ 2025/03/04 17:59",
+        "s": "白雨心弦",
+        "a": [
+            "恶王丸",
+            "断浪长鳍",
+            "昭心",
+            "曚云之月",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」078期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/55/e3uocre5w1qytr27m3h4j49v4a5c1rr.png",
+        "title": "「炉边烬影」077期角色活动祈愿",
+        "type": "角色",
+        "version": "5.3下半",
+        "timer": "2025/01/21 18:00 ~ 2025/02/11 14:59",
+        "s": "阿蕾奇诺",
+        "a": [
+            "夏沃蕾",
+            "罗莎莉亚",
+            "蓝砚"
+        ],
+        "img_path": "img/ys/history/「炉边烬影」077期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/74/d0fee2dlzjrf971e21hsud2evnzuj3f.png",
+        "title": "「流霆贯夜」077-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.3下半",
+        "timer": "2025/01/21 18:00 ~ 2025/02/11 14:59",
+        "s": "克洛琳德",
+        "a": [
+            "夏沃蕾",
+            "罗莎莉亚",
+            "蓝砚"
+        ],
+        "img_path": "img/ys/history/「流霆贯夜」077-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/75/l6b5nj0uzk6e22qbsoz65xxr5dj66v8.png",
+        "title": "「神铸赋形」077期武器活动祈愿",
+        "type": "武器",
+        "version": "5.3下半",
+        "timer": "2025/01/21 18:00 ~ 2025/02/11 14:59",
+        "s": "赤月之形",
+        "a": [
+            "匣里龙吟",
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」077期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/75/l6b5nj0uzk6e22qbsoz65xxr5dj66v8.png",
+        "title": "「神铸赋形」077期武器活动祈愿",
+        "type": "武器",
+        "version": "5.3下半",
+        "timer": "2025/01/21 18:00 ~ 2025/02/11 14:59",
+        "s": "赦罪",
+        "a": [
+            "匣里龙吟",
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」077期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/71/5yzkphx1fxgix7zg83dws0y1svswmgy.png",
+        "title": "「宿古的赫炎」076期角色活动祈愿",
+        "type": "角色",
+        "version": "5.3上半",
+        "timer": "5.3版本更新后 ~ 2025/01/21 17:59",
+        "s": "玛薇卡",
+        "a": [
+            "卡齐娜",
+            "班尼特",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「宿古的赫炎」076期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6f/5ttxfghy1hc4m66ge6crxy0f8eyq9dq.png",
+        "title": "「星边夜语」076-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.3上半",
+        "timer": "5.3版本更新后 ~ 2025/01/21 17:59",
+        "s": "茜特菈莉",
+        "a": [
+            "卡齐娜",
+            "班尼特",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「星边夜语」076-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/aa/rhhkvdchh7qks4qpki6izdstxiuzcfq.png",
+        "title": "「神铸赋形」076期武器活动祈愿",
+        "type": "武器",
+        "version": "5.3上半",
+        "timer": "5.3版本更新后 ~ 2025/01/21 17:59",
+        "s": "焚曜千阳",
+        "a": [
+            "千岩古剑",
+            "祭礼剑",
+            "绝弦",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」076期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/aa/rhhkvdchh7qks4qpki6izdstxiuzcfq.png",
+        "title": "「神铸赋形」076期武器活动祈愿",
+        "type": "武器",
+        "version": "5.3上半",
+        "timer": "5.3版本更新后 ~ 2025/01/21 17:59",
+        "s": "祭星者之望",
+        "a": [
+            "千岩古剑",
+            "祭礼剑",
+            "绝弦",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」076期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/43/7hkqrzeso2jnb50h4mbgtre4s734ikx.png",
+        "title": "「渊海界令」075期角色活动祈愿",
+        "type": "角色",
+        "version": "5.2下半",
+        "timer": "2024/12/10 18:00 ~ 2024/12/31 14:59",
+        "s": "那维莱特",
+        "a": [
+            "瑶瑶",
+            "菲谢尔",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「渊海界令」075期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/58/ssjjxma6c3ik04hi0s3wfhgo7x14599.png",
+        "title": "「陵薮市朝」075-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.2下半",
+        "timer": "2024/12/10 18:00 ~ 2024/12/31 14:59",
+        "s": "钟离",
+        "a": [
+            "瑶瑶",
+            "菲谢尔",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」075-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/3b/37hlda4sdhoes7m1hn0r45fahg078jc.png",
+        "title": "「神铸赋形」075期武器活动祈愿",
+        "type": "武器",
+        "version": "5.2下半",
+        "timer": "2024/12/10 18:00 ~ 2024/12/31 14:59",
+        "s": "万世流涌大典",
+        "a": [
+            "匣里灭辰",
+            "幽夜华尔兹",
+            "祭礼残章",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」075期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/3b/37hlda4sdhoes7m1hn0r45fahg078jc.png",
+        "title": "「神铸赋形」075期武器活动祈愿",
+        "type": "武器",
+        "version": "5.2下半",
+        "timer": "2024/12/10 18:00 ~ 2024/12/31 14:59",
+        "s": "贯虹之槊",
+        "a": [
+            "匣里灭辰",
+            "幽夜华尔兹",
+            "祭礼残章",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」075期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/7f/71z71sw77r1taxpf242bsxea13pxsid.png",
+        "title": "「饮羽散红」074期角色活动祈愿",
+        "type": "角色",
+        "version": "5.2上半",
+        "timer": "5.2版本更新后 ~ 2024/12/10 17:59",
+        "s": "恰斯卡",
+        "a": [
+            "欧洛伦",
+            "砂糖",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「饮羽散红」074期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/a3/got3xo1v6zacx6twhjacjt4f4ylj5h6.png",
+        "title": "「光与影的戏术」074-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.2上半",
+        "timer": "5.2版本更新后 ~ 2024/12/10 17:59",
+        "s": "林尼",
+        "a": [
+            "欧洛伦",
+            "砂糖",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「光与影的戏术」074-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/51/3drijqpym15m3ijtnfr6o2k7zbptsmt.png",
+        "title": "「神铸赋形」074期武器活动祈愿",
+        "type": "武器",
+        "version": "5.2上半",
+        "timer": "5.2版本更新后 ~ 2024/12/10 17:59",
+        "s": "星鹫赤羽",
+        "a": [
+            "乘浪的回旋",
+            "笛剑",
+            "缀花之翎",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」074期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/51/3drijqpym15m3ijtnfr6o2k7zbptsmt.png",
+        "title": "「神铸赋形」074期武器活动祈愿",
+        "type": "武器",
+        "version": "5.2上半",
+        "timer": "5.2版本更新后 ~ 2024/12/10 17:59",
+        "s": "最初的大魔术",
+        "a": [
+            "乘浪的回旋",
+            "笛剑",
+            "缀花之翎",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」074期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5b/jaerhvr5sn2102k6etztqgt2zn4as24.png/900px-%E7%A5%88%E6%84%BF073%E6%9C%9F.png.jpeg",
+        "title": "「月草的赐慧」073期角色活动祈愿",
+        "type": "角色",
+        "version": "5.1下半",
+        "timer": "2024/10/29 18:00 ~ 2024/11/19 14:59",
+        "s": "纳西妲",
+        "a": [
+            "久岐忍",
+            "行秋",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「月草的赐慧」073期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/3d/aphfgarde4k6u9uya8lgtwsas164hkw.png/900px-%E7%A5%88%E6%84%BF073-2%E6%9C%9F.png.jpeg",
+        "title": "「赤团开时」073-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.1下半",
+        "timer": "2024/10/29 18:00 ~ 2024/11/19 14:59",
+        "s": "胡桃",
+        "a": [
+            "久岐忍",
+            "行秋",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「赤团开时」073-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5d/op04nn0cfptiknux89fv0gqon4x8w7k.png/900px-%E7%A5%88%E6%84%BF073%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」073期武器活动祈愿",
+        "type": "武器",
+        "version": "5.1下半",
+        "timer": "2024/10/29 18:00 ~ 2024/11/19 14:59",
+        "s": "千夜浮梦",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "硕果钩",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」073期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5d/op04nn0cfptiknux89fv0gqon4x8w7k.png/900px-%E7%A5%88%E6%84%BF073%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」073期武器活动祈愿",
+        "type": "武器",
+        "version": "5.1下半",
+        "timer": "2024/10/29 18:00 ~ 2024/11/19 14:59",
+        "s": "护摩之杖",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "昭心",
+            "硕果钩",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」073期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/65/0uuyir6piix48b45tbfbvrmhb454i8e.png/900px-%E7%A5%88%E6%84%BF072%E6%9C%9F.png.jpeg",
+        "title": "「煅火的祝赐」072期角色活动祈愿",
+        "type": "角色",
+        "version": "5.1上半",
+        "timer": "5.1版本更新后 ~ 2024/10/29 17:59",
+        "s": "希诺宁",
+        "a": [
+            "坎蒂丝",
+            "多莉",
+            "柯莱"
+        ],
+        "img_path": "img/ys/history/「煅火的祝赐」072期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/54/rpydpv8wjhcir19gcv5etguozxjwvqn.png/900px-%E7%A5%88%E6%84%BF072-2%E6%9C%9F.png.jpeg",
+        "title": "「千云绘羽织」072-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.1上半",
+        "timer": "5.1版本更新后 ~ 2024/10/29 17:59",
+        "s": "千织",
+        "a": [
+            "坎蒂丝",
+            "多莉",
+            "柯莱"
+        ],
+        "img_path": "img/ys/history/「千云绘羽织」072-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/59/f6fub7y7sxw38oyjiskmkxwkzpwuy2d.png/900px-%E7%A5%88%E6%84%BF072%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」072期武器活动祈愿",
+        "type": "武器",
+        "version": "5.1上半",
+        "timer": "5.1版本更新后 ~ 2024/10/29 17:59",
+        "s": "岩峰巡歌",
+        "a": [
+            "弓藏",
+            "弥坚骨",
+            "祭礼大剑",
+            "西风秘典",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」072期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/59/f6fub7y7sxw38oyjiskmkxwkzpwuy2d.png/900px-%E7%A5%88%E6%84%BF072%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」072期武器活动祈愿",
+        "type": "武器",
+        "version": "5.1上半",
+        "timer": "5.1版本更新后 ~ 2024/10/29 17:59",
+        "s": "有乐御簾切",
+        "a": [
+            "弓藏",
+            "弥坚骨",
+            "祭礼大剑",
+            "西风秘典",
+            "镇山之钉"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」072期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/e3/i849xfezjjjjh2odklgsl1puak2mbub.png/900px-%E7%A5%88%E6%84%BF071%E6%9C%9F.png.jpeg",
+        "title": "「巡火猎秘」071期角色活动祈愿",
+        "type": "角色",
+        "version": "5.0下半",
+        "timer": "2024/09/17 18:00 ~ 2024/10/08 14:59",
+        "s": "基尼奇",
+        "a": [
+            "九条裟罗",
+            "夏沃蕾",
+            "托马"
+        ],
+        "img_path": "img/ys/history/「巡火猎秘」071期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a2/7650qi7qd7dosi67tqcjdz7xt60nnux.png/900px-%E7%A5%88%E6%84%BF071-2%E6%9C%9F.png.jpeg",
+        "title": "「影寂天下人」071-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.0下半",
+        "timer": "2024/09/17 18:00 ~ 2024/10/08 14:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "夏沃蕾",
+            "托马"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」071-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/77/62j8b1rblbdjjeaw5ro3uxk8soosvf1.png/900px-%E7%A5%88%E6%84%BF071%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」071期武器活动祈愿",
+        "type": "武器",
+        "version": "5.0下半",
+        "timer": "2024/09/17 18:00 ~ 2024/10/08 14:59",
+        "s": "山王长牙",
+        "a": [
+            "流浪乐章",
+            "祭礼剑",
+            "祭礼弓",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」071期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/77/62j8b1rblbdjjeaw5ro3uxk8soosvf1.png/900px-%E7%A5%88%E6%84%BF071%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」071期武器活动祈愿",
+        "type": "武器",
+        "version": "5.0下半",
+        "timer": "2024/09/17 18:00 ~ 2024/10/08 14:59",
+        "s": "薙草之稻光",
+        "a": [
+            "流浪乐章",
+            "祭礼剑",
+            "祭礼弓",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」071期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bd/jqju8yzr83isp3qdpxerkqfeysgr17j.png/900px-%E7%A5%88%E6%84%BF070%E6%9C%9F.png.jpeg",
+        "title": "「鲨鲨逐浪游」070期角色活动祈愿",
+        "type": "角色",
+        "version": "5.0上半",
+        "timer": "5.0版本更新后 ~ 2024/09/17 17:59",
+        "s": "玛拉妮",
+        "a": [
+            "卡齐娜",
+            "班尼特",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「鲨鲨逐浪游」070期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/05/0s6ror09pt6qdc7rl3d85ce0mca9yn7.png/900px-%E7%A5%88%E6%84%BF070-2%E6%9C%9F.png.jpeg",
+        "title": "「叶落风随」070-2期角色活动祈愿",
+        "type": "角色",
+        "version": "5.0上半",
+        "timer": "5.0版本更新后 ~ 2024/09/17 17:59",
+        "s": "枫原万叶",
+        "a": [
+            "卡齐娜",
+            "班尼特",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「叶落风随」070-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/31/twe6f450d4tp94lpcul1cvftciz21v8.png/900px-%E7%A5%88%E6%84%BF070%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」070期武器活动祈愿",
+        "type": "武器",
+        "version": "5.0上半",
+        "timer": "5.0版本更新后 ~ 2024/09/17 17:59",
+        "s": "冲浪时光",
+        "a": [
+            "匣里灭辰",
+            "祭礼残章",
+            "绝弦",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」070期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/31/twe6f450d4tp94lpcul1cvftciz21v8.png/900px-%E7%A5%88%E6%84%BF070%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」070期武器活动祈愿",
+        "type": "武器",
+        "version": "5.0上半",
+        "timer": "5.0版本更新后 ~ 2024/09/17 17:59",
+        "s": "苍古自由之誓",
+        "a": [
+            "匣里灭辰",
+            "祭礼残章",
+            "绝弦",
+            "西风剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」070期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/42/lftcr17b9j1i0n7hr1vo5mzi60idpjc.png/900px-%E7%A5%88%E6%84%BF069%E6%9C%9F.png",
+        "title": "「凝露轻芳」069期角色活动祈愿",
+        "type": "角色",
+        "version": "4.8下半",
+        "timer": "2024/08/06 18:00 ~ 2024/08/27 14:59",
+        "s": "艾梅莉埃",
+        "a": [
+            "烟绯",
+            "雷泽",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「凝露轻芳」069期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/94/qa8nzi7vzll6tjrqkiwqmeyxl7uakpo.png/900px-%E7%A5%88%E6%84%BF069-2%E6%9C%9F.png",
+        "title": "「素霓伣天」069-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.8下半",
+        "timer": "2024/08/06 18:00 ~ 2024/08/27 14:59",
+        "s": "夜兰",
+        "a": [
+            "烟绯",
+            "雷泽",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「素霓伣天」069-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c7/cqy6p9ac23qkwrf230neaq0l3tr79pr.png/900px-%E7%A5%88%E6%84%BF069%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」069期武器活动祈愿",
+        "type": "武器",
+        "version": "4.8下半",
+        "timer": "2024/08/06 18:00 ~ 2024/08/27 14:59",
+        "s": "柔灯挽歌",
+        "a": [
+            "流浪的晚星",
+            "玛海菈的水色",
+            "笛剑",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」069期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c7/cqy6p9ac23qkwrf230neaq0l3tr79pr.png/900px-%E7%A5%88%E6%84%BF069%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」069期武器活动祈愿",
+        "type": "武器",
+        "version": "4.8下半",
+        "timer": "2024/08/06 18:00 ~ 2024/08/27 14:59",
+        "s": "若水",
+        "a": [
+            "流浪的晚星",
+            "玛海菈的水色",
+            "笛剑",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」069期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/20/5dw8kxpxrlr3asl61c42nzvma5u2gjq.png/900px-%E7%A5%88%E6%84%BF068%E6%9C%9F.png",
+        "title": "「刺玫的铭誓」068期角色活动祈愿",
+        "type": "角色",
+        "version": "4.8上半",
+        "timer": "4.8版本更新后 ~ 2024/08/06 17:59",
+        "s": "娜维娅",
+        "a": [
+            "凝光",
+            "卡维",
+            "绮良良"
+        ],
+        "img_path": "img/ys/history/「刺玫的铭誓」068期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/37/5wkc9o82s17lpsn5amt8o9c427k2j4d.png/900px-%E7%A5%88%E6%84%BF068-2%E6%9C%9F.png",
+        "title": "「翩舞歈莲」068-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.8上半",
+        "timer": "4.8版本更新后 ~ 2024/08/06 17:59",
+        "s": "妮露",
+        "a": [
+            "凝光",
+            "卡维",
+            "绮良良"
+        ],
+        "img_path": "img/ys/history/「翩舞歈莲」068-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/42/oij3hkqao92thldq47bpk9azks2wovt.png/900px-%E7%A5%88%E6%84%BF068%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」068期武器活动祈愿",
+        "type": "武器",
+        "version": "4.8上半",
+        "timer": "4.8版本更新后 ~ 2024/08/06 17:59",
+        "s": "圣显之钥",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "昭心",
+            "西福斯的月光",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」068期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/42/oij3hkqao92thldq47bpk9azks2wovt.png/900px-%E7%A5%88%E6%84%BF068%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」068期武器活动祈愿",
+        "type": "武器",
+        "version": "4.8上半",
+        "timer": "4.8版本更新后 ~ 2024/08/06 17:59",
+        "s": "裁断",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "昭心",
+            "西福斯的月光",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」068期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/17/tsg505acz2b6lhwevp80eagmqudirty.png/900px-%E7%A5%88%E6%84%BF067%E6%9C%9F.png.jpeg",
+        "title": "「柔柔海露心」067期角色活动祈愿",
+        "type": "角色",
+        "version": "4.7下半",
+        "timer": "2024/06/25 18:00 ~ 2024/07/16 14:59",
+        "s": "希格雯",
+        "a": [
+            "嘉明",
+            "罗莎莉亚",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「柔柔海露心」067期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a9/6mm2rfn4sfycci3t4m2hybm92u7aszo.png/900px-%E7%A5%88%E6%84%BF067-2%E6%9C%9F.png.jpeg",
+        "title": "「众水的颂诗」067-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.7下半",
+        "timer": "2024/06/25 18:00 ~ 2024/07/16 14:59",
+        "s": "芙宁娜",
+        "a": [
+            "嘉明",
+            "罗莎莉亚",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「众水的颂诗」067-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/69/k5tcfc658pejt4s14ilscaskj5bci06.png/900px-%E7%A5%88%E6%84%BF067%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」067期武器活动祈愿",
+        "type": "武器",
+        "version": "4.7下半",
+        "timer": "2024/06/25 18:00 ~ 2024/07/16 14:59",
+        "s": "白雨心弦",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "祭礼弓",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」067期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/69/k5tcfc658pejt4s14ilscaskj5bci06.png/900px-%E7%A5%88%E6%84%BF067%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」067期武器活动祈愿",
+        "type": "武器",
+        "version": "4.7下半",
+        "timer": "2024/06/25 18:00 ~ 2024/07/16 14:59",
+        "s": "静水流涌之辉",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "祭礼弓",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」067期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/00/inee2jgfnnstu0mddym9xxl761q4uzx.png/900px-%E7%A5%88%E6%84%BF066%E6%9C%9F.png.jpeg",
+        "title": "「流霆贯夜」066期角色活动祈愿",
+        "type": "角色",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2024/06/25 17:59",
+        "s": "克洛琳德",
+        "a": [
+            "托马",
+            "班尼特",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「流霆贯夜」066期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d6/qa49iq8bg8893gch7wcsoc80faroj49.png/900px-%E7%A5%88%E6%84%BF066-2%E6%9C%9F.png.jpeg",
+        "title": "「敕诫枢谋」066-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2024/06/25 17:59",
+        "s": "艾尔海森",
+        "a": [
+            "托马",
+            "班尼特",
+            "赛索斯"
+        ],
+        "img_path": "img/ys/history/「敕诫枢谋」066-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/43/tqk2f1ziy72f0br5yajwhpdt5rf13zz.png/900px-%E7%A5%88%E6%84%BF066%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」066期武器活动祈愿",
+        "type": "武器",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2024/06/25 17:59",
+        "s": "裁叶萃光",
+        "a": [
+            "千岩长枪",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼残章",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」066期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/43/tqk2f1ziy72f0br5yajwhpdt5rf13zz.png/900px-%E7%A5%88%E6%84%BF066%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」066期武器活动祈愿",
+        "type": "武器",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2024/06/25 17:59",
+        "s": "赦罪",
+        "a": [
+            "千岩长枪",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼残章",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」066期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/db/559mli79iyl7nvc7ndol4uy30udhqtp.png/900px-%E7%A5%88%E6%84%BF065%E6%9C%9F.png.jpeg",
+        "title": "「余火变相」065期角色活动祈愿",
+        "type": "角色",
+        "version": "4.6下半",
+        "timer": "2024/05/14 18:00 ~ 2024/06/04 14:59",
+        "s": "流浪者",
+        "a": [
+            "北斗",
+            "珐露珊",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「余火变相」065期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8e/on7qm3pd486vd9ixy05z5ry6kndoltj.png/900px-%E7%A5%88%E6%84%BF065-2%E6%9C%9F.png.jpeg",
+        "title": "「心珠循琅」065-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.6下半",
+        "timer": "2024/05/14 18:00 ~ 2024/06/04 14:59",
+        "s": "白术",
+        "a": [
+            "北斗",
+            "珐露珊",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「心珠循琅」065-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1a/lhsk6fg55jdj6t0v2uhj9ixts9kkris.png/900px-%E7%A5%88%E6%84%BF065%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」065期武器活动祈愿",
+        "type": "武器",
+        "version": "4.6下半",
+        "timer": "2024/05/14 18:00 ~ 2024/06/04 14:59",
+        "s": "图莱杜拉的回忆",
+        "a": [
+            "勘探钻机",
+            "测距规",
+            "祭礼残章",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」065期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1a/lhsk6fg55jdj6t0v2uhj9ixts9kkris.png/900px-%E7%A5%88%E6%84%BF065%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」065期武器活动祈愿",
+        "type": "武器",
+        "version": "4.6下半",
+        "timer": "2024/05/14 18:00 ~ 2024/06/04 14:59",
+        "s": "碧落之珑",
+        "a": [
+            "勘探钻机",
+            "测距规",
+            "祭礼残章",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」065期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/e2/pr8gkr1gy82x0woyrft4vu5b8d5gxcn.png/900px-%E7%A5%88%E6%84%BF064%E6%9C%9F.png.jpeg",
+        "title": "「炉边烬影」064期角色活动祈愿",
+        "type": "角色",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2024/05/14 17:59",
+        "s": "阿蕾奇诺",
+        "a": [
+            "琳妮特",
+            "菲米尼",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「炉边烬影」064期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/99/4qr2kza9ps32kgahph17nut2lnv3f2t.png/900px-%E7%A5%88%E6%84%BF064-2%E6%9C%9F.png.jpeg",
+        "title": "「光与影的戏术」064-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2024/05/14 17:59",
+        "s": "林尼",
+        "a": [
+            "琳妮特",
+            "菲米尼",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「光与影的戏术」064-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/3c/l5eh1ou0y7r5dxnd9htn9y74brlch79.png/900px-%E7%A5%88%E6%84%BF064%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」064期武器活动祈愿",
+        "type": "武器",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2024/05/14 17:59",
+        "s": "最初的大魔术",
+        "a": [
+            "便携动力锯",
+            "匣里灭辰",
+            "昭心",
+            "船坞长剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」064期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/3c/l5eh1ou0y7r5dxnd9htn9y74brlch79.png/900px-%E7%A5%88%E6%84%BF064%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」064期武器活动祈愿",
+        "type": "武器",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2024/05/14 17:59",
+        "s": "赤月之形",
+        "a": [
+            "便携动力锯",
+            "匣里灭辰",
+            "昭心",
+            "船坞长剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」064期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/38/l34qazneyy75n6h5yvvnaun9n7p2oe8.png/900px-%E7%A5%88%E6%84%BF063%E6%9C%9F.png.jpeg",
+        "title": "「渊海界令」063期角色活动祈愿",
+        "type": "角色",
+        "version": "4.5下半",
+        "timer": "2024/04/02 18:00 ~ 2024/04/23 14:59",
+        "s": "那维莱特",
+        "a": [
+            "烟绯",
+            "芭芭拉",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「渊海界令」063期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/48/athsfdooqkzwwp6kiyxdefhhpufxr34.png/900px-%E7%A5%88%E6%84%BF063-2%E6%9C%9F.png.jpeg",
+        "title": "「叶落风随」063-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.5下半",
+        "timer": "2024/04/02 18:00 ~ 2024/04/23 14:59",
+        "s": "枫原万叶",
+        "a": [
+            "烟绯",
+            "芭芭拉",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「叶落风随」063-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/94/8tenks7we6drx2xduol3fa3zavk6oab.png/900px-%E7%A5%88%E6%84%BF063%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」063期武器活动祈愿",
+        "type": "武器",
+        "version": "4.5下半",
+        "timer": "2024/04/02 18:00 ~ 2024/04/23 14:59",
+        "s": "万世流涌大典",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷的酒与诗",
+            "笛剑",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」063期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/94/8tenks7we6drx2xduol3fa3zavk6oab.png/900px-%E7%A5%88%E6%84%BF063%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」063期武器活动祈愿",
+        "type": "武器",
+        "version": "4.5下半",
+        "timer": "2024/04/02 18:00 ~ 2024/04/23 14:59",
+        "s": "苍古自由之誓",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷的酒与诗",
+            "笛剑",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」063期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/70/32g4rftp3x570rw0w41g40v8gahuwyl.png/900px-%E7%A5%88%E6%84%BF062%E6%9C%9F.png.jpeg",
+        "title": "「千云绘羽织」062期角色活动祈愿",
+        "type": "角色",
+        "version": "4.5上半",
+        "timer": "4.5版本更新后 ~ 2024/04/02 17:59",
+        "s": "千织",
+        "a": [
+            "云堇",
+            "五郎",
+            "多莉"
+        ],
+        "img_path": "img/ys/history/「千云绘羽织」062期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8d/f3d8w52zcv1z7th6hb3qj2q3nku1pyv.png/900px-%E7%A5%88%E6%84%BF062-2%E6%9C%9F.png.jpeg",
+        "title": "「鬼门斗宴」062-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.5上半",
+        "timer": "4.5版本更新后 ~ 2024/04/02 17:59",
+        "s": "荒泷一斗",
+        "a": [
+            "云堇",
+            "五郎",
+            "多莉"
+        ],
+        "img_path": "img/ys/history/「鬼门斗宴」062-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4d/qi52wv2k7v2s5xmdvpzke9fe520t1ic.png/900px-%E7%A5%88%E6%84%BF062%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」062期武器活动祈愿",
+        "type": "武器",
+        "version": "4.5上半",
+        "timer": "4.5版本更新后 ~ 2024/04/02 17:59",
+        "s": "有乐御簾切",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷闪光",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」062期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4d/qi52wv2k7v2s5xmdvpzke9fe520t1ic.png/900px-%E7%A5%88%E6%84%BF062%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」062期武器活动祈愿",
+        "type": "武器",
+        "version": "4.5上半",
+        "timer": "4.5版本更新后 ~ 2024/04/02 17:59",
+        "s": "赤角石溃杵",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷闪光",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」062期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bf/lekbinjnjaanc1bpplq6g9vaot6jl1m.png/900px-%E7%A5%88%E6%84%BF061%E6%9C%9F.png.jpeg",
+        "title": "「烟火之邀」061期角色活动祈愿",
+        "type": "角色",
+        "version": "4.4下半",
+        "timer": "2024/02/20 18:00 ~ 2024/03/12 14:59",
+        "s": "魈",
+        "a": [
+            "凝光",
+            "瑶瑶",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「烟火之邀」061期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/36/76u2m8ia0v2e779zawuchbsug0se34d.png/900px-%E7%A5%88%E6%84%BF061-2%E6%9C%9F.png.jpeg",
+        "title": "「华紫樱绯」061-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.4下半",
+        "timer": "2024/02/20 18:00 ~ 2024/03/12 14:59",
+        "s": "八重神子",
+        "a": [
+            "凝光",
+            "瑶瑶",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「华紫樱绯」061-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/e5/3v3jemh9lbe7n31zmaqfk6l89a6vgmc.png/900px-%E7%A5%88%E6%84%BF061%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」061期武器活动祈愿",
+        "type": "武器",
+        "version": "4.4下半",
+        "timer": "2024/02/20 18:00 ~ 2024/03/12 14:59",
+        "s": "和璞鸢",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "流浪乐章",
+            "绝弦",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」061期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/e5/3v3jemh9lbe7n31zmaqfk6l89a6vgmc.png/900px-%E7%A5%88%E6%84%BF061%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」061期武器活动祈愿",
+        "type": "武器",
+        "version": "4.4下半",
+        "timer": "2024/02/20 18:00 ~ 2024/03/12 14:59",
+        "s": "神乐之真意",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "流浪乐章",
+            "绝弦",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」061期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c5/54s9f64xet6qwrcaq3e9gto564btkb6.png/900px-%E7%A5%88%E6%84%BF060%E6%9C%9F.png.jpeg",
+        "title": "「云府鹤行」060期角色活动祈愿",
+        "type": "角色",
+        "version": "4.4上半",
+        "timer": "4.4版本更新后 ~ 2024/02/20 17:59",
+        "s": "闲云",
+        "a": [
+            "嘉明",
+            "珐露珊",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「云府鹤行」060期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5c/g35ys3henmnhbbvcjw1mx626j37yg83.png/900px-%E7%A5%88%E6%84%BF060-2%E6%9C%9F.png.jpeg",
+        "title": "「月草的赐慧」060-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.4上半",
+        "timer": "4.4版本更新后 ~ 2024/02/20 17:59",
+        "s": "纳西妲",
+        "a": [
+            "嘉明",
+            "珐露珊",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「月草的赐慧」060-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5f/lot7wdkh448gncl7bpvprfdcazl8r43.png/900px-%E7%A5%88%E6%84%BF060%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」060期武器活动祈愿",
+        "type": "武器",
+        "version": "4.4上半",
+        "timer": "4.4版本更新后 ~ 2024/02/20 17:59",
+        "s": "千夜浮梦",
+        "a": [
+            "千岩长枪",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼弓",
+            "祭礼残章"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」060期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5f/lot7wdkh448gncl7bpvprfdcazl8r43.png/900px-%E7%A5%88%E6%84%BF060%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」060期武器活动祈愿",
+        "type": "武器",
+        "version": "4.4上半",
+        "timer": "4.4版本更新后 ~ 2024/02/20 17:59",
+        "s": "鹤鸣余音",
+        "a": [
+            "千岩长枪",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼弓",
+            "祭礼残章"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」060期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d3/nenuly6c9bkw38gzha75djlbbpgro88.png/900px-%E7%A5%88%E6%84%BF059%E6%9C%9F.png.jpeg",
+        "title": "「影寂天下人」059期角色活动祈愿",
+        "type": "角色",
+        "version": "4.3下半",
+        "timer": "2024/01/09 18:00 ~ 2024/01/30 14:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "夏沃蕾",
+            "班尼特"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」059期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9e/dnh0i7ni1n88jfts476fqr00nfzn4rl.png/900px-%E7%A5%88%E6%84%BF059-2%E6%9C%9F.png.jpeg",
+        "title": "「焰色天河」059-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.3下半",
+        "timer": "2024/01/09 18:00 ~ 2024/01/30 14:59",
+        "s": "宵宫",
+        "a": [
+            "九条裟罗",
+            "夏沃蕾",
+            "班尼特"
+        ],
+        "img_path": "img/ys/history/「焰色天河」059-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/16/06mdyijrj1mheubwmq4buhvxx72wbl0.png/900px-%E7%A5%88%E6%84%BF059%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」059期武器活动祈愿",
+        "type": "武器",
+        "version": "4.3下半",
+        "timer": "2024/01/09 18:00 ~ 2024/01/30 14:59",
+        "s": "薙草之稻光",
+        "a": [
+            "弓藏",
+            "断浪长鳍",
+            "昭心",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」059期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/16/06mdyijrj1mheubwmq4buhvxx72wbl0.png/900px-%E7%A5%88%E6%84%BF059%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」059期武器活动祈愿",
+        "type": "武器",
+        "version": "4.3下半",
+        "timer": "2024/01/09 18:00 ~ 2024/01/30 14:59",
+        "s": "飞雷之弦振",
+        "a": [
+            "弓藏",
+            "断浪长鳍",
+            "昭心",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」059期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/40/645r133gq6tc0we6pzxfunnvwoh92gb.png",
+        "title": "「刺玫的铭誓」058期角色活动祈愿",
+        "type": "角色",
+        "version": "4.3上半",
+        "timer": "4.3版本更新后 ~ 2024/01/09 17:59",
+        "s": "娜维娅",
+        "a": [
+            "坎蒂丝",
+            "砂糖",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「刺玫的铭誓」058期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9e/lnrta6x70ag37qtjodq2kxxxysdspwa.png",
+        "title": "「白鹭之庭」058-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.3上半",
+        "timer": "4.3版本更新后 ~ 2024/01/09 17:59",
+        "s": "神里绫华",
+        "a": [
+            "坎蒂丝",
+            "砂糖",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「白鹭之庭」058-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/53/lj3lavpca6lqqs049a7fvgsdsboo2xt.png",
+        "title": "「神铸赋形」058期武器活动祈愿",
+        "type": "武器",
+        "version": "4.3上半",
+        "timer": "4.3版本更新后 ~ 2024/01/09 17:59",
+        "s": "裁断",
+        "a": [
+            "匣里灭辰",
+            "恶王丸",
+            "曚云之月",
+            "笛剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」058期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/53/lj3lavpca6lqqs049a7fvgsdsboo2xt.png",
+        "title": "「神铸赋形」058期武器活动祈愿",
+        "type": "武器",
+        "version": "4.3上半",
+        "timer": "4.3版本更新后 ~ 2024/01/09 17:59",
+        "s": "雾切之回光",
+        "a": [
+            "匣里灭辰",
+            "恶王丸",
+            "曚云之月",
+            "笛剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」058期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/e/e5/03kiet2n3dw3rmkmeqxlfhsvvow7nir.png",
+        "title": "「雳裁冥昭」057期角色活动祈愿",
+        "type": "角色",
+        "version": "4.2下半",
+        "timer": "2023/11/28 18:00 ~ 2023/12/19 14:59",
+        "s": "赛诺",
+        "a": [
+            "久岐忍",
+            "绮良良",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「雳裁冥昭」057期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/2e/jo9p5i5i2zvk2wepolf9g5w60xla5hx.png",
+        "title": "「苍流踏花」057-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.2下半",
+        "timer": "2023/11/28 18:00 ~ 2023/12/19 14:59",
+        "s": "神里绫人",
+        "a": [
+            "久岐忍",
+            "绮良良",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「苍流踏花」057-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/1/12/du8r2qnuimgw2infb4ayaey0trx59ji.png",
+        "title": "「神铸赋形」057期武器活动祈愿",
+        "type": "武器",
+        "version": "4.2下半",
+        "timer": "2023/11/28 18:00 ~ 2023/12/19 14:59",
+        "s": "波乱月白经津",
+        "a": [
+            "匣里龙吟",
+            "流浪乐章",
+            "西风大剑",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」057期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/1/12/du8r2qnuimgw2infb4ayaey0trx59ji.png",
+        "title": "「神铸赋形」057期武器活动祈愿",
+        "type": "武器",
+        "version": "4.2下半",
+        "timer": "2023/11/28 18:00 ~ 2023/12/19 14:59",
+        "s": "赤沙之杖",
+        "a": [
+            "匣里龙吟",
+            "流浪乐章",
+            "西风大剑",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」057期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2a/mkk9bt6yqsfg8qafol62mcmqlrq5b62.png/900px-%E7%A5%88%E6%84%BF056%E6%9C%9F.png.jpeg",
+        "title": "「众水的颂诗」056期角色活动祈愿",
+        "type": "角色",
+        "version": "4.2上半",
+        "timer": "4.2版本更新后 ~ 2023/11/28 17:59",
+        "s": "芙宁娜",
+        "a": [
+            "北斗",
+            "夏洛蒂",
+            "柯莱"
+        ],
+        "img_path": "img/ys/history/「众水的颂诗」056期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/56/rw7aju2f7llnxcxfk70hhyp699755tj.png/900px-%E7%A5%88%E6%84%BF056-2%E6%9C%9F.png.jpeg",
+        "title": "「心珠循琅」056-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.2上半",
+        "timer": "4.2版本更新后 ~ 2023/11/28 17:59",
+        "s": "白术",
+        "a": [
+            "北斗",
+            "夏洛蒂",
+            "柯莱"
+        ],
+        "img_path": "img/ys/history/「心珠循琅」056-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5b/63u68ayyb95bv4xlgtxm77s9botf3b5.png/900px-%E7%A5%88%E6%84%BF056%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」056期武器活动祈愿",
+        "type": "武器",
+        "version": "4.2上半",
+        "timer": "4.2版本更新后 ~ 2023/11/28 17:59",
+        "s": "碧落之珑",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼残章",
+            "绝弦",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」056期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5b/63u68ayyb95bv4xlgtxm77s9botf3b5.png/900px-%E7%A5%88%E6%84%BF056%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」056期武器活动祈愿",
+        "type": "武器",
+        "version": "4.2上半",
+        "timer": "4.2版本更新后 ~ 2023/11/28 17:59",
+        "s": "静水流涌之辉",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼残章",
+            "绝弦",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」056期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/c/c9/09hyz0zjveoi44jrhsr9rfihafhio11.png",
+        "title": "「劫中泛滥」055期角色活动祈愿",
+        "type": "角色",
+        "version": "4.1下半",
+        "timer": "2023/10/17 18:00 ~ 2023/11/07 14:59",
+        "s": "莱欧斯利",
+        "a": [
+            "多莉",
+            "托马",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「劫中泛滥」055期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/1/12/4irdxr5chydg2pj11h5knpii5geut0v.png",
+        "title": "「杯装之诗」055-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.1下半",
+        "timer": "2023/10/17 18:00 ~ 2023/11/07 14:59",
+        "s": "温迪",
+        "a": [
+            "多莉",
+            "托马",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」055-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/09/0vqwejck0e3b0y2jjcjnv53t9fj5uuc.png",
+        "title": "「神铸赋形」055期武器活动祈愿",
+        "type": "武器",
+        "version": "4.1下半",
+        "timer": "2023/10/17 18:00 ~ 2023/11/07 14:59",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "勘探钻机",
+            "昭心",
+            "测距规",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」055期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/09/0vqwejck0e3b0y2jjcjnv53t9fj5uuc.png",
+        "title": "「神铸赋形」055期武器活动祈愿",
+        "type": "武器",
+        "version": "4.1下半",
+        "timer": "2023/10/17 18:00 ~ 2023/11/07 14:59",
+        "s": "金流监督",
+        "a": [
+            "勘探钻机",
+            "昭心",
+            "测距规",
+            "西风剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」055期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c8/5tv76o03q0183fkbcf5c0c364m3y5b7.png/900px-%E7%A5%88%E6%84%BF054%E6%9C%9F.png.jpeg",
+        "title": "「渊海界令」054期角色活动祈愿",
+        "type": "角色",
+        "version": "4.1上半",
+        "timer": "4.1版本更新后 ~ 2023/10/17 17:59",
+        "s": "那维莱特",
+        "a": [
+            "菲谢尔",
+            "行秋",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「渊海界令」054期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a2/9q2optctd55820egtsvnx340kbjn975.png/900px-%E7%A5%88%E6%84%BF054-2%E6%9C%9F.png.jpeg",
+        "title": "「赤团开时」054-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.1上半",
+        "timer": "4.1版本更新后 ~ 2023/10/17 17:59",
+        "s": "胡桃",
+        "a": [
+            "菲谢尔",
+            "行秋",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「赤团开时」054-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2c/c3kpzprkc8v8gni9sf8bxv6r1wxa18f.png/900px-%E7%A5%88%E6%84%BF054%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」054期武器活动祈愿",
+        "type": "武器",
+        "version": "4.1上半",
+        "timer": "4.1版本更新后 ~ 2023/10/17 17:59",
+        "s": "万世流涌大典",
+        "a": [
+            "便携动力锯",
+            "幽夜华尔兹",
+            "船坞长剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」054期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2c/c3kpzprkc8v8gni9sf8bxv6r1wxa18f.png/900px-%E7%A5%88%E6%84%BF054%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」054期武器活动祈愿",
+        "type": "武器",
+        "version": "4.1上半",
+        "timer": "4.1版本更新后 ~ 2023/10/17 17:59",
+        "s": "护摩之杖",
+        "a": [
+            "便携动力锯",
+            "幽夜华尔兹",
+            "船坞长剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」054期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/11/aiccuczliikkm8domj8dbq80ybgx099.png/900px-%E7%A5%88%E6%84%BF053%E6%9C%9F.png",
+        "title": "「陵薮市朝」053期角色活动祈愿",
+        "type": "角色",
+        "version": "4.0下半",
+        "timer": "2023/09/05 18:00 ~ 2023/09/26 14:59",
+        "s": "钟离",
+        "a": [
+            "早柚",
+            "菲米尼",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」053期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/27/mpc7feb4vwq72hjampecwbw16jpikz7.png/900px-%E7%A5%88%E6%84%BF053-2%E6%9C%9F.png",
+        "title": "「暂别冬都」053-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.0下半",
+        "timer": "2023/09/05 18:00 ~ 2023/09/26 14:59",
+        "s": "达达利亚",
+        "a": [
+            "早柚",
+            "菲米尼",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「暂别冬都」053-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/cb/puylbprgyjmd1n2g5mhyxjoczjtn3j2.png/900px-%E7%A5%88%E6%84%BF053%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」053期武器活动祈愿",
+        "type": "武器",
+        "version": "4.0下半",
+        "timer": "2023/09/05 18:00 ~ 2023/09/26 14:59",
+        "s": "冬极白星",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」053期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/cb/puylbprgyjmd1n2g5mhyxjoczjtn3j2.png/900px-%E7%A5%88%E6%84%BF053%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」053期武器活动祈愿",
+        "type": "武器",
+        "version": "4.0下半",
+        "timer": "2023/09/05 18:00 ~ 2023/09/26 14:59",
+        "s": "贯虹之槊",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」053期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/05/7m7c8l68nyv32oao34kyv0v37x34bzg.png/900px-%E7%A5%88%E6%84%BF052%E6%9C%9F.png.jpeg",
+        "title": "「光与影的戏术」052期角色活动祈愿",
+        "type": "角色",
+        "version": "4.0上半",
+        "timer": "4.0版本更新后 ~ 2023/09/05 17:59",
+        "s": "林尼",
+        "a": [
+            "班尼特",
+            "琳妮特",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「光与影的戏术」052期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/5f/cfbl79cc57fe2yyg49hugns055ofs05.png/900px-%E7%A5%88%E6%84%BF052-2%E6%9C%9F.png.jpeg",
+        "title": "「素霓伣天」052-2期角色活动祈愿",
+        "type": "角色",
+        "version": "4.0上半",
+        "timer": "4.0版本更新后 ~ 2023/09/05 17:59",
+        "s": "夜兰",
+        "a": [
+            "班尼特",
+            "琳妮特",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「素霓伣天」052-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/0b/4r8qekc20l6w72jipuwat8gvxrt70hs.png/900px-%E7%A5%88%E6%84%BF052%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」052期武器活动祈愿",
+        "type": "武器",
+        "version": "4.0上半",
+        "timer": "4.0版本更新后 ~ 2023/09/05 17:59",
+        "s": "最初的大魔术",
+        "a": [
+            "祭礼剑",
+            "祭礼弓",
+            "祭礼残章",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」052期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/0b/4r8qekc20l6w72jipuwat8gvxrt70hs.png/900px-%E7%A5%88%E6%84%BF052%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」052期武器活动祈愿",
+        "type": "武器",
+        "version": "4.0上半",
+        "timer": "4.0版本更新后 ~ 2023/09/05 17:59",
+        "s": "若水",
+        "a": [
+            "祭礼剑",
+            "祭礼弓",
+            "祭礼残章",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」052期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c8/7yf6qdtpei4sfvnhulo3a3lpypeb4ee.png/900px-%E7%A5%88%E6%84%BF051%E6%9C%9F.png.jpeg",
+        "title": "「浮岳虹珠」051期角色活动祈愿",
+        "type": "角色",
+        "version": "3.8下半",
+        "timer": "2023/07/25 18:00 ~ 2023/08/15 14:59",
+        "s": "珊瑚宫心海",
+        "a": [
+            "烟绯",
+            "珐露珊",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「浮岳虹珠」051期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/e4/kwz7yedgv8ot9mnem55e7013o4f2qh0.png/900px-%E7%A5%88%E6%84%BF051-2%E6%9C%9F.png.jpeg",
+        "title": "「余火变相」051-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.8下半",
+        "timer": "2023/07/25 18:00 ~ 2023/08/15 14:59",
+        "s": "流浪者",
+        "a": [
+            "烟绯",
+            "珐露珊",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「余火变相」051-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/df/omwsahc0im1tktr473vd23uyccn3m91.png/900px-%E7%A5%88%E6%84%BF051%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」051期武器活动祈愿",
+        "type": "武器",
+        "version": "3.8下半",
+        "timer": "2023/07/25 18:00 ~ 2023/08/15 14:59",
+        "s": "不灭月华",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "暗巷的酒与诗",
+            "西风猎弓",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」051期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/df/omwsahc0im1tktr473vd23uyccn3m91.png/900px-%E7%A5%88%E6%84%BF051%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」051期武器活动祈愿",
+        "type": "武器",
+        "version": "3.8下半",
+        "timer": "2023/07/25 18:00 ~ 2023/08/15 14:59",
+        "s": "图莱杜拉的回忆",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "暗巷的酒与诗",
+            "西风猎弓",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」051期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b4/2jeqkbiyzn9m0ahwjcs5zsn9qf1un01.png/900px-%E7%A5%88%E6%84%BF050%E6%9C%9F.png",
+        "title": "「浪涌之瞬」050期角色活动祈愿",
+        "type": "角色",
+        "version": "3.8上半",
+        "timer": "3.8版本更新后 ~ 2023/07/25 17:59",
+        "s": "优菈",
+        "a": [
+            "托马",
+            "米卡",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「浪涌之瞬」050期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/df/2vr9zmlkt30fdk8ovzqubjlptxmud1p.png/900px-%E7%A5%88%E6%84%BF050-2%E6%9C%9F.png",
+        "title": "「闪焰的驻足」050-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.8上半",
+        "timer": "3.8版本更新后 ~ 2023/07/25 17:59",
+        "s": "可莉",
+        "a": [
+            "托马",
+            "米卡",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「闪焰的驻足」050-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a2/2qvuopwx6vqx9egzqgwn7bs8ngkgahc.png/900px-%E7%A5%88%E6%84%BF050%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」050期武器活动祈愿",
+        "type": "武器",
+        "version": "3.8上半",
+        "timer": "3.8版本更新后 ~ 2023/07/25 17:59",
+        "s": "四风原典",
+        "a": [
+            "昭心",
+            "暗巷猎手",
+            "暗巷闪光",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」050期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a2/2qvuopwx6vqx9egzqgwn7bs8ngkgahc.png/900px-%E7%A5%88%E6%84%BF050%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」050期武器活动祈愿",
+        "type": "武器",
+        "version": "3.8上半",
+        "timer": "3.8版本更新后 ~ 2023/07/25 17:59",
+        "s": "松籁响起之时",
+        "a": [
+            "昭心",
+            "暗巷猎手",
+            "暗巷闪光",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」050期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/94/fh0dtp53rie1cgwoi6vgsn2wybvyppe.png/900px-%E7%A5%88%E6%84%BF049%E6%9C%9F.png",
+        "title": "「敕诫枢谋」049期角色活动祈愿",
+        "type": "角色",
+        "version": "3.7下半",
+        "timer": "2023/06/13 18:00 ~ 2023/07/04 14:59",
+        "s": "艾尔海森",
+        "a": [
+            "瑶瑶",
+            "香菱",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「敕诫枢谋」049期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/df/9691vvi7olb9ohwa7cd1bz3u6zmue5m.png/900px-%E7%A5%88%E6%84%BF049-2%E6%9C%9F.png",
+        "title": "「叶落风随」049-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.7下半",
+        "timer": "2023/06/13 18:00 ~ 2023/07/04 14:59",
+        "s": "枫原万叶",
+        "a": [
+            "瑶瑶",
+            "香菱",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「叶落风随」049-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/08/rqst031w02cc6uobvdcwtdb8ktkvww9.png/900px-%E7%A5%88%E6%84%BF049%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」049期武器活动祈愿",
+        "type": "武器",
+        "version": "3.7下半",
+        "timer": "2023/06/13 18:00 ~ 2023/07/04 14:59",
+        "s": "苍古自由之誓",
+        "a": [
+            "断浪长鳍",
+            "曚云之月",
+            "祭礼大剑",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」049期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/08/rqst031w02cc6uobvdcwtdb8ktkvww9.png/900px-%E7%A5%88%E6%84%BF049%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」049期武器活动祈愿",
+        "type": "武器",
+        "version": "3.7下半",
+        "timer": "2023/06/13 18:00 ~ 2023/07/04 14:59",
+        "s": "裁叶萃光",
+        "a": [
+            "断浪长鳍",
+            "曚云之月",
+            "祭礼大剑",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」049期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/19/pgov51fkjy515m4yd92yi5vaeyi7nmc.png/900px-%E7%A5%88%E6%84%BF048%E6%9C%9F.png",
+        "title": "「焰色天河」048期角色活动祈愿",
+        "type": "角色",
+        "version": "3.7上半",
+        "timer": "3.7版本更新后 ~ 2023/06/13 17:59",
+        "s": "宵宫",
+        "a": [
+            "云堇",
+            "绮良良",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「焰色天河」048期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c2/2076li1vd6y0trw0pri8zomda1xd1k0.png/900px-%E7%A5%88%E6%84%BF048-2%E6%9C%9F.png",
+        "title": "「华紫樱绯」048-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.7上半",
+        "timer": "3.7版本更新后 ~ 2023/06/13 17:59",
+        "s": "八重神子",
+        "a": [
+            "云堇",
+            "绮良良",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「华紫樱绯」048-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b5/skula4allrnc0kvi4t7zff7j11mexi0.png/900px-%E7%A5%88%E6%84%BF048%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」048期武器活动祈愿",
+        "type": "武器",
+        "version": "3.7上半",
+        "timer": "3.7版本更新后 ~ 2023/06/13 17:59",
+        "s": "神乐之真意",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "恶王丸",
+            "流浪乐章",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」048期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b5/skula4allrnc0kvi4t7zff7j11mexi0.png/900px-%E7%A5%88%E6%84%BF048%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」048期武器活动祈愿",
+        "type": "武器",
+        "version": "3.7上半",
+        "timer": "3.7版本更新后 ~ 2023/06/13 17:59",
+        "s": "飞雷之弦振",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "恶王丸",
+            "流浪乐章",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」048期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/ff/6tfq2s1h5up9co7t58i8t3sa8m6sixn.png/900px-%E7%A5%88%E6%84%BF047%E6%9C%9F.png",
+        "title": "「心珠循琅」047期角色活动祈愿",
+        "type": "角色",
+        "version": "3.6下半",
+        "timer": "2023/05/02 18:00 ~ 2023/05/23 14:59",
+        "s": "白术",
+        "a": [
+            "卡维",
+            "坎蒂丝",
+            "菲谢尔"
+        ],
+        "img_path": "img/ys/history/「心珠循琅」047期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f9/d6o91ofb40q03m6iouecyv9vp7idcae.png/900px-%E7%A5%88%E6%84%BF047-2%E6%9C%9F.png",
+        "title": "「浮生孰来」047-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.6下半",
+        "timer": "2023/05/02 18:00 ~ 2023/05/23 14:59",
+        "s": "甘雨",
+        "a": [
+            "卡维",
+            "坎蒂丝",
+            "菲谢尔"
+        ],
+        "img_path": "img/ys/history/「浮生孰来」047-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/53/bz86f7fzd7zhcltywjswscpo93lgaty.png/900px-%E7%A5%88%E6%84%BF047%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」047期武器活动祈愿",
+        "type": "武器",
+        "version": "3.6下半",
+        "timer": "2023/05/02 18:00 ~ 2023/05/23 14:59",
+        "s": "碧落之珑",
+        "a": [
+            "匣里龙吟",
+            "流浪的晚星",
+            "玛海菈的水色",
+            "祭礼弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」047期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/53/bz86f7fzd7zhcltywjswscpo93lgaty.png/900px-%E7%A5%88%E6%84%BF047%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」047期武器活动祈愿",
+        "type": "武器",
+        "version": "3.6下半",
+        "timer": "2023/05/02 18:00 ~ 2023/05/23 14:59",
+        "s": "阿莫斯之弓",
+        "a": [
+            "匣里龙吟",
+            "流浪的晚星",
+            "玛海菈的水色",
+            "祭礼弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」047期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/17/4iqkh5xu75utzw81na58pop7eelad0b.png/900px-%E7%A5%88%E6%84%BF046%E6%9C%9F.png",
+        "title": "「月草的赐慧」046期角色活动祈愿",
+        "type": "角色",
+        "version": "3.6上半",
+        "timer": "3.6版本更新后 ~ 2023/05/02 17:59",
+        "s": "纳西妲",
+        "a": [
+            "久岐忍",
+            "多莉",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「月草的赐慧」046期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/98/t5bhxrc9hpkbmuux6aujbye9utflail.png/900px-%E7%A5%88%E6%84%BF046-2%E6%9C%9F.png",
+        "title": "「翩舞歈莲」046-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.6上半",
+        "timer": "3.6版本更新后 ~ 2023/05/02 17:59",
+        "s": "妮露",
+        "a": [
+            "久岐忍",
+            "多莉",
+            "莱依拉"
+        ],
+        "img_path": "img/ys/history/「翩舞歈莲」046-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/68/gjvv3gaio6wmhp3rciamog9gbj9knrt.png/900px-%E7%A5%88%E6%84%BF046%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」046期武器活动祈愿",
+        "type": "武器",
+        "version": "3.6上半",
+        "timer": "3.6版本更新后 ~ 2023/05/02 17:59",
+        "s": "千夜浮梦",
+        "a": [
+            "匣里灭辰",
+            "祭礼残章",
+            "绝弦",
+            "西福斯的月光",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」046期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/68/gjvv3gaio6wmhp3rciamog9gbj9knrt.png/900px-%E7%A5%88%E6%84%BF046%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」046期武器活动祈愿",
+        "type": "武器",
+        "version": "3.6上半",
+        "timer": "3.6版本更新后 ~ 2023/05/02 17:59",
+        "s": "圣显之钥",
+        "a": [
+            "匣里灭辰",
+            "祭礼残章",
+            "绝弦",
+            "西福斯的月光",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」046期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1f/md3wmxvq59ugr9s4v8sws4w37e824bx.png/900px-%E7%A5%88%E6%84%BF045%E6%9C%9F.png.jpeg",
+        "title": "「出尘入世」045期角色活动祈愿",
+        "type": "角色",
+        "version": "3.5下半",
+        "timer": "2023/03/21 18:00 ~ 2023/04/11 14:59",
+        "s": "申鹤",
+        "a": [
+            "砂糖",
+            "米卡",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「出尘入世」045期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b5/ckzo1em95ptlz575xgze7j5llypy5rx.png/900px-%E7%A5%88%E6%84%BF045-2%E6%9C%9F.png.jpeg",
+        "title": "「白鹭之庭」045-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.5下半",
+        "timer": "2023/03/21 18:00 ~ 2023/04/11 14:59",
+        "s": "神里绫华",
+        "a": [
+            "砂糖",
+            "米卡",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「白鹭之庭」045-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/32/rn4rtexzvgxlrufidomd9z7kn2l8qqg.png/900px-%E7%A5%88%E6%84%BF045%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」045期武器活动祈愿",
+        "type": "武器",
+        "version": "3.5下半",
+        "timer": "2023/03/21 18:00 ~ 2023/04/11 14:59",
+        "s": "息灾",
+        "a": [
+            "暗巷的酒与诗",
+            "祭礼剑",
+            "西风猎弓",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」045期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/32/rn4rtexzvgxlrufidomd9z7kn2l8qqg.png/900px-%E7%A5%88%E6%84%BF045%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」045期武器活动祈愿",
+        "type": "武器",
+        "version": "3.5下半",
+        "timer": "2023/03/21 18:00 ~ 2023/04/11 14:59",
+        "s": "雾切之回光",
+        "a": [
+            "暗巷的酒与诗",
+            "祭礼剑",
+            "西风猎弓",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」045期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/08/63uaxmujxc9tx2ya8dl72vsuiz75o6r.png/900px-%E7%A5%88%E6%84%BF044%E6%9C%9F.png.jpeg",
+        "title": "「烈阳烁金」044期角色活动祈愿",
+        "type": "角色",
+        "version": "3.5上半",
+        "timer": "3.5版本更新后 ~ 2023/03/21 17:59",
+        "s": "迪希雅",
+        "a": [
+            "柯莱",
+            "班尼特",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「烈阳烁金」044期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f6/ecvwy294e0nb86qg1aqaz9sowuxmjly.png/900px-%E7%A5%88%E6%84%BF044-2%E6%9C%9F.png.jpeg",
+        "title": "「雳裁冥昭」044-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.5上半",
+        "timer": "3.5版本更新后 ~ 2023/03/21 17:59",
+        "s": "赛诺",
+        "a": [
+            "柯莱",
+            "班尼特",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「雳裁冥昭」044-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/18/tgnhmgkswmdqkpgfl3wfchv65osxd5j.png/900px-%E7%A5%88%E6%84%BF044%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」044期武器活动祈愿",
+        "type": "武器",
+        "version": "3.5上半",
+        "timer": "3.5版本更新后 ~ 2023/03/21 17:59",
+        "s": "苇海信标",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "暗巷猎手",
+            "暗巷闪光",
+            "祭礼大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」044期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/18/tgnhmgkswmdqkpgfl3wfchv65osxd5j.png/900px-%E7%A5%88%E6%84%BF044%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」044期武器活动祈愿",
+        "type": "武器",
+        "version": "3.5上半",
+        "timer": "3.5版本更新后 ~ 2023/03/21 17:59",
+        "s": "赤沙之杖",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "暗巷猎手",
+            "暗巷闪光",
+            "祭礼大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」044期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/36/49u2knsmg40rkvlczb4d914iux8at11.png/900px-%E7%A5%88%E6%84%BF043%E6%9C%9F.png.jpeg",
+        "title": "「赤团开时」043期角色活动祈愿",
+        "type": "角色",
+        "version": "3.4下半",
+        "timer": "2023/02/07 18:00 ~ 2023/02/28 14:59",
+        "s": "胡桃",
+        "a": [
+            "凝光",
+            "北斗",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「赤团开时」043期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1b/9z00btfsxgoh6k6wxmmgswgfxnpcar4.png/900px-%E7%A5%88%E6%84%BF043-2%E6%9C%9F.png.jpeg",
+        "title": "「素霓伣天」043-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.4下半",
+        "timer": "2023/02/07 18:00 ~ 2023/02/28 14:59",
+        "s": "夜兰",
+        "a": [
+            "凝光",
+            "北斗",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「素霓伣天」043-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2f/0ymoe9sc2z2oakhr2ul21sycvq1mrcm.png/900px-%E7%A5%88%E6%84%BF043%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」043期武器活动祈愿",
+        "type": "武器",
+        "version": "3.4下半",
+        "timer": "2023/02/07 18:00 ~ 2023/02/28 14:59",
+        "s": "护摩之杖",
+        "a": [
+            "匣里灭辰",
+            "千岩古剑",
+            "弓藏",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」043期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/2f/0ymoe9sc2z2oakhr2ul21sycvq1mrcm.png/900px-%E7%A5%88%E6%84%BF043%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」043期武器活动祈愿",
+        "type": "武器",
+        "version": "3.4下半",
+        "timer": "2023/02/07 18:00 ~ 2023/02/28 14:59",
+        "s": "若水",
+        "a": [
+            "匣里灭辰",
+            "千岩古剑",
+            "弓藏",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」043期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/05/lioro9epjpyll8ib769sa14zkffxf6o.png/900px-%E7%A5%88%E6%84%BF042%E6%9C%9F.png.jpeg",
+        "title": "「敕诫枢谋」042期角色活动祈愿",
+        "type": "角色",
+        "version": "3.4上半",
+        "timer": "3.4版本更新后 ~ 2023/02/07 17:59",
+        "s": "艾尔海森",
+        "a": [
+            "云堇",
+            "瑶瑶",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「敕诫枢谋」042期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/68/re63m3dbz6sd9iejplmna69hry4i6db.png/900px-%E7%A5%88%E6%84%BF042-2%E6%9C%9F.png.jpeg",
+        "title": "「烟火之邀」042-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.4上半",
+        "timer": "3.4版本更新后 ~ 2023/02/07 17:59",
+        "s": "魈",
+        "a": [
+            "云堇",
+            "瑶瑶",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「烟火之邀」042-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/55/klwrf0vjnybelyz7yzosetselvpk423.png/900px-%E7%A5%88%E6%84%BF042%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」042期武器活动祈愿",
+        "type": "武器",
+        "version": "3.4上半",
+        "timer": "2023/01/18 11:00 ~ 2023/02/07 17:59",
+        "s": "和璞鸢",
+        "a": [
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓",
+            "笛剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」042期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/5/55/klwrf0vjnybelyz7yzosetselvpk423.png/900px-%E7%A5%88%E6%84%BF042%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」042期武器活动祈愿",
+        "type": "武器",
+        "version": "3.4上半",
+        "timer": "2023/01/18 11:00 ~ 2023/02/07 17:59",
+        "s": "裁叶萃光",
+        "a": [
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓",
+            "笛剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」042期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/87/6bpxovrlw4nbacvxnr6blj29ftrr92z.png/900px-%E7%A5%88%E6%84%BF041%E6%9C%9F.png.jpeg",
+        "title": "「影寂天下人」041期角色活动祈愿",
+        "type": "角色",
+        "version": "3.3下半",
+        "timer": "2022/12/27 18:00 ~ 2023/01/17 14:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "早柚",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」041期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/40/p0tmhkt6a9xab2m68eo510sg931b7nd.png/900px-%E7%A5%88%E6%84%BF041-2%E6%9C%9F.png.jpeg",
+        "title": "「苍流踏花」041-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.3下半",
+        "timer": "2022/12/27 18:00 ~ 2023/01/17 14:59",
+        "s": "神里绫人",
+        "a": [
+            "九条裟罗",
+            "早柚",
+            "罗莎莉亚"
+        ],
+        "img_path": "img/ys/history/「苍流踏花」041-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/00/p9lrgko2u3njg5v2oz2qmft07paydih.png/900px-%E7%A5%88%E6%84%BF041%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」041期武器活动祈愿",
+        "type": "武器",
+        "version": "3.3下半",
+        "timer": "2022/12/27 18:00 ~ 2023/01/17 14:59",
+        "s": "波乱月白经津",
+        "a": [
+            "匣里龙吟",
+            "恶王丸",
+            "曚云之月",
+            "祭礼残章",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」041期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/00/p9lrgko2u3njg5v2oz2qmft07paydih.png/900px-%E7%A5%88%E6%84%BF041%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」041期武器活动祈愿",
+        "type": "武器",
+        "version": "3.3下半",
+        "timer": "2022/12/27 18:00 ~ 2023/01/17 14:59",
+        "s": "薙草之稻光",
+        "a": [
+            "匣里龙吟",
+            "恶王丸",
+            "曚云之月",
+            "祭礼残章",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」041期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/a8/g1rvza8l1vvnrp771voza0w08y87yn9.png/900px-%E7%A5%88%E6%84%BF040%E6%9C%9F.png.jpeg",
+        "title": "「余火变相」040期角色活动祈愿",
+        "type": "角色",
+        "version": "3.3上半",
+        "timer": "3.3版本更新后 ~ 2022/12/27 17:59",
+        "s": "流浪者",
+        "a": [
+            "五郎",
+            "烟绯",
+            "珐露珊"
+        ],
+        "img_path": "img/ys/history/「余火变相」040期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f3/8baw3m3z4lzawh9g0r7w4bn0h1vw3wb.png/900px-%E7%A5%88%E6%84%BF040-2%E6%9C%9F.png.jpeg",
+        "title": "「鬼门斗宴」040-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.3上半",
+        "timer": "3.3版本更新后 ~ 2022/12/27 17:59",
+        "s": "荒泷一斗",
+        "a": [
+            "五郎",
+            "烟绯",
+            "珐露珊"
+        ],
+        "img_path": "img/ys/history/「鬼门斗宴」040-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/77/lcpfmpkpecdln3scxakws58vi5mu32u.png/900px-%E7%A5%88%E6%84%BF040%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」040期武器活动祈愿",
+        "type": "武器",
+        "version": "3.3上半",
+        "timer": "2022/12/07 11:00 ~ 2022/12/27 17:59",
+        "s": "图莱杜拉的回忆",
+        "a": [
+            "断浪长鳍",
+            "昭心",
+            "祭礼剑",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」040期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/7/77/lcpfmpkpecdln3scxakws58vi5mu32u.png/900px-%E7%A5%88%E6%84%BF040%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」040期武器活动祈愿",
+        "type": "武器",
+        "version": "3.3上半",
+        "timer": "2022/12/07 11:00 ~ 2022/12/27 17:59",
+        "s": "赤角石溃杵",
+        "a": [
+            "断浪长鳍",
+            "昭心",
+            "祭礼剑",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」040期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ef/6txxlshqb3br4tv21tbe7ywpmolg69h.png/900px-%E7%A5%88%E6%84%BF039%E6%9C%9F.png.jpeg",
+        "title": "「华紫樱绯」039期角色活动祈愿",
+        "type": "角色",
+        "version": "3.2下半",
+        "timer": "2022/11/18 18:00 ~ 2022/12/06 14:59",
+        "s": "八重神子",
+        "a": [
+            "托马",
+            "莱依拉",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「华紫樱绯」039期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b7/kvxk90mdr1rip8songe9y2is7iwhcks.png/900px-%E7%A5%88%E6%84%BF039-2%E6%9C%9F.png.jpeg",
+        "title": "「暂别冬都」039-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.2下半",
+        "timer": "2022/11/18 18:00 ~ 2022/12/06 14:59",
+        "s": "达达利亚",
+        "a": [
+            "托马",
+            "莱依拉",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「暂别冬都」039-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/03/oiga8k4hn3wnd98svz3chj2vzvoqip1.png/900px-%E7%A5%88%E6%84%BF039%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」039期武器活动祈愿",
+        "type": "武器",
+        "version": "3.2下半",
+        "timer": "2022/11/18 18:00 ~ 2022/12/06 14:59",
+        "s": "冬极白星",
+        "a": [
+            "匣里灭辰",
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」039期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/03/oiga8k4hn3wnd98svz3chj2vzvoqip1.png/900px-%E7%A5%88%E6%84%BF039%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」039期武器活动祈愿",
+        "type": "武器",
+        "version": "3.2下半",
+        "timer": "2022/11/18 18:00 ~ 2022/12/06 14:59",
+        "s": "神乐之真意",
+        "a": [
+            "匣里灭辰",
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」039期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9a/r4tirjbbvpjw7co65jk4xu1h7tj7rge.png/900px-%E7%A5%88%E6%84%BF038%E6%9C%9F.png.jpeg",
+        "title": "「月草的赐慧」038期角色活动祈愿",
+        "type": "角色",
+        "version": "3.2上半",
+        "timer": "2022/11/02 11:00 ~ 2022/11/18 17:59",
+        "s": "纳西妲",
+        "a": [
+            "班尼特",
+            "诺艾尔",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「月草的赐慧」038期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/86/hi0ep0w4j0u77ratpddmfsatkhqvicx.png/900px-%E7%A5%88%E6%84%BF038-2%E6%9C%9F.png.jpeg",
+        "title": "「焰色天河」038-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.2上半",
+        "timer": "2022/11/02 11:00 ~ 2022/11/18 17:59",
+        "s": "宵宫",
+        "a": [
+            "班尼特",
+            "诺艾尔",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「焰色天河」038-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/be/5129g0g1jtqleb47db2szqppbiumw2g.png/900px-%E7%A5%88%E6%84%BF038%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」038期武器活动祈愿",
+        "type": "武器",
+        "version": "3.2上半",
+        "timer": "2022/11/02 11:00 ~ 2022/11/18 17:59",
+        "s": "千夜浮梦",
+        "a": [
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」038期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/be/5129g0g1jtqleb47db2szqppbiumw2g.png/900px-%E7%A5%88%E6%84%BF038%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」038期武器活动祈愿",
+        "type": "武器",
+        "version": "3.2上半",
+        "timer": "2022/11/02 11:00 ~ 2022/11/18 17:59",
+        "s": "飞雷之弦振",
+        "a": [
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」038期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b2/kdcnqnofbso8z1uz616f7oqbmk2gr5x.png/900px-%E7%A5%88%E6%84%BF037%E6%9C%9F.png.jpeg",
+        "title": "「翩舞歈莲」037期角色活动祈愿",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2022/10/14 18:00 ~ 2022/11/01 14:59",
+        "s": "妮露",
+        "a": [
+            "北斗",
+            "芭芭拉",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「翩舞歈莲」037期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/3/3a/ccyk2hh624huanyqdfm710q8ks5slah.png/900px-%E7%A5%88%E6%84%BF037-2%E6%9C%9F.png.jpeg",
+        "title": "「深秘之息」037-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2022/10/14 18:00 ~ 2022/11/01 14:59",
+        "s": "阿贝多",
+        "a": [
+            "北斗",
+            "芭芭拉",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「深秘之息」037-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ea/n8lpt8v94m88mje93gurlydp6w79wg5.png/900px-%E7%A5%88%E6%84%BF037%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」037期武器活动祈愿",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2022/10/14 18:00 ~ 2022/11/01 14:59",
+        "s": "圣显之钥",
+        "a": [
+            "匣里灭辰",
+            "流浪的晚星",
+            "祭礼弓",
+            "西福斯的月光",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」037期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/e/ea/n8lpt8v94m88mje93gurlydp6w79wg5.png/900px-%E7%A5%88%E6%84%BF037%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」037期武器活动祈愿",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2022/10/14 18:00 ~ 2022/11/01 14:59",
+        "s": "磐岩结绿",
+        "a": [
+            "匣里灭辰",
+            "流浪的晚星",
+            "祭礼弓",
+            "西福斯的月光",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」037期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/11/8a0epfo8cxubjd00as6j5crseiw8etu.png/900px-%E7%A5%88%E6%84%BF036%E6%9C%9F.png.jpeg",
+        "title": "「雳裁冥昭」036期角色活动祈愿",
+        "type": "角色",
+        "version": "3.1上半",
+        "timer": "2022/09/28 11:00 ~ 2022/10/14 17:59",
+        "s": "赛诺",
+        "a": [
+            "久岐忍",
+            "坎蒂丝",
+            "早柚"
+        ],
+        "img_path": "img/ys/history/「雳裁冥昭」036期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/63/qsdcklgzbs78niayfbigm21d73y8u01.png/900px-%E7%A5%88%E6%84%BF036-2%E6%9C%9F.png.jpeg",
+        "title": "「杯装之诗」036-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.1上半",
+        "timer": "2022/09/28 11:00 ~ 2022/10/14 17:59",
+        "s": "温迪",
+        "a": [
+            "久岐忍",
+            "坎蒂丝",
+            "早柚"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」036-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b8/9k0zji4qjep0d79wd9kivcg6kdtzhw5.png/900px-%E7%A5%88%E6%84%BF036%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」036期武器活动祈愿",
+        "type": "武器",
+        "version": "3.1上半",
+        "timer": "2022/09/28 11:00 ~ 2022/10/14 17:59",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "匣里龙吟",
+            "玛海菈的水色",
+            "祭礼残章",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」036期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b8/9k0zji4qjep0d79wd9kivcg6kdtzhw5.png/900px-%E7%A5%88%E6%84%BF036%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」036期武器活动祈愿",
+        "type": "武器",
+        "version": "3.1上半",
+        "timer": "2022/09/28 11:00 ~ 2022/10/14 17:59",
+        "s": "赤沙之杖",
+        "a": [
+            "匣里龙吟",
+            "玛海菈的水色",
+            "祭礼残章",
+            "西风猎弓",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」036期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d8/3uo4ig5lrikk7tal16r7jxqyh1dl0wb.png/900px-%E7%A5%88%E6%84%BF035%E6%9C%9F.png.jpeg",
+        "title": "「浮生孰来」035期角色活动祈愿",
+        "type": "角色",
+        "version": "3.0下半",
+        "timer": "2022/09/09 18:00 ~ 2022/09/27 14:59",
+        "s": "甘雨",
+        "a": [
+            "多莉",
+            "砂糖",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「浮生孰来」035期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/87/e02mn4m1cw48ua3vdfu64j5ywibcl1m.png/900px-%E7%A5%88%E6%84%BF035-2%E6%9C%9F.png.jpeg",
+        "title": "「浮岳虹珠」035-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.0下半",
+        "timer": "2022/09/09 18:00 ~ 2022/09/27 14:59",
+        "s": "珊瑚宫心海",
+        "a": [
+            "多莉",
+            "砂糖",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「浮岳虹珠」035-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6f/3upgm4p6nq7en4tinv2cwme03408vhy.png/900px-%E7%A5%88%E6%84%BF035%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」035期武器活动祈愿",
+        "type": "武器",
+        "version": "3.0下半",
+        "timer": "2022/09/09 18:00 ~ 2022/09/27 14:59",
+        "s": "不灭月华",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "昭心",
+            "祭礼剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」035期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6f/3upgm4p6nq7en4tinv2cwme03408vhy.png/900px-%E7%A5%88%E6%84%BF035%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」035期武器活动祈愿",
+        "type": "武器",
+        "version": "3.0下半",
+        "timer": "2022/09/09 18:00 ~ 2022/09/27 14:59",
+        "s": "阿莫斯之弓",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "昭心",
+            "祭礼剑",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」035期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d6/ptm2yrj188rbcbpeoeqmau76i2xvm9f.png/900px-%E7%A5%88%E6%84%BF034%E6%9C%9F.png.jpeg",
+        "title": "「巡御蘙荟」034期角色活动祈愿",
+        "type": "角色",
+        "version": "3.0上半",
+        "timer": "2022/08/24 11:00 ~ 2022/09/09 17:59",
+        "s": "提纳里",
+        "a": [
+            "柯莱",
+            "菲谢尔",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「巡御蘙荟」034期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/bf/le1a8gk2byk2di3bk1uy43bdx4eqo8y.png/900px-%E7%A5%88%E6%84%BF034-2%E6%9C%9F.png.jpeg",
+        "title": "「陵薮市朝」034-2期角色活动祈愿",
+        "type": "角色",
+        "version": "3.0上半",
+        "timer": "2022/08/24 11:00 ~ 2022/09/09 17:59",
+        "s": "钟离",
+        "a": [
+            "柯莱",
+            "菲谢尔",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」034-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8c/56colrsn3ntt9plm8u8u77jtw2j4z5k.png/900px-%E7%A5%88%E6%84%BF034%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」034期武器活动祈愿",
+        "type": "武器",
+        "version": "3.0上半",
+        "timer": "2022/08/24 11:00 ~ 2022/09/09 17:59",
+        "s": "猎人之径",
+        "a": [
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」034期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/8c/56colrsn3ntt9plm8u8u77jtw2j4z5k.png/900px-%E7%A5%88%E6%84%BF034%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」034期武器活动祈愿",
+        "type": "武器",
+        "version": "3.0上半",
+        "timer": "2022/08/24 11:00 ~ 2022/09/09 17:59",
+        "s": "贯虹之槊",
+        "a": [
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」034期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/c0/4skp74chrualn54eqmuza0ly108xhgl.png/900px-%E7%A5%88%E6%84%BF033%E6%9C%9F.png",
+        "title": "「焰色天河」033期角色活动祈愿",
+        "type": "角色",
+        "version": "2.8下半",
+        "timer": "2022/08/02 18:00 ~ 2022/08/23 14:59",
+        "s": "宵宫",
+        "a": [
+            "云堇",
+            "班尼特",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「焰色天河」033期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/15/tgyrqsu8qvhlfmkm0lbs3kh3u9xmqcr.png/900px-%E7%A5%88%E6%84%BF033%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」033期武器活动祈愿",
+        "type": "武器",
+        "version": "2.8下半",
+        "timer": "2022/08/02 18:00 ~ 2022/08/23 14:59",
+        "s": "斫峰之刃",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」033期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/15/tgyrqsu8qvhlfmkm0lbs3kh3u9xmqcr.png/900px-%E7%A5%88%E6%84%BF033%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」033期武器活动祈愿",
+        "type": "武器",
+        "version": "2.8下半",
+        "timer": "2022/08/02 18:00 ~ 2022/08/23 14:59",
+        "s": "飞雷之弦振",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」033期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4f/427ehi5pnk4tvp8uxvv2m43fcek07u6.png",
+        "title": "「叶落风随」032期角色活动祈愿",
+        "type": "角色",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2022/08/02 17:59",
+        "s": "枫原万叶",
+        "a": [
+            "凝光",
+            "托马",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「叶落风随」032期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f8/kxuwacyy6b0wwbugjru8fbecbdlhmst.png",
+        "title": "「闪焰的驻足」032-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.8上半",
+        "timer": "2.8版本更新后 ~ 2022/08/02 17:59",
+        "s": "可莉",
+        "a": [
+            "凝光",
+            "托马",
+            "鹿野院平藏"
+        ],
+        "img_path": "img/ys/history/「闪焰的驻足」032-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/24/osvru6ywmkywan9du02gm9x7rxf3jm1.png",
+        "title": "「神铸赋形」032期武器活动祈愿",
+        "type": "武器",
+        "version": "2.8上半",
+        "timer": "2022/07/13 11:00 ~ 2022/08/02 17:59",
+        "s": "四风原典",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷闪光",
+            "流浪乐章",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」032期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/24/osvru6ywmkywan9du02gm9x7rxf3jm1.png",
+        "title": "「神铸赋形」032期武器活动祈愿",
+        "type": "武器",
+        "version": "2.8上半",
+        "timer": "2022/07/13 11:00 ~ 2022/08/02 17:59",
+        "s": "苍古自由之誓",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷闪光",
+            "流浪乐章",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」032期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/01/f6r1kimwxi7mi0h324huqaorcbsqwm2.png/900px-%E7%A5%88%E6%84%BF031%E6%9C%9F.png",
+        "title": "「鬼门斗宴」031期角色活动祈愿",
+        "type": "角色",
+        "version": "2.7下半",
+        "timer": "2022/6/21 18:00:00 ~ 2022/7/12 14:59:59",
+        "s": "荒泷一斗",
+        "a": [
+            "久岐忍",
+            "五郎",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「鬼门斗宴」031期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/be/l7awtha8ej90o82936iobew8oxuppdq.png/900px-%E7%A5%88%E6%84%BF031%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」031期武器活动祈愿",
+        "type": "武器",
+        "version": "2.7下半",
+        "timer": "2022/06/21 18:00 ~ 2022/07/12 14:59",
+        "s": "尘世之锁",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "千岩古剑",
+            "祭礼残章",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」031期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/be/l7awtha8ej90o82936iobew8oxuppdq.png/900px-%E7%A5%88%E6%84%BF031%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」031期武器活动祈愿",
+        "type": "武器",
+        "version": "2.7下半",
+        "timer": "2022/06/21 18:00 ~ 2022/07/12 14:59",
+        "s": "赤角石溃杵",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "千岩古剑",
+            "祭礼残章",
+            "绝弦"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」031期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/58/nra24kd9hupxf1ry67mcivrz9mivcky.png",
+        "title": "「素霓伣天」030期角色活动祈愿",
+        "type": "角色",
+        "version": "2.7上半",
+        "timer": "2.7版本更新后 ~ 2022/06/21 17:59",
+        "s": "夜兰",
+        "a": [
+            "烟绯",
+            "芭芭拉",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「素霓伣天」030期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6b/tbb5dq0ieb584oqwwt9k76nlcj7d9nt.png",
+        "title": "「烟火之邀」030-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.7上半",
+        "timer": "2.7版本更新后 ~ 2022/06/21 17:59",
+        "s": "魈",
+        "a": [
+            "烟绯",
+            "芭芭拉",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「烟火之邀」030-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/0c/5dbuqkei42ol1q2gqbsxzvx800dhe42.png",
+        "title": "「神铸赋形」030期武器活动祈愿",
+        "type": "武器",
+        "version": "2.7上半",
+        "timer": "2022/05/31 11:00 ~ 2022/06/21 17:59",
+        "s": "和璞鸢",
+        "a": [
+            "千岩长枪",
+            "昭心",
+            "祭礼剑",
+            "祭礼弓",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」030期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/0c/5dbuqkei42ol1q2gqbsxzvx800dhe42.png",
+        "title": "「神铸赋形」030期武器活动祈愿",
+        "type": "武器",
+        "version": "2.7上半",
+        "timer": "2022/05/31 11:00 ~ 2022/06/21 17:59",
+        "s": "若水",
+        "a": [
+            "千岩长枪",
+            "昭心",
+            "祭礼剑",
+            "祭礼弓",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」030期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f8/rj0huqdsdjc5d3mwic32908xkl10wam.png",
+        "title": "「白鹭之庭」029期角色活动祈愿",
+        "type": "角色",
+        "version": "2.6下半",
+        "timer": "2022/04/19 18:00 ~ 2022/05/31 05:59",
+        "s": "神里绫华",
+        "a": [
+            "早柚",
+            "罗莎莉亚",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「白鹭之庭」029期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/57/grsdolriv73frkcl596rei2unwjuxl2.png",
+        "title": "「神铸赋形」029期武器活动祈愿",
+        "type": "武器",
+        "version": "2.6下半",
+        "timer": "2022/04/19 18:00 ~ 2022/05/31 05:59",
+        "s": "无工之剑",
+        "a": [
+            "西风剑",
+            "西风猎弓",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」029期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/57/grsdolriv73frkcl596rei2unwjuxl2.png",
+        "title": "「神铸赋形」029期武器活动祈愿",
+        "type": "武器",
+        "version": "2.6下半",
+        "timer": "2022/04/19 18:00 ~ 2022/05/31 05:59",
+        "s": "雾切之回光",
+        "a": [
+            "西风剑",
+            "西风猎弓",
+            "西风秘典",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」029期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/62/9mx7liu6q7zmb19fx9mifpxjfvjr64s.png",
+        "title": "「苍流踏花」028期角色活动祈愿",
+        "type": "角色",
+        "version": "2.6上半",
+        "timer": "2.6版本更新后 ~ 2022/04/19 18:00",
+        "s": "神里绫人",
+        "a": [
+            "云堇",
+            "砂糖",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「苍流踏花」028期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/5/5b/i3ih9ouze8og2z6qjtm748mn1qjtdra.png",
+        "title": "「杯装之诗」028-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.6上半",
+        "timer": "2.6版本更新后 ~ 2022/04/19 18:00",
+        "s": "温迪",
+        "a": [
+            "云堇",
+            "砂糖",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」028-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6c/3iu3no6q2ltbximhbmv5cvjks9flfvm.png",
+        "title": "「神铸赋形」028期武器活动祈愿",
+        "type": "武器",
+        "version": "2.6上半",
+        "timer": "2022/03/30 11:00 ~ 2022/04/19 18:00",
+        "s": "波乱月白经津",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」028期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6c/3iu3no6q2ltbximhbmv5cvjks9flfvm.png",
+        "title": "「神铸赋形」028期武器活动祈愿",
+        "type": "武器",
+        "version": "2.6上半",
+        "timer": "2022/03/30 11:00 ~ 2022/04/19 18:00",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "流浪乐章",
+            "祭礼大剑",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」028期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/b/b9/ryg98oybgy7gigshrjemoeyveyi90de.png",
+        "title": "「影寂天下人」027期角色活动祈愿",
+        "type": "角色",
+        "version": "2.5下半",
+        "timer": "2022/03/08 18:00 ~ 2022/03/29 14:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "班尼特",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」027期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/47/seq3awyf1koehrz41y35uqsn0yvi90u.png",
+        "title": "「浮岳虹珠」027-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.5下半",
+        "timer": "2022/03/08 18:00 ~ 2022/03/29 14:59",
+        "s": "珊瑚宫心海",
+        "a": [
+            "九条裟罗",
+            "班尼特",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「浮岳虹珠」027-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9b/2ns0yj1u9q2iybr87ycris1ctptwhit.png",
+        "title": "「神铸赋形」027期武器活动祈愿",
+        "type": "武器",
+        "version": "2.5下半",
+        "timer": "2022/03/08 18:00 ~ 2022/03/29 14:59",
+        "s": "不灭月华",
+        "a": [
+            "匣里龙吟",
+            "恶王丸",
+            "曚云之月",
+            "祭礼残章",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」027期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9b/2ns0yj1u9q2iybr87ycris1ctptwhit.png",
+        "title": "「神铸赋形」027期武器活动祈愿",
+        "type": "武器",
+        "version": "2.5下半",
+        "timer": "2022/03/08 18:00 ~ 2022/03/29 14:59",
+        "s": "薙草之稻光",
+        "a": [
+            "匣里龙吟",
+            "恶王丸",
+            "曚云之月",
+            "祭礼残章",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」027期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/93/3226ujr7kia3c5rbja8r2a9lskag2zt.png",
+        "title": "「华紫樱绯」026期角色活动祈愿",
+        "type": "角色",
+        "version": "2.5上半",
+        "timer": "2.5版本更新后 ~ 2022/03/08 17:59:59",
+        "s": "八重神子",
+        "a": [
+            "托马",
+            "菲谢尔",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「华紫樱绯」026期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/c/c3/p8ldvqt6n21wo6b6q1nku8ujz9bi1wu.png",
+        "title": "「神铸赋形」026期武器活动祈愿",
+        "type": "武器",
+        "version": "2.5上半",
+        "timer": "2022/02/16 11:00:00 ~ 2022/03/08 17:59:59",
+        "s": "磐岩结绿",
+        "a": [
+            "断浪长鳍",
+            "昭心",
+            "祭礼剑",
+            "绝弦",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」026期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/c/c3/p8ldvqt6n21wo6b6q1nku8ujz9bi1wu.png",
+        "title": "「神铸赋形」026期武器活动祈愿",
+        "type": "武器",
+        "version": "2.5上半",
+        "timer": "2022/02/16 11:00:00 ~ 2022/03/08 17:59:59",
+        "s": "神乐之真意",
+        "a": [
+            "断浪长鳍",
+            "昭心",
+            "祭礼剑",
+            "绝弦",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」026期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/da/neehidv4pch06mdogre49f7vm1oqs6a.png/900px-2.4%E8%A7%92%E8%89%B2%E5%8D%A1%E6%B1%A02-1.png.jpeg",
+        "title": "「陵薮市朝」025期角色活动祈愿",
+        "type": "角色",
+        "version": "2.4下半",
+        "timer": "2022/01/25 18:00 ~ 2022/02/15 14:59",
+        "s": "钟离",
+        "a": [
+            "北斗",
+            "烟绯",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」025期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/d/d0/ksutgj24w8xhxz5kajim8s7zf4s5lof.png/900px-2.4%E8%A7%92%E8%89%B2%E5%8D%A1%E6%B1%A02-2.png.jpeg",
+        "title": "「浮生孰来」025-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.4下半",
+        "timer": "2022/01/25 18:00 ~ 2022/02/15 14:59",
+        "s": "甘雨",
+        "a": [
+            "北斗",
+            "烟绯",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「浮生孰来」025-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/45/4978v2yrqo897a0uvnb0tq7u2s92zjm.png/900px-2.4%E6%AD%A6%E5%99%A8%E5%8D%A1%E6%B1%A02.png.jpeg",
+        "title": "「神铸赋形」025期武器活动祈愿",
+        "type": "武器",
+        "version": "2.4下半",
+        "timer": "2022/01/25 18:00 ~ 2022/02/15 14:59",
+        "s": "贯虹之槊",
+        "a": [
+            "匣里灭辰",
+            "千岩古剑",
+            "祭礼弓",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」025期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/45/4978v2yrqo897a0uvnb0tq7u2s92zjm.png/900px-2.4%E6%AD%A6%E5%99%A8%E5%8D%A1%E6%B1%A02.png.jpeg",
+        "title": "「神铸赋形」025期武器活动祈愿",
+        "type": "武器",
+        "version": "2.4下半",
+        "timer": "2022/01/25 18:00 ~ 2022/02/15 14:59",
+        "s": "阿莫斯之弓",
+        "a": [
+            "匣里灭辰",
+            "千岩古剑",
+            "祭礼弓",
+            "西风剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」025期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/93/2thu8gp7u3nwm3aw934j50yct8d2fxf.png/900px-2.4%E8%A7%92%E8%89%B2%E5%8D%A1%E6%B1%A01-1.png.jpeg",
+        "title": "「出尘入世」024期角色活动祈愿",
+        "type": "角色",
+        "version": "2.4上半",
+        "timer": "2.4版本更新后 ~ 2022/01/25 17:59",
+        "s": "申鹤",
+        "a": [
+            "云堇",
+            "凝光",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「出尘入世」024期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/06/00ihumkea9ob9sj23o3sd4mepcyr3b0.png/900px-2.4%E8%A7%92%E8%89%B2%E5%8D%A1%E6%B1%A01-2.png.jpeg",
+        "title": "「烟火之邀」024-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.4上半",
+        "timer": "2.4版本更新后 ~ 2022/01/25 17:59",
+        "s": "魈",
+        "a": [
+            "云堇",
+            "凝光",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「烟火之邀」024-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/ae/e44hdtk014x4m97zu25i1godwon8csq.png/900px-2.4%E6%AD%A6%E5%99%A8%E5%8D%A1%E6%B1%A01.png.jpeg",
+        "title": "「神铸赋形」024期武器活动祈愿",
+        "type": "武器",
+        "version": "2.4上半",
+        "timer": "2022/01/05 11:00 ~ 2022/01/25 17:59",
+        "s": "和璞鸢",
+        "a": [
+            "千岩长枪",
+            "流浪乐章",
+            "笛剑",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」024期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/a/ae/e44hdtk014x4m97zu25i1godwon8csq.png/900px-2.4%E6%AD%A6%E5%99%A8%E5%8D%A1%E6%B1%A01.png.jpeg",
+        "title": "「神铸赋形」024期武器活动祈愿",
+        "type": "武器",
+        "version": "2.4上半",
+        "timer": "2022/01/05 11:00 ~ 2022/01/25 17:59",
+        "s": "息灾",
+        "a": [
+            "千岩长枪",
+            "流浪乐章",
+            "笛剑",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」024期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/fe/hk2hbywct14vxl8u5xugmsvas9jpamk.png",
+        "title": "「鬼门斗宴」023期角色活动祈愿",
+        "type": "角色",
+        "version": "2.3下半",
+        "timer": "2021/12/14 18:00:00 ~ 2022/01/04 14:59:59",
+        "s": "荒泷一斗",
+        "a": [
+            "五郎",
+            "芭芭拉",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「鬼门斗宴」023期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/e/ef/d2mmb3a0y8nq8w2aokms6mdogp19yb2.png",
+        "title": "「神铸赋形」023期武器活动祈愿",
+        "type": "武器",
+        "version": "2.3下半",
+        "timer": "2021/12/14 18:00:00 ~ 2022/01/04 14:59:59",
+        "s": "天空之翼",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷闪光",
+            "祭礼残章",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」023期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/e/ef/d2mmb3a0y8nq8w2aokms6mdogp19yb2.png",
+        "title": "「神铸赋形」023期武器活动祈愿",
+        "type": "武器",
+        "version": "2.3下半",
+        "timer": "2021/12/14 18:00:00 ~ 2022/01/04 14:59:59",
+        "s": "赤角石溃杵",
+        "a": [
+            "幽夜华尔兹",
+            "暗巷闪光",
+            "祭礼残章",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」023期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/7/78/panh231x1krcopi528u6hskg3yy5crn.png",
+        "title": "「深秘之息」022期角色活动祈愿",
+        "type": "角色",
+        "version": "2.3上半",
+        "timer": "2.3版本更新后 ~ 2021/12/14 18:00:00",
+        "s": "阿贝多",
+        "a": [
+            "班尼特",
+            "罗莎莉亚",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「深秘之息」022期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/64/bux6bw2qyob0d18abq4a1c8gppx2zp5.png",
+        "title": "「浪涌之瞬」022-2期角色活动祈愿",
+        "type": "角色",
+        "version": "2.3上半",
+        "timer": "2.3版本更新后 ~ 2021/12/14 18:00:00",
+        "s": "优菈",
+        "a": [
+            "班尼特",
+            "罗莎莉亚",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「浪涌之瞬」022-2期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/8/85/jkn9gwsj1oz11ctaotqt9rvrnunsbyk.png",
+        "title": "「神铸赋形」022期武器活动祈愿",
+        "type": "武器",
+        "version": "2.3上半",
+        "timer": "2021/11/24 11:00:00 ~ 2021/12/14 18:00:00",
+        "s": "松籁响起之时",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "祭礼大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」022期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/8/85/jkn9gwsj1oz11ctaotqt9rvrnunsbyk.png",
+        "title": "「神铸赋形」022期武器活动祈愿",
+        "type": "武器",
+        "version": "2.3上半",
+        "timer": "2021/11/24 11:00:00 ~ 2021/12/14 18:00:00",
+        "s": "苍古自由之誓",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "祭礼大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」022期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/0c/pv3o18ix5blylsd9ol9dml8rpjl6epf.png",
+        "title": "「赤团开时」021期角色活动祈愿",
+        "type": "角色",
+        "version": "2.2下半",
+        "timer": "2021/11/02 18:00:00 ~ 2021/11/23 14:59:59",
+        "s": "胡桃",
+        "a": [
+            "托马",
+            "早柚",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「赤团开时」021期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/45/l1i80ew1sb97o4t6ey39r1fp7e7xy44.png",
+        "title": "「神铸赋形」021期武器活动祈愿",
+        "type": "武器",
+        "version": "2.2下半",
+        "timer": "2021/11/02 18:00:00 ~ 2021/11/23 14:59:59",
+        "s": "护摩之杖",
+        "a": [
+            "断浪长鳍",
+            "曚云之月",
+            "流浪乐章",
+            "祭礼剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」021期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/45/l1i80ew1sb97o4t6ey39r1fp7e7xy44.png",
+        "title": "「神铸赋形」021期武器活动祈愿",
+        "type": "武器",
+        "version": "2.2下半",
+        "timer": "2021/11/02 18:00:00 ~ 2021/11/23 14:59:59",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "断浪长鳍",
+            "曚云之月",
+            "流浪乐章",
+            "祭礼剑",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」021期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9f/15ff0katrrqmjgq7qmc5fa18hq612e6.png",
+        "title": "「暂别冬都」020期角色活动祈愿",
+        "type": "角色",
+        "version": "2.2上半",
+        "timer": "2.2版本更新后 ~ 2021/11/02 17:59:59",
+        "s": "达达利亚",
+        "a": [
+            "凝光",
+            "烟绯",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「暂别冬都」020期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4b/cs0oppuqbnpzskjznimo4yp3nayaxzr.png",
+        "title": "「神铸赋形」020期武器活动祈愿",
+        "type": "武器",
+        "version": "2.2上半",
+        "timer": "2021/10/13 11:00:00 ~ 2021/11/02 17:59:59",
+        "s": "冬极白星",
+        "a": [
+            "弓藏",
+            "恶王丸",
+            "昭心",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」020期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4b/cs0oppuqbnpzskjznimo4yp3nayaxzr.png",
+        "title": "「神铸赋形」020期武器活动祈愿",
+        "type": "武器",
+        "version": "2.2上半",
+        "timer": "2021/10/13 11:00:00 ~ 2021/11/02 17:59:59",
+        "s": "尘世之锁",
+        "a": [
+            "弓藏",
+            "恶王丸",
+            "昭心",
+            "西风剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」020期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/32/sgivlbnfw2cvk93yurn29pjal9t53jq.png",
+        "title": "「浮岳虹珠」019期角色活动祈愿",
+        "type": "角色",
+        "version": "2.1下半",
+        "timer": "2021/09/21 18:00:00 ~ 2021/10/12 14:59:59",
+        "s": "珊瑚宫心海",
+        "a": [
+            "北斗",
+            "罗莎莉亚",
+            "行秋"
+        ],
+        "img_path": "img/ys/history/「浮岳虹珠」019期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/22/5yrj6r185zt1qigii30a3owk96pm19u.png",
+        "title": "「神铸赋形」019期武器活动祈愿",
+        "type": "武器",
+        "version": "2.1下半",
+        "timer": "2021/09/21 18:00:00 ~ 2021/10/12 14:59:59",
+        "s": "不灭月华",
+        "a": [
+            "匣里灭辰",
+            "笛剑",
+            "绝弦",
+            "西风大剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」019期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/22/5yrj6r185zt1qigii30a3owk96pm19u.png",
+        "title": "「神铸赋形」019期武器活动祈愿",
+        "type": "武器",
+        "version": "2.1下半",
+        "timer": "2021/09/21 18:00:00 ~ 2021/10/12 14:59:59",
+        "s": "磐岩结绿",
+        "a": [
+            "匣里灭辰",
+            "笛剑",
+            "绝弦",
+            "西风大剑",
+            "西风秘典"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」019期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/a/ab/qvzjd0zxfzmav0y38j6eifo4sy5rq5y.png",
+        "title": "「影寂天下人」018期角色活动祈愿",
+        "type": "角色",
+        "version": "2.1上半",
+        "timer": "2.1版本更新后 ~ 2021/09/21 17:59:59",
+        "s": "雷电将军",
+        "a": [
+            "九条裟罗",
+            "砂糖",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「影寂天下人」018期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/24/gw4zi8y4yuth91cy40i2t6tbb5ketbe.png",
+        "title": "「神铸赋形」018期武器活动祈愿",
+        "type": "武器",
+        "version": "2.1上半",
+        "timer": "2021/09/01 10:00:00 ~ 2021/09/21 17:59:59",
+        "s": "无工之剑",
+        "a": [
+            "匣里龙吟",
+            "流浪乐章",
+            "祭礼弓",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」018期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/24/gw4zi8y4yuth91cy40i2t6tbb5ketbe.png",
+        "title": "「神铸赋形」018期武器活动祈愿",
+        "type": "武器",
+        "version": "2.1上半",
+        "timer": "2021/09/01 10:00:00 ~ 2021/09/21 17:59:59",
+        "s": "薙草之稻光",
+        "a": [
+            "匣里龙吟",
+            "流浪乐章",
+            "祭礼弓",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」018期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/3/37/6tmiszvoe6gneghw6w5h7dd8qyqcat6.png",
+        "title": "「焰色天河」017期角色活动祈愿",
+        "type": "角色",
+        "version": "2.0下半",
+        "timer": "2021/08/10 18:00:00 ~ 2021/08/31 14:59:59",
+        "s": "宵宫",
+        "a": [
+            "早柚",
+            "辛焱",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「焰色天河」017期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/23/qa6nzrwofhx12w7sbmqsbqytdi0hyzn.png",
+        "title": "「神铸赋形」017期武器活动祈愿",
+        "type": "武器",
+        "version": "2.0下半",
+        "timer": "2021/08/10 18:00:00 ~ 2021/08/31 14:59:59",
+        "s": "天空之刃",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼残章",
+            "西风猎弓",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」017期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/2/23/qa6nzrwofhx12w7sbmqsbqytdi0hyzn.png",
+        "title": "「神铸赋形」017期武器活动祈愿",
+        "type": "武器",
+        "version": "2.0下半",
+        "timer": "2021/08/10 18:00:00 ~ 2021/08/31 14:59:59",
+        "s": "飞雷之弦振",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼残章",
+            "西风猎弓",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」017期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/4b/agylgm3x8x23u59e4o94auiz7xsx8wp.png",
+        "title": "「白鹭之庭」016期角色活动祈愿",
+        "type": "角色",
+        "version": "2.0上半",
+        "timer": "2.0版本更新后 ~ 2021/08/10 17:59:59",
+        "s": "神里绫华",
+        "a": [
+            "凝光",
+            "烟绯",
+            "重云"
+        ],
+        "img_path": "img/ys/history/「白鹭之庭」016期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/47/ot8irgesx10gvxuihf1bvzm5xgouxxm.png",
+        "title": "「神铸赋形」015期武器活动祈愿",
+        "type": "武器",
+        "version": "2.0上半",
+        "timer": "2021/07/21 11:00:00 ~ 2021/08/10 17:59:59",
+        "s": "天空之脊",
+        "a": [
+            "祭礼大剑",
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」015期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/47/ot8irgesx10gvxuihf1bvzm5xgouxxm.png",
+        "title": "「神铸赋形」015期武器活动祈愿",
+        "type": "武器",
+        "version": "2.0上半",
+        "timer": "2021/07/21 11:00:00 ~ 2021/08/10 17:59:59",
+        "s": "雾切之回光",
+        "a": [
+            "祭礼大剑",
+            "绝弦",
+            "西风剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」015期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/9c/6fzdp0hpnn2lg5699pbu28fpry7lx8m.png",
+        "title": "「叶落风随」015期角色活动祈愿",
+        "type": "角色",
+        "version": "1.6下半",
+        "timer": "2021/06/29 18:00:00 ~ 2021/07/20 14:59:59",
+        "s": "枫原万叶",
+        "a": [
+            "班尼特",
+            "罗莎莉亚",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「叶落风随」015期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/97/hgdn6z3h533x64475ngnutdq5pa1n03.png",
+        "title": "「神铸赋形」014期武器活动祈愿",
+        "type": "武器",
+        "version": "1.6下半",
+        "timer": "2021/06/29 18:00:00 ~ 2021/07/20 17:59:59",
+        "s": "天空之卷",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」014期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/9/97/hgdn6z3h533x64475ngnutdq5pa1n03.png",
+        "title": "「神铸赋形」014期武器活动祈愿",
+        "type": "武器",
+        "version": "1.6下半",
+        "timer": "2021/06/29 18:00:00 ~ 2021/07/20 17:59:59",
+        "s": "苍古自由之誓",
+        "a": [
+            "匣里灭辰",
+            "暗巷猎手",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风大剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」014期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/8/82/drp3jmtwpp97ms616qy9pkxf3hiytqh.png",
+        "title": "「闪焰的驻足」014期角色活动祈愿",
+        "type": "角色",
+        "version": "1.6上半",
+        "timer": "1.6版本更新后 ~ 2021/06/29 17:59:59",
+        "s": "可莉",
+        "a": [
+            "砂糖",
+            "芭芭拉",
+            "菲谢尔"
+        ],
+        "img_path": "img/ys/history/「闪焰的驻足」014期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f0/f3a81n31gx4qb9t9vvjc2co8ymdwm5j.png",
+        "title": "「神铸赋形」013期武器活动祈愿",
+        "type": "武器",
+        "version": "1.6上半",
+        "timer": "2021/06/09 10:30:00 ~ 2021/06/29 17:59:59",
+        "s": "四风原典",
+        "a": [
+            "匣里龙吟",
+            "幽夜华尔兹",
+            "流浪乐章",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」013期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/f/f0/f3a81n31gx4qb9t9vvjc2co8ymdwm5j.png",
+        "title": "「神铸赋形」013期武器活动祈愿",
+        "type": "武器",
+        "version": "1.6上半",
+        "timer": "2021/06/09 10:30:00 ~ 2021/06/29 17:59:59",
+        "s": "天空之傲",
+        "a": [
+            "匣里龙吟",
+            "幽夜华尔兹",
+            "流浪乐章",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」013期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/d/d9/llx3sg8qnanxh16gr4lj053u04pyl59.png",
+        "title": "「浪涌之瞬」013期角色活动祈愿",
+        "type": "角色",
+        "version": "1.5下半",
+        "timer": "2021/05/18 18:00:00 ~ 2021/06/08 14:59:59",
+        "s": "优菈",
+        "a": [
+            "北斗",
+            "行秋",
+            "辛焱"
+        ],
+        "img_path": "img/ys/history/「浪涌之瞬」013期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6a/ey3ckhdvsh6jcz6lneky1pkna7j3ghf.png",
+        "title": "「神铸赋形」012期武器活动祈愿",
+        "type": "武器",
+        "version": "1.5下半",
+        "timer": "2021/05/18 18:00:00 ~ 2021/06/08 14:59:59",
+        "s": "松籁响起之时",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼剑",
+            "祭礼残章",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」012期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/6/6a/ey3ckhdvsh6jcz6lneky1pkna7j3ghf.png",
+        "title": "「神铸赋形」012期武器活动祈愿",
+        "type": "武器",
+        "version": "1.5下半",
+        "timer": "2021/05/18 18:00:00 ~ 2021/06/08 14:59:59",
+        "s": "风鹰剑",
+        "a": [
+            "匣里灭辰",
+            "弓藏",
+            "祭礼剑",
+            "祭礼残章",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」012期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/0/0b/qxvfg91ljeytyhias77sby98vvjicoh.png",
+        "title": "「陵薮市朝」012期角色活动祈愿",
+        "type": "角色",
+        "version": "1.5上半",
+        "timer": "1.5版本更新后 ~ 2021/05/18 17:59:59",
+        "s": "钟离",
+        "a": [
+            "烟绯",
+            "诺艾尔",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」012期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/47/82vjaz6jgrhvs01yhne8vfbfup8uanz.png",
+        "title": "「神铸赋形」011期武器活动祈愿",
+        "type": "武器",
+        "version": "1.5上半",
+        "timer": "2021/04/28 11:00:00 ~ 2021/05/18 17:59:59",
+        "s": "尘世之锁",
+        "a": [
+            "千岩古剑",
+            "千岩长枪",
+            "昭心",
+            "祭礼弓",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」011期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/4/47/82vjaz6jgrhvs01yhne8vfbfup8uanz.png",
+        "title": "「神铸赋形」011期武器活动祈愿",
+        "type": "武器",
+        "version": "1.5上半",
+        "timer": "2021/04/28 11:00:00 ~ 2021/05/18 17:59:59",
+        "s": "斫峰之刃",
+        "a": [
+            "千岩古剑",
+            "千岩长枪",
+            "昭心",
+            "祭礼弓",
+            "笛剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」011期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9b/alexn0prjqv01tv8g1hgn4f7x85weg1.png/900px-%E7%A5%88%E6%84%BF011%E6%9C%9F.png",
+        "title": "「暂别冬都」011期角色活动祈愿",
+        "type": "角色",
+        "version": "1.4下半",
+        "timer": "2021/04/06 18:00:00 ~ 2021/04/27 14:59:59",
+        "s": "达达利亚",
+        "a": [
+            "罗莎莉亚",
+            "芭芭拉",
+            "菲谢尔"
+        ],
+        "img_path": "img/ys/history/「暂别冬都」011期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9b/q6jkk2m1n6d0iq0ywf5cwwumt2j2mch.png/900px-%E7%A5%88%E6%84%BF010%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」010期武器活动祈愿",
+        "type": "武器",
+        "version": "1.4下半",
+        "timer": "2021/04/06 18:00:00 ~ 2021/04/27 14:59:59",
+        "s": "四风原典",
+        "a": [
+            "暗巷猎手",
+            "祭礼大剑",
+            "西风剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」010期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9b/q6jkk2m1n6d0iq0ywf5cwwumt2j2mch.png/900px-%E7%A5%88%E6%84%BF010%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」010期武器活动祈愿",
+        "type": "武器",
+        "version": "1.4下半",
+        "timer": "2021/04/06 18:00:00 ~ 2021/04/27 14:59:59",
+        "s": "天空之翼",
+        "a": [
+            "暗巷猎手",
+            "祭礼大剑",
+            "西风剑",
+            "西风秘典",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」010期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/fc/8uv9vt5beh3sfxdul0vkv0y5wjdw4v6.png/900px-%E7%A5%88%E6%84%BF010%E6%9C%9F.png.jpeg",
+        "title": "「杯装之诗」010期角色活动祈愿",
+        "type": "角色",
+        "version": "1.4上半",
+        "timer": "1.4版本更新后 ~ 2021/04/06 15:59:59",
+        "s": "温迪",
+        "a": [
+            "砂糖",
+            "诺艾尔",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」010期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/ff/45g2wdqjgbnovdi6ynt2ie9a10xhgsn.png/900px-%E7%A5%88%E6%84%BF009%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」009期武器活动祈愿",
+        "type": "武器",
+        "version": "1.4上半",
+        "timer": "2021/03/17 10:00:00 ~ 2021/04/06 15:59:59",
+        "s": "天空之刃",
+        "a": [
+            "匣里灭辰",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」009期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/ff/45g2wdqjgbnovdi6ynt2ie9a10xhgsn.png/900px-%E7%A5%88%E6%84%BF009%E6%9C%9F%E6%AD%A6%E5%99%A8.png.jpeg",
+        "title": "「神铸赋形」009期武器活动祈愿",
+        "type": "武器",
+        "version": "1.4上半",
+        "timer": "2021/03/17 10:00:00 ~ 2021/04/06 15:59:59",
+        "s": "终末嗟叹之诗",
+        "a": [
+            "匣里灭辰",
+            "暗巷的酒与诗",
+            "暗巷闪光",
+            "西风大剑",
+            "西风猎弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」009期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/b/bf/tq897v1vgr0ogy5xi4c6lo3hcme2i18.png",
+        "title": "「赤团开时」009期角色活动祈愿",
+        "type": "角色",
+        "version": "1.3下半",
+        "timer": "2021/03/02 18:00:00 ~ 2021/03/16 14:59:59",
+        "s": "胡桃",
+        "a": [
+            "行秋",
+            "重云",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「赤团开时」009期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/f8/4kgx6k2ldxmxq5sdhz54c9uvqltlncs.png/900px-%E7%A5%88%E6%84%BF008%E6%9C%9F.png",
+        "title": "「鱼龙灯昼」008期角色活动祈愿",
+        "type": "角色",
+        "version": "1.3中",
+        "timer": "2021/02/17 18:00:00 ~ 2021/03/02 15:59:59",
+        "s": "刻晴",
+        "a": [
+            "凝光",
+            "班尼特",
+            "芭芭拉"
+        ],
+        "img_path": "img/ys/history/「鱼龙灯昼」008期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/c/cc/3yo2724w4g3jvd26c95gr31ym82x4vg.png/900px-%E7%A5%88%E6%84%BF007%E6%9C%9F.png",
+        "title": "「烟火之邀」007期角色活动祈愿",
+        "type": "角色",
+        "version": "1.3上半",
+        "timer": "1.3版本更新后 ~ 2021/02/17 15:59:59",
+        "s": "魈",
+        "a": [
+            "北斗",
+            "辛焱",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「烟火之邀」007期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/24/klwwrktb7ke4m0891gf3qnpf88jmdwu.png/900px-%E7%A5%88%E6%84%BF008%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」008期武器活动祈愿",
+        "type": "武器",
+        "version": "1.3下半",
+        "timer": "2021/02/23 18:00:00 ~ 2021/03/16 14:59:59",
+        "s": "护摩之杖",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」008期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/24/klwwrktb7ke4m0891gf3qnpf88jmdwu.png/900px-%E7%A5%88%E6%84%BF008%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」008期武器活动祈愿",
+        "type": "武器",
+        "version": "1.3下半",
+        "timer": "2021/02/23 18:00:00 ~ 2021/03/16 14:59:59",
+        "s": "狼的末路",
+        "a": [
+            "匣里龙吟",
+            "千岩古剑",
+            "千岩长枪",
+            "流浪乐章",
+            "祭礼弓"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」008期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9b/al4sqrjab4dybb8qdfi5tfvxh3ca8du.png/900px-%E7%A5%88%E6%84%BF007%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」007期武器活动祈愿",
+        "type": "武器",
+        "version": "1.3上半",
+        "timer": "2021/02/03 10:00:00 ~ 2021/02/23 15:59:59",
+        "s": "和璞鸢",
+        "a": [
+            "弓藏",
+            "昭心",
+            "祭礼大剑",
+            "笛剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」007期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/9/9b/al4sqrjab4dybb8qdfi5tfvxh3ca8du.png/900px-%E7%A5%88%E6%84%BF007%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」007期武器活动祈愿",
+        "type": "武器",
+        "version": "1.3上半",
+        "timer": "2021/02/03 10:00:00 ~ 2021/02/23 15:59:59",
+        "s": "磐岩结绿",
+        "a": [
+            "弓藏",
+            "昭心",
+            "祭礼大剑",
+            "笛剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」007期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/8/84/4x8lxkigohqov05pzmghqya6h467wib.png/900px-%E7%A5%88%E6%84%BF006%E6%9C%9F.png",
+        "title": "「浮生孰来」006期角色活动祈愿",
+        "type": "角色",
+        "version": "1.2下半",
+        "timer": "2021/01/12 18:00:00 ~ 2021/02/02 14:59:59",
+        "s": "甘雨",
+        "a": [
+            "行秋",
+            "诺艾尔",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「浮生孰来」006期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/09/8s2a8pzhmkd48qxuqwsbe02ylt4o9oj.png/900px-%E7%A5%88%E6%84%BF006%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」006期武器活动祈愿",
+        "type": "武器",
+        "version": "1.2下半",
+        "timer": "2021/01/12 18:00:00 ~ 2021/02/02 14:59:59",
+        "s": "天空之傲",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "祭礼剑",
+            "西风猎弓",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」006期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/0/09/8s2a8pzhmkd48qxuqwsbe02ylt4o9oj.png/900px-%E7%A5%88%E6%84%BF006%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」006期武器活动祈愿",
+        "type": "武器",
+        "version": "1.2下半",
+        "timer": "2021/01/12 18:00:00 ~ 2021/02/02 14:59:59",
+        "s": "阿莫斯之弓",
+        "a": [
+            "匣里灭辰",
+            "昭心",
+            "祭礼剑",
+            "西风猎弓",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」006期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/f/fb/9vnt383u6hczpyusy4pufkq68hvl8w6.png/900px-%E7%A5%88%E6%84%BF005%E6%9C%9F.png",
+        "title": "「深秘之息」005期角色活动祈愿",
+        "type": "角色",
+        "version": "1.2上半",
+        "timer": "1.2版本更新后 ~ 2021/01/12 15:59:59",
+        "s": "阿贝多",
+        "a": [
+            "班尼特",
+            "砂糖",
+            "菲谢尔"
+        ],
+        "img_path": "img/ys/history/「深秘之息」005期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/15/0xbcq3h68vswuqvwswcj71onza8bo8z.png/900px-%E7%A5%88%E6%84%BF005%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」005期武器活动祈愿",
+        "type": "武器",
+        "version": "1.2上半",
+        "timer": "2020/12/23 10:00:00 ~ 2021/01/12 15:59:59",
+        "s": "天空之卷",
+        "a": [
+            "祭礼残章",
+            "绝弦",
+            "西风剑",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」005期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/15/0xbcq3h68vswuqvwswcj71onza8bo8z.png/900px-%E7%A5%88%E6%84%BF005%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」005期武器活动祈愿",
+        "type": "武器",
+        "version": "1.2上半",
+        "timer": "2020/12/23 10:00:00 ~ 2021/01/12 15:59:59",
+        "s": "斫峰之刃",
+        "a": [
+            "祭礼残章",
+            "绝弦",
+            "西风剑",
+            "西风大剑",
+            "西风长枪"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」005期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/45/dr5pdbhwjeqnuu4geqyumpitem8ntyy.png/900px-%E7%A5%88%E6%84%BF004%E6%9C%9F.png",
+        "title": "「陵薮市朝」004期角色活动祈愿",
+        "type": "角色",
+        "version": "1.1下半",
+        "timer": "2020/12/01 18:00:00 ~ 2020/12/22 14:59:59",
+        "s": "钟离",
+        "a": [
+            "辛焱",
+            "重云",
+            "雷泽"
+        ],
+        "img_path": "img/ys/history/「陵薮市朝」004期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/26/3h4cldcd8sm353rv8nmg78cofrl9dum.png/900px-%E7%A5%88%E6%84%BF004%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」004期武器活动祈愿",
+        "type": "武器",
+        "version": "1.1下半",
+        "timer": "2020/12/01 18:00:00 ~ 2020/12/22 14:59:59",
+        "s": "无工之剑",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "西风猎弓",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」004期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/2/26/3h4cldcd8sm353rv8nmg78cofrl9dum.png/900px-%E7%A5%88%E6%84%BF004%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」004期武器活动祈愿",
+        "type": "武器",
+        "version": "1.1下半",
+        "timer": "2020/12/01 18:00:00 ~ 2020/12/22 14:59:59",
+        "s": "贯虹之槊",
+        "a": [
+            "匣里灭辰",
+            "匣里龙吟",
+            "西风猎弓",
+            "西风秘典",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」004期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b4/d1huus1qky7q0s7v931r688ducciyuu.png/900px-%E7%A5%88%E6%84%BF003%E6%9C%9F.png",
+        "title": "「暂别冬都」003期角色活动祈愿",
+        "type": "角色",
+        "version": "1.1上半",
+        "timer": "1.1版本更新后 ~ 2020/12/01 15:59:59",
+        "s": "达达利亚",
+        "a": [
+            "凝光",
+            "北斗",
+            "迪奥娜"
+        ],
+        "img_path": "img/ys/history/「暂别冬都」003期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6e/nu2l34jqj183nrjbyspw9bke4v5dfyk.png/900px-%E7%A5%88%E6%84%BF003%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」003期武器活动祈愿",
+        "type": "武器",
+        "version": "1.1上半",
+        "timer": "2020/11/11 10:00:00 ~ 2020/12/01 15:59:59",
+        "s": "天空之翼",
+        "a": [
+            "弓藏",
+            "昭心",
+            "笛剑",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」003期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/6/6e/nu2l34jqj183nrjbyspw9bke4v5dfyk.png/900px-%E7%A5%88%E6%84%BF003%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」003期武器活动祈愿",
+        "type": "武器",
+        "version": "1.1上半",
+        "timer": "2020/11/11 10:00:00 ~ 2020/12/01 15:59:59",
+        "s": "尘世之锁",
+        "a": [
+            "弓藏",
+            "昭心",
+            "笛剑",
+            "西风长枪",
+            "雨裁"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」003期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/b/b4/n4sa1hzyq6rcfjbxmfb1joq5ld156fx.png/900px-%E7%A5%88%E6%84%BF002%E6%9C%9F.png",
+        "title": "「闪焰的驻足」002期角色活动祈愿",
+        "type": "角色",
+        "version": "1.0下半",
+        "timer": "2020/10/20 18:00:00 ~ 2020/11/10 14:59:59",
+        "s": "可莉",
+        "a": [
+            "砂糖",
+            "行秋",
+            "诺艾尔"
+        ],
+        "img_path": "img/ys/history/「闪焰的驻足」002期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1d/0i1jklswzh9t2h4lnh41qbjxe1cmidy.png/900px-%E7%A5%88%E6%84%BF002%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」002期武器活动祈愿",
+        "type": "武器",
+        "version": "1.0下半",
+        "timer": "2020/10/20 18:00:00 ~ 2020/11/10 14:59:59",
+        "s": "四风原典",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼弓",
+            "祭礼残章"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」002期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/1/1d/0i1jklswzh9t2h4lnh41qbjxe1cmidy.png/900px-%E7%A5%88%E6%84%BF002%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」002期武器活动祈愿",
+        "type": "武器",
+        "version": "1.0下半",
+        "timer": "2020/10/20 18:00:00 ~ 2020/11/10 14:59:59",
+        "s": "狼的末路",
+        "a": [
+            "匣里灭辰",
+            "祭礼剑",
+            "祭礼大剑",
+            "祭礼弓",
+            "祭礼残章"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」002期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/c/c3/caiapbwqjbns42dlpycl1tqlsltpszo.png",
+        "title": "「杯装之诗」001期角色活动祈愿",
+        "type": "角色",
+        "version": "1.0上半",
+        "timer": "2020/09/28 12:00:00 ~ 2020/10/18 17:59:59",
+        "s": "温迪",
+        "a": [
+            "芭芭拉",
+            "菲谢尔",
+            "香菱"
+        ],
+        "img_path": "img/ys/history/「杯装之诗」001期角色活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4a/pmw5ho587u6jghew3m85b8gx6vcnmgy.png/900px-%E7%A5%88%E6%84%BF001%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」001期武器活动祈愿",
+        "type": "武器",
+        "version": "1.0上半",
+        "timer": "2020/09/28 12:00:00 ~ 2020/10/18 17:59:59",
+        "s": "阿莫斯之弓",
+        "a": [
+            "流浪乐章",
+            "笛剑",
+            "绝弦",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」001期武器活动祈愿.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/ys/thumb/4/4a/pmw5ho587u6jghew3m85b8gx6vcnmgy.png/900px-%E7%A5%88%E6%84%BF001%E6%9C%9F%E6%AD%A6%E5%99%A8.png",
+        "title": "「神铸赋形」001期武器活动祈愿",
+        "type": "武器",
+        "version": "1.0上半",
+        "timer": "2020/09/28 12:00:00 ~ 2020/10/18 17:59:59",
+        "s": "风鹰剑",
+        "a": [
+            "流浪乐章",
+            "笛剑",
+            "绝弦",
+            "西风长枪",
+            "钟剑"
+        ],
+        "img_path": "img/ys/history/「神铸赋形」001期武器活动祈愿.png"
+    }
+]

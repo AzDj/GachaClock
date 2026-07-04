@@ -1,3 +1,5 @@
+import re
+
 import scrapy
 
 from spider.items import HistoryItem
@@ -14,31 +16,51 @@ class WwHistorySpider(scrapy.Spider):
     start_urls = ["https://wiki.biligame.com/wutheringwaves/UP%E8%AE%B0%E5%BD%95"]
 
     def parse(self, response):
-        row_list = response.xpath('//*[@id="mw-content-text"]/div/h3[contains(., "第")]/following-sibling::table[following-sibling::h3]')
-        # row_list = response.xpath('//*[@id="mw-content-text"]/div/table[@class="wikitable"]')
+        heading_list = response.xpath('//*[@id="mw-content-text"]//h3')
 
-        # 每个版本
-        for row in row_list:
-            # 每个卡池
-            tb_list = row.xpath('.//table')
-            for tb in tb_list:
-                tr_list = tb.xpath(".//tr")
-                
-                try:
-                    img = tr_list[0].xpath(".//img/@srcset").extract_first().strip()
-                except:
-                    continue
-                title = tr_list[0].xpath(".//img/@alt").extract_first().strip()
-                timer = tr_list[1].xpath(".//td/text()").extract_first().strip()
-                version = tr_list[2].xpath(".//td/text()").extract_first().strip()
-                s = tr_list[3].xpath(".//td/a/@title").extract_first().strip()
-                a = tr_list[4].xpath(".//td/a/@title").extract()
+        for heading in heading_list:
+            version = self.clean_text(heading.xpath("string(.)").get())
+            if not re.match(r"^\d{4}年\d{1,2}月\d{1,2}日", version):
+                continue
 
-                item = HistoryItem()
-                item["img"] = img.split(' ', 1)[0]
-                item["title"] = title
-                item["version"] = version
-                item["timer"] = timer
-                item["s"] = s
-                item["a"] = sorted(set(a))
-                yield item
+            s_name = self.extract_heading_name(version)
+
+            for sibling in heading.xpath("following-sibling::*"):
+                if sibling.root.tag == "h3":
+                    break
+
+                for table in sibling.xpath('.//table[contains(@class, "wikitable")]'):
+                    item = self.build_item(table, version, s_name)
+                    if item:
+                        yield item
+
+    def build_item(self, table, version, s_name):
+        img = table.xpath(".//img/@srcset").get()
+        if img:
+            img = img.strip().split(" ", 1)[0]
+        else:
+            img = table.xpath(".//img/@src").get()
+
+        title = self.clean_text(table.xpath(".//img/@alt").get())
+        timer = self.clean_text(
+            table.xpath('.//tr[td[contains(normalize-space(.), "唤取时间")]]/td[last()]/text()').get()
+        )
+
+        if not img or not title or not timer:
+            return None
+
+        item = HistoryItem()
+        item["img"] = img
+        item["title"] = title.rsplit(".", 1)[0]
+        item["type"] = "角色" if "角色" in title else "武器"
+        item["version"] = version
+        item["timer"] = timer
+        item["s"] = s_name if item["type"] == "角色" else item["title"]
+        item["a"] = []
+        return item
+
+    def clean_text(self, value):
+        return re.sub(r"\s+", " ", value or "").strip()
+
+    def extract_heading_name(self, value):
+        return re.sub(r"^\d{4}年\d{1,2}月\d{1,2}日\s*", "", value).strip()

@@ -1,4 +1,4 @@
-import { AccordionItem, Card, CardBody, CardFooter, Image } from '@heroui/react';
+import { Card, CardBody, CardFooter, Image } from '@heroui/react';
 import { useEffect, useMemo, useState } from 'react';
 
 export interface CardPoolProps {
@@ -19,9 +19,12 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
       // 合并 s 角色（数组去重）
       const existingS = Array.isArray(group[key].s) ? group[key].s : [group[key].s];
       const newS = Array.isArray(item.s) ? item.s : [item.s];
-      group[key].s = [...new Set([...existingS, ...newS])];
+      group[key].s = [...new Set([...existingS, ...newS].filter(Boolean))];
     }
-    return Object.values(group);
+    return Object.values(group).sort((a: any, b: any) => {
+      const endDiff = getHistoryEndTime(a.timer) - getHistoryEndTime(b.timer);
+      return endDiff || `${a.title}`.localeCompare(`${b.title}`);
+    });
   }, [historyList]);
 
   useEffect(() => {
@@ -67,7 +70,7 @@ interface CountdownTimerProps {
 export const CountdownTimer = ({ date, className, prefix }: CountdownTimerProps) => {
   // console.log("date:::", date);
 
-  const initialTime = new Date(date).getTime() - new Date().getTime();
+  const initialTime = parseDateTime(date) - new Date().getTime();
   const [timeLeft, setTimeLeft] = useState(initialTime / 1000);
 
   useEffect(() => {
@@ -92,8 +95,36 @@ export const CountdownTimer = ({ date, className, prefix }: CountdownTimerProps)
   );
 };
 
+// 兼容中划线、斜杠和中文日期，避免本地浏览器解析差异导致倒计时异常
+export const parseDateTime = (date: string) => {
+  if (!date) {
+    return NaN;
+  }
+
+  const normalizedDate = date
+    .trim()
+    .replace(
+      /^(\d{4})年(\d{1,2})月(\d{1,2})日(.*)$/,
+      (_, year, month, day, rest) => `${year}/${month}/${day}${rest}`,
+    )
+    .replace(/-/g, '/');
+
+  return new Date(normalizedDate).getTime();
+};
+
+export const getHistoryEndTime = (timer: string) => {
+  const endTimer = `${timer ?? ''}`.split('~')[1];
+  const endTime = parseDateTime(endTimer);
+
+  return Number.isFinite(endTime) ? endTime : Number.POSITIVE_INFINITY;
+};
+
 // 时间格式化函数
 const formatTime = (seconds: number) => {
+  if (!Number.isFinite(seconds)) {
+    return '时间未知';
+  }
+
   if (seconds <= 0) {
     return '已结束';
   }

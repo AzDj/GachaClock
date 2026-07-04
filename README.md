@@ -3,7 +3,7 @@
 这是一个简单的倒计时卡片项目，包含 spider + web 模块。项目展示了如何创建一个响应式的卡片布局，并在卡片中显示倒计时。
 
 # 访问地址
-https://gclock.yffjglcms.com/
+https://new.zeroding.com/
 
 # 功能预览
 

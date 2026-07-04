@@ -6,11 +6,9 @@
 
 # useful for handling different item types with a single interface
 import os
-from itemadapter import ItemAdapter
 import json
 import requests
 import base64
-from datetime import datetime
 
 data_dir = "data"
 img_dir = "img"
@@ -50,6 +48,27 @@ def download_file(url, save_path):
     return False
 
 
+def downloaded_path_or_empty(url, save_path):
+    download_result = download_file(url, save_path)
+    return "" if download_result is False else save_path
+
+
+def update_or_create_meta_key(file_path: str, target_key: str, new_value: object) -> None:
+    try:
+        with open(file_path, "r+", encoding="utf-8") as f:
+            data = json.load(f)
+            data[target_key] = new_value
+            f.seek(0)
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.truncate()
+    except FileNotFoundError:
+        directory = os.path.dirname(file_path)
+        if directory and not os.path.exists(directory):
+            os.makedirs(directory)
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump({target_key: new_value}, f, indent=2, ensure_ascii=False)
+
+
 class SpiderPipeline:
 
     def open_spider(self, spider):
@@ -62,8 +81,7 @@ class SpiderPipeline:
         for gacha in item["gachas"]:
             if gacha["img"]:
                 file_name = f"{img_dir}/{spider.name}/{gacha['title']}.png"
-                download_file(gacha["img"], file_name)
-                gacha["img_path"] = file_name
+                gacha["img_path"] = downloaded_path_or_empty(gacha["img"], file_name)
             else:
                 gacha["img_path"] = ''
         # 爬虫处理数据时将数据添加到列表
@@ -99,7 +117,7 @@ class SpiderPipeline:
 
                 # 记录最新数据
                 file_name = f"{data_dir}/{meta_file_name}.{ext}"
-                self.update_or_create_meta_key(file_name, spider.name, self.file.name)
+                update_or_create_meta_key(file_name, spider.name, self.file.name)
             except Exception as e:
                 print(f"Failed to write to file: {e}")
             finally:
@@ -134,23 +152,6 @@ class SpiderPipeline:
             result.append(filename_str)
         return "_".join(result)
 
-    def update_or_create_meta_key(
-        self, file_path: str, target_key: str, new_value: any
-    ) -> None:
-        try:
-            with open(file_path, "r+", encoding="utf-8") as f:
-                data = json.load(f)
-                data[target_key] = new_value
-                f.seek(0)  # 移动指针到文件开头
-                json.dump(data, f, indent=2, ensure_ascii=False)
-                f.truncate()  # 清除旧内容可能残留的部分
-            # print(f"已设置 {target_key} = {new_value}")
-        except FileNotFoundError:
-            # 如果文件不存在，直接创建新文件
-            with open(file_path, "w") as f:
-                json.dump({target_key: new_value}, f, indent=2)
-            # print(f"创建新文件并设置 {target_key} = {new_value}")
-
 
 class HistoryPipeline:
 
@@ -163,8 +164,7 @@ class HistoryPipeline:
         # print(f"下载图片")
         file_name = f"{img_dir}/{spider.name}/{item['title']}.png"
         if item["img"]:
-            download_file(item["img"], file_name)
-            item["img_path"] = file_name
+            item["img_path"] = downloaded_path_or_empty(item["img"], file_name)
         else:
             item["img_path"] = ''
         self.items.append(item)
@@ -179,6 +179,7 @@ class HistoryPipeline:
             
             # 生成文件名
             file_name = f"{data_dir}/{spider.name}.{ext}"
+            self.file_name = file_name
             # print(f"目标文件路径： {file_name}")
 
             # 获取文件所在的目录
@@ -202,6 +203,19 @@ class HistoryPipeline:
                 print(f"Failed to write to file: {e}")
             finally:
                 self.file.close()
+
+
+class HistoryMetaPipeline(HistoryPipeline):
+
+    def close_spider(self, spider):
+        super().close_spider(spider)
+
+        if len(getattr(self, "items", [])) == 0 or not hasattr(self, "file_name"):
+            return
+
+        game_key = spider.name.split("/")[0]
+        meta_path = f"{data_dir}/{meta_file_name}.{ext}"
+        update_or_create_meta_key(meta_path, game_key, self.file_name)
 
 
 class RolePipeline:

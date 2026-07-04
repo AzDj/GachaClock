@@ -1,0 +1,242 @@
+[
+    {
+        "title": "显影于明日",
+        "type": "角色",
+        "timer": [
+            "2026-06-13 10:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "洛瑟菈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d90570ac17704c21879062d95ced5ece20260612.jpg",
+                "img_path": "img/ww/洛瑟菈.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0e540fc9c24642efb8d032e8fca73f8e20260612.png",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a17b91a4338d48628ee30eedd967365d20260612.png",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/361b153f5c794033a28a8356ccd67fea20260612.png",
+                "img_path": "img/ww/桃祈.png"
+            }
+        ]
+    },
+    {
+        "title": "梦 行于月畔",
+        "type": "角色",
+        "timer": [
+            "2026-06-08 11:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "露西",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ae747103db3545c3970ebbb68991d26720260605.jpg",
+                "img_path": "img/ww/露西.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9a693081e52942cba0eca3cfddd98c2020260605.png",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/bd01a8af8ce845bfb3bb556facad1bb820260605.png",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9ef226847fcb4472974a511c0f7bc34a20260605.png",
+                "img_path": "img/ww/桃祈.png"
+            }
+        ]
+    },
+    {
+        "title": "怒 烬中重燃",
+        "type": "角色",
+        "timer": [
+            "2026-06-08 11:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "丽贝卡",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d415153081af45a8ac8ffc878d77384020260605.jpg",
+                "img_path": "img/ww/丽贝卡.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6eeaf243ebd34c37bba05a669805d08e20260605.png",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/16b7227f2a9b43659e1c2b540a5fd0b620260605.png",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e34615b0576e4db8b1549b2d4be8bae220260605.png",
+                "img_path": "img/ww/桃祈.png"
+            }
+        ]
+    },
+    {
+        "title": "却也在风潮后轻舞",
+        "type": "角色",
+        "timer": [
+            "2026-06-18 10:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "卡提希娅",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/5d6a5f32b8604ae280bba194b2ffd9bb20260617.png",
+                "img_path": "img/ww/卡提希娅.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ae358608a74c4bdb8b2a61f358b92ad220260617.png",
+                "img_path": "img/ww/秧秧.png"
+            },
+            {
+                "title": "渊武",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/67cff982cd0840c395d49e0b8c8a745420260617.png",
+                "img_path": "img/ww/渊武.png"
+            },
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6916320df10749719845ac69341c026420260617.png",
+                "img_path": "img/ww/莫特斐.png"
+            }
+        ]
+    },
+    {
+        "title": "存帧",
+        "type": "武器",
+        "timer": [
+            "2026-06-13 10:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "存帧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/252bb5f8bd0e4895be47661d50dbb21b20260612.png",
+                "img_path": "img/ww/存帧.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/67dc4e5aa0b34344a5573ddbff128a7920260612.png",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/74e5b929d0154e839ab18e1af350f5cd20260612.png",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9bc7cfd0a1b34aafb0bf20d736ff409520260612.png",
+                "img_path": "img/ww/悖论喷流.png"
+            }
+        ]
+    },
+    {
+        "title": "蜃影",
+        "type": "武器",
+        "timer": [
+            "2026-06-08 11:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "蜃影",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/acb28a3c6e69495c8e8e9ee4c7306bc120260605.png",
+                "img_path": "img/ww/蜃影.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a20f552f880b4baa81287238e83f485b20260520.png",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/65a2de7d88134b6a874f938099a1a73420260605.png",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/3c54d5262e3c4be4b5134d0fcb53a57120260605.png",
+                "img_path": "img/ww/悖论喷流.png"
+            }
+        ]
+    },
+    {
+        "title": "碎骨",
+        "type": "武器",
+        "timer": [
+            "2026-06-08 11:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "碎骨",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/f47f424c37314f868ee694aa8618441a20260605.png",
+                "img_path": "img/ww/碎骨.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/3054e1ba64dc4d38981611df11e595b820260520.png",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/339eb9bf879c4e88946bd8f66be85f4c20260605.png",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1c477b5a9ec24af4bd854f701097667320260605.png",
+                "img_path": "img/ww/悖论喷流.png"
+            }
+        ]
+    },
+    {
+        "title": "不屈命定之冠",
+        "type": "武器",
+        "timer": [
+            "2026-06-18 10:00:00",
+            "2026-07-09 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "不屈命定之冠",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/924130f42fe046a8adf95ca36f9d1e9120260617.png",
+                "img_path": "img/ww/不屈命定之冠.png"
+            },
+            {
+                "title": "",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/57d75cb0e4da4229b97aa28895b1e53020260617.png",
+                "img_path": "img/ww/.png"
+            },
+            {
+                "title": "呼啸重音",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b2a16e9dbecc4d84844c5d8b1a686a2320260617.png",
+                "img_path": "img/ww/呼啸重音.png"
+            },
+            {
+                "title": "袍泽之固",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/25a62c8a9ab84990bf8408de0cc3748420260617.png",
+                "img_path": "img/ww/袍泽之固.png"
+            }
+        ]
+    }
+]

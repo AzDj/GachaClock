@@ -1,14 +1,31 @@
 import { Accordion, AccordionItem } from '@heroui/react';
 import { useEffect, useRef, useState } from 'react';
 
-import { CardPool, CardPoolProps, CountdownTimer } from '@/components/card-pool';
+import {
+  CardPool,
+  CardPoolProps,
+  CountdownTimer,
+  getHistoryEndTime,
+  parseDateTime,
+} from '@/components/card-pool';
 import DefaultLayout from '@/layouts/default';
 import { Link } from '@heroui/link';
 import { useLocalStorage } from 'react-use';
 
+const gameLabelMap: Record<string, string> = {
+  sr: '崩铁',
+  ww: '鸣潮',
+  zzz: '绝区零',
+  ys: '原神',
+  arknights: '方舟',
+  endfield: '终末地',
+};
+const imageLogoKeys = new Set(['sr', 'ww', 'zzz', 'ys', 'arknights', 'endfield']);
+
 export default function IndexPage() {
   const [cardGroup, setCardGroup] = useState<CardPoolProps>();
   const [expandedKeys, setExpandedKeys] = useLocalStorage('expandedKeys', null);
+  const accordionExpandedKeys = expandedKeys ?? [];
   const roleCache = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -24,7 +41,7 @@ export default function IndexPage() {
   }, []);
 
   useEffect(() => {
-    if (expandedKeys) {
+    if (expandedKeys !== null && expandedKeys !== undefined) {
       return;
     }
 
@@ -43,8 +60,7 @@ export default function IndexPage() {
     <DefaultLayout>
       <div>
         <Accordion
-          expandedKeys={expandedKeys}
-          defaultExpandedKeys={expandedKeys}
+          expandedKeys={accordionExpandedKeys}
           selectionMode="multiple"
           variant="splitted"
           onExpandedChange={(keys) => {
@@ -52,18 +68,15 @@ export default function IndexPage() {
           }}
         >
           {Object.keys(cardGroup)
-            .sort((a, b) => a.localeCompare(b))
+            .sort((a, b) => {
+              const endDiff = getHistoryEndTime(cardGroup[a].currentTimer) - getHistoryEndTime(cardGroup[b].currentTimer);
+              return endDiff || a.localeCompare(b);
+            })
             .map((key) => (
               <AccordionItem
                 key={key}
                 aria-label={cardGroup[key].currentVersion}
-                startContent={
-                  <img
-                    alt="Logo"
-                    className="w-10 h-10 rounded-full"
-                    src={`${key.toLocaleLowerCase()}.png`}
-                  />
-                }
+                startContent={renderGameLogo(key)}
                 subtitle={
                   <CountdownTimer
                     className={'text-lg'}
@@ -80,6 +93,26 @@ export default function IndexPage() {
     </DefaultLayout>
   );
 
+  function renderGameLogo(key: string) {
+    const normalizedKey = key.toLocaleLowerCase();
+
+    if (imageLogoKeys.has(normalizedKey)) {
+      return (
+        <img
+          alt="Logo"
+          className="w-10 h-10 rounded-full"
+          src={`${normalizedKey}.png`}
+        />
+      );
+    }
+
+    return (
+      <div className="w-10 h-10 rounded-full bg-default-200 text-default-700 flex items-center justify-center text-xs font-medium">
+        {gameLabelMap[normalizedKey] ?? key}
+      </div>
+    );
+  }
+
   async function fetchEachGame(key: string, lastPoolUrl: string) {
     const role = await fetchEachGameRole(key);
     console.log(`${key} role`, role);
@@ -94,57 +127,62 @@ export default function IndexPage() {
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
 
-      const currentVersion = data[0].version;
-      historyList = data
-        .filter((item: any) => item.version === currentVersion)
-        .filter((item: any) => item.type === '角色')
-        .map((item: any) => {
-          const copy = { ...item };
-          copy.title = item.title.substring(0, item.title.indexOf('」') + 1);
-          return copy;
-        });
+      const selectedHistoryList = selectCurrentHistoryList(data);
+      historyList = normalizeHistoryList(selectedHistoryList);
 
-      const currentEndTimer = historyList[0]?.timer?.split('~')[1];
-      const currentStartTimer = historyList[0]?.timer?.split('~')[0];
-      let currentTime = new Date().getTime();
-      if (new Date(currentEndTimer).getTime() < currentTime) {
-        throw new Error('版本过期');
-      }
-      if (currentTime < new Date(currentStartTimer).getTime()) {
-        throw new Error('版本未开始');
+      if (historyList.length === 0) {
+        throw new Error('没有当前或未来历史卡池');
       }
 
-      version = historyList[0].version;
-      timer = historyList[0].timer;
+      const nearestHistoryItem = selectNearestHistoryItem(selectedHistoryList);
+      version = nearestHistoryItem.version;
+      timer = nearestHistoryItem.timer;
     } catch (err) {
       console.log(`${key} history err, 使用最新卡池数据, 即从meta里面获取。 `, err);
-
-      roleKey = 'title';
 
       const data = await fetch(lastPoolUrl).then((res) => res.json());
       console.log(`${key} meta`, data);
 
-      if (!role || Object.keys(role).length === 0) {
-        historyList = data
-          .filter((item: any) => item.type === '角色')
-          .map((item: any) => item.gachas[0]);
-      } else {
-        historyList = data
-          .filter((item: any) => item.type === '角色')
-          .flatMap((item: any) => item.gachas)
-          .filter(
-            (item: any) => !role?.[item['title']] || role?.[item['title']].chara_rarity === '5星',
-          );
-      }
+      if (data[0]?.gachas) {
+        roleKey = 'title';
 
-      version = data[data.length - 1].timer;
-      timer = data[data.length - 1].timer.join('~');
+        if (!role || Object.keys(role).length === 0) {
+          historyList = data
+            .filter((item: any) => item.type === '角色')
+            .map((item: any) => item.gachas[0]);
+        } else {
+          historyList = data
+            .filter((item: any) => item.type === '角色')
+            .flatMap((item: any) => item.gachas)
+            .filter(
+              (item: any) => !role?.[item['title']] || role?.[item['title']].chara_rarity === '5星',
+            );
+        }
+
+        const timerSource = selectCurrentMetaTimer(data);
+        version = timerSource.title;
+        timer = timerSource.timer.join('~');
+      } else {
+        roleKey = 's';
+        const selectedHistoryList = selectCurrentHistoryList(data);
+        historyList = normalizeHistoryList(selectedHistoryList);
+
+        if (historyList.length === 0) {
+          throw new Error('meta 历史卡池为空');
+        }
+
+        const nearestHistoryItem = selectNearestHistoryItem(selectedHistoryList);
+        version = nearestHistoryItem.version;
+        timer = nearestHistoryItem.timer;
+      }
     }
 
     historyList.forEach((item) => {
-      const promotionImg = role?.[item[roleKey]]?.['promotion_img'];
-      const simpleImg = role?.[item[roleKey]]?.['simple_img'];
-      item['img'] = promotionImg?.[1] ?? promotionImg?.[0] ?? item['img_path'] ?? simpleImg;
+      const roleName = Array.isArray(item[roleKey]) ? item[roleKey][0] : item[roleKey];
+      const promotionImg = role?.[roleName]?.['promotion_img'];
+      const simpleImg = role?.[roleName]?.['simple_img'];
+      const cachedImg = normalizeAssetUrl(item['img_path']);
+      item['img'] = promotionImg?.[1] || promotionImg?.[0] || cachedImg || item['img'] || simpleImg;
     });
 
     console.log(`${key} historyList::`, historyList);
@@ -157,6 +195,98 @@ export default function IndexPage() {
         historyList: historyList,
       },
     }));
+  }
+
+  function selectCurrentHistoryList(data: any[]) {
+    if (!data || data.length === 0) {
+      return [];
+    }
+
+    const currentTime = new Date().getTime();
+    const currentList = data.filter((item: any) => isTimerCurrent(item.timer, currentTime));
+
+    if (currentList.length > 0) {
+      return currentList;
+    }
+
+    const upcomingItem = data
+      .map((item: any) => ({ item, range: getTimerRange(item.timer) }))
+      .filter(({ range }) => Number.isFinite(range.start) && range.start > currentTime)
+      .sort((a, b) => a.range.start - b.range.start)[0]?.item;
+    if (!upcomingItem) {
+      return [];
+    }
+
+    const fallbackItem = upcomingItem;
+
+    return data.filter((item: any) => item.timer === fallbackItem.timer);
+  }
+
+  function selectNearestHistoryItem(data: any[]) {
+    return [...data].sort((a: any, b: any) => {
+      const endDiff = getHistoryEndTime(a.timer) - getHistoryEndTime(b.timer);
+      return endDiff || `${a.title}`.localeCompare(`${b.title}`);
+    })[0];
+  }
+
+  function selectCurrentMetaTimer(data: any[]) {
+    const currentTime = new Date().getTime();
+    const currentList = data
+      .map((item: any) => ({ item, range: getMetaTimerRange(item.timer) }))
+      .filter(({ range }) => Number.isFinite(range.start) && Number.isFinite(range.end) && range.start <= currentTime && currentTime <= range.end)
+      .sort((a, b) => a.range.end - b.range.end);
+
+    return (currentList[0]?.item ?? data[data.length - 1]) as any;
+  }
+
+  function normalizeHistoryList(data: any[]) {
+    const roleList = data.filter((item: any) => item.type === '角色');
+    const sourceList = roleList.length > 0 ? roleList : data;
+
+    return sourceList.map((item: any) => {
+      const copy = { ...item };
+      const titleEndIndex = typeof item.title === 'string' ? item.title.indexOf('」') : -1;
+
+      if (titleEndIndex >= 0) {
+        copy.title = item.title.substring(0, titleEndIndex + 1);
+      }
+
+      return copy;
+    });
+  }
+
+  function isTimerCurrent(timer: string, currentTime: number) {
+    const { start, end } = getTimerRange(timer);
+
+    return Number.isFinite(start) && Number.isFinite(end) && start <= currentTime && currentTime <= end;
+  }
+
+  function getTimerRange(timer: string) {
+    const [startTimer, endTimer] = `${timer ?? ''}`.split('~');
+
+    return {
+      start: parseDateTime(startTimer),
+      end: parseDateTime(endTimer),
+    };
+  }
+
+  function getMetaTimerRange(timer: string[]) {
+    return {
+      start: parseDateTime(timer?.[0]),
+      end: parseDateTime(timer?.[1]),
+    };
+  }
+
+  function normalizeAssetUrl(value?: string) {
+    if (!value) {
+      return '';
+    }
+
+    if (/^https?:\/\//.test(value) || value.startsWith('/')) {
+      return value;
+    }
+
+    return `/${value}`;
   }
 
   async function fetchEachGameRole(key: string) {
