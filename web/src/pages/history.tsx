@@ -1,16 +1,25 @@
-import { CardPool, getHistoryEndTime } from '@/components/card-pool';
+import { CardPool } from '@/components/card-pool';
 import DefaultLayout from '@/layouts/default';
+import {
+  compareVersionDesc,
+  compareVersionFamilyDesc,
+  filterOpenedHistoryItems,
+  getVersionFamily,
+} from '@/utils/history';
 import { Accordion, AccordionItem } from '@heroui/react';
 import { groupBy } from 'lodash';
-import { useEffect, useState, useRef } from 'react';
-import { useLocalStorage } from 'react-use';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useLocalStorage } from 'react-use';
 
 export default function HistoryPage() {
-  const [cardGroup, setCardGroup] = useState<any>({});
-  const [titleMap, setTitleMap] = useState<any>({});
-  const [expandedKeys, setExpandedKeys] = useLocalStorage('history/expandedKeys', null); // 初始值为空
-  const accordionExpandedKeys = expandedKeys ?? [];
+  const [cardGroup, setCardGroup] = useState<Record<string, Record<string, any[]>>>({});
+  const [titleMap, setTitleMap] = useState<Record<string, string>>({});
+  const [expandedFamilyKeys, setExpandedFamilyKeys] = useLocalStorage<string[] | null>('history/expandedFamilyKeys', null);
+  const [expandedVersionKeyMap, setExpandedVersionKeyMap] = useLocalStorage<Record<string, string[]> | null>(
+    'history/expandedVersionKeyMap',
+    null,
+  );
   const roleCache = useRef<Record<string, any>>({});
 
   let { key } = useParams();
@@ -32,11 +41,11 @@ export default function HistoryPage() {
           data.forEach((element) => {
             element.img_path = normalizeAssetUrl(element.img_path);
           });
-          let versionGroup = groupBy(data, 'version');
+          const openedHistoryList = filterOpenedHistoryItems(data as any[]);
+          let versionGroup = groupBy(openedHistoryList, 'version') as Record<string, any[]>;
           console.log('versionGroup:::', versionGroup);
 
-          // 设置group
-          setCardGroup(versionGroup);
+          const nextTitleMap: Record<string, string> = {};
 
           Object.keys(versionGroup).forEach((key) => {
             // 卡池图片没有的时候，使用角色立绘
@@ -44,8 +53,9 @@ export default function HistoryPage() {
             versionGroup[key].forEach((item) => {
               // console.log(`item::: ${item.s}`, item);
               console.log(`role::: ${key}`, role);
-              const promotionImg = role?.[item['s']]?.['promotion_img'];
-              const simpleImg = role?.[item['s']]?.['simple_img'];
+              const roleName = Array.isArray(item['s']) ? item['s'][0] : item['s'];
+              const promotionImg = role?.[roleName]?.['promotion_img'];
+              const simpleImg = role?.[roleName]?.['simple_img'];
               item['img'] = promotionImg?.[1] || promotionImg?.[0] || item['img_path'] || item['img'] || simpleImg;
             });
 
@@ -53,22 +63,31 @@ export default function HistoryPage() {
             versionGroup[key] = versionGroup[key].filter((item) => item.img !== '' && item.img);
 
             // 设置title
-            setTitleMap((pre) => {
-              const roleNames = versionGroup[key]
-                .filter((item) => item.type === '角色')
-                .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s]))
-                .filter(Boolean);
-              const fallbackNames = versionGroup[key]
-                .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s || item.title]))
-                .filter(Boolean);
-              const displayNames = roleNames.length > 0 ? roleNames : fallbackNames;
+            const roleNames = versionGroup[key]
+              .filter((item) => item.type === '角色')
+              .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s]))
+              .filter(Boolean);
+            const fallbackNames = versionGroup[key]
+              .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s || item.title]))
+              .filter(Boolean);
+            const displayNames = roleNames.length > 0 ? roleNames : fallbackNames;
 
-              return {
-                ...pre,
-                [key]: `${versionGroup[key][0]?.timer ?? ''} ${displayNames.join('、')}`.trim(),
-              };
-            });
+            nextTitleMap[key] = `${versionGroup[key][0]?.timer ?? ''} ${displayNames.join('、')}`.trim();
           });
+          const nextCardGroup = Object.keys(versionGroup).reduce<Record<string, Record<string, any[]>>>(
+            (groups, versionKey) => {
+              const versionFamily = getVersionFamily(versionKey);
+
+              groups[versionFamily] = groups[versionFamily] || {};
+              groups[versionFamily][versionKey] = versionGroup[versionKey];
+
+              return groups;
+            },
+            {},
+          );
+
+          setCardGroup(nextCardGroup);
+          setTitleMap(nextTitleMap);
         });
     };
 
@@ -115,30 +134,76 @@ export default function HistoryPage() {
     <DefaultLayout>
       <div>
         <Accordion
-          expandedKeys={accordionExpandedKeys}
+          selectedKeys={getSelectedFamilyKeys()}
           selectionMode="multiple"
           variant="splitted"
-          onExpandedChange={(keys) => {
-            setExpandedKeys([...keys]);
+          onSelectionChange={(keys) => {
+            setExpandedFamilyKeys(resolveSelectionKeys(keys, getVersionFamilyKeys()));
           }}
         >
-          {Object.keys(cardGroup)
-            .sort((a, b) => {
-              const endDiff = getGroupEndTime(cardGroup[a]) - getGroupEndTime(cardGroup[b]);
-              return endDiff || a.localeCompare(b);
-            })
-            .map((key) => (
-              <AccordionItem key={key} aria-label={key} startContent={key} subtitle={titleMap[key]}>
-                <CardPool historyList={cardGroup[key]} />
-              </AccordionItem>
-            ))}
+          {getVersionFamilyKeys().map((versionFamily) => (
+            <AccordionItem
+              key={versionFamily}
+              aria-label={versionFamily}
+              startContent={versionFamily}
+              subtitle={getVersionFamilySubtitle(versionFamily)}
+            >
+              <Accordion
+                selectedKeys={getSelectedVersionKeys(versionFamily)}
+                selectionMode="multiple"
+                variant="splitted"
+                onSelectionChange={(keys) => {
+                  setExpandedVersionKeyMap({
+                    ...(expandedVersionKeyMap || {}),
+                    [versionFamily]: resolveSelectionKeys(keys, getVersionKeys(versionFamily)),
+                  });
+                }}
+              >
+                {getVersionKeys(versionFamily).map((versionKey) => (
+                  <AccordionItem key={versionKey} aria-label={versionKey} startContent={versionKey} subtitle={titleMap[versionKey]}>
+                    <CardPool historyList={cardGroup[versionFamily][versionKey]} />
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
     </DefaultLayout>
   );
 
-  function getGroupEndTime(historyList: any[]) {
-    const endTimeList = historyList.map((item) => getHistoryEndTime(item.timer));
-    return Math.min(...endTimeList);
+  function getVersionFamilyKeys() {
+    return Object.keys(cardGroup).sort(compareVersionFamilyDesc);
+  }
+
+  function getVersionKeys(versionFamily: string) {
+    return Object.keys(cardGroup[versionFamily] || {}).sort(compareVersionDesc);
+  }
+
+  function getSelectedFamilyKeys() {
+    if (Array.isArray(expandedFamilyKeys)) {
+      return expandedFamilyKeys;
+    }
+
+    return getVersionFamilyKeys().slice(0, 1);
+  }
+
+  function getSelectedVersionKeys(versionFamily: string) {
+    if (expandedVersionKeyMap?.[versionFamily]) {
+      return expandedVersionKeyMap[versionFamily];
+    }
+
+    return getVersionKeys(versionFamily).slice(0, 1);
+  }
+
+  function getVersionFamilySubtitle(versionFamily: string) {
+    const versionKeys = getVersionKeys(versionFamily);
+    const poolCount = versionKeys.reduce((sum, versionKey) => sum + cardGroup[versionFamily][versionKey].length, 0);
+
+    return `${versionKeys.length} 个版本 / ${poolCount} 个卡池`;
+  }
+
+  function resolveSelectionKeys(keys: any, allKeys: string[]) {
+    return keys === 'all' ? allKeys : [...keys].map(String);
   }
 }

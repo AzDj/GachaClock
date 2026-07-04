@@ -2,7 +2,7 @@ import { Card, CardBody, CardFooter, Image } from '@heroui/react';
 import { useEffect, useMemo, useState } from 'react';
 
 export interface CardPoolProps {
-  historyList: [];
+  historyList: any[];
 }
 
 export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps) => {

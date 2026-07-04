@@ -9,6 +9,11 @@ import {
   parseDateTime,
 } from '@/components/card-pool';
 import DefaultLayout from '@/layouts/default';
+import {
+  filterOpenedHistoryItems,
+  isTimerAmbiguousAndUnexpired,
+  isTimerStartedAndUnexpired,
+} from '@/utils/history';
 import { Link } from '@heroui/link';
 import { useLocalStorage } from 'react-use';
 
@@ -131,11 +136,11 @@ export default function IndexPage() {
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
 
-      const selectedHistoryList = selectCurrentHistoryList(data);
+      const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data));
       historyList = normalizeHistoryList(selectedHistoryList);
 
       if (historyList.length === 0) {
-        throw new Error('没有当前或未来历史卡池');
+        throw new Error('没有当前历史卡池');
       }
 
       const nearestHistoryItem = selectNearestHistoryItem(selectedHistoryList);
@@ -168,7 +173,7 @@ export default function IndexPage() {
         timer = timerSource.timer.join('~');
       } else {
         roleKey = 's';
-        const selectedHistoryList = selectCurrentHistoryList(data);
+        const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data));
         historyList = normalizeHistoryList(selectedHistoryList);
 
         if (historyList.length === 0) {
@@ -214,23 +219,15 @@ export default function IndexPage() {
     }
 
     const currentTime = new Date().getTime();
-    const currentList = data.filter((item: any) => isTimerCurrent(item.timer, currentTime));
+    const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
 
-    if (currentList.length > 0) {
-      return currentList;
+    if (finiteCurrentList.length > 0) {
+      return finiteCurrentList;
     }
 
-    const upcomingItem = data
-      .map((item: any) => ({ item, range: getTimerRange(item.timer) }))
-      .filter(({ range }) => Number.isFinite(range.start) && range.start > currentTime)
-      .sort((a, b) => a.range.start - b.range.start)[0]?.item;
-    if (!upcomingItem) {
-      return [];
-    }
+    const ambiguousCurrentList = data.filter((item: any) => isTimerAmbiguousAndUnexpired(item.timer, currentTime));
 
-    const fallbackItem = upcomingItem;
-
-    return data.filter((item: any) => item.timer === fallbackItem.timer);
+    return ambiguousCurrentList;
   }
 
   function selectNearestHistoryItem(data: any[]) {
@@ -264,26 +261,6 @@ export default function IndexPage() {
 
       return copy;
     });
-  }
-
-  function isTimerCurrent(timer: string, currentTime: number) {
-    const { start, end } = getTimerRange(timer);
-
-    if (!Number.isFinite(end) || currentTime > end) {
-      return false;
-    }
-
-    // 兼容“版本更新后”这类无法直接解析的开始时间，只要结束时间未到就按当前卡池处理。
-    return !Number.isFinite(start) || start <= currentTime;
-  }
-
-  function getTimerRange(timer: string) {
-    const [startTimer, endTimer] = `${timer ?? ''}`.split('~');
-
-    return {
-      start: parseDateTime(startTimer),
-      end: parseDateTime(endTimer),
-    };
   }
 
   function getMetaTimerRange(timer: string[]) {
