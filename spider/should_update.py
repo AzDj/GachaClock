@@ -7,11 +7,36 @@ from pathlib import Path
 
 LOCAL_TIMEZONE = timezone(timedelta(hours=8))
 DATA_DIR = Path(__file__).resolve().parent / "data"
-ALL_GAMES = ["zzz", "sr", "ww"]
+AUTO_GAMES = ["zzz", "sr", "ww", "ys", "arknights"]
+MANUAL_GAMES = ["endfield"]
+ALL_GAMES = AUTO_GAMES + MANUAL_GAMES
 
 
 def parse_bool(value):
     return str(value or "").lower() in {"1", "true", "yes", "y"}
+
+
+def parse_force_games(value):
+    normalized_value = str(value or "auto").strip().lower()
+    if normalized_value in {"auto", ""}:
+        return AUTO_GAMES
+    if normalized_value == "all":
+        return ALL_GAMES
+
+    selected_games = []
+    for game in normalized_value.split(","):
+        normalized_game = game.strip()
+        if not normalized_game:
+            continue
+        if normalized_game not in ALL_GAMES:
+            raise ValueError(f"不支持的游戏标识：{normalized_game}")
+        if normalized_game not in selected_games:
+            selected_games.append(normalized_game)
+
+    if not selected_games:
+        raise ValueError("手动刷新游戏不能为空")
+
+    return selected_games
 
 
 def parse_datetime(value):
@@ -70,13 +95,15 @@ def write_github_output(result):
 
 def main():
     force_update = parse_bool(os.getenv("FORCE_UPDATE"))
+    force_games = parse_force_games(os.getenv("FORCE_GAMES"))
     now = datetime.now(LOCAL_TIMEZONE)
 
     if force_update:
+        game_text = "全部游戏" if force_games == ALL_GAMES else "、".join(force_games)
         result = {
             "should_run": "true",
-            "games": ",".join(ALL_GAMES),
-            "reason": "强制触发，抓取全部游戏",
+            "games": ",".join(force_games),
+            "reason": f"强制触发，抓取游戏：{game_text}",
         }
         write_github_output(result)
         print(result["reason"])
@@ -88,7 +115,7 @@ def main():
 
     due_games = []
     status_messages = []
-    for game in ALL_GAMES:
+    for game in AUTO_GAMES:
         if game not in meta:
             due_games.append(game)
             status_messages.append(f"{game}: meta 缺失，纳入维护")

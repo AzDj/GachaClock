@@ -1,17 +1,17 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Vite + HeroUI',
-  description: 'Make beautiful websites regardless of your design experience.',
+  name: 'GachaClock',
+  description: '卡池时间与历史维护工具',
   navItems: [
     {
-      label: "Home",
+      label: "当前卡池",
       href: "/",
     },
-    // {
-    //   label: "History",
-    //   href: "/history",
-    // },
+    {
+      label: "手动维护",
+      href: "/manual",
+    },
     // {
     //   label: "Pricing",
     //   href: "/pricing",
@@ -27,13 +27,13 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
+      label: "当前卡池",
       href: "/",
     },
-    // {
-    //   label: "History",
-    //   href: "/history",
-    // },
+    {
+      label: "手动维护",
+      href: "/manual",
+    },
   ],
   links: {
     github: 'https://github.com/iaoongin/GachaClock',

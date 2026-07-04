@@ -24,8 +24,8 @@ const imageLogoKeys = new Set(['sr', 'ww', 'zzz', 'ys', 'arknights', 'endfield']
 
 export default function IndexPage() {
   const [cardGroup, setCardGroup] = useState<CardPoolProps>();
-  const [expandedKeys, setExpandedKeys] = useLocalStorage('expandedKeys', null);
-  const accordionExpandedKeys = expandedKeys ?? [];
+  const [storedExpandedKeys, setStoredExpandedKeys] = useLocalStorage<string[] | null>('expandedKeys', null);
+  const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
   const roleCache = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -41,16 +41,17 @@ export default function IndexPage() {
   }, []);
 
   useEffect(() => {
-    if (expandedKeys !== null && expandedKeys !== undefined) {
-      return;
-    }
-
     if (!cardGroup || Object.keys(cardGroup).length == 0) {
       return;
     }
 
+    if (Array.isArray(storedExpandedKeys)) {
+      setExpandedKeys(storedExpandedKeys);
+      return;
+    }
+
     setExpandedKeys(Object.keys(cardGroup));
-  }, [cardGroup, expandedKeys, setExpandedKeys]);
+  }, [cardGroup, storedExpandedKeys]);
 
   if (!cardGroup || Object.keys(cardGroup).length == 0) {
     return <div>Loading...</div>;
@@ -60,11 +61,14 @@ export default function IndexPage() {
     <DefaultLayout>
       <div>
         <Accordion
-          expandedKeys={accordionExpandedKeys}
+          selectedKeys={expandedKeys}
           selectionMode="multiple"
           variant="splitted"
-          onExpandedChange={(keys) => {
-            setExpandedKeys([...keys]);
+          onSelectionChange={(keys) => {
+            const nextExpandedKeys = keys === 'all' ? Object.keys(cardGroup) : [...keys].map(String);
+
+            setExpandedKeys(nextExpandedKeys);
+            setStoredExpandedKeys(nextExpandedKeys);
           }}
         >
           {Object.keys(cardGroup)
@@ -182,7 +186,14 @@ export default function IndexPage() {
       const promotionImg = role?.[roleName]?.['promotion_img'];
       const simpleImg = role?.[roleName]?.['simple_img'];
       const cachedImg = normalizeAssetUrl(item['img_path']);
-      item['img'] = promotionImg?.[1] || promotionImg?.[0] || cachedImg || item['img'] || simpleImg;
+      const sourceImg = item['img'];
+
+      if (roleKey === 's') {
+        item['img'] = cachedImg || sourceImg || promotionImg?.[1] || promotionImg?.[0] || simpleImg;
+        return;
+      }
+
+      item['img'] = promotionImg?.[1] || promotionImg?.[0] || cachedImg || sourceImg || simpleImg;
     });
 
     console.log(`${key} historyList::`, historyList);
@@ -258,7 +269,12 @@ export default function IndexPage() {
   function isTimerCurrent(timer: string, currentTime: number) {
     const { start, end } = getTimerRange(timer);
 
-    return Number.isFinite(start) && Number.isFinite(end) && start <= currentTime && currentTime <= end;
+    if (!Number.isFinite(end) || currentTime > end) {
+      return false;
+    }
+
+    // 兼容“版本更新后”这类无法直接解析的开始时间，只要结束时间未到就按当前卡池处理。
+    return !Number.isFinite(start) || start <= currentTime;
   }
 
   function getTimerRange(timer: string) {
