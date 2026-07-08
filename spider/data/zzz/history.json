@@ -1,5 +1,57 @@
 [
     {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/0/01/ekfj49ssktlp6ysisglmpwsl9pvy3jr.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5034-1%E6%9C%9F.png",
+        "title": "「天才不等式」034-1期独家频段",
+        "type": "角色",
+        "version": "3.0下半",
+        "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
+        "s": "诺姆",
+        "a": [
+            "本",
+            "波可娜"
+        ],
+        "img_path": "img/zzz/history/「天才不等式」034-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/3/38/expn442ici94s1cnd6wobf1y8go0njq.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5034-1%E6%9C%9F.png",
+        "title": "「首席跟班」034-1期音擎频段",
+        "type": "武器",
+        "version": "3.0下半",
+        "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
+        "s": "首席跟班（页面不存在）",
+        "a": [
+            "比格气缸",
+            "裁纸刀"
+        ],
+        "img_path": "img/zzz/history/「首席跟班」034-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/6/69/taswlmjtttowlgt0sx37tqi3rrqf2oe.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5034-2%E6%9C%9F.png",
+        "title": "「四三拍谬想」034-2期独家频段",
+        "type": "角色",
+        "version": "3.0下半",
+        "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
+        "s": "千夏",
+        "a": [
+            "本",
+            "波可娜"
+        ],
+        "img_path": "img/zzz/history/「四三拍谬想」034-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/a3/njt7nfjk2l453ffj13el87z6q4zt6hc.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5034-2%E6%9C%9F.png",
+        "title": "「思络成歌」034-2期音擎频段",
+        "type": "武器",
+        "version": "3.0下半",
+        "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
+        "s": "思络成歌",
+        "a": [
+            "比格气缸",
+            "裁纸刀"
+        ],
+        "img_path": "img/zzz/history/「思络成歌」034-2期音擎频段.png"
+    },
+    {
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/5a/ol70jq73tzraal1ny3dr5xiis2xsksd.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5033-1%E6%9C%9F.png",
         "title": "「凛风吟仪」033-1期独家频段",
         "type": "角色",
@@ -18,7 +70,7 @@
         "type": "武器",
         "version": "3.0上半",
         "timer": "3.0版本更新后 ~ 2026/07/08 11:59:59",
-        "s": "琳琅鎏心（页面不存在）",
+        "s": "琳琅鎏心",
         "a": [
             "聚宝箱",
             "轰鸣座驾"
