@@ -1,0 +1,182 @@
+[
+    {
+        "title": "牵翎祈万声",
+        "type": "角色",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "秧秧·玄翎",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d6850c8a16714cb7aeb568835f5666f220260709.jpg",
+                "img_path": "img/ww/秧秧·玄翎.png"
+            },
+            {
+                "title": "丹瑾",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b399bf26109c49c2b37b365687a6aabd20260709.png",
+                "img_path": "img/ww/丹瑾.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/7ad12115255c4f30b438a07e1017e33f20260709.png",
+                "img_path": "img/ww/炽霞.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9441386df5e54d52a010ab0dce9f626320260709.png",
+                "img_path": "img/ww/秋水.png"
+            }
+        ]
+    },
+    {
+        "title": "逾此长冬",
+        "type": "角色",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "陆·赫斯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/65793c1bcdc140abaa4eb383204335b520260709.jpg",
+                "img_path": "img/ww/陆·赫斯.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ed3aa15347db410b97f6f66ef17c2da220260709.png",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d84218bdafa243108e746d3ad5e9ef8920260709.png",
+                "img_path": "img/ww/炽霞.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/47fb0f310fc240a8b472f5ac7aa8bef820260709.png",
+                "img_path": "img/ww/秋水.png"
+            }
+        ]
+    },
+    {
+        "title": "非定义光谱",
+        "type": "角色",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "琳奈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9af7bc87fdef4f5484af8b1f7bb7efd120260709.jpg",
+                "img_path": "img/ww/琳奈.png"
+            },
+            {
+                "title": "丹瑾",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9f9c99adab5b43c2be5f57df8f69a89f20260709.png",
+                "img_path": "img/ww/丹瑾.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/70acf74e339a4aa8b6d32cb35124ed7620260709.png",
+                "img_path": "img/ww/炽霞.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/8b12ef7aff9a4ef2af401f761f0d6e7620260709.png",
+                "img_path": "img/ww/秋水.png"
+            }
+        ]
+    },
+    {
+        "title": "天之苍苍",
+        "type": "武器",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "存帧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b4e6efc3d7de403dae224c332bcc960020260709.png",
+                "img_path": "img/ww/存帧.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/4e4a416c14b84f4caafaf71ecf0d5d9220260709.png",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "骇行",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e487c9b8dd6c4f81bc4747c816724f0720260709.png",
+                "img_path": "img/ww/骇行.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2baf876bd3514ef6ba741553b184414d20260709.png",
+                "img_path": "img/ww/异响空灵.png"
+            }
+        ]
+    },
+    {
+        "title": "白昼之脊",
+        "type": "武器",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "白昼之脊",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/70655551387f4c7280e95cc4cfe5e5e420260709.png",
+                "img_path": "img/ww/白昼之脊.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/07bd62d6ea1b4ddeb03bfc0bca46ccb020260709.png",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "骇行",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1af0492935844f48b4b942ac8e776d7820260709.png",
+                "img_path": "img/ww/骇行.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6f5cbddbfd254d01a33d78917550e25220260709.png",
+                "img_path": "img/ww/异响空灵.png"
+            }
+        ]
+    },
+    {
+        "title": "溢彩荧辉",
+        "type": "武器",
+        "timer": [
+            "2026-07-10 11:00:00",
+            "2026-07-30 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "溢彩荧辉",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/39aa93fbb7e04d7c8e12bca0b1acf49620260709.png",
+                "img_path": "img/ww/溢彩荧辉.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ea594d85c0104518b4d0b653fe5ca3c820260709.png",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "骇行",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/4562a39f0d7c412fa6a105e884c2bfa820260709.png",
+                "img_path": "img/ww/骇行.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/5f70a1df4a9f4afc9c9e78eff078e3b720260709.png",
+                "img_path": "img/ww/异响空灵.png"
+            }
+        ]
+    }
+]
