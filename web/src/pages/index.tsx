@@ -12,6 +12,7 @@ import DefaultLayout from '@/layouts/default';
 import {
   filterOpenedHistoryItems,
   isTimerAmbiguousAndUnexpired,
+  isTimerOverlappingCurrentDate,
   isTimerStartedAndUnexpired,
 } from '@/utils/history';
 import { Link } from '@heroui/link';
@@ -136,14 +137,14 @@ export default function IndexPage() {
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
 
-      const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data));
+      const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data), key);
       historyList = normalizeHistoryList(selectedHistoryList);
 
       if (historyList.length === 0) {
         throw new Error('没有当前历史卡池');
       }
 
-      const nearestHistoryItem = selectNearestHistoryItem(selectedHistoryList);
+      const nearestHistoryItem = selectNearestCurrentHistoryItem(selectedHistoryList);
       version = nearestHistoryItem.version;
       timer = nearestHistoryItem.timer;
     } catch (err) {
@@ -173,14 +174,14 @@ export default function IndexPage() {
         timer = timerSource.timer.join('~');
       } else {
         roleKey = 's';
-        const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data));
+        const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data), key);
         historyList = normalizeHistoryList(selectedHistoryList);
 
         if (historyList.length === 0) {
           throw new Error('meta 历史卡池为空');
         }
 
-        const nearestHistoryItem = selectNearestHistoryItem(selectedHistoryList);
+        const nearestHistoryItem = selectNearestCurrentHistoryItem(selectedHistoryList);
         version = nearestHistoryItem.version;
         timer = nearestHistoryItem.timer;
       }
@@ -213,12 +214,20 @@ export default function IndexPage() {
     }));
   }
 
-  function selectCurrentHistoryList(data: any[]) {
+  function selectCurrentHistoryList(data: any[], key: string) {
     if (!data || data.length === 0) {
       return [];
     }
 
     const currentTime = new Date().getTime();
+    const currentDateList = key === 'arknights'
+      ? data.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
+      : [];
+
+    if (currentDateList.length > 0) {
+      return currentDateList;
+    }
+
     const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
 
     if (finiteCurrentList.length > 0) {
@@ -228,6 +237,17 @@ export default function IndexPage() {
     const ambiguousCurrentList = data.filter((item: any) => isTimerAmbiguousAndUnexpired(item.timer, currentTime));
 
     return ambiguousCurrentList;
+  }
+
+  function selectNearestCurrentHistoryItem(data: any[]) {
+    const currentTime = new Date().getTime();
+    const unexpiredList = data.filter((item: any) => {
+      const endTime = getHistoryEndTime(item.timer);
+
+      return currentTime <= endTime;
+    });
+
+    return selectNearestHistoryItem(unexpiredList.length > 0 ? unexpiredList : data);
   }
 
   function selectNearestHistoryItem(data: any[]) {

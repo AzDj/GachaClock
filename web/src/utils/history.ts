@@ -42,6 +42,13 @@ export function isTimerAmbiguousAndUnexpired(timer: string, currentTime: number)
   return !Number.isFinite(start) && Number.isFinite(end) && currentTime <= end;
 }
 
+export function isTimerOverlappingCurrentDate(timer: string, currentTime: number) {
+  const { start, end } = getTimerRange(timer);
+  const { start: dayStart, end: dayEnd } = getLocalDayRange(currentTime);
+
+  return isRangeOverlapping(start, end, dayStart, dayEnd);
+}
+
 export function getVersionFamily(version: string) {
   const match = `${version ?? ''}`.match(/(\d+)\.(\d+)/);
 
@@ -73,6 +80,21 @@ function isVersionGroupOpened<T extends { timer?: string }>(historyList: T[], cu
   }
 
   return Math.min(...finiteStartList) <= currentTime;
+}
+
+function getLocalDayRange(currentTime: number) {
+  const currentDate = new Date(currentTime);
+  const start = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()).getTime();
+  const end = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 1).getTime() - 1;
+
+  return { start, end };
+}
+
+function isRangeOverlapping(start: number, end: number, targetStart: number, targetEnd: number) {
+  const normalizedStart = Number.isFinite(start) ? start : Number.NEGATIVE_INFINITY;
+  const normalizedEnd = Number.isFinite(end) ? end : Number.POSITIVE_INFINITY;
+
+  return normalizedStart <= targetEnd && targetStart <= normalizedEnd;
 }
 
 function getFamilySortValue(versionFamily: string) {
