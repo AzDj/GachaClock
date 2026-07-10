@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import {
   CardPool,
-  CardPoolProps,
+  type CardPoolProps,
   CountdownTimer,
   getHistoryEndTime,
   parseDateTime,
@@ -27,9 +27,17 @@ const gameLabelMap: Record<string, string> = {
   endfield: '终末地',
 };
 const imageLogoKeys = new Set(['sr', 'ww', 'zzz', 'ys', 'arknights', 'endfield']);
+const newPoolVisibleDuration = 7 * 24 * 60 * 60 * 1000;
+
+interface CurrentCardGroup {
+  currentVersion: string;
+  currentTimer: string;
+  historyList: CardPoolProps['historyList'];
+  hasNewPool: boolean;
+}
 
 export default function IndexPage() {
-  const [cardGroup, setCardGroup] = useState<CardPoolProps>();
+  const [cardGroup, setCardGroup] = useState<Record<string, CurrentCardGroup>>();
   const [storedExpandedKeys, setStoredExpandedKeys] = useLocalStorage<string[] | null>('expandedKeys', null);
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
   const roleCache = useRef<Record<string, any>>({});
@@ -91,6 +99,7 @@ export default function IndexPage() {
                   <CountdownTimer
                     className={'text-lg'}
                     date={cardGroup[key].currentTimer.split('~')[1]}
+                    prefix={renderGameName(key, cardGroup[key].hasNewPool)}
                   />
                 }
                 indicator={({ isOpen }) => <Link href={`/history/${key}`}>H</Link>}
@@ -123,6 +132,21 @@ export default function IndexPage() {
     );
   }
 
+  function renderGameName(key: string, hasNewPool: boolean) {
+    const normalizedKey = key.toLocaleLowerCase();
+
+    return (
+      <>
+        <span className="font-medium text-foreground">{gameLabelMap[normalizedKey] ?? key}</span>
+        {hasNewPool && (
+          <span className="rounded-small bg-orange-100 px-1.5 py-0.5 text-[11px] font-semibold leading-none text-orange-600 dark:bg-orange-500/20 dark:text-orange-300">
+            new
+          </span>
+        )}
+      </>
+    );
+  }
+
   async function fetchEachGame(key: string, lastPoolUrl: string) {
     const role = await fetchEachGameRole(key);
     console.log(`${key} role`, role);
@@ -131,6 +155,7 @@ export default function IndexPage() {
     let version: string;
     let timer: string;
     let roleKey: string; // 历史卡池为 s，meta信息为title
+    let hasNewPool = false;
 
     try {
       roleKey = 's';
@@ -147,6 +172,7 @@ export default function IndexPage() {
       const nearestHistoryItem = selectNearestCurrentHistoryItem(selectedHistoryList);
       version = nearestHistoryItem.version;
       timer = nearestHistoryItem.timer;
+      hasNewPool = await resolveHistoryNewPoolFlag(selectedHistoryList, timer, lastPoolUrl);
     } catch (err) {
       console.log(`${key} history err, 使用最新卡池数据, 即从meta里面获取。 `, err);
 
@@ -172,6 +198,7 @@ export default function IndexPage() {
         const timerSource = selectCurrentMetaTimer(data);
         version = timerSource.title;
         timer = timerSource.timer.join('~');
+        hasNewPool = isRecentNewPool(timer);
       } else {
         roleKey = 's';
         const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data), key);
@@ -184,6 +211,7 @@ export default function IndexPage() {
         const nearestHistoryItem = selectNearestCurrentHistoryItem(selectedHistoryList);
         version = nearestHistoryItem.version;
         timer = nearestHistoryItem.timer;
+        hasNewPool = await resolveHistoryNewPoolFlag(selectedHistoryList, timer, lastPoolUrl);
       }
     }
 
@@ -210,6 +238,7 @@ export default function IndexPage() {
         currentVersion: version,
         currentTimer: timer,
         historyList: historyList,
+        hasNewPool,
       },
     }));
   }
@@ -300,6 +329,73 @@ export default function IndexPage() {
     }
 
     return `/${value}`;
+  }
+
+  async function resolveHistoryNewPoolFlag(data: any[], fallbackTimer: string, lastPoolUrl: string) {
+    const finiteStartList = data
+      .map((item: any) => getPoolStartTime(`${item.timer ?? ''}`))
+      .filter(Number.isFinite);
+
+    if (finiteStartList.length > 0) {
+      return finiteStartList.some((startTime) => isRecentStartTime(startTime));
+    }
+
+    if (isRecentNewPool(fallbackTimer)) {
+      return true;
+    }
+
+    return resolveLatestMetaNewPoolFlag(fallbackTimer, lastPoolUrl);
+  }
+
+  async function resolveLatestMetaNewPoolFlag(fallbackTimer: string, lastPoolUrl: string) {
+    try {
+      const data = await fetch(lastPoolUrl).then((res) => res.json());
+      const latestTimer = normalizeMetaTimer(selectCurrentMetaTimer(data)?.timer);
+
+      if (!latestTimer || !isSamePoolEndTime(fallbackTimer, latestTimer)) {
+        return false;
+      }
+
+      return isRecentNewPool(latestTimer);
+    } catch (err) {
+      console.log('无法确认最新卡池更新时间，隐藏 new 标记。', err);
+      return false;
+    }
+  }
+
+  function normalizeMetaTimer(timer: string[] | string | undefined) {
+    if (Array.isArray(timer)) {
+      return timer.join('~');
+    }
+
+    return timer ?? '';
+  }
+
+  function isSamePoolEndTime(leftTimer: string, rightTimer: string) {
+    const leftEndTime = getHistoryEndTime(leftTimer);
+    const rightEndTime = getHistoryEndTime(rightTimer);
+
+    return Number.isFinite(leftEndTime)
+      && Number.isFinite(rightEndTime)
+      && Math.abs(leftEndTime - rightEndTime) < 60 * 1000;
+  }
+
+  function isRecentNewPool(timer: string) {
+    return isRecentStartTime(getPoolStartTime(timer));
+  }
+
+  function getPoolStartTime(timer: string) {
+    const startTimer = `${timer ?? ''}`.split('~')[0];
+
+    return parseDateTime(startTimer);
+  }
+
+  function isRecentStartTime(startTime: number) {
+    const currentTime = new Date().getTime();
+
+    return Number.isFinite(startTime)
+      && startTime <= currentTime
+      && currentTime < startTime + newPoolVisibleDuration;
   }
 
   async function fetchEachGameRole(key: string) {

@@ -1,5 +1,5 @@
 import { Card, CardBody, CardFooter, Image } from '@heroui/react';
-import { useEffect, useMemo, useState } from 'react';
+import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
 export interface CardPoolProps {
   historyList: any[];
@@ -87,7 +87,7 @@ function isPermanentPool(item: any) {
 interface CountdownTimerProps {
   date: string;
   className?: string;
-  prefix?: string;
+  prefix?: ReactNode;
 }
 
 // 倒计时组件
@@ -109,11 +109,13 @@ export const CountdownTimer = ({ date, className, prefix }: CountdownTimerProps)
 
   return (
     <div>
-      <div className={`${className} hidden md:block`}>
-        {prefix} 剩余时间 {formatTime(timeLeft)}
+      <div className={`${className} hidden min-w-0 flex-wrap items-center gap-x-2 gap-y-1 md:flex`}>
+        {prefix && <span className="inline-flex shrink-0 items-center gap-1">{prefix}</span>}
+        <span className="min-w-0">剩余时间 {formatTime(timeLeft)}</span>
       </div>
-      <div className={`${className} md:hidden block`}>
-        {prefix} {formatTime(timeLeft)}
+      <div className={`${className} flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 md:hidden`}>
+        {prefix && <span className="inline-flex shrink-0 items-center gap-1">{prefix}</span>}
+        <span className="min-w-0">{formatTime(timeLeft)}</span>
       </div>
     </div>
   );
