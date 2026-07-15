@@ -1,0 +1,142 @@
+[
+    {
+        "title": "「拓星启明」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/07/15 10:00:00",
+            "2026/08/25 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "姬子•启行",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/f6/dvg8g9rwdmgb8gzcnrmk9zd4wi0fiug.png/112px-%E5%A7%AC%E5%AD%90%E2%80%A2%E5%90%AF%E8%A1%8C.png",
+                "img_path": "img/sr/姬子•启行.png"
+            },
+            {
+                "title": "貊泽",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/61/rkegujumye2mz2bddqhg976ijosbv0k.png/112px-%E8%B2%8A%E6%B3%BD.png",
+                "img_path": "img/sr/貊泽.png"
+            },
+            {
+                "title": "寒鸦",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/2a/4wcmkrfx62ngkpa260kjr20dtjk7ctp.png/112px-%E5%AF%92%E9%B8%A6.png",
+                "img_path": "img/sr/寒鸦.png"
+            },
+            {
+                "title": "希露瓦",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/19/algq66demezhksajce9t8s6df8f6qv0.png/112px-%E5%B8%8C%E9%9C%B2%E7%93%A6.png",
+                "img_path": "img/sr/希露瓦.png"
+            }
+        ]
+    },
+    {
+        "title": "「铭心之萃•火花、丹恒•腾荒、长夜月」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/07/15 10:00:00",
+            "2026/08/05 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "火花",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/1d/guxpvan8rcg0hoy9rv9upi4kw60kd8z.png/112px-%E7%81%AB%E8%8A%B1.png",
+                "img_path": "img/sr/火花.png"
+            },
+            {
+                "title": "丹恒•腾荒",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/28/96lbtozg3f95jcjz3w3hrgmqdnq709k.png/112px-%E4%B8%B9%E6%81%92%E2%80%A2%E8%85%BE%E8%8D%92.png",
+                "img_path": "img/sr/丹恒•腾荒.png"
+            },
+            {
+                "title": "长夜月",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/6c/qa8t3g4e1iyx0k8mc6gj6nmblljhgoj.png/112px-%E9%95%BF%E5%A4%9C%E6%9C%88.png",
+                "img_path": "img/sr/长夜月.png"
+            },
+            {
+                "title": "貊泽",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/61/rkegujumye2mz2bddqhg976ijosbv0k.png/112px-%E8%B2%8A%E6%B3%BD.png",
+                "img_path": "img/sr/貊泽.png"
+            },
+            {
+                "title": "寒鸦",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/2a/4wcmkrfx62ngkpa260kjr20dtjk7ctp.png/112px-%E5%AF%92%E9%B8%A6.png",
+                "img_path": "img/sr/寒鸦.png"
+            },
+            {
+                "title": "希露瓦",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/19/algq66demezhksajce9t8s6df8f6qv0.png/112px-%E5%B8%8C%E9%9C%B2%E7%93%A6.png",
+                "img_path": "img/sr/希露瓦.png"
+            }
+        ]
+    },
+    {
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/07/15 10:00:00",
+            "2026/08/25 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "当一颗星照亮夜空",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/db/11bye2r19t8nx99f9apw2h7oqmli77l.png/112px-%E5%BD%93%E4%B8%80%E9%A2%97%E6%98%9F%E7%85%A7%E4%BA%AE%E5%A4%9C%E7%A9%BA.png",
+                "img_path": "img/sr/当一颗星照亮夜空.png"
+            },
+            {
+                "title": "谐乐静默之后",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/0f/j1i577njeg5l5uxvsh18git9hl4cj3k.png/112px-%E8%B0%90%E4%B9%90%E9%9D%99%E9%BB%98%E4%B9%8B%E5%90%8E.png",
+                "img_path": "img/sr/谐乐静默之后.png"
+            },
+            {
+                "title": "在蓝天下",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/c/ce/arvbljps9qru3k4gcnj5wn39frbt169.png/112px-%E5%9C%A8%E8%93%9D%E5%A4%A9%E4%B8%8B.png",
+                "img_path": "img/sr/在蓝天下.png"
+            },
+            {
+                "title": "「我」的诞生",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/3/3d/1tn2g6gigtqq1xyt1502xtn0gjz2q9d.png/112px-%E3%80%8C%E6%88%91%E3%80%8D%E7%9A%84%E8%AF%9E%E7%94%9F.png",
+                "img_path": "img/sr/「我」的诞生.png"
+            }
+        ]
+    },
+    {
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/07/15 10:00:00",
+            "2026/08/05 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "花花世界迷人眼",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/f3/cgd7w378smjzdhfvjgrrgzctwj64zur.png/112px-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E8%BF%B7%E4%BA%BA%E7%9C%BC.png",
+                "img_path": "img/sr/花花世界迷人眼.png"
+            },
+            {
+                "title": "纵然山河万程",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/f7/m6y2w1lm19sm5qfmhpa50u5gpgx2mpo.png/112px-%E7%BA%B5%E7%84%B6%E5%B1%B1%E6%B2%B3%E4%B8%87%E7%A8%8B.png",
+                "img_path": "img/sr/纵然山河万程.png"
+            },
+            {
+                "title": "致长夜的星光",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/05/4xatse14l9zqx8778ne2fakwn9n58kf.png/112px-%E8%87%B4%E9%95%BF%E5%A4%9C%E7%9A%84%E6%98%9F%E5%85%89.png",
+                "img_path": "img/sr/致长夜的星光.png"
+            },
+            {
+                "title": "谐乐静默之后",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/0f/j1i577njeg5l5uxvsh18git9hl4cj3k.png/112px-%E8%B0%90%E4%B9%90%E9%9D%99%E9%BB%98%E4%B9%8B%E5%90%8E.png",
+                "img_path": "img/sr/谐乐静默之后.png"
+            },
+            {
+                "title": "在蓝天下",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/c/ce/arvbljps9qru3k4gcnj5wn39frbt169.png/112px-%E5%9C%A8%E8%93%9D%E5%A4%A9%E4%B8%8B.png",
+                "img_path": "img/sr/在蓝天下.png"
+            },
+            {
+                "title": "「我」的诞生",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/3/3d/1tn2g6gigtqq1xyt1502xtn0gjz2q9d.png/112px-%E3%80%8C%E6%88%91%E3%80%8D%E7%9A%84%E8%AF%9E%E7%94%9F.png",
+                "img_path": "img/sr/「我」的诞生.png"
+            }
+        ]
+    }
+]
