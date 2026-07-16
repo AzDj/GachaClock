@@ -1,7 +1,12 @@
 import { Card, CardBody } from '@heroui/react';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
-import { getHistoryRoleNames, type HistoryRoleDisplay, normalizeHistoryRoleName } from '@/utils/pool-role';
+import {
+  getHistoryRoleImages,
+  getHistoryRoleNames,
+  type HistoryRoleDisplay,
+  normalizeHistoryRoleName,
+} from '@/utils/pool-role';
 
 export interface CardPoolProps {
   historyList: any[];
@@ -102,23 +107,30 @@ const PoolCard = ({ item }: { item: any }) => {
   );
 };
 
-const RoleTile = ({ role }: { role: HistoryRoleDisplay }) => (
-  <div className="flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2">
-    {role.img ? (
-      <img
-        alt={role.title}
-        className="h-12 w-12 shrink-0 rounded-md object-cover object-top"
-        loading="lazy"
-        src={role.img}
-      />
-    ) : (
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600">
-        {role.title.slice(0, 1)}
-      </div>
-    )}
-    <span className="min-w-0 break-words text-sm font-medium leading-tight text-default-700">{role.title}</span>
-  </div>
-);
+const RoleTile = ({ role }: { role: HistoryRoleDisplay }) => {
+  const [imageFailed, setImageFailed] = useState(false);
+  const shouldShowImage = role.img && !imageFailed;
+
+  return (
+    <div className="flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2">
+      {shouldShowImage ? (
+        <img
+          alt={role.title}
+          className="h-12 w-12 shrink-0 rounded-md object-cover object-top"
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          src={role.img}
+          onError={() => setImageFailed(true)}
+        />
+      ) : (
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600">
+          {role.title.slice(0, 1)}
+        </div>
+      )}
+      <span className="min-w-0 break-words text-sm font-medium leading-tight text-default-700">{role.title}</span>
+    </div>
+  );
+};
 
 function getPoolGroupKey(item: any) {
   return [item.type ?? '', item.title ?? '', item.timer ?? ''].join('|');
@@ -157,10 +169,11 @@ function getDisplayRoles(item: any) {
   }
 
   const roleNameList = getHistoryRoleNames(item.s || item.title);
+  const roleImageList = getHistoryRoleImages(item.s_imgs);
 
-  return roleNameList.map((roleName) => ({
+  return roleNameList.map((roleName, index) => ({
     title: roleName,
-    img: item.img,
+    img: roleImageList[index] || item.img,
   }));
 }
 
