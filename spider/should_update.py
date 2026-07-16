@@ -1,11 +1,12 @@
 import json
 import os
-import re
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 from pathlib import Path
 
+from spider.arknights_current import get_arknights_maintenance_end_time
+from spider.pool_time import LOCAL_TIMEZONE, extract_end_time
 
-LOCAL_TIMEZONE = timezone(timedelta(hours=8))
+
 DATA_DIR = Path(__file__).resolve().parent / "data"
 AUTO_GAMES = ["zzz", "sr", "ww", "ys", "arknights"]
 MANUAL_GAMES = ["endfield"]
@@ -39,27 +40,6 @@ def parse_force_games(value):
     return selected_games
 
 
-def parse_datetime(value):
-    normalized_value = re.sub(r"\s+", " ", str(value or "").strip())
-    normalized_value = normalized_value.replace("-", "/")
-    for fmt in ("%Y/%m/%d %H:%M:%S", "%Y/%m/%d %H:%M"):
-        try:
-            return datetime.strptime(normalized_value, fmt).replace(tzinfo=LOCAL_TIMEZONE)
-        except ValueError:
-            continue
-    return None
-
-
-def extract_end_time(timer):
-    if isinstance(timer, list) and len(timer) >= 2:
-        return parse_datetime(timer[-1])
-
-    if isinstance(timer, str) and "~" in timer:
-        return parse_datetime(timer.rsplit("~", 1)[-1])
-
-    return None
-
-
 def resolve_data_file(relative_path):
     normalized_path = str(relative_path).replace("\\", "/")
     if normalized_path.startswith("data/"):
@@ -67,10 +47,16 @@ def resolve_data_file(relative_path):
     return DATA_DIR / normalized_path
 
 
-def get_game_end_time(game, relative_path):
+def get_game_end_time(game, relative_path, current_time=None):
     data_file = resolve_data_file(relative_path)
     with data_file.open("r", encoding="utf-8") as file:
         pool_list = json.load(file)
+
+    if game == "arknights":
+        return get_arknights_maintenance_end_time(
+            pool_list,
+            current_time or datetime.now(LOCAL_TIMEZONE),
+        )
 
     end_time_list = [
         end_time
@@ -121,8 +107,11 @@ def main():
             status_messages.append(f"{game}: meta 缺失，纳入维护")
             continue
 
-        end_time = get_game_end_time(game, meta[game])
-        if now >= end_time:
+        end_time = get_game_end_time(game, meta[game], now)
+        if end_time is None:
+            due_games.append(game)
+            status_messages.append(f"{game}: 没有当前限时卡池结束时间，纳入维护")
+        elif now >= end_time:
             due_games.append(game)
             status_messages.append(f"{game}: 已到期 {end_time.isoformat()}")
         else:

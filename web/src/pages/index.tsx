@@ -249,18 +249,18 @@ export default function IndexPage() {
     }
 
     const currentTime = new Date().getTime();
+    const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
+
+    if (finiteCurrentList.length > 0) {
+      return finiteCurrentList;
+    }
+
     const currentDateList = key === 'arknights'
       ? data.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
       : [];
 
     if (currentDateList.length > 0) {
       return currentDateList;
-    }
-
-    const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
-
-    if (finiteCurrentList.length > 0) {
-      return finiteCurrentList;
     }
 
     const ambiguousCurrentList = data.filter((item: any) => isTimerAmbiguousAndUnexpired(item.timer, currentTime));

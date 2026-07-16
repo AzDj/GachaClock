@@ -9,6 +9,10 @@ import os
 import json
 import requests
 import base64
+from datetime import datetime
+
+from spider.arknights_current import merge_arknights_history_items
+from spider.pool_time import LOCAL_TIMEZONE
 
 data_dir = "data"
 img_dir = "img"
@@ -187,22 +191,34 @@ class HistoryPipeline:
             # 检查目录是否存在，如果不存在则创建
             if not os.path.exists(directory):
                 os.makedirs(directory)
-            self.file = open(file_name, "w", encoding="utf-8")
         except Exception as e:
             print(f"Failed to open file: {e}")
 
         # 爬虫结束时将数据写入文件并关闭文件
-        if hasattr(self, "file"):
+        if hasattr(self, "file_name"):
             try:
                 # 将 SpiderItem 转换为字典
                 serialized_items = [dict(item) for item in self.items]
-                self.file.write(
-                    json.dumps(serialized_items, ensure_ascii=False, indent=4)
-                )
+                serialized_items = self.merge_history_items(spider, self.file_name, serialized_items)
+                with open(self.file_name, "w", encoding="utf-8") as file:
+                    file.write(
+                        json.dumps(serialized_items, ensure_ascii=False, indent=4)
+                    )
             except Exception as e:
                 print(f"Failed to write to file: {e}")
-            finally:
-                self.file.close()
+
+    def merge_history_items(self, spider, file_name, serialized_items):
+        if spider.name != "arknights/history" or not os.path.exists(file_name):
+            return serialized_items
+
+        with open(file_name, "r", encoding="utf-8") as file:
+            existing_items = json.load(file)
+
+        return merge_arknights_history_items(
+            existing_items,
+            serialized_items,
+            datetime.now(LOCAL_TIMEZONE),
+        )
 
 
 class HistoryMetaPipeline(HistoryPipeline):
