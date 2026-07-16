@@ -1,5 +1,18 @@
 [
     {
+        "img": "https://media.prts.wiki/thumb/7/72/%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%B7%B7%E6%B2%8C.png/600px-%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%B7%B7%E6%B2%8C.png?v=qh34a9rmn5y4qtjv10rf8zlddg2daug",
+        "title": "确定性混沌",
+        "type": "角色",
+        "version": "2026-07-10 限时寻访",
+        "timer": "2026-07-10 12:00 ~ 2026-07-24 03:59",
+        "s": "谬因",
+        "a": [
+            "佩德洛",
+            "钼铅"
+        ],
+        "img_path": "img/arknights/history/确定性混沌.png"
+    },
+    {
         "img": "https://media.prts.wiki/thumb/1/1e/%E8%81%94%E5%90%88%E8%A1%8C%E5%8A%A822.jpg/600px-%E8%81%94%E5%90%88%E8%A1%8C%E5%8A%A822.jpg?v=m351gukgxyi8hvzdh694lncor7gfhx8",
         "title": "联合行动22",
         "type": "角色",
@@ -1607,6 +1620,34 @@
             "铎铃"
         ],
         "img_path": "img/arknights/history/干员轮换卡池175.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/a/a0/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A070.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A070.jpg?v=n41kcvmspmquunrz81of1lmamkhk3gl",
+        "title": "中坚干员轮换卡池70",
+        "type": "角色",
+        "version": "2026-07-09 常驻中坚寻访&中坚甄选",
+        "timer": "2026-07-09 04:00 ~ 2026-07-23 03:59",
+        "s": "煌",
+        "a": [
+            "狮蝎",
+            "送葬人",
+            "食铁兽"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池70.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/a/a0/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A070.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A070.jpg?v=n41kcvmspmquunrz81of1lmamkhk3gl",
+        "title": "中坚干员轮换卡池70",
+        "type": "角色",
+        "version": "2026-07-09 常驻中坚寻访&中坚甄选",
+        "timer": "2026-07-09 04:00 ~ 2026-07-23 03:59",
+        "s": "麦哲伦",
+        "a": [
+            "狮蝎",
+            "送葬人",
+            "食铁兽"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池70.png"
     },
     {
         "img": "https://media.prts.wiki/thumb/4/41/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A069.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A069.jpg?v=217qmrhke7h7zuob2u2lmpvzjrscqc0",
