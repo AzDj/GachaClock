@@ -250,9 +250,11 @@ export default function IndexPage() {
 
     const currentTime = new Date().getTime();
     const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
+    const finiteLimitedCurrentList = finiteCurrentList.filter((item: any) => !isPermanentHistoryPool(item));
+    const permanentCurrentList = finiteCurrentList.filter(isPermanentHistoryPool);
 
-    if (finiteCurrentList.length > 0) {
-      return finiteCurrentList;
+    if (finiteLimitedCurrentList.length > 0) {
+      return appendPermanentHistoryPools(finiteLimitedCurrentList, permanentCurrentList);
     }
 
     const currentDateList = key === 'arknights'
@@ -260,12 +262,29 @@ export default function IndexPage() {
       : [];
 
     if (currentDateList.length > 0) {
-      return currentDateList;
+      return appendPermanentHistoryPools(currentDateList, permanentCurrentList);
     }
 
     const ambiguousCurrentList = data.filter((item: any) => isTimerAmbiguousAndUnexpired(item.timer, currentTime));
 
-    return ambiguousCurrentList;
+    if (ambiguousCurrentList.length > 0) {
+      return appendPermanentHistoryPools(ambiguousCurrentList, permanentCurrentList);
+    }
+
+    return finiteCurrentList;
+  }
+
+  function appendPermanentHistoryPools(currentList: any[], permanentList: any[]) {
+    const currentSet = new Set(currentList);
+    const supplementList = permanentList.filter((item) => !currentSet.has(item));
+
+    return [...currentList, ...supplementList];
+  }
+
+  function isPermanentHistoryPool(item: any) {
+    const endTimer = `${item?.timer ?? ''}`.split('~')[1]?.trim();
+
+    return endTimer === '长期';
   }
 
   function selectNearestCurrentHistoryItem(data: any[]) {

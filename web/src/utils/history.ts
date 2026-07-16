@@ -75,11 +75,15 @@ function isVersionGroupOpened<T extends { timer?: string }>(historyList: T[], cu
     .map((item) => getTimerRange(`${item.timer ?? ''}`).start)
     .filter(Number.isFinite);
 
-  if (finiteStartList.length === 0) {
+  if (finiteStartList.some((startTime) => startTime <= currentTime)) {
     return true;
   }
 
-  return Math.min(...finiteStartList) <= currentTime;
+  if (historyList.some((item) => isTimerAmbiguousAndUnexpired(`${item.timer ?? ''}`, currentTime))) {
+    return true;
+  }
+
+  return finiteStartList.length === 0;
 }
 
 function getLocalDayRange(currentTime: number) {
