@@ -1,9 +1,19 @@
+from collections import defaultdict
+
 from spider.pool_time import (
     extract_end_time,
+    extract_start_time,
     is_timer_ambiguous_and_unexpired,
     is_timer_overlapping_current_day,
     is_timer_started_and_unexpired,
 )
+
+
+ARKNIGHTS_POSITION_SECTIONS = {
+    "限时寻访",
+    "常驻标准寻访",
+    "常驻中坚寻访&中坚甄选",
+}
 
 
 def select_current_arknights_items(pool_list, current_time):
@@ -45,17 +55,29 @@ def get_arknights_maintenance_end_time(pool_list, current_time):
 
 
 def merge_arknights_history_items(existing_items, fetched_items, current_time):
-    protected_map = {
-        get_arknights_item_key(item): item
-        for item in select_current_arknights_items(existing_items, current_time)
-    }
+    protected_position_map = defaultdict(list)
+    for item in select_current_arknights_items(existing_items, current_time):
+        position_key = get_arknights_position_key(item)
+        if position_key is not None:
+            protected_position_map[position_key].append(item)
+
+    emitted_protected_positions = set()
     seen_keys = set()
     merged_items = []
 
     for item in fetched_items:
-        item_key = get_arknights_item_key(item)
-        merged_items.append(protected_map.get(item_key, item))
-        seen_keys.add(item_key)
+        position_key = get_arknights_position_key(item)
+        if position_key in protected_position_map:
+            if position_key not in emitted_protected_positions:
+                for protected_item in protected_position_map[position_key]:
+                    merged_items.append(protected_item)
+                    seen_keys.add(get_arknights_item_key(protected_item))
+                emitted_protected_positions.add(position_key)
+            seen_keys.add(get_arknights_item_key(item))
+            continue
+
+        merged_items.append(item)
+        seen_keys.add(get_arknights_item_key(item))
 
     for item in existing_items:
         item_key = get_arknights_item_key(item)
@@ -66,6 +88,26 @@ def merge_arknights_history_items(existing_items, fetched_items, current_time):
     return merged_items
 
 
+def get_arknights_position_key(item):
+    section = get_arknights_section(item)
+    if section not in ARKNIGHTS_POSITION_SECTIONS:
+        return None
+
+    start_time = extract_start_time(item.get("timer"))
+    if start_time is None:
+        return None
+
+    return section, start_time.isoformat()
+
+
+def get_arknights_section(item):
+    version = str(item.get("version", ""))
+    if " " not in version:
+        return version
+
+    return version.split(" ", 1)[1]
+
+
 def get_arknights_item_key(item):
     s_value = item.get("s")
     if isinstance(s_value, list):
@@ -73,6 +115,7 @@ def get_arknights_item_key(item):
 
     return (
         str(item.get("title", "")),
+        str(item.get("version", "")),
         str(item.get("timer", "")),
         str(s_value or ""),
     )

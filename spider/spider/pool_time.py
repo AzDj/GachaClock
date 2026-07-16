@@ -38,6 +38,10 @@ def extract_end_time(timer):
     return get_timer_range(timer)[1]
 
 
+def extract_start_time(timer):
+    return get_timer_range(timer)[0]
+
+
 def is_timer_started_and_unexpired(timer, current_time):
     start_time, end_time = get_timer_range(timer)
     local_current_time = ensure_local_timezone(current_time)
