@@ -159,7 +159,7 @@ function getDisplayRoles(item: any) {
     ? item.roles
         .map((role: any) => ({
           title: normalizeHistoryRoleName(role?.title),
-          img: role?.img,
+          img: role?.img || item.img,
         }))
         .filter((role: HistoryRoleDisplay) => role.title)
     : [];
