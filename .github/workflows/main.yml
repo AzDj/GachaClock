@@ -47,6 +47,8 @@ jobs:
     steps:
       - name: 检出代码
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: 设置 Python
         uses: actions/setup-python@v6
@@ -87,8 +89,22 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add spider/data spider/img
           if [ -n "$(git status --porcelain spider/data spider/img)" ]; then
+            target_branch="${GITHUB_REF_NAME:-main}"
             git commit -m "更新卡池数据 [skip pages]"
-            git push
+            if git push origin "HEAD:${target_branch}"; then
+              exit 0
+            fi
+
+            for attempt in 1 2; do
+              echo "远端分支已有新提交，执行 rebase 后重试推送：第 ${attempt} 次"
+              git pull --rebase origin "${target_branch}"
+              if git push origin "HEAD:${target_branch}"; then
+                exit 0
+              fi
+            done
+
+            echo "重试后仍无法推送，请检查远端分支是否持续有新提交或存在 rebase 冲突。"
+            exit 1
           else
             echo "没有新的卡池数据需要提交。"
           fi
