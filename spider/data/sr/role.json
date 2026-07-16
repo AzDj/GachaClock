@@ -310,6 +310,19 @@
         "chara_size": "成女"
     },
     {
+        "title": "姬子•启行",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/7/7d/ob5mxnuhw3n4idipzy0e9slfp86cx80.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/bb/72z2os7gvca2cvoijrxtaasakwpfff1.png/900px-%E5%A7%AC%E5%AD%90%E2%80%A2%E5%90%AF%E8%A1%8C%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/1/15/b84ivhpre86fjt564twtn4f6j3f73vl.png"
+        ],
+        "chara_rarity": "5星",
+        "chara_type": "智识",
+        "chara_element": "火",
+        "chara_load_version": "4.4",
+        "chara_size": "成女"
+    },
+    {
         "title": "娜塔莎",
         "simple_img": "https://patchwiki.biligame.com/images/sr/2/23/b5ljww54yzx6vtb804y87kkhyl7g4sl.png",
         "promotion_img": [

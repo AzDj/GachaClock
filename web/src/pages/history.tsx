@@ -6,6 +6,12 @@ import {
   filterOpenedHistoryItems,
   getVersionFamily,
 } from '@/utils/history';
+import {
+  getHistoryRoleImages,
+  getHistoryRoleNames,
+  normalizeHistoryRoleValue,
+  type HistoryRoleDisplay,
+} from '@/utils/pool-role';
 import { Accordion, AccordionItem } from '@heroui/react';
 import { groupBy } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
@@ -53,22 +59,29 @@ export default function HistoryPage() {
             versionGroup[key].forEach((item) => {
               // console.log(`item::: ${item.s}`, item);
               console.log(`role::: ${key}`, role);
-              const roleName = Array.isArray(item['s']) ? item['s'][0] : item['s'];
-              const promotionImg = role?.[roleName]?.['promotion_img'];
-              const simpleImg = role?.[roleName]?.['simple_img'];
-              item['img'] = promotionImg?.[1] || promotionImg?.[0] || item['img_path'] || item['img'] || simpleImg;
+              const roleNameList = getHistoryRoleNames(item['s']);
+              const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
+              const roleList = roleNameList.map((roleName, index) => ({
+                title: roleName,
+                img: getRoleImage(role?.[roleName]) || historyRoleImageList[index],
+              }));
+              const primaryRoleImg = roleList.find((roleItem) => roleItem.img)?.img;
+
+              item['s'] = normalizeHistoryRoleValue(item['s']);
+              item['roles'] = roleList;
+              item['img'] = primaryRoleImg || item['img_path'] || item['img'];
             });
 
-            // 没有图片的再排除
-            versionGroup[key] = versionGroup[key].filter((item) => item.img !== '' && item.img);
+            // 角色图未抓到时仍保留卡池，卡片会用角色名占位。
+            versionGroup[key] = versionGroup[key].filter((item) => item.img || item.roles?.length > 0);
 
             // 设置title
             const roleNames = versionGroup[key]
               .filter((item) => item.type === '角色')
-              .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s]))
+              .flatMap((item) => getHistoryRoleNames(item.s))
               .filter(Boolean);
             const fallbackNames = versionGroup[key]
-              .flatMap((item) => (Array.isArray(item.s) ? item.s : [item.s || item.title]))
+              .flatMap((item) => getHistoryRoleNames(item.s || item.title))
               .filter(Boolean);
             const displayNames = roleNames.length > 0 ? roleNames : fallbackNames;
 
@@ -128,6 +141,12 @@ export default function HistoryPage() {
     }
 
     return `/${value}`;
+  }
+
+  function getRoleImage(roleInfo: any): HistoryRoleDisplay['img'] {
+    const promotionImg = roleInfo?.['promotion_img'];
+
+    return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
   }
 
   return (

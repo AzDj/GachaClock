@@ -5,11 +5,20 @@
         "type": "角色",
         "version": "4.4下半",
         "timer": "2026/08/05 12:00 ~ 2026/08/25 15:00",
-        "s": "刻律德菈",
+        "s": [
+            "刻律德菈",
+            "那刻夏",
+            "砂金"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/ca/n4rihkvayctcshy7x77eyvyaahuohwq.png/45px-%E5%88%BB%E5%BE%8B%E5%BE%B7%E8%8F%88.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c7/f3udn1bfun9og7a2h8nkabbom5kh53b.png/45px-%E9%82%A3%E5%88%BB%E5%A4%8F.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/b88dlc8dr8gocikr1x7gpfke3m2n0q0.png/45px-%E7%A0%82%E9%87%91.png"
+        ],
         "a": [
+            "貊泽",
             "寒鸦",
-            "希露瓦",
-            "貊泽"
+            "希露瓦"
         ],
         "img_path": ""
     },
@@ -19,11 +28,20 @@
         "type": "武器",
         "version": "4.4下半",
         "timer": "2026/08/05 12:00 ~ 2026/08/25 15:00",
-        "s": "金血铭刻的时代",
+        "s": [
+            "金血铭刻的时代",
+            "生命当付之一炬",
+            "命运从未公平"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8a/qo2qaon6v5ard8o3fp1a31id7u91nzb.png/45px-%E9%87%91%E8%A1%80%E9%93%AD%E5%88%BB%E7%9A%84%E6%97%B6%E4%BB%A3.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/loqu6wivhy1hsvz57b5j6a2rsd4nz3w.png/45px-%E7%94%9F%E5%91%BD%E5%BD%93%E4%BB%98%E4%B9%8B%E4%B8%80%E7%82%AC.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/63/fqe7u18gzj9w4dzckopxc8izgczrbat.png/45px-%E5%91%BD%E8%BF%90%E4%BB%8E%E6%9C%AA%E5%85%AC%E5%B9%B3.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "谐乐静默之后",
             "在蓝天下",
-            "谐乐静默之后"
+            "「我」的诞生"
         ],
         "img_path": ""
     },
@@ -33,7 +51,10 @@
         "type": "角色",
         "version": "4.4上半",
         "timer": "2026/07/24 12:00 ~ 长期",
-        "s": "文件:吉尔伽美什.png",
+        "s": "吉尔伽美什",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/84/g49nylsq1e2lpcpgaquti1docmdzyqw.png/45px-%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -44,6 +65,9 @@
         "version": "4.4上半",
         "timer": "2026/07/24 12:00 ~ 长期",
         "s": "所见即我",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d8/iqmyf2szes31hnghs4yjxxntr0koq5a.png/45px-%E6%89%80%E8%A7%81%E5%8D%B3%E6%88%91.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -53,7 +77,10 @@
         "type": "角色",
         "version": "4.4上半",
         "timer": "2026/07/24 12:00 ~ 长期",
-        "s": "文件:远坂凛.png",
+        "s": "远坂凛",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0b/spm3ss3abb1oqbyrd66hbpu6f73491e.png/45px-%E8%BF%9C%E5%9D%82%E5%87%9B.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -64,6 +91,9 @@
         "version": "4.4上半",
         "timer": "2026/07/24 12:00 ~ 长期",
         "s": "星火悄然闪耀",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/99/sfo34bvc1zxghbadmgn4ugnr66qpr2p.png/45px-%E6%98%9F%E7%81%AB%E6%82%84%E7%84%B6%E9%97%AA%E8%80%80.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -73,11 +103,20 @@
         "type": "角色",
         "version": "4.4上半",
         "timer": "4.4版本更新后 ~ 2026/08/05 11:59",
-        "s": "火花",
+        "s": [
+            "火花",
+            "丹恒•腾荒",
+            "长夜月"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1d/guxpvan8rcg0hoy9rv9upi4kw60kd8z.png/45px-%E7%81%AB%E8%8A%B1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/2/28/96lbtozg3f95jcjz3w3hrgmqdnq709k.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E8%85%BE%E8%8D%92.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/qa8t3g4e1iyx0k8mc6gj6nmblljhgoj.png/45px-%E9%95%BF%E5%A4%9C%E6%9C%88.png"
+        ],
         "a": [
+            "貊泽",
             "寒鸦",
-            "希露瓦",
-            "貊泽"
+            "希露瓦"
         ],
         "img_path": ""
     },
@@ -87,11 +126,20 @@
         "type": "武器",
         "version": "4.4上半",
         "timer": "4.4版本更新后 ~ 2026/08/05 11:59",
-        "s": "花花世界迷人眼",
+        "s": [
+            "花花世界迷人眼",
+            "纵然山河万程",
+            "致长夜的星光"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/cgd7w378smjzdhfvjgrrgzctwj64zur.png/45px-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E8%BF%B7%E4%BA%BA%E7%9C%BC.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f7/m6y2w1lm19sm5qfmhpa50u5gpgx2mpo.png/45px-%E7%BA%B5%E7%84%B6%E5%B1%B1%E6%B2%B3%E4%B8%87%E7%A8%8B.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/0/05/4xatse14l9zqx8778ne2fakwn9n58kf.png/45px-%E8%87%B4%E9%95%BF%E5%A4%9C%E7%9A%84%E6%98%9F%E5%85%89.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "谐乐静默之后",
             "在蓝天下",
-            "谐乐静默之后"
+            "「我」的诞生"
         ],
         "img_path": ""
     },
@@ -102,10 +150,13 @@
         "version": "4.4上半",
         "timer": "4.4版本更新后 ~ 2026/08/25 15:00",
         "s": "姬子•启行",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f6/dvg8g9rwdmgb8gzcnrmk9zd4wi0fiug.png/45px-%E5%A7%AC%E5%AD%90%E2%80%A2%E5%90%AF%E8%A1%8C.png"
+        ],
         "a": [
+            "貊泽",
             "寒鸦",
-            "希露瓦",
-            "貊泽"
+            "希露瓦"
         ],
         "img_path": ""
     },
@@ -116,10 +167,13 @@
         "version": "4.4上半",
         "timer": "4.4版本更新后 ~ 2026/08/25 15:00",
         "s": "当一颗星照亮夜空",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/db/11bye2r19t8nx99f9apw2h7oqmli77l.png/45px-%E5%BD%93%E4%B8%80%E9%A2%97%E6%98%9F%E7%85%A7%E4%BA%AE%E5%A4%9C%E7%A9%BA.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "谐乐静默之后",
             "在蓝天下",
-            "谐乐静默之后"
+            "「我」的诞生"
         ],
         "img_path": ""
     },
@@ -130,6 +184,9 @@
         "version": "4.3下半",
         "timer": "2026/06/24 12:00 ~ 2026/07/14 15:00",
         "s": "白厄",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/71ifmfc3f77xp5mrsnww56mto2ul2qz.png/45px-%E7%99%BD%E5%8E%84.png"
+        ],
         "a": [
             "三月七•存护",
             "阿兰",
@@ -144,9 +201,12 @@
         "version": "4.3下半",
         "timer": "2026/06/24 12:00 ~ 2026/07/14 15:00",
         "s": "黎明恰如此燃烧",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/3gqlqkwbprln81uwjo4p0sqw8ychh7y.png/45px-%E9%BB%8E%E6%98%8E%E6%81%B0%E5%A6%82%E6%AD%A4%E7%87%83%E7%83%A7.png"
+        ],
         "a": [
-            "点个关注吧！",
             "秘密誓心",
+            "点个关注吧！",
             "舞！舞！舞！"
         ],
         "img_path": ""
@@ -158,6 +218,9 @@
         "version": "4.3下半",
         "timer": "2026/06/24 12:00 ~ 2026/07/14 15:00",
         "s": "昔涟",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ed/ctq3torprjw781nkmgoxshovz2wl1dw.png/45px-%E6%98%94%E6%B6%9F.png"
+        ],
         "a": [
             "三月七•存护",
             "阿兰",
@@ -172,9 +235,12 @@
         "version": "4.3下半",
         "timer": "2026/06/24 12:00 ~ 2026/07/14 15:00",
         "s": "爱如此刻永恒",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/92/lpqsfdw06gwd24gvmyjtwyefas3iz06.png/45px-%E7%88%B1%E5%A6%82%E6%AD%A4%E5%88%BB%E6%B0%B8%E6%81%92.png"
+        ],
         "a": [
-            "点个关注吧！",
             "秘密誓心",
+            "点个关注吧！",
             "舞！舞！舞！"
         ],
         "img_path": ""
@@ -186,10 +252,13 @@
         "version": "4.3上半",
         "timer": "4.3版本更新后 ~ 2026/06/24 11:59",
         "s": "爻光",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/dd/g9zc7p0op80hxgy12p7pgbot8wof7bt.png/45px-%E7%88%BB%E5%85%89.png"
+        ],
         "a": [
-            "停云",
+            "桑博",
             "卢卡",
-            "桑博"
+            "停云"
         ],
         "img_path": ""
     },
@@ -200,9 +269,12 @@
         "version": "4.3上半",
         "timer": "4.3版本更新后 ~ 2026/06/24 11:59",
         "s": "当她决定看见",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/14/n0ysea89xw6wdsu4utz3tuj8wumfjmx.png/45px-%E5%BD%93%E5%A5%B9%E5%86%B3%E5%AE%9A%E7%9C%8B%E8%A7%81.png"
+        ],
         "a": [
-            "余生的第一天",
             "晚安与睡颜",
+            "余生的第一天",
             "鼹鼠党欢迎你"
         ],
         "img_path": ""
@@ -214,10 +286,13 @@
         "version": "4.3上半",
         "timer": "4.3版本更新后 ~ 2026/06/24 11:59",
         "s": "千冶•刃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6d/fmmvaxj6k2orw5zbw9y3ur7z6b7cdag.png/45px-%E5%8D%83%E5%86%B6%E2%80%A2%E5%88%83.png"
+        ],
         "a": [
-            "停云",
+            "桑博",
             "卢卡",
-            "桑博"
+            "停云"
         ],
         "img_path": ""
     },
@@ -228,9 +303,12 @@
         "version": "4.3上半",
         "timer": "4.3版本更新后 ~ 2026/06/24 11:59",
         "s": "灼尽炼狱的新骸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d4/n4cu3qdsxorat732t0eow0aiu4ty6ea.png/45px-%E7%81%BC%E5%B0%BD%E7%82%BC%E7%8B%B1%E7%9A%84%E6%96%B0%E9%AA%B8.png"
+        ],
         "a": [
-            "余生的第一天",
             "晚安与睡颜",
+            "余生的第一天",
             "鼹鼠党欢迎你"
         ],
         "img_path": ""
@@ -241,7 +319,16 @@
         "type": "角色",
         "version": "4.2下半",
         "timer": "2026/05/13 12:00 ~ 2026/06/01 03:59",
-        "s": "缇宝",
+        "s": [
+            "缇宝",
+            "星期日",
+            "飞霄"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/16/s15opurtx1s67wf670orxm0ysqnr7nk.png/45px-%E7%BC%87%E5%AE%9D.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8d/65lqy256fqzq7jiaznl1bys2ito0oez.png/45px-%E6%98%9F%E6%9C%9F%E6%97%A5.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/iq1o5mvremm66200xe7a5klm5lb1vc4.png/45px-%E9%A3%9E%E9%9C%84.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -251,7 +338,16 @@
         "type": "武器",
         "version": "4.2下半",
         "timer": "2026/05/13 12:00 ~ 2026/06/01 03:59",
-        "s": "如果时间是一朵花",
+        "s": [
+            "如果时间是一朵花",
+            "回到大地的飞行",
+            "我将，巡征追猎"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/51/fj94fxdzp0nicnfsd5i0fagwq0vwslq.png/45px-%E5%A6%82%E6%9E%9C%E6%97%B6%E9%97%B4%E6%98%AF%E4%B8%80%E6%9C%B5%E8%8A%B1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/9u705gmkt4im18pajxkl8nspivu7x27.png/45px-%E5%9B%9E%E5%88%B0%E5%A4%A7%E5%9C%B0%E7%9A%84%E9%A3%9E%E8%A1%8C.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/53dgod1vym8rrl41k7pxb5w6jri22aj.png/45px-%E6%88%91%E5%B0%86%EF%BC%8C%E5%B7%A1%E5%BE%81%E8%BF%BD%E7%8C%8E.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -262,6 +358,9 @@
         "version": "4.2下半",
         "timer": "2026/05/13 12:00 ~ 2026/06/01 03:59",
         "s": "绯英",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/eb/cxbonjd73t3awbiv7w19iyztg8nim9k.png/45px-%E7%BB%AF%E8%8B%B1.png"
+        ],
         "a": [
             "桂乃芬",
             "玲可",
@@ -276,10 +375,13 @@
         "version": "4.2下半",
         "timer": "2026/05/13 12:00 ~ 2026/06/01 03:59",
         "s": "邂逅于下一个花季",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/65/k5qsoohh4xowa56314irudnbp2d0rde.png/45px-%E9%82%82%E9%80%85%E4%BA%8E%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%B1%E5%AD%A3.png"
+        ],
         "a": [
-            "同一种心情",
+            "论剑",
             "记忆中的模样",
-            "论剑"
+            "同一种心情"
         ],
         "img_path": ""
     },
@@ -289,7 +391,16 @@
         "type": "角色",
         "version": "4.2上半",
         "timer": "4.2版本更新后 ~ 2026/05/13 11:59",
-        "s": "大丽花",
+        "s": [
+            "大丽花",
+            "遐蝶",
+            "流萤"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1c/nxx3bwgqdwdsp7k9dj0z5jxumr8a32h.png/45px-%E5%A4%A7%E4%B8%BD%E8%8A%B1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/johi69tjqhfyngs4cfkfsu2w8bomyiy.png/45px-%E9%81%90%E8%9D%B6.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6e/loo8cnidyavnbgut84xmcgth6vdl5a0.png/45px-%E6%B5%81%E8%90%A4.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -299,7 +410,16 @@
         "type": "武器",
         "version": "4.2上半",
         "timer": "4.2版本更新后 ~ 2026/05/13 11:59",
-        "s": "勿忘她的火焰",
+        "s": [
+            "勿忘她的火焰",
+            "让告别，更美一些",
+            "梦应归于何处"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1b/pgn803kkzah3x90ctxadm4xkk6f3z0a.png/45px-%E5%8B%BF%E5%BF%98%E5%A5%B9%E7%9A%84%E7%81%AB%E7%84%B0.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/3/3e/9rr2he9qn24t42twe0ij29w46rakykt.png/45px-%E8%AE%A9%E5%91%8A%E5%88%AB%EF%BC%8C%E6%9B%B4%E7%BE%8E%E4%B8%80%E4%BA%9B.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/97/9hgw5hentvblnrhzra15e143qbtjdv1.png/45px-%E6%A2%A6%E5%BA%94%E5%BD%92%E4%BA%8E%E4%BD%95%E5%A4%84.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -310,10 +430,13 @@
         "version": "4.2上半",
         "timer": "4.2版本更新后 ~ 2026/05/13 11:59",
         "s": "银狼LV.999",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e5/f70nc18yogu7nw1v4xrmgrc3b5t801j.png/45px-%E9%93%B6%E7%8B%BCLV.999.png"
+        ],
         "a": [
             "加拉赫",
-            "虎克",
-            "雪衣"
+            "雪衣",
+            "虎克"
         ],
         "img_path": ""
     },
@@ -324,10 +447,13 @@
         "version": "4.2上半",
         "timer": "4.2版本更新后 ~ 2026/05/13 11:59",
         "s": "欢迎来到银河城",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/bf/ksdznitvv9hb45s8hmg3xlip4eilxfs.png/45px-%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%93%B6%E6%B2%B3%E5%9F%8E.png"
+        ],
         "a": [
-            "猎物的视线",
             "芳华待灼",
-            "铭记于心的约定"
+            "铭记于心的约定",
+            "猎物的视线"
         ],
         "img_path": ""
     },
@@ -338,6 +464,9 @@
         "version": "4.1下半",
         "timer": "2026/04/08 12:00 ~ 2026/04/21 15:00",
         "s": "波提欧",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/da/5wtfcz4garqrmk9k3jbq0vc5x45lgu3.png/45px-%E6%B3%A2%E6%8F%90%E6%AC%A7.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -348,6 +477,9 @@
         "version": "4.1下半",
         "timer": "2026/04/08 12:00 ~ 2026/04/21 15:00",
         "s": "驶向第二次生命",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/i0df57yj4zoqi9ij944mc20innski09.png/45px-%E9%A9%B6%E5%90%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%94%9F%E5%91%BD.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -358,10 +490,13 @@
         "version": "4.1上半",
         "timer": "4.1版本更新后 ~ 2026/04/21 15:00",
         "s": "不死途",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/oha65dklgc3lfjlmazp0t5la8bdkqll.png/45px-%E4%B8%8D%E6%AD%BB%E9%80%94.png"
+        ],
         "a": [
-            "米沙",
             "艾丝妲",
-            "貊泽"
+            "貊泽",
+            "米沙"
         ],
         "img_path": ""
     },
@@ -372,10 +507,13 @@
         "version": "4.1上半",
         "timer": "4.1版本更新后 ~ 2026/04/21 15:00",
         "s": "一场谎言的终幕",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8a/38w5dwlm4wvfpkj5sohtc5ocvbti2ww.png/45px-%E4%B8%80%E5%9C%BA%E8%B0%8E%E8%A8%80%E7%9A%84%E7%BB%88%E5%B9%95.png"
+        ],
         "a": [
             "别让世界静下来",
-            "梦的蒙太奇",
-            "黑夜如影随行"
+            "黑夜如影随行",
+            "梦的蒙太奇"
         ],
         "img_path": ""
     },
@@ -386,6 +524,9 @@
         "version": "4.1上半",
         "timer": "4.1版本更新后 ~ 2026/04/08 11:59",
         "s": "风堇",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/btad3oegk6v46b3xswvvtl370ib8zbm.png/45px-%E9%A3%8E%E5%A0%87.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -396,6 +537,9 @@
         "version": "4.1上半",
         "timer": "4.1版本更新后 ~ 2026/04/08 11:59",
         "s": "愿虹光永驻天空",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c2/3ntgy78x59gaxaaerxxm4ud0t179dxu.png/45px-%E6%84%BF%E8%99%B9%E5%85%89%E6%B0%B8%E9%A9%BB%E5%A4%A9%E7%A9%BA.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -406,6 +550,9 @@
         "version": "4.0下半",
         "timer": "2026/03/03 12:00 ~ 2026/03/24 15:00",
         "s": "火花",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1d/guxpvan8rcg0hoy9rv9upi4kw60kd8z.png/45px-%E7%81%AB%E8%8A%B1.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -416,6 +563,9 @@
         "version": "4.0下半",
         "timer": "2026/03/03 12:00 ~ 2026/03/24 15:00",
         "s": "花花世界迷人眼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/cgd7w378smjzdhfvjgrrgzctwj64zur.png/45px-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E8%BF%B7%E4%BA%BA%E7%9C%BC.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -425,7 +575,16 @@
         "type": "角色",
         "version": "4.0下半",
         "timer": "2026/03/03 12:00 ~ 2026/03/24 15:00",
-        "s": "刻律德菈",
+        "s": [
+            "刻律德菈",
+            "乱破",
+            "花火"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/ca/n4rihkvayctcshy7x77eyvyaahuohwq.png/45px-%E5%88%BB%E5%BE%8B%E5%BE%B7%E8%8F%88.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0d/3wrmrv02fzul9srx9ft5r4ytbzh02ip.png/45px-%E4%B9%B1%E7%A0%B4.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/90/jf5yte1ote51iepifi8i75wifww5ybe.png/45px-%E8%8A%B1%E7%81%AB.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -435,7 +594,16 @@
         "type": "武器",
         "version": "4.0下半",
         "timer": "2026/03/03 12:00 ~ 2026/03/24 15:00",
-        "s": "金血铭刻的时代",
+        "s": [
+            "金血铭刻的时代",
+            "忍法帖•缭乱破魔",
+            "游戏尘寰"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8a/qo2qaon6v5ard8o3fp1a31id7u91nzb.png/45px-%E9%87%91%E8%A1%80%E9%93%AD%E5%88%BB%E7%9A%84%E6%97%B6%E4%BB%A3.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/2/2c/axmdvkiw05p8dsdlg4s0kvn5tjbkva8.png/45px-%E5%BF%8D%E6%B3%95%E5%B8%96%E2%80%A2%E7%BC%AD%E4%B9%B1%E7%A0%B4%E9%AD%94.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/cjkwkkdlpbyfu5rh292fgc5dl8c09wj.png/45px-%E6%B8%B8%E6%88%8F%E5%B0%98%E5%AF%B0.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -446,6 +614,9 @@
         "version": "4.0上半",
         "timer": "4.0版本更新后 ~ 2026/03/24 15:00",
         "s": "爻光",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/dd/g9zc7p0op80hxgy12p7pgbot8wof7bt.png/45px-%E7%88%BB%E5%85%89.png"
+        ],
         "a": [
             "佩拉",
             "寒鸦",
@@ -460,6 +631,9 @@
         "version": "4.0上半",
         "timer": "4.0版本更新后 ~ 2026/03/24 15:00",
         "s": "当她决定看见",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/14/n0ysea89xw6wdsu4utz3tuj8wumfjmx.png/45px-%E5%BD%93%E5%A5%B9%E5%86%B3%E5%AE%9A%E7%9C%8B%E8%A7%81.png"
+        ],
         "a": [
             "与行星相会",
             "决心如汗珠般闪耀",
@@ -473,7 +647,16 @@
         "type": "角色",
         "version": "4.0上半",
         "timer": "4.0版本更新后 ~ 2026/03/03 11:59",
-        "s": "长夜月",
+        "s": [
+            "长夜月",
+            "海瑟音",
+            "黑天鹅"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/qa8t3g4e1iyx0k8mc6gj6nmblljhgoj.png/45px-%E9%95%BF%E5%A4%9C%E6%9C%88.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/5/54/mukowg0x3h5ctho5ds5mmby4msrrhhf.png/45px-%E6%B5%B7%E7%91%9F%E9%9F%B3.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b8/qrev74l35vj8n7kwpcpr8ud9b41ni1a.png/45px-%E9%BB%91%E5%A4%A9%E9%B9%85.png"
+        ],
         "a": [
             "佩拉",
             "寒鸦",
@@ -487,7 +670,16 @@
         "type": "武器",
         "version": "4.0上半",
         "timer": "4.0版本更新后 ~ 2026/03/03 11:59",
-        "s": "致长夜的星光",
+        "s": [
+            "致长夜的星光",
+            "海洋为何而歌",
+            "重塑时光之忆"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/05/4xatse14l9zqx8778ne2fakwn9n58kf.png/45px-%E8%87%B4%E9%95%BF%E5%A4%9C%E7%9A%84%E6%98%9F%E5%85%89.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0b/ij2ybk71rf7huf2s2sb6hg4qtlaz3rd.png/45px-%E6%B5%B7%E6%B4%8B%E4%B8%BA%E4%BD%95%E8%80%8C%E6%AD%8C.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/1dqan418sbv4dtlcusymmi1rmtzgjrl.png/45px-%E9%87%8D%E5%A1%91%E6%97%B6%E5%85%89%E4%B9%8B%E5%BF%86.png"
+        ],
         "a": [
             "与行星相会",
             "决心如汗珠般闪耀",
@@ -502,10 +694,13 @@
         "version": "3.8额外",
         "timer": "2026/01/28 12:00 ~ 2026/02/12 15:00",
         "s": "阿格莱雅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b3/js5tt9qxs66y1o04vi921zmgsrt54le.png/45px-%E9%98%BF%E6%A0%BC%E8%8E%B1%E9%9B%85.png"
+        ],
         "a": [
-            "丹恒",
+            "驭空",
             "停云",
-            "驭空"
+            "丹恒"
         ],
         "img_path": ""
     },
@@ -516,6 +711,9 @@
         "version": "3.8额外",
         "timer": "2026/01/28 12:00 ~ 2026/02/12 15:00",
         "s": "将光阴织成黄金",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/6hiv3esq6merfws803g9uqkvh288d0c.png/45px-%E5%B0%86%E5%85%89%E9%98%B4%E7%BB%87%E6%88%90%E9%BB%84%E9%87%91.png"
+        ],
         "a": [
             "天才们的问候",
             "宇宙市场趋势",
@@ -530,10 +728,13 @@
         "version": "3.8额外",
         "timer": "2026/01/28 12:00 ~ 2026/02/12 15:00",
         "s": "星期日",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8d/65lqy256fqzq7jiaznl1bys2ito0oez.png/45px-%E6%98%9F%E6%9C%9F%E6%97%A5.png"
+        ],
         "a": [
-            "丹恒",
+            "驭空",
             "停云",
-            "驭空"
+            "丹恒"
         ],
         "img_path": ""
     },
@@ -544,6 +745,9 @@
         "version": "3.8额外",
         "timer": "2026/01/28 12:00 ~ 2026/02/12 15:00",
         "s": "回到大地的飞行",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/9u705gmkt4im18pajxkl8nspivu7x27.png/45px-%E5%9B%9E%E5%88%B0%E5%A4%A7%E5%9C%B0%E7%9A%84%E9%A3%9E%E8%A1%8C.png"
+        ],
         "a": [
             "天才们的问候",
             "宇宙市场趋势",
@@ -558,9 +762,12 @@
         "version": "3.8下半",
         "timer": "2026/01/07 12:00 ~ 2026/01/28 11:59",
         "s": "忘归人",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b7/knwf151e2owlehhkauisj3wlcpqg4gh.png/45px-%E5%BF%98%E5%BD%92%E4%BA%BA.png"
+        ],
         "a": [
-            "娜塔莎",
             "桑博",
+            "娜塔莎",
             "阿兰"
         ],
         "img_path": ""
@@ -572,10 +779,13 @@
         "version": "3.8下半",
         "timer": "2026/01/07 12:00 ~ 2026/01/28 11:59",
         "s": "长路终有归途",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/57/mw0hy38ydplne1x41r6kzyyz5watd2s.png/45px-%E9%95%BF%E8%B7%AF%E7%BB%88%E6%9C%89%E5%BD%92%E9%80%94.png"
+        ],
         "a": [
-            "一场术后对话",
             "天才们的休憩",
-            "鼹鼠党欢迎你"
+            "鼹鼠党欢迎你",
+            "一场术后对话"
         ],
         "img_path": ""
     },
@@ -586,9 +796,12 @@
         "version": "3.8下半",
         "timer": "2026/01/07 12:00 ~ 2026/01/28 11:59",
         "s": "灵砂",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/kwdehoxn9net3nsjwub5r16ix6ipofo.png/45px-%E7%81%B5%E7%A0%82.png"
+        ],
         "a": [
-            "娜塔莎",
             "桑博",
+            "娜塔莎",
             "阿兰"
         ],
         "img_path": ""
@@ -600,10 +813,13 @@
         "version": "3.8下半",
         "timer": "2026/01/07 12:00 ~ 2026/01/28 11:59",
         "s": "唯有香如故",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/85/bxpa26qskqqrzv0wjl8pupqxjhzdlg3.png/45px-%E5%94%AF%E6%9C%89%E9%A6%99%E5%A6%82%E6%95%85.png"
+        ],
         "a": [
-            "一场术后对话",
             "天才们的休憩",
-            "鼹鼠党欢迎你"
+            "鼹鼠党欢迎你",
+            "一场术后对话"
         ],
         "img_path": ""
     },
@@ -614,10 +830,13 @@
         "version": "3.8上半",
         "timer": "3.8版本更新后 ~ 2026/01/07 11:59",
         "s": "大丽花",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1c/nxx3bwgqdwdsp7k9dj0z5jxumr8a32h.png/45px-%E5%A4%A7%E4%B8%BD%E8%8A%B1.png"
+        ],
         "a": [
             "三月七•存护",
-            "加拉赫",
-            "卢卡"
+            "卢卡",
+            "加拉赫"
         ],
         "img_path": ""
     },
@@ -628,10 +847,13 @@
         "version": "3.8上半",
         "timer": "3.8版本更新后 ~ 2026/01/07 11:59",
         "s": "勿忘她的火焰",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1b/pgn803kkzah3x90ctxadm4xkk6f3z0a.png/45px-%E5%8B%BF%E5%BF%98%E5%A5%B9%E7%9A%84%E7%81%AB%E7%84%B0.png"
+        ],
         "a": [
-            "两个人的演唱会",
             "晚安与睡颜",
-            "记忆中的模样"
+            "记忆中的模样",
+            "两个人的演唱会"
         ],
         "img_path": ""
     },
@@ -642,10 +864,13 @@
         "version": "3.8上半",
         "timer": "3.8版本更新后 ~ 2026/01/07 11:59",
         "s": "流萤",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6e/loo8cnidyavnbgut84xmcgth6vdl5a0.png/45px-%E6%B5%81%E8%90%A4.png"
+        ],
         "a": [
             "三月七•存护",
-            "加拉赫",
-            "卢卡"
+            "卢卡",
+            "加拉赫"
         ],
         "img_path": ""
     },
@@ -656,10 +881,13 @@
         "version": "3.8上半",
         "timer": "3.8版本更新后 ~ 2026/01/07 11:59",
         "s": "梦应归于何处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/97/9hgw5hentvblnrhzra15e143qbtjdv1.png/45px-%E6%A2%A6%E5%BA%94%E5%BD%92%E4%BA%8E%E4%BD%95%E5%A4%84.png"
+        ],
         "a": [
-            "两个人的演唱会",
             "晚安与睡颜",
-            "记忆中的模样"
+            "记忆中的模样",
+            "两个人的演唱会"
         ],
         "img_path": ""
     },
@@ -669,7 +897,16 @@
         "type": "角色",
         "version": "3.7下半",
         "timer": "2025/11/26 12:00 ~ 2025/12/16 15:00",
-        "s": "白厄",
+        "s": [
+            "白厄",
+            "赛飞儿",
+            "万敌"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/71ifmfc3f77xp5mrsnww56mto2ul2qz.png/45px-%E7%99%BD%E5%8E%84.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e2/2b5rj10j02j58py04b3c4eegkmphntz.png/45px-%E8%B5%9B%E9%A3%9E%E5%84%BF.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d9/0dyo0uk3edcfpjbz82qbwep032ge0m4.png/45px-%E4%B8%87%E6%95%8C.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -679,7 +916,16 @@
         "type": "武器",
         "version": "3.7下半",
         "timer": "2025/11/26 12:00 ~ 2025/12/16 15:00",
-        "s": "黎明恰如此燃烧",
+        "s": [
+            "黎明恰如此燃烧",
+            "谎言在风中飘扬",
+            "血火啊，燃烧前路"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/3gqlqkwbprln81uwjo4p0sqw8ychh7y.png/45px-%E9%BB%8E%E6%98%8E%E6%81%B0%E5%A6%82%E6%AD%A4%E7%87%83%E7%83%A7.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/9a/ctt4qwt0buo5h3fglgsup7mw7girw82.png/45px-%E8%B0%8E%E8%A8%80%E5%9C%A8%E9%A3%8E%E4%B8%AD%E9%A3%98%E6%89%AC.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/64huga50u99yuma4mur1ha97y0bmqye.png/45px-%E8%A1%80%E7%81%AB%E5%95%8A%EF%BC%8C%E7%87%83%E7%83%A7%E5%89%8D%E8%B7%AF.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -689,7 +935,16 @@
         "type": "角色",
         "version": "3.7上半",
         "timer": "3.7版本更新后 ~ 2025/11/26 11:59",
-        "s": "风堇",
+        "s": [
+            "风堇",
+            "遐蝶",
+            "缇宝"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/btad3oegk6v46b3xswvvtl370ib8zbm.png/45px-%E9%A3%8E%E5%A0%87.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/johi69tjqhfyngs4cfkfsu2w8bomyiy.png/45px-%E9%81%90%E8%9D%B6.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/1/16/s15opurtx1s67wf670orxm0ysqnr7nk.png/45px-%E7%BC%87%E5%AE%9D.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -699,7 +954,16 @@
         "type": "武器",
         "version": "3.7上半",
         "timer": "3.7版本更新后 ~ 2025/11/26 11:59",
-        "s": "愿虹光永驻天空",
+        "s": [
+            "愿虹光永驻天空",
+            "让告别，更美一些",
+            "如果时间是一朵花"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c2/3ntgy78x59gaxaaerxxm4ud0t179dxu.png/45px-%E6%84%BF%E8%99%B9%E5%85%89%E6%B0%B8%E9%A9%BB%E5%A4%A9%E7%A9%BA.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/3/3e/9rr2he9qn24t42twe0ij29w46rakykt.png/45px-%E8%AE%A9%E5%91%8A%E5%88%AB%EF%BC%8C%E6%9B%B4%E7%BE%8E%E4%B8%80%E4%BA%9B.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/5/51/fj94fxdzp0nicnfsd5i0fagwq0vwslq.png/45px-%E5%A6%82%E6%9E%9C%E6%97%B6%E9%97%B4%E6%98%AF%E4%B8%80%E6%9C%B5%E8%8A%B1.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -710,10 +974,13 @@
         "version": "3.7上半",
         "timer": "3.7版本更新后 ~ 2025/12/16 15:00",
         "s": "昔涟",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ed/ctq3torprjw781nkmgoxshovz2wl1dw.png/45px-%E6%98%94%E6%B6%9F.png"
+        ],
         "a": [
-            "佩拉",
+            "貊泽",
             "玲可",
-            "貊泽"
+            "佩拉"
         ],
         "img_path": ""
     },
@@ -724,9 +991,12 @@
         "version": "3.7上半",
         "timer": "3.7版本更新后 ~ 2025/12/16 15:00",
         "s": "爱如此刻永恒",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/92/lpqsfdw06gwd24gvmyjtwyefas3iz06.png/45px-%E7%88%B1%E5%A6%82%E6%AD%A4%E5%88%BB%E6%B0%B8%E6%81%92.png"
+        ],
         "a": [
-            "两个人的演唱会",
             "故事的下一页",
+            "两个人的演唱会",
             "无边曼舞"
         ],
         "img_path": ""
@@ -738,10 +1008,13 @@
         "version": "3.6下半",
         "timer": "2025/10/15 12:00 ~ 2025/11/04 15:00",
         "s": "丹恒•腾荒",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/28/96lbtozg3f95jcjz3w3hrgmqdnq709k.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E8%85%BE%E8%8D%92.png"
+        ],
         "a": [
+            "素裳",
             "寒鸦",
-            "希露瓦",
-            "素裳"
+            "希露瓦"
         ],
         "img_path": ""
     },
@@ -752,9 +1025,12 @@
         "version": "3.6下半",
         "timer": "2025/10/15 12:00 ~ 2025/11/04 15:00",
         "s": "纵然山河万程",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f7/m6y2w1lm19sm5qfmhpa50u5gpgx2mpo.png/45px-%E7%BA%B5%E7%84%B6%E5%B1%B1%E6%B2%B3%E4%B8%87%E7%A8%8B.png"
+        ],
         "a": [
-            "唯有沉默",
             "朗道的选择",
+            "唯有沉默",
             "此时恰好"
         ],
         "img_path": ""
@@ -766,10 +1042,13 @@
         "version": "3.6下半",
         "timer": "2025/10/15 12:00 ~ 2025/11/04 15:00",
         "s": "那刻夏",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c7/f3udn1bfun9og7a2h8nkabbom5kh53b.png/45px-%E9%82%A3%E5%88%BB%E5%A4%8F.png"
+        ],
         "a": [
+            "素裳",
             "寒鸦",
-            "希露瓦",
-            "素裳"
+            "希露瓦"
         ],
         "img_path": ""
     },
@@ -780,9 +1059,12 @@
         "version": "3.6下半",
         "timer": "2025/10/15 12:00 ~ 2025/11/04 15:00",
         "s": "生命当付之一炬",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/loqu6wivhy1hsvz57b5j6a2rsd4nz3w.png/45px-%E7%94%9F%E5%91%BD%E5%BD%93%E4%BB%98%E4%B9%8B%E4%B8%80%E7%82%AC.png"
+        ],
         "a": [
-            "唯有沉默",
             "朗道的选择",
+            "唯有沉默",
             "此时恰好"
         ],
         "img_path": ""
@@ -794,9 +1076,12 @@
         "version": "3.6上半",
         "timer": "3.6版本更新后 ~ 2025/10/15 11:59",
         "s": "长夜月",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/qa8t3g4e1iyx0k8mc6gj6nmblljhgoj.png/45px-%E9%95%BF%E5%A4%9C%E6%9C%88.png"
+        ],
         "a": [
-            "桂乃芬",
             "米沙",
+            "桂乃芬",
             "雪衣"
         ],
         "img_path": ""
@@ -808,10 +1093,13 @@
         "version": "3.6上半",
         "timer": "3.6版本更新后 ~ 2025/10/15 11:59",
         "s": "致长夜的星光",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/05/4xatse14l9zqx8778ne2fakwn9n58kf.png/45px-%E8%87%B4%E9%95%BF%E5%A4%9C%E7%9A%84%E6%98%9F%E5%85%89.png"
+        ],
         "a": [
             "梦的蒙太奇",
-            "舞！舞！舞！",
-            "谐乐静默之后"
+            "谐乐静默之后",
+            "舞！舞！舞！"
         ],
         "img_path": ""
     },
@@ -822,9 +1110,12 @@
         "version": "3.6上半",
         "timer": "3.6版本更新后 ~ 2025/10/15 11:59",
         "s": "大黑塔",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/k7y0cams5glai70zx3zq20dy4nvzcbp.png/45px-%E5%A4%A7%E9%BB%91%E5%A1%94.png"
+        ],
         "a": [
-            "桂乃芬",
             "米沙",
+            "桂乃芬",
             "雪衣"
         ],
         "img_path": ""
@@ -836,10 +1127,13 @@
         "version": "3.6上半",
         "timer": "3.6版本更新后 ~ 2025/10/15 11:59",
         "s": "向着不可追问处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/mm29v1nfj90ddbr9y3vbvcol4kn992m.png/45px-%E5%90%91%E7%9D%80%E4%B8%8D%E5%8F%AF%E8%BF%BD%E9%97%AE%E5%A4%84.png"
+        ],
         "a": [
             "梦的蒙太奇",
-            "舞！舞！舞！",
-            "谐乐静默之后"
+            "谐乐静默之后",
+            "舞！舞！舞！"
         ],
         "img_path": ""
     },
@@ -850,10 +1144,13 @@
         "version": "3.5下半",
         "timer": "2025/09/02 12:00 ~ 2025/09/23 15:00",
         "s": "刻律德菈",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/ca/n4rihkvayctcshy7x77eyvyaahuohwq.png/45px-%E5%88%BB%E5%BE%8B%E5%BE%B7%E8%8F%88.png"
+        ],
         "a": [
-            "丹恒",
             "桑博",
-            "青雀"
+            "青雀",
+            "丹恒"
         ],
         "img_path": ""
     },
@@ -864,10 +1161,13 @@
         "version": "3.5下半",
         "timer": "2025/09/02 12:00 ~ 2025/09/23 15:00",
         "s": "金血铭刻的时代",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8a/qo2qaon6v5ard8o3fp1a31id7u91nzb.png/45px-%E9%87%91%E8%A1%80%E9%93%AD%E5%88%BB%E7%9A%84%E6%97%B6%E4%BB%A3.png"
+        ],
         "a": [
             "「我」的诞生",
-            "晚安与睡颜",
-            "论剑"
+            "论剑",
+            "晚安与睡颜"
         ],
         "img_path": ""
     },
@@ -878,10 +1178,13 @@
         "version": "3.5下半",
         "timer": "2025/09/02 12:00 ~ 2025/09/23 15:00",
         "s": "银狼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6a/fy5jpy31k53qtntk0aetrjq9ior9gs2.png/45px-%E9%93%B6%E7%8B%BC.png"
+        ],
         "a": [
-            "丹恒",
             "桑博",
-            "青雀"
+            "青雀",
+            "丹恒"
         ],
         "img_path": ""
     },
@@ -892,10 +1195,13 @@
         "version": "3.5下半",
         "timer": "2025/09/02 12:00 ~ 2025/09/23 15:00",
         "s": "雨一直下",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/5o2f5ztwugkgtr3j0tz89maktzlfib7.png/45px-%E9%9B%A8%E4%B8%80%E7%9B%B4%E4%B8%8B.png"
+        ],
         "a": [
             "「我」的诞生",
-            "晚安与睡颜",
-            "论剑"
+            "论剑",
+            "晚安与睡颜"
         ],
         "img_path": ""
     },
@@ -906,10 +1212,13 @@
         "version": "3.5上半",
         "timer": "3.5版本更新后 ~ 2025/09/02 11:59",
         "s": "海瑟音",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/54/mukowg0x3h5ctho5ds5mmby4msrrhhf.png/45px-%E6%B5%B7%E7%91%9F%E9%9F%B3.png"
+        ],
         "a": [
             "艾丝妲",
-            "虎克",
-            "阿兰"
+            "阿兰",
+            "虎克"
         ],
         "img_path": ""
     },
@@ -920,6 +1229,9 @@
         "version": "3.5上半",
         "timer": "3.5版本更新后 ~ 2025/09/02 11:59",
         "s": "海洋为何而歌",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0b/ij2ybk71rf7huf2s2sb6hg4qtlaz3rd.png/45px-%E6%B5%B7%E6%B4%8B%E4%B8%BA%E4%BD%95%E8%80%8C%E6%AD%8C.png"
+        ],
         "a": [
             "猎物的视线",
             "芳华待灼",
@@ -934,10 +1246,13 @@
         "version": "3.5上半",
         "timer": "3.5版本更新后 ~ 2025/09/02 11:59",
         "s": "卡芙卡",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/dohx45e24wwx133a7ys68qtz1hy0mav.png/45px-%E5%8D%A1%E8%8A%99%E5%8D%A1.png"
+        ],
         "a": [
             "艾丝妲",
-            "虎克",
-            "阿兰"
+            "阿兰",
+            "虎克"
         ],
         "img_path": ""
     },
@@ -948,6 +1263,9 @@
         "version": "3.5上半",
         "timer": "3.5版本更新后 ~ 2025/09/02 11:59",
         "s": "只需等待",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/efjfno0uzcaf7mji1xs0pvbpvh3d3jl.png/45px-%E5%8F%AA%E9%9C%80%E7%AD%89%E5%BE%85.png"
+        ],
         "a": [
             "猎物的视线",
             "芳华待灼",
@@ -961,11 +1279,20 @@
         "type": "角色",
         "version": "3.4下半",
         "timer": "2025/07/23 12:00 ~ 2025/08/12 15:00",
-        "s": "流萤",
+        "s": [
+            "流萤",
+            "镜流",
+            "刃"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6e/loo8cnidyavnbgut84xmcgth6vdl5a0.png/45px-%E6%B5%81%E8%90%A4.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4f/eroepj7blbgn986vxmq6yupvn8wwgho.png/45px-%E9%95%9C%E6%B5%81.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4c/h32p7jlxyi00coj1ya4so5ggjbw1g8w.png/45px-%E5%88%83.png"
+        ],
         "a": [
-            "卢卡",
             "寒鸦",
-            "玲可"
+            "玲可",
+            "卢卡"
         ],
         "img_path": ""
     },
@@ -975,11 +1302,20 @@
         "type": "武器",
         "version": "3.4下半",
         "timer": "2025/07/23 12:00 ~ 2025/08/12 15:00",
-        "s": "梦应归于何处",
+        "s": [
+            "梦应归于何处",
+            "此身为剑",
+            "到不了的彼岸"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/97/9hgw5hentvblnrhzra15e143qbtjdv1.png/45px-%E6%A2%A6%E5%BA%94%E5%BD%92%E4%BA%8E%E4%BD%95%E5%A4%84.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f4/mf0w98474ew7l3pzib8ifnktdyfofhg.png/45px-%E6%AD%A4%E8%BA%AB%E4%B8%BA%E5%89%91.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c5/11vzcjzj1xcyvw5g8cu7ltktnpzvyko.png/45px-%E5%88%B0%E4%B8%8D%E4%BA%86%E7%9A%84%E5%BD%BC%E5%B2%B8.png"
+        ],
         "a": [
-            "决心如汗珠般闪耀",
+            "秘密誓心",
             "点个关注吧！",
-            "秘密誓心"
+            "决心如汗珠般闪耀"
         ],
         "img_path": ""
     },
@@ -990,6 +1326,9 @@
         "version": "3.4上半",
         "timer": "2025/07/11 12:00 ~ 长期",
         "s": "Saber",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/23/1893xl1v5mmtwf9wmon57i4a5i14i5u.png/45px-Saber.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -1000,6 +1339,9 @@
         "version": "3.4上半",
         "timer": "2025/07/11 12:00 ~ 长期",
         "s": "没有回报的加冕",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ee/5alntjwtrkzwgwxq353xv8rcopqv3d7.png/45px-%E6%B2%A1%E6%9C%89%E5%9B%9E%E6%8A%A5%E7%9A%84%E5%8A%A0%E5%86%95.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -1010,6 +1352,9 @@
         "version": "3.4上半",
         "timer": "2025/07/11 12:00 ~ 长期",
         "s": "Archer",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/29/g9k68n7k77ts9wcvfho88l2y5eur6a8.png/45px-Archer.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -1020,6 +1365,9 @@
         "version": "3.4上半",
         "timer": "2025/07/11 12:00 ~ 长期",
         "s": "理想燃烧的地狱",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d0/45nt7hu3fcx19ezkkocdbqrfgvpgpjw.png/45px-%E7%90%86%E6%83%B3%E7%87%83%E7%83%A7%E7%9A%84%E5%9C%B0%E7%8B%B1.png"
+        ],
         "a": [],
         "img_path": ""
     },
@@ -1030,9 +1378,12 @@
         "version": "3.4上半",
         "timer": "3.4版本更新后 ~ 2025/07/23 11:59",
         "s": "白厄",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/71ifmfc3f77xp5mrsnww56mto2ul2qz.png/45px-%E7%99%BD%E5%8E%84.png"
+        ],
         "a": [
-            "三月七•存护",
             "停云",
+            "三月七•存护",
             "驭空"
         ],
         "img_path": ""
@@ -1044,10 +1395,13 @@
         "version": "3.4上半",
         "timer": "3.4版本更新后 ~ 2025/07/23 11:59",
         "s": "黎明恰如此燃烧",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/3gqlqkwbprln81uwjo4p0sqw8ychh7y.png/45px-%E9%BB%8E%E6%98%8E%E6%81%B0%E5%A6%82%E6%AD%A4%E7%87%83%E7%83%A7.png"
+        ],
         "a": [
+            "故事的下一页",
             "与行星相会",
-            "在蓝天下",
-            "故事的下一页"
+            "在蓝天下"
         ],
         "img_path": ""
     },
@@ -1057,10 +1411,19 @@
         "type": "角色",
         "version": "3.4上半",
         "timer": "3.4版本更新后 ~ 2025/07/23 11:59",
-        "s": "缇宝",
+        "s": [
+            "缇宝",
+            "星期日",
+            "花火"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/16/s15opurtx1s67wf670orxm0ysqnr7nk.png/45px-%E7%BC%87%E5%AE%9D.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8d/65lqy256fqzq7jiaznl1bys2ito0oez.png/45px-%E6%98%9F%E6%9C%9F%E6%97%A5.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/90/jf5yte1ote51iepifi8i75wifww5ybe.png/45px-%E8%8A%B1%E7%81%AB.png"
+        ],
         "a": [
-            "三月七•存护",
             "停云",
+            "三月七•存护",
             "驭空"
         ],
         "img_path": ""
@@ -1071,11 +1434,20 @@
         "type": "武器",
         "version": "3.4上半",
         "timer": "3.4版本更新后 ~ 2025/07/23 11:59",
-        "s": "如果时间是一朵花",
+        "s": [
+            "如果时间是一朵花",
+            "回到大地的飞行",
+            "游戏尘寰"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/51/fj94fxdzp0nicnfsd5i0fagwq0vwslq.png/45px-%E5%A6%82%E6%9E%9C%E6%97%B6%E9%97%B4%E6%98%AF%E4%B8%80%E6%9C%B5%E8%8A%B1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/9u705gmkt4im18pajxkl8nspivu7x27.png/45px-%E5%9B%9E%E5%88%B0%E5%A4%A7%E5%9C%B0%E7%9A%84%E9%A3%9E%E8%A1%8C.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/cjkwkkdlpbyfu5rh292fgc5dl8c09wj.png/45px-%E6%B8%B8%E6%88%8F%E5%B0%98%E5%AF%B0.png"
+        ],
         "a": [
+            "故事的下一页",
             "与行星相会",
-            "在蓝天下",
-            "故事的下一页"
+            "在蓝天下"
         ],
         "img_path": ""
     },
@@ -1086,10 +1458,13 @@
         "version": "3.3下半",
         "timer": "2025/06/11 12:00 ~ 2025/07/01 15:00",
         "s": "赛飞儿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e2/2b5rj10j02j58py04b3c4eegkmphntz.png/45px-%E8%B5%9B%E9%A3%9E%E5%84%BF.png"
+        ],
         "a": [
-            "素裳",
+            "青雀",
             "雪衣",
-            "青雀"
+            "素裳"
         ],
         "img_path": ""
     },
@@ -1100,10 +1475,13 @@
         "version": "3.3下半",
         "timer": "2025/06/11 12:00 ~ 2025/07/01 15:00",
         "s": "谎言在风中飘扬",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/9a/ctt4qwt0buo5h3fglgsup7mw7girw82.png/45px-%E8%B0%8E%E8%A8%80%E5%9C%A8%E9%A3%8E%E4%B8%AD%E9%A3%98%E6%89%AC.png"
+        ],
         "a": [
-            "同一种心情",
             "天才们的问候",
-            "猎物的视线"
+            "猎物的视线",
+            "同一种心情"
         ],
         "img_path": ""
     },
@@ -1114,10 +1492,13 @@
         "version": "3.3下半",
         "timer": "2025/06/11 12:00 ~ 2025/07/01 15:00",
         "s": "阿格莱雅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b3/js5tt9qxs66y1o04vi921zmgsrt54le.png/45px-%E9%98%BF%E6%A0%BC%E8%8E%B1%E9%9B%85.png"
+        ],
         "a": [
-            "素裳",
+            "青雀",
             "雪衣",
-            "青雀"
+            "素裳"
         ],
         "img_path": ""
     },
@@ -1128,10 +1509,13 @@
         "version": "3.3下半",
         "timer": "2025/06/11 12:00 ~ 2025/07/01 15:00",
         "s": "将光阴织成黄金",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/6hiv3esq6merfws803g9uqkvh288d0c.png/45px-%E5%B0%86%E5%85%89%E9%98%B4%E7%BB%87%E6%88%90%E9%BB%84%E9%87%91.png"
+        ],
         "a": [
-            "同一种心情",
             "天才们的问候",
-            "猎物的视线"
+            "猎物的视线",
+            "同一种心情"
         ],
         "img_path": ""
     },
@@ -1142,10 +1526,13 @@
         "version": "3.3上半",
         "timer": "3.3版本更新后 ~ 2025/06/11 11:59",
         "s": "风堇",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/btad3oegk6v46b3xswvvtl370ib8zbm.png/45px-%E9%A3%8E%E5%A0%87.png"
+        ],
         "a": [
-            "娜塔莎",
+            "米沙",
             "希露瓦",
-            "米沙"
+            "娜塔莎"
         ],
         "img_path": ""
     },
@@ -1156,10 +1543,13 @@
         "version": "3.3上半",
         "timer": "3.3版本更新后 ~ 2025/06/11 11:59",
         "s": "愿虹光永驻天空",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c2/3ntgy78x59gaxaaerxxm4ud0t179dxu.png/45px-%E6%84%BF%E8%99%B9%E5%85%89%E6%B0%B8%E9%A9%BB%E5%A4%A9%E7%A9%BA.png"
+        ],
         "a": [
-            "余生的第一天",
             "别让世界静下来",
-            "黑夜如影随行"
+            "黑夜如影随行",
+            "余生的第一天"
         ],
         "img_path": ""
     },
@@ -1170,10 +1560,13 @@
         "version": "3.3上半",
         "timer": "3.3版本更新后 ~ 2025/06/11 11:59",
         "s": "大黑塔",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/k7y0cams5glai70zx3zq20dy4nvzcbp.png/45px-%E5%A4%A7%E9%BB%91%E5%A1%94.png"
+        ],
         "a": [
-            "娜塔莎",
+            "米沙",
             "希露瓦",
-            "米沙"
+            "娜塔莎"
         ],
         "img_path": ""
     },
@@ -1184,10 +1577,13 @@
         "version": "3.3上半",
         "timer": "3.3版本更新后 ~ 2025/06/11 11:59",
         "s": "向着不可追问处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/mm29v1nfj90ddbr9y3vbvcol4kn992m.png/45px-%E5%90%91%E7%9D%80%E4%B8%8D%E5%8F%AF%E8%BF%BD%E9%97%AE%E5%A4%84.png"
+        ],
         "a": [
-            "余生的第一天",
             "别让世界静下来",
-            "黑夜如影随行"
+            "黑夜如影随行",
+            "余生的第一天"
         ],
         "img_path": ""
     },
@@ -1198,6 +1594,9 @@
         "version": "3.2下半",
         "timer": "2025/04/30 12:00 ~ 2025/05/20 15:00",
         "s": "那刻夏",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c7/f3udn1bfun9og7a2h8nkabbom5kh53b.png/45px-%E9%82%A3%E5%88%BB%E5%A4%8F.png"
+        ],
         "a": [
             "丹恒",
             "希露瓦",
@@ -1212,6 +1611,9 @@
         "version": "3.2下半",
         "timer": "2025/04/30 12:00 ~ 2025/05/20 15:00",
         "s": "生命当付之一炬",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/loqu6wivhy1hsvz57b5j6a2rsd4nz3w.png/45px-%E7%94%9F%E5%91%BD%E5%BD%93%E4%BB%98%E4%B9%8B%E4%B8%80%E7%82%AC.png"
+        ],
         "a": [
             "宇宙市场趋势",
             "谐乐静默之后",
@@ -1226,6 +1628,9 @@
         "version": "3.2下半",
         "timer": "2025/04/30 12:00 ~ 2025/05/20 15:00",
         "s": "真理医生",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/2vsc3pe7c2e1jly7wm2idvz6t2m31d8.png/45px-%E7%9C%9F%E7%90%86%E5%8C%BB%E7%94%9F.png"
+        ],
         "a": [
             "丹恒",
             "希露瓦",
@@ -1240,6 +1645,9 @@
         "version": "3.2下半",
         "timer": "2025/04/30 12:00 ~ 2025/05/20 15:00",
         "s": "纯粹思维的洗礼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/56/nur8kwlpu961g0wt7xlzvu1akautd02.png/45px-%E7%BA%AF%E7%B2%B9%E6%80%9D%E7%BB%B4%E7%9A%84%E6%B4%97%E7%A4%BC.png"
+        ],
         "a": [
             "宇宙市场趋势",
             "谐乐静默之后",
@@ -1254,6 +1662,9 @@
         "version": "3.2上半",
         "timer": "3.2版本更新后 ~ 2025/04/30 11:59",
         "s": "遐蝶",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/johi69tjqhfyngs4cfkfsu2w8bomyiy.png/45px-%E9%81%90%E8%9D%B6.png"
+        ],
         "a": [
             "佩拉",
             "加拉赫",
@@ -1268,10 +1679,13 @@
         "version": "3.2上半",
         "timer": "3.2版本更新后 ~ 2025/04/30 11:59",
         "s": "让告别，更美一些",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/3/3e/9rr2he9qn24t42twe0ij29w46rakykt.png/45px-%E8%AE%A9%E5%91%8A%E5%88%AB%EF%BC%8C%E6%9B%B4%E7%BE%8E%E4%B8%80%E4%BA%9B.png"
+        ],
         "a": [
+            "晚安与睡颜",
             "一场术后对话",
-            "无边曼舞",
-            "晚安与睡颜"
+            "无边曼舞"
         ],
         "img_path": ""
     },
@@ -1281,7 +1695,16 @@
         "type": "角色",
         "version": "3.2上半",
         "timer": "3.2版本更新后 ~ 2025/04/30 11:59",
-        "s": "忘归人",
+        "s": [
+            "忘归人",
+            "椒丘",
+            "黄泉"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b7/knwf151e2owlehhkauisj3wlcpqg4gh.png/45px-%E5%BF%98%E5%BD%92%E4%BA%BA.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e0/qaochn30qkct2gzvcop1l7galoy9d63.png/45px-%E6%A4%92%E4%B8%98.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/7s1eiyi9q7kjk4ow4wcov33bjiokhwx.png/45px-%E9%BB%84%E6%B3%89.png"
+        ],
         "a": [
             "佩拉",
             "加拉赫",
@@ -1295,11 +1718,20 @@
         "type": "武器",
         "version": "3.2上半",
         "timer": "3.2版本更新后 ~ 2025/04/30 11:59",
-        "s": "长路终有归途",
+        "s": [
+            "长路终有归途",
+            "那无数个春天",
+            "行于流逝的岸"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/57/mw0hy38ydplne1x41r6kzyyz5watd2s.png/45px-%E9%95%BF%E8%B7%AF%E7%BB%88%E6%9C%89%E5%BD%92%E9%80%94.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5a/2lmhn3vxhauxg7slc5yjtkoqaqhofyo.png/45px-%E9%82%A3%E6%97%A0%E6%95%B0%E4%B8%AA%E6%98%A5%E5%A4%A9.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/c/cd/aibtuk0o5dt19zp72g0v3ni27ynxxbl.png/45px-%E8%A1%8C%E4%BA%8E%E6%B5%81%E9%80%9D%E7%9A%84%E5%B2%B8.png"
+        ],
         "a": [
+            "晚安与睡颜",
             "一场术后对话",
-            "无边曼舞",
-            "晚安与睡颜"
+            "无边曼舞"
         ],
         "img_path": ""
     },
@@ -1310,10 +1742,13 @@
         "version": "3.1下半",
         "timer": "2025/03/19 12:00 ~ 2025/04/08 15:00",
         "s": "万敌",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d9/0dyo0uk3edcfpjbz82qbwep032ge0m4.png/45px-%E4%B8%87%E6%95%8C.png"
+        ],
         "a": [
-            "娜塔莎",
             "阿兰",
-            "雪衣"
+            "雪衣",
+            "娜塔莎"
         ],
         "img_path": "img/sr/history/「血炬狮心」034-1期角色活动跃迁.png"
     },
@@ -1324,6 +1759,9 @@
         "version": "3.1下半",
         "timer": "2025/03/19 12:00 ~ 2025/04/08 15:00",
         "s": "血火啊，燃烧前路",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/64huga50u99yuma4mur1ha97y0bmqye.png/45px-%E8%A1%80%E7%81%AB%E5%95%8A%EF%BC%8C%E7%87%83%E7%83%A7%E5%89%8D%E8%B7%AF.png"
+        ],
         "a": [
             "此时恰好",
             "秘密誓心",
@@ -1338,10 +1776,13 @@
         "version": "3.1下半",
         "timer": "2025/03/19 12:00 ~ 2025/04/08 15:00",
         "s": "藿藿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/18/mxyemxhumdaxh5fwuyhhxuvckpujai0.png/45px-%E8%97%BF%E8%97%BF.png"
+        ],
         "a": [
-            "娜塔莎",
             "阿兰",
-            "雪衣"
+            "雪衣",
+            "娜塔莎"
         ],
         "img_path": "img/sr/history/「令奉贞凶」034-2期角色活动跃迁.png"
     },
@@ -1352,6 +1793,9 @@
         "version": "3.1下半",
         "timer": "2025/03/19 12:00 ~ 2025/04/08 15:00",
         "s": "惊魂夜",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0c/4fcoke87kz8md11t0j8adbyctcj08hr.png/45px-%E6%83%8A%E9%AD%82%E5%A4%9C.png"
+        ],
         "a": [
             "此时恰好",
             "秘密誓心",
@@ -1366,10 +1810,13 @@
         "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2025/03/19 11:59",
         "s": "缇宝",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/16/s15opurtx1s67wf670orxm0ysqnr7nk.png/45px-%E7%BC%87%E5%AE%9D.png"
+        ],
         "a": [
-            "桂乃芬",
             "玲可",
-            "虎克"
+            "虎克",
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「径复原初」033-1期角色活动跃迁.png"
     },
@@ -1380,9 +1827,12 @@
         "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2025/03/19 11:59",
         "s": "如果时间是一朵花",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/51/fj94fxdzp0nicnfsd5i0fagwq0vwslq.png/45px-%E5%A6%82%E6%9E%9C%E6%97%B6%E9%97%B4%E6%98%AF%E4%B8%80%E6%9C%B5%E8%8A%B1.png"
+        ],
         "a": [
-            "一场术后对话",
             "与行星相会",
+            "一场术后对话",
             "宇宙市场趋势"
         ],
         "img_path": "img/sr/history/「流光定影」033-1期光锥活动跃迁.png"
@@ -1394,10 +1844,13 @@
         "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2025/03/19 11:59",
         "s": "云璃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d9/q1kzn8lehteph6x95tlyzjzf9re3ek8.png/45px-%E4%BA%91%E7%92%83.png"
+        ],
         "a": [
-            "桂乃芬",
             "玲可",
-            "虎克"
+            "虎克",
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「掷山破云」033-2期角色活动跃迁.png"
     },
@@ -1408,9 +1861,12 @@
         "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2025/03/19 11:59",
         "s": "落日时起舞",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d2/c4luysg9im43c6gbz319m9lo0eb9uga.png/45px-%E8%90%BD%E6%97%A5%E6%97%B6%E8%B5%B7%E8%88%9E.png"
+        ],
         "a": [
-            "一场术后对话",
             "与行星相会",
+            "一场术后对话",
             "宇宙市场趋势"
         ],
         "img_path": "img/sr/history/「溯回忆象」033-2期光锥活动跃迁.png"
@@ -1422,6 +1878,9 @@
         "version": "3.0下半",
         "timer": "2025/02/05 12:00 ~ 2025/02/25 15:00",
         "s": "阿格莱雅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b3/js5tt9qxs66y1o04vi921zmgsrt54le.png/45px-%E9%98%BF%E6%A0%BC%E8%8E%B1%E9%9B%85.png"
+        ],
         "a": [
             "停云",
             "寒鸦",
@@ -1436,6 +1895,9 @@
         "version": "3.0下半",
         "timer": "2025/02/05 12:00 ~ 2025/02/25 15:00",
         "s": "将光阴织成黄金",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/6hiv3esq6merfws803g9uqkvh288d0c.png/45px-%E5%B0%86%E5%85%89%E9%98%B4%E7%BB%87%E6%88%90%E9%BB%84%E9%87%91.png"
+        ],
         "a": [
             "天才们的问候",
             "点个关注吧！",
@@ -1449,7 +1911,16 @@
         "type": "角色",
         "version": "3.0下半",
         "timer": "2025/02/05 12:00 ~ 2025/02/25 15:00",
-        "s": "波提欧",
+        "s": [
+            "波提欧",
+            "知更鸟",
+            "银狼"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/da/5wtfcz4garqrmk9k3jbq0vc5x45lgu3.png/45px-%E6%B3%A2%E6%8F%90%E6%AC%A7.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/45/mcybqtbsmow098ik7nu1dq1jmef7bmc.png/45px-%E7%9F%A5%E6%9B%B4%E9%B8%9F.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6a/fy5jpy31k53qtntk0aetrjq9ior9gs2.png/45px-%E9%93%B6%E7%8B%BC.png"
+        ],
         "a": [
             "停云",
             "寒鸦",
@@ -1463,7 +1934,16 @@
         "type": "武器",
         "version": "3.0下半",
         "timer": "2025/02/05 12:00 ~ 2025/02/25 15:00",
-        "s": "驶向第二次生命",
+        "s": [
+            "驶向第二次生命",
+            "夜色流光溢彩",
+            "雨一直下"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/i0df57yj4zoqi9ij944mc20innski09.png/45px-%E9%A9%B6%E5%90%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%94%9F%E5%91%BD.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/2/2a/83gcsilph5bmptedtiqkoaflk1zx5at.png/45px-%E5%A4%9C%E8%89%B2%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/5o2f5ztwugkgtr3j0tz89maktzlfib7.png/45px-%E9%9B%A8%E4%B8%80%E7%9B%B4%E4%B8%8B.png"
+        ],
         "a": [
             "天才们的问候",
             "点个关注吧！",
@@ -1478,6 +1958,9 @@
         "version": "3.0上半",
         "timer": "3.0版本更新后 ~ 2025/02/05 11:59",
         "s": "大黑塔",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0f/k7y0cams5glai70zx3zq20dy4nvzcbp.png/45px-%E5%A4%A7%E9%BB%91%E5%A1%94.png"
+        ],
         "a": [
             "娜塔莎",
             "艾丝妲",
@@ -1492,10 +1975,13 @@
         "version": "3.0上半",
         "timer": "3.0版本更新后 ~ 2025/02/05 11:59",
         "s": "向着不可追问处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/04/mm29v1nfj90ddbr9y3vbvcol4kn992m.png/45px-%E5%90%91%E7%9D%80%E4%B8%8D%E5%8F%AF%E8%BF%BD%E9%97%AE%E5%A4%84.png"
+        ],
         "a": [
             "唯有沉默",
-            "天才们的休憩",
-            "朗道的选择"
+            "朗道的选择",
+            "天才们的休憩"
         ],
         "img_path": "img/sr/history/「流光定影」031-1期光锥活动跃迁.png"
     },
@@ -1505,7 +1991,16 @@
         "type": "角色",
         "version": "3.0上半",
         "timer": "3.0版本更新后 ~ 2025/02/05 11:59",
-        "s": "灵砂",
+        "s": [
+            "灵砂",
+            "飞霄",
+            "翡翠"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/kwdehoxn9net3nsjwub5r16ix6ipofo.png/45px-%E7%81%B5%E7%A0%82.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/iq1o5mvremm66200xe7a5klm5lb1vc4.png/45px-%E9%A3%9E%E9%9C%84.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ec/4er3t2hcgkmytigzjj4ralmhbn0gwf6.png/45px-%E7%BF%A1%E7%BF%A0.png"
+        ],
         "a": [
             "娜塔莎",
             "艾丝妲",
@@ -1519,11 +2014,20 @@
         "type": "武器",
         "version": "3.0上半",
         "timer": "3.0版本更新后 ~ 2025/02/05 11:59",
-        "s": "唯有香如故",
+        "s": [
+            "唯有香如故",
+            "我将，巡征追猎",
+            "偏偏希望无价"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/85/bxpa26qskqqrzv0wjl8pupqxjhzdlg3.png/45px-%E5%94%AF%E6%9C%89%E9%A6%99%E5%A6%82%E6%95%85.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/53dgod1vym8rrl41k7pxb5w6jri22aj.png/45px-%E6%88%91%E5%B0%86%EF%BC%8C%E5%B7%A1%E5%BE%81%E8%BF%BD%E7%8C%8E.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/0/00/642vnhjuwvju90lee2g5qt2cmzvmjwb.png/45px-%E5%81%8F%E5%81%8F%E5%B8%8C%E6%9C%9B%E6%97%A0%E4%BB%B7.png"
+        ],
         "a": [
             "唯有沉默",
-            "天才们的休憩",
-            "朗道的选择"
+            "朗道的选择",
+            "天才们的休憩"
         ],
         "img_path": "img/sr/history/「真意之汇」031-2期光锥活动跃迁.png"
     },
@@ -1534,10 +2038,13 @@
         "version": "2.7下半",
         "timer": "2024/12/25 12:00 ~ 2025/01/14 15:00",
         "s": "忘归人",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b7/knwf151e2owlehhkauisj3wlcpqg4gh.png/45px-%E5%BF%98%E5%BD%92%E4%BA%BA.png"
+        ],
         "a": [
             "加拉赫",
-            "米沙",
-            "驭空"
+            "驭空",
+            "米沙"
         ],
         "img_path": "img/sr/history/「归路迢迢」030-1期角色活动跃迁.png"
     },
@@ -1548,10 +2055,13 @@
         "version": "2.7下半",
         "timer": "2024/12/25 12:00 ~ 2025/01/14 15:00",
         "s": "长路终有归途",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/57/mw0hy38ydplne1x41r6kzyyz5watd2s.png/45px-%E9%95%BF%E8%B7%AF%E7%BB%88%E6%9C%89%E5%BD%92%E9%80%94.png"
+        ],
         "a": [
-            "两个人的演唱会",
+            "铭记于心的约定",
             "决心如汗珠般闪耀",
-            "铭记于心的约定"
+            "两个人的演唱会"
         ],
         "img_path": "img/sr/history/「流光定影」030-1期光锥活动跃迁.png"
     },
@@ -1562,10 +2072,13 @@
         "version": "2.7下半",
         "timer": "2024/12/25 12:00 ~ 2025/01/14 15:00",
         "s": "流萤",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6e/loo8cnidyavnbgut84xmcgth6vdl5a0.png/45px-%E6%B5%81%E8%90%A4.png"
+        ],
         "a": [
             "加拉赫",
-            "米沙",
-            "驭空"
+            "驭空",
+            "米沙"
         ],
         "img_path": "img/sr/history/「盈茧炽盛」030-2期角色活动跃迁.png"
     },
@@ -1576,10 +2089,13 @@
         "version": "2.7下半",
         "timer": "2024/12/25 12:00 ~ 2025/01/14 15:00",
         "s": "梦应归于何处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/97/9hgw5hentvblnrhzra15e143qbtjdv1.png/45px-%E6%A2%A6%E5%BA%94%E5%BD%92%E4%BA%8E%E4%BD%95%E5%A4%84.png"
+        ],
         "a": [
-            "两个人的演唱会",
+            "铭记于心的约定",
             "决心如汗珠般闪耀",
-            "铭记于心的约定"
+            "两个人的演唱会"
         ],
         "img_path": "img/sr/history/「溯回忆象」030-2期光锥活动跃迁.png"
     },
@@ -1590,10 +2106,13 @@
         "version": "2.7上半",
         "timer": "2.7版本更新后 ~ 2024/12/25 11:59",
         "s": "星期日",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8d/65lqy256fqzq7jiaznl1bys2ito0oez.png/45px-%E6%98%9F%E6%9C%9F%E6%97%A5.png"
+        ],
         "a": [
-            "停云",
+            "青雀",
             "阿兰",
-            "青雀"
+            "停云"
         ],
         "img_path": "img/sr/history/「向星举目」029-1期角色活动跃迁.png"
     },
@@ -1604,9 +2123,12 @@
         "version": "2.7上半",
         "timer": "2.7版本更新后 ~ 2024/12/25 11:59",
         "s": "回到大地的飞行",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6c/9u705gmkt4im18pajxkl8nspivu7x27.png/45px-%E5%9B%9E%E5%88%B0%E5%A4%A7%E5%9C%B0%E7%9A%84%E9%A3%9E%E8%A1%8C.png"
+        ],
         "a": [
-            "「我」的诞生",
             "芳华待灼",
+            "「我」的诞生",
             "论剑"
         ],
         "img_path": "img/sr/history/「流光定影」029-1期光锥活动跃迁.png"
@@ -1618,10 +2140,13 @@
         "version": "2.7上半",
         "timer": "2.7版本更新后 ~ 2024/12/25 11:59",
         "s": "景元",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/11/0s6m58osylvmhiqxpqbqlinww9sxvl0.png/45px-%E6%99%AF%E5%85%83.png"
+        ],
         "a": [
-            "停云",
+            "青雀",
             "阿兰",
-            "青雀"
+            "停云"
         ],
         "img_path": "img/sr/history/「天戈麾斥」029-2期角色活动跃迁.png"
     },
@@ -1632,9 +2157,12 @@
         "version": "2.7上半",
         "timer": "2.7版本更新后 ~ 2024/12/25 11:59",
         "s": "拂晓之前",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/e3yukm7phvszpq69oo727ppjaqtyefu.png/45px-%E6%8B%82%E6%99%93%E4%B9%8B%E5%89%8D.png"
+        ],
         "a": [
-            "「我」的诞生",
             "芳华待灼",
+            "「我」的诞生",
             "论剑"
         ],
         "img_path": "img/sr/history/「溯回忆象」029-2期光锥活动跃迁.png"
@@ -1646,10 +2174,13 @@
         "version": "2.6下半",
         "timer": "2024/11/13 12:00 ~ 2024/12/03 15:00",
         "s": "黄泉",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/7s1eiyi9q7kjk4ow4wcov33bjiokhwx.png/45px-%E9%BB%84%E6%B3%89.png"
+        ],
         "a": [
             "三月七•存护",
-            "佩拉",
-            "桑博"
+            "桑博",
+            "佩拉"
         ],
         "img_path": "img/sr/history/「远辞畴昔」028-1期角色活动跃迁.png"
     },
@@ -1660,10 +2191,13 @@
         "version": "2.6下半",
         "timer": "2024/11/13 12:00 ~ 2024/12/03 15:00",
         "s": "行于流逝的岸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/cd/aibtuk0o5dt19zp72g0v3ni27ynxxbl.png/45px-%E8%A1%8C%E4%BA%8E%E6%B5%81%E9%80%9D%E7%9A%84%E5%B2%B8.png"
+        ],
         "a": [
             "余生的第一天",
-            "别让世界静下来",
-            "无边曼舞"
+            "无边曼舞",
+            "别让世界静下来"
         ],
         "img_path": "img/sr/history/「溯回忆象」028-1期光锥活动跃迁.png"
     },
@@ -1674,10 +2208,13 @@
         "version": "2.6下半",
         "timer": "2024/11/13 12:00 ~ 2024/12/03 15:00",
         "s": "砂金",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/b88dlc8dr8gocikr1x7gpfke3m2n0q0.png/45px-%E7%A0%82%E9%87%91.png"
+        ],
         "a": [
             "三月七•存护",
-            "佩拉",
-            "桑博"
+            "桑博",
+            "佩拉"
         ],
         "img_path": "img/sr/history/「囚石铸金」028-2期角色活动跃迁.png"
     },
@@ -1688,10 +2225,13 @@
         "version": "2.6下半",
         "timer": "2024/11/13 12:00 ~ 2024/12/03 15:00",
         "s": "命运从未公平",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/63/fqe7u18gzj9w4dzckopxc8izgczrbat.png/45px-%E5%91%BD%E8%BF%90%E4%BB%8E%E6%9C%AA%E5%85%AC%E5%B9%B3.png"
+        ],
         "a": [
             "余生的第一天",
-            "别让世界静下来",
-            "无边曼舞"
+            "无边曼舞",
+            "别让世界静下来"
         ],
         "img_path": "img/sr/history/「溯回忆象」028-2期光锥活动跃迁.png"
     },
@@ -1702,6 +2242,9 @@
         "version": "2.6上半",
         "timer": "2.6版本更新后 ~ 2024/11/13 11:59",
         "s": "乱破",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0d/3wrmrv02fzul9srx9ft5r4ytbzh02ip.png/45px-%E4%B9%B1%E7%A0%B4.png"
+        ],
         "a": [
             "玲可",
             "雪衣",
@@ -1716,10 +2259,13 @@
         "version": "2.6上半",
         "timer": "2.6版本更新后 ~ 2024/11/13 11:59",
         "s": "忍法帖•缭乱破魔",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/2c/axmdvkiw05p8dsdlg4s0kvn5tjbkva8.png/45px-%E5%BF%8D%E6%B3%95%E5%B8%96%E2%80%A2%E7%BC%AD%E4%B9%B1%E7%A0%B4%E9%AD%94.png"
+        ],
         "a": [
-            "在蓝天下",
             "梦的蒙太奇",
-            "谐乐静默之后"
+            "谐乐静默之后",
+            "在蓝天下"
         ],
         "img_path": "img/sr/history/「流光定影」027-1期光锥活动跃迁.png"
     },
@@ -1730,6 +2276,9 @@
         "version": "2.6上半",
         "timer": "2.6版本更新后 ~ 2024/11/13 11:59",
         "s": "丹恒•饮月",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5e/hdu1w3gwyaqtfi8ztdu3f13kjfta8rh.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E9%A5%AE%E6%9C%88.png"
+        ],
         "a": [
             "玲可",
             "雪衣",
@@ -1744,10 +2293,13 @@
         "version": "2.6上半",
         "timer": "2.6版本更新后 ~ 2024/11/13 11:59",
         "s": "比阳光更明亮的",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/ap3fv056aaq2yd07ieac6ezv20w8r2h.png/45px-%E6%AF%94%E9%98%B3%E5%85%89%E6%9B%B4%E6%98%8E%E4%BA%AE%E7%9A%84.png"
+        ],
         "a": [
-            "在蓝天下",
             "梦的蒙太奇",
-            "谐乐静默之后"
+            "谐乐静默之后",
+            "在蓝天下"
         ],
         "img_path": "img/sr/history/「溯回忆象」027-2期光锥活动跃迁.png"
     },
@@ -1758,10 +2310,13 @@
         "version": "2.5下半",
         "timer": "2024/10/02 12:00 ~ 2024/10/22 15:00",
         "s": "灵砂",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/kwdehoxn9net3nsjwub5r16ix6ipofo.png/45px-%E7%81%B5%E7%A0%82.png"
+        ],
         "a": [
+            "米沙",
             "娜塔莎",
-            "桂乃芬",
-            "米沙"
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「卧香沉水」026-1期角色活动跃迁.png"
     },
@@ -1772,10 +2327,13 @@
         "version": "2.5下半",
         "timer": "2024/10/02 12:00 ~ 2024/10/22 15:00",
         "s": "唯有香如故",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/85/bxpa26qskqqrzv0wjl8pupqxjhzdlg3.png/45px-%E5%94%AF%E6%9C%89%E9%A6%99%E5%A6%82%E6%95%85.png"
+        ],
         "a": [
-            "与行星相会",
+            "黑夜如影随行",
             "同一种心情",
-            "黑夜如影随行"
+            "与行星相会"
         ],
         "img_path": "img/sr/history/「流光定影」026-1期光锥活动跃迁.png"
     },
@@ -1786,10 +2344,13 @@
         "version": "2.5下半",
         "timer": "2024/10/02 12:00 ~ 2024/10/22 15:00",
         "s": "托帕&账账",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c4/tksvx8yn9bdrxild4w3q99u2hqsdiq0.png/45px-%E6%89%98%E5%B8%95%26%E8%B4%A6%E8%B4%A6.png"
+        ],
         "a": [
+            "米沙",
             "娜塔莎",
-            "桂乃芬",
-            "米沙"
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「落日条款」026-2期角色活动跃迁.png"
     },
@@ -1800,10 +2361,13 @@
         "version": "2.5下半",
         "timer": "2024/10/02 12:00 ~ 2024/10/22 15:00",
         "s": "烦恼着，幸福着",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/84/q5uh78cul6vgnk4aep039tdwk2wbsih.png/45px-%E7%83%A6%E6%81%BC%E7%9D%80%EF%BC%8C%E5%B9%B8%E7%A6%8F%E7%9D%80.png"
+        ],
         "a": [
-            "与行星相会",
+            "黑夜如影随行",
             "同一种心情",
-            "黑夜如影随行"
+            "与行星相会"
         ],
         "img_path": "img/sr/history/「溯回忆象」026-2期光锥活动跃迁.png"
     },
@@ -1814,10 +2378,13 @@
         "version": "2.5上半",
         "timer": "2.5版本更新后 ~ 2024/10/02 11:59",
         "s": "飞霄",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/iq1o5mvremm66200xe7a5klm5lb1vc4.png/45px-%E9%A3%9E%E9%9C%84.png"
+        ],
         "a": [
-            "卢卡",
+            "貊泽",
             "艾丝妲",
-            "貊泽"
+            "卢卡"
         ],
         "img_path": "img/sr/history/「飙驭霆击」025-1期角色活动跃迁.png"
     },
@@ -1828,10 +2395,13 @@
         "version": "2.5上半",
         "timer": "2.5版本更新后 ~ 2024/10/02 11:59",
         "s": "我将，巡征追猎",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/df/53dgod1vym8rrl41k7pxb5w6jri22aj.png/45px-%E6%88%91%E5%B0%86%EF%BC%8C%E5%B7%A1%E5%BE%81%E8%BF%BD%E7%8C%8E.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "论剑",
             "决心如汗珠般闪耀",
-            "论剑"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「流光定影」025-1期光锥活动跃迁.png"
     },
@@ -1841,11 +2411,20 @@
         "type": "角色",
         "version": "2.5上半",
         "timer": "2.5版本更新后 ~ 2024/10/02 11:59",
-        "s": "卡芙卡",
+        "s": [
+            "卡芙卡",
+            "黑天鹅",
+            "知更鸟"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/dohx45e24wwx133a7ys68qtz1hy0mav.png/45px-%E5%8D%A1%E8%8A%99%E5%8D%A1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b8/qrev74l35vj8n7kwpcpr8ud9b41ni1a.png/45px-%E9%BB%91%E5%A4%A9%E9%B9%85.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/45/mcybqtbsmow098ik7nu1dq1jmef7bmc.png/45px-%E7%9F%A5%E6%9B%B4%E9%B8%9F.png"
+        ],
         "a": [
-            "卢卡",
+            "貊泽",
             "艾丝妲",
-            "貊泽"
+            "卢卡"
         ],
         "img_path": "img/sr/history/「铭心之萃」025-2期角色活动跃迁.png"
     },
@@ -1855,11 +2434,20 @@
         "type": "武器",
         "version": "2.5上半",
         "timer": "2.5版本更新后 ~ 2024/10/02 11:59",
-        "s": "只需等待",
+        "s": [
+            "只需等待",
+            "重塑时光之忆",
+            "夜色流光溢彩"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/efjfno0uzcaf7mji1xs0pvbpvh3d3jl.png/45px-%E5%8F%AA%E9%9C%80%E7%AD%89%E5%BE%85.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/1dqan418sbv4dtlcusymmi1rmtzgjrl.png/45px-%E9%87%8D%E5%A1%91%E6%97%B6%E5%85%89%E4%B9%8B%E5%BF%86.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/2/2a/83gcsilph5bmptedtiqkoaflk1zx5at.png/45px-%E5%A4%9C%E8%89%B2%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "论剑",
             "决心如汗珠般闪耀",
-            "论剑"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「真意之汇」025-2期光锥活动跃迁.png"
     },
@@ -1870,9 +2458,12 @@
         "version": "2.4下半",
         "timer": "2024/08/21 12:00 ~ 2024/09/09 15:00",
         "s": "椒丘",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e0/qaochn30qkct2gzvcop1l7galoy9d63.png/45px-%E6%A4%92%E4%B8%98.png"
+        ],
         "a": [
-            "桂乃芬",
             "虎克",
+            "桂乃芬",
             "阿兰"
         ],
         "img_path": "img/sr/history/「鼎中捭阖」024-1期角色活动跃迁.png"
@@ -1884,10 +2475,13 @@
         "version": "2.4下半",
         "timer": "2024/08/21 12:00 ~ 2024/09/09 15:00",
         "s": "那无数个春天",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5a/2lmhn3vxhauxg7slc5yjtkoqaqhofyo.png/45px-%E9%82%A3%E6%97%A0%E6%95%B0%E4%B8%AA%E6%98%A5%E5%A4%A9.png"
+        ],
         "a": [
+            "芳华待灼",
             "猎物的视线",
-            "秘密誓心",
-            "芳华待灼"
+            "秘密誓心"
         ],
         "img_path": "img/sr/history/「流光定影」024-1期光锥活动跃迁.png"
     },
@@ -1898,9 +2492,12 @@
         "version": "2.4下半",
         "timer": "2024/08/21 12:00 ~ 2024/09/09 15:00",
         "s": "花火",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/90/jf5yte1ote51iepifi8i75wifww5ybe.png/45px-%E8%8A%B1%E7%81%AB.png"
+        ],
         "a": [
-            "桂乃芬",
             "虎克",
+            "桂乃芬",
             "阿兰"
         ],
         "img_path": "img/sr/history/「焰锦游鱼」024-2期角色活动跃迁.png"
@@ -1912,10 +2509,13 @@
         "version": "2.4下半",
         "timer": "2024/08/21 12:00 ~ 2024/09/09 15:00",
         "s": "游戏尘寰",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/cjkwkkdlpbyfu5rh292fgc5dl8c09wj.png/45px-%E6%B8%B8%E6%88%8F%E5%B0%98%E5%AF%B0.png"
+        ],
         "a": [
+            "芳华待灼",
             "猎物的视线",
-            "秘密誓心",
-            "芳华待灼"
+            "秘密誓心"
         ],
         "img_path": "img/sr/history/「溯回忆象」024-2期光锥活动跃迁.png"
     },
@@ -1926,10 +2526,13 @@
         "version": "2.4上半",
         "timer": "2.4版本更新后 ~ 2024/08/21 11:59",
         "s": "云璃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d9/q1kzn8lehteph6x95tlyzjzf9re3ek8.png/45px-%E4%BA%91%E7%92%83.png"
+        ],
         "a": [
             "寒鸦",
-            "玲可",
-            "驭空"
+            "驭空",
+            "玲可"
         ],
         "img_path": "img/sr/history/「掷山破云」023-1期角色活动跃迁.png"
     },
@@ -1940,10 +2543,13 @@
         "version": "2.4上半",
         "timer": "2.4版本更新后 ~ 2024/08/21 11:59",
         "s": "落日时起舞",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d2/c4luysg9im43c6gbz319m9lo0eb9uga.png/45px-%E8%90%BD%E6%97%A5%E6%97%B6%E8%B5%B7%E8%88%9E.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "鼹鼠党欢迎你",
             "此时恰好",
-            "鼹鼠党欢迎你"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「流光定影」023-1期光锥活动跃迁.png"
     },
@@ -1954,10 +2560,13 @@
         "version": "2.4上半",
         "timer": "2.4版本更新后 ~ 2024/08/21 11:59",
         "s": "藿藿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/18/mxyemxhumdaxh5fwuyhhxuvckpujai0.png/45px-%E8%97%BF%E8%97%BF.png"
+        ],
         "a": [
             "寒鸦",
-            "玲可",
-            "驭空"
+            "驭空",
+            "玲可"
         ],
         "img_path": "img/sr/history/「令奉贞凶」023-2期角色活动跃迁.png"
     },
@@ -1968,10 +2577,13 @@
         "version": "2.4上半",
         "timer": "2.4版本更新后 ~ 2024/08/21 11:59",
         "s": "惊魂夜",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0c/4fcoke87kz8md11t0j8adbyctcj08hr.png/45px-%E6%83%8A%E9%AD%82%E5%A4%9C.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "鼹鼠党欢迎你",
             "此时恰好",
-            "鼹鼠党欢迎你"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「溯回忆象」023-2期光锥活动跃迁.png"
     },
@@ -1982,9 +2594,12 @@
         "version": "2.3下半",
         "timer": "2024/07/10 12:00 ~ 2024/07/30 15:00",
         "s": "翡翠",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ec/4er3t2hcgkmytigzjj4ralmhbn0gwf6.png/45px-%E7%BF%A1%E7%BF%A0.png"
+        ],
         "a": [
-            "娜塔莎",
             "希露瓦",
+            "娜塔莎",
             "艾丝妲"
         ],
         "img_path": "img/sr/history/「质生契运」022-1期角色活动跃迁.png"
@@ -1996,6 +2611,9 @@
         "version": "2.3下半",
         "timer": "2024/07/10 12:00 ~ 2024/07/30 15:00",
         "s": "偏偏希望无价",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/00/642vnhjuwvju90lee2g5qt2cmzvmjwb.png/45px-%E5%81%8F%E5%81%8F%E5%B8%8C%E6%9C%9B%E6%97%A0%E4%BB%B7.png"
+        ],
         "a": [
             "同一种心情",
             "宇宙市场趋势",
@@ -2010,9 +2628,12 @@
         "version": "2.3下半",
         "timer": "2024/07/10 12:00 ~ 2024/07/30 15:00",
         "s": "银枝",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d8/mygr5talpfik1ukgmnhgr5c7jc6fq6x.png/45px-%E9%93%B6%E6%9E%9D.png"
+        ],
         "a": [
-            "娜塔莎",
             "希露瓦",
+            "娜塔莎",
             "艾丝妲"
         ],
         "img_path": "img/sr/history/「荆冠芳勋」022-2期角色活动跃迁.png"
@@ -2024,6 +2645,9 @@
         "version": "2.3下半",
         "timer": "2024/07/10 12:00 ~ 2024/07/30 15:00",
         "s": "片刻，留在眼底",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8f/i4n2fslotqkxrmxls8n9gs8s3jjknfe.png/45px-%E7%89%87%E5%88%BB%EF%BC%8C%E7%95%99%E5%9C%A8%E7%9C%BC%E5%BA%95.png"
+        ],
         "a": [
             "同一种心情",
             "宇宙市场趋势",
@@ -2038,6 +2662,9 @@
         "version": "2.3上半",
         "timer": "2.3版本更新后 ~ 2024/07/10 11:59",
         "s": "流萤",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6e/loo8cnidyavnbgut84xmcgth6vdl5a0.png/45px-%E6%B5%81%E8%90%A4.png"
+        ],
         "a": [
             "加拉赫",
             "米沙",
@@ -2052,10 +2679,13 @@
         "version": "2.3上半",
         "timer": "2.3版本更新后 ~ 2024/07/10 11:59",
         "s": "梦应归于何处",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/97/9hgw5hentvblnrhzra15e143qbtjdv1.png/45px-%E6%A2%A6%E5%BA%94%E5%BD%92%E4%BA%8E%E4%BD%95%E5%A4%84.png"
+        ],
         "a": [
+            "记忆中的模样",
             "余生的第一天",
-            "猎物的视线",
-            "记忆中的模样"
+            "猎物的视线"
         ],
         "img_path": "img/sr/history/「流光定影」021-1期光锥活动跃迁.png"
     },
@@ -2066,6 +2696,9 @@
         "version": "2.3上半",
         "timer": "2.3版本更新后 ~ 2024/07/10 11:59",
         "s": "阮•梅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/7/7e/4fr0z14ln8pzcws5dwd7jee4s0g0u66.png/45px-%E9%98%AE%E2%80%A2%E6%A2%85.png"
+        ],
         "a": [
             "加拉赫",
             "米沙",
@@ -2080,10 +2713,13 @@
         "version": "2.3上半",
         "timer": "2.3版本更新后 ~ 2024/07/10 11:59",
         "s": "镜中故我",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f2/tv9d87pes7ugfrafdhkbor8atkgp5qi.png/45px-%E9%95%9C%E4%B8%AD%E6%95%85%E6%88%91.png"
+        ],
         "a": [
+            "记忆中的模样",
             "余生的第一天",
-            "猎物的视线",
-            "记忆中的模样"
+            "猎物的视线"
         ],
         "img_path": "img/sr/history/「溯回忆象」021-2期光锥活动跃迁.png"
     },
@@ -2094,6 +2730,9 @@
         "version": "2.2下半",
         "timer": "2024/05/29 12:00 ~ 2024/06/18 15:00",
         "s": "波提欧",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/da/5wtfcz4garqrmk9k3jbq0vc5x45lgu3.png/45px-%E6%B3%A2%E6%8F%90%E6%AC%A7.png"
+        ],
         "a": [
             "佩拉",
             "卢卡",
@@ -2108,10 +2747,13 @@
         "version": "2.2下半",
         "timer": "2024/05/29 12:00 ~ 2024/06/18 15:00",
         "s": "驶向第二次生命",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/ff/i0df57yj4zoqi9ij944mc20innski09.png/45px-%E9%A9%B6%E5%90%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%94%9F%E5%91%BD.png"
+        ],
         "a": [
             "天才们的休憩",
-            "朗道的选择",
-            "秘密誓心"
+            "秘密誓心",
+            "朗道的选择"
         ],
         "img_path": "img/sr/history/「流光定影」020-1期光锥活动跃迁.png"
     },
@@ -2122,6 +2764,9 @@
         "version": "2.2下半",
         "timer": "2024/05/29 12:00 ~ 2024/06/18 15:00",
         "s": "符玄",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/93/l8whdjtp13zqrhep2pfc4ale839tahz.png/45px-%E7%AC%A6%E7%8E%84.png"
+        ],
         "a": [
             "佩拉",
             "卢卡",
@@ -2136,10 +2781,13 @@
         "version": "2.2下半",
         "timer": "2024/05/29 12:00 ~ 2024/06/18 15:00",
         "s": "她已闭上双眼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/54/go4f6jbge1b9pew14izl3gurbudzm7t.png/45px-%E5%A5%B9%E5%B7%B2%E9%97%AD%E4%B8%8A%E5%8F%8C%E7%9C%BC.png"
+        ],
         "a": [
             "天才们的休憩",
-            "朗道的选择",
-            "秘密誓心"
+            "秘密誓心",
+            "朗道的选择"
         ],
         "img_path": "img/sr/history/「溯回忆象」020-2期光锥活动跃迁.png"
     },
@@ -2150,6 +2798,9 @@
         "version": "2.2上半",
         "timer": "2.2版本更新后 ~ 2024/05/29 11:59",
         "s": "知更鸟",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/45/mcybqtbsmow098ik7nu1dq1jmef7bmc.png/45px-%E7%9F%A5%E6%9B%B4%E9%B8%9F.png"
+        ],
         "a": [
             "三月七•存护",
             "寒鸦",
@@ -2164,10 +2815,13 @@
         "version": "2.2上半",
         "timer": "2.2版本更新后 ~ 2024/05/29 11:59",
         "s": "夜色流光溢彩",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/2a/83gcsilph5bmptedtiqkoaflk1zx5at.png/45px-%E5%A4%9C%E8%89%B2%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9.png"
+        ],
         "a": [
+            "论剑",
             "无边曼舞",
-            "此时恰好",
-            "论剑"
+            "此时恰好"
         ],
         "img_path": "img/sr/history/「流光定影」019-1期光锥活动跃迁.png"
     },
@@ -2178,6 +2832,9 @@
         "version": "2.2上半",
         "timer": "2.2版本更新后 ~ 2024/05/29 11:59",
         "s": "托帕&账账",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c4/tksvx8yn9bdrxild4w3q99u2hqsdiq0.png/45px-%E6%89%98%E5%B8%95%26%E8%B4%A6%E8%B4%A6.png"
+        ],
         "a": [
             "三月七•存护",
             "寒鸦",
@@ -2192,10 +2849,13 @@
         "version": "2.2上半",
         "timer": "2.2版本更新后 ~ 2024/05/29 11:59",
         "s": "烦恼着，幸福着",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/84/q5uh78cul6vgnk4aep039tdwk2wbsih.png/45px-%E7%83%A6%E6%81%BC%E7%9D%80%EF%BC%8C%E5%B9%B8%E7%A6%8F%E7%9D%80.png"
+        ],
         "a": [
+            "论剑",
             "无边曼舞",
-            "此时恰好",
-            "论剑"
+            "此时恰好"
         ],
         "img_path": "img/sr/history/「溯回忆象」019-2期光锥活动跃迁.png"
     },
@@ -2206,10 +2866,13 @@
         "version": "2.1下半",
         "timer": "2024/04/17 12:00 ~ 2024/05/07 15:00",
         "s": "砂金",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/b88dlc8dr8gocikr1x7gpfke3m2n0q0.png/45px-%E7%A0%82%E9%87%91.png"
+        ],
         "a": [
+            "玲可",
             "卢卡",
-            "希露瓦",
-            "玲可"
+            "希露瓦"
         ],
         "img_path": "img/sr/history/「囚石铸金」018-1期角色活动跃迁.png"
     },
@@ -2220,10 +2883,13 @@
         "version": "2.1下半",
         "timer": "2024/04/17 12:00 ~ 2024/05/07 15:00",
         "s": "命运从未公平",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/63/fqe7u18gzj9w4dzckopxc8izgczrbat.png/45px-%E5%91%BD%E8%BF%90%E4%BB%8E%E6%9C%AA%E5%85%AC%E5%B9%B3.png"
+        ],
         "a": [
             "两个人的演唱会",
-            "别让世界静下来",
-            "同一种心情"
+            "同一种心情",
+            "别让世界静下来"
         ],
         "img_path": "img/sr/history/「流光定影」018-1期光锥活动跃迁.png"
     },
@@ -2234,10 +2900,13 @@
         "version": "2.1下半",
         "timer": "2024/04/17 12:00 ~ 2024/05/07 15:00",
         "s": "镜流",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4f/eroepj7blbgn986vxmq6yupvn8wwgho.png/45px-%E9%95%9C%E6%B5%81.png"
+        ],
         "a": [
+            "玲可",
             "卢卡",
-            "希露瓦",
-            "玲可"
+            "希露瓦"
         ],
         "img_path": "img/sr/history/「月有薄蚀」018-2期角色活动跃迁.png"
     },
@@ -2248,10 +2917,13 @@
         "version": "2.1下半",
         "timer": "2024/04/17 12:00 ~ 2024/05/07 15:00",
         "s": "此身为剑",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f4/mf0w98474ew7l3pzib8ifnktdyfofhg.png/45px-%E6%AD%A4%E8%BA%AB%E4%B8%BA%E5%89%91.png"
+        ],
         "a": [
             "两个人的演唱会",
-            "别让世界静下来",
-            "同一种心情"
+            "同一种心情",
+            "别让世界静下来"
         ],
         "img_path": "img/sr/history/「溯回忆象」018-2期光锥活动跃迁.png"
     },
@@ -2262,10 +2934,13 @@
         "version": "2.1上半",
         "timer": "2.1版本更新后 ~ 2024/04/17 11:59",
         "s": "黄泉",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/7s1eiyi9q7kjk4ow4wcov33bjiokhwx.png/45px-%E9%BB%84%E6%B3%89.png"
+        ],
         "a": [
-            "丹恒",
+            "加拉赫",
             "佩拉",
-            "加拉赫"
+            "丹恒"
         ],
         "img_path": "img/sr/history/「远辞畴昔」017-1期角色活动跃迁.png"
     },
@@ -2276,9 +2951,12 @@
         "version": "2.1上半",
         "timer": "2.1版本更新后 ~ 2024/04/17 11:59",
         "s": "行于流逝的岸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/cd/aibtuk0o5dt19zp72g0v3ni27ynxxbl.png/45px-%E8%A1%8C%E4%BA%8E%E6%B5%81%E9%80%9D%E7%9A%84%E5%B2%B8.png"
+        ],
         "a": [
-            "一场术后对话",
             "晚安与睡颜",
+            "一场术后对话",
             "点个关注吧！"
         ],
         "img_path": "img/sr/history/「流光定影」017-1期光锥活动跃迁.png"
@@ -2290,10 +2968,13 @@
         "version": "2.1上半",
         "timer": "2.1版本更新后 ~ 2024/04/17 11:59",
         "s": "罗刹",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/25/mk44uvm6gfnven3tuq7rlzm5oz7acvw.png/45px-%E7%BD%97%E5%88%B9.png"
+        ],
         "a": [
-            "丹恒",
+            "加拉赫",
             "佩拉",
-            "加拉赫"
+            "丹恒"
         ],
         "img_path": "img/sr/history/「寻索世间」017-2期角色活动跃迁.png"
     },
@@ -2304,9 +2985,12 @@
         "version": "2.1上半",
         "timer": "2.1版本更新后 ~ 2024/04/17 11:59",
         "s": "棺的回响",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/18/b5q02v30rvtdvh1mhnvqsow63m9qddz.png/45px-%E6%A3%BA%E7%9A%84%E5%9B%9E%E5%93%8D.png"
+        ],
         "a": [
-            "一场术后对话",
             "晚安与睡颜",
+            "一场术后对话",
             "点个关注吧！"
         ],
         "img_path": "img/sr/history/「溯回忆象」017-2期光锥活动跃迁.png"
@@ -2318,10 +3002,13 @@
         "version": "2.0下半",
         "timer": "2024/02/29 12:00 ~ 2024/03/26 15:00",
         "s": "花火",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/90/jf5yte1ote51iepifi8i75wifww5ybe.png/45px-%E8%8A%B1%E7%81%AB.png"
+        ],
         "a": [
-            "寒鸦",
             "桑博",
-            "青雀"
+            "青雀",
+            "寒鸦"
         ],
         "img_path": "img/sr/history/「焰锦游鱼」016-1期角色活动跃迁.png"
     },
@@ -2332,6 +3019,9 @@
         "version": "2.0下半",
         "timer": "2024/02/29 12:00 ~ 2024/03/26 15:00",
         "s": "游戏尘寰",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/cjkwkkdlpbyfu5rh292fgc5dl8c09wj.png/45px-%E6%B8%B8%E6%88%8F%E5%B0%98%E5%AF%B0.png"
+        ],
         "a": [
             "与行星相会",
             "在蓝天下",
@@ -2346,10 +3036,13 @@
         "version": "2.0下半",
         "timer": "2024/02/29 12:00 ~ 2024/03/26 15:00",
         "s": "景元",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/11/0s6m58osylvmhiqxpqbqlinww9sxvl0.png/45px-%E6%99%AF%E5%85%83.png"
+        ],
         "a": [
-            "寒鸦",
             "桑博",
-            "青雀"
+            "青雀",
+            "寒鸦"
         ],
         "img_path": "img/sr/history/「天戈麾斥」016-2期角色活动跃迁.png"
     },
@@ -2360,6 +3053,9 @@
         "version": "2.0下半",
         "timer": "2024/02/29 12:00 ~ 2024/03/26 15:00",
         "s": "拂晓之前",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/e3yukm7phvszpq69oo727ppjaqtyefu.png/45px-%E6%8B%82%E6%99%93%E4%B9%8B%E5%89%8D.png"
+        ],
         "a": [
             "与行星相会",
             "在蓝天下",
@@ -2374,10 +3070,13 @@
         "version": "2.0上半",
         "timer": "2.0版本更新后 ~ 2024/02/29 11:59",
         "s": "黑天鹅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/b8/qrev74l35vj8n7kwpcpr8ud9b41ni1a.png/45px-%E9%BB%91%E5%A4%A9%E9%B9%85.png"
+        ],
         "a": [
+            "米沙",
             "停云",
-            "桂乃芬",
-            "米沙"
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「镜映婆娑」015-1期角色活动跃迁.png"
     },
@@ -2388,10 +3087,13 @@
         "version": "2.0上半",
         "timer": "2.0版本更新后 ~ 2024/02/29 11:59",
         "s": "重塑时光之忆",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/60/1dqan418sbv4dtlcusymmi1rmtzgjrl.png/45px-%E9%87%8D%E5%A1%91%E6%97%B6%E5%85%89%E4%B9%8B%E5%BF%86.png"
+        ],
         "a": [
+            "铭记于心的约定",
             "决心如汗珠般闪耀",
-            "舞！舞！舞！",
-            "铭记于心的约定"
+            "舞！舞！舞！"
         ],
         "img_path": "img/sr/history/「流光定影」015-1期光锥活动跃迁.png"
     },
@@ -2402,10 +3104,13 @@
         "version": "2.0上半",
         "timer": "2.0版本更新后 ~ 2024/02/29 11:59",
         "s": "丹恒•饮月",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5e/hdu1w3gwyaqtfi8ztdu3f13kjfta8rh.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E9%A5%AE%E6%9C%88.png"
+        ],
         "a": [
+            "米沙",
             "停云",
-            "桂乃芬",
-            "米沙"
+            "桂乃芬"
         ],
         "img_path": "img/sr/history/「濯世垂虹」015-2期角色活动跃迁.png"
     },
@@ -2416,10 +3121,13 @@
         "version": "2.0上半",
         "timer": "2.0版本更新后 ~ 2024/02/29 11:59",
         "s": "比阳光更明亮的",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/ap3fv056aaq2yd07ieac6ezv20w8r2h.png/45px-%E6%AF%94%E9%98%B3%E5%85%89%E6%9B%B4%E6%98%8E%E4%BA%AE%E7%9A%84.png"
+        ],
         "a": [
+            "铭记于心的约定",
             "决心如汗珠般闪耀",
-            "舞！舞！舞！",
-            "铭记于心的约定"
+            "舞！舞！舞！"
         ],
         "img_path": "img/sr/history/「溯回忆象」015-2期光锥活动跃迁.png"
     },
@@ -2430,9 +3138,12 @@
         "version": "1.6下半",
         "timer": "2024/01/17 12:00 ~ 2024/02/05 15:00",
         "s": "真理医生",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/2vsc3pe7c2e1jly7wm2idvz6t2m31d8.png/45px-%E7%9C%9F%E7%90%86%E5%8C%BB%E7%94%9F.png"
+        ],
         "a": [
-            "娜塔莎",
             "素裳",
+            "娜塔莎",
             "虎克"
         ],
         "img_path": "img/sr/history/「万物皆流」014-1期角色活动跃迁.png"
@@ -2444,10 +3155,13 @@
         "version": "1.6下半",
         "timer": "2024/01/17 12:00 ~ 2024/02/05 15:00",
         "s": "纯粹思维的洗礼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/56/nur8kwlpu961g0wt7xlzvu1akautd02.png/45px-%E7%BA%AF%E7%B2%B9%E6%80%9D%E7%BB%B4%E7%9A%84%E6%B4%97%E7%A4%BC.png"
+        ],
         "a": [
+            "此时恰好",
             "唯有沉默",
-            "朗道的选择",
-            "此时恰好"
+            "朗道的选择"
         ],
         "img_path": "img/sr/history/「流光定影」014-1期光锥活动跃迁.png"
     },
@@ -2458,9 +3172,12 @@
         "version": "1.6下半",
         "timer": "2024/01/17 12:00 ~ 2024/02/05 15:00",
         "s": "卡芙卡",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/dohx45e24wwx133a7ys68qtz1hy0mav.png/45px-%E5%8D%A1%E8%8A%99%E5%8D%A1.png"
+        ],
         "a": [
-            "娜塔莎",
             "素裳",
+            "娜塔莎",
             "虎克"
         ],
         "img_path": "img/sr/history/「夜将不眠」014-2期角色活动跃迁.png"
@@ -2472,10 +3189,13 @@
         "version": "1.6下半",
         "timer": "2024/01/17 12:00 ~ 2024/02/05 15:00",
         "s": "只需等待",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/efjfno0uzcaf7mji1xs0pvbpvh3d3jl.png/45px-%E5%8F%AA%E9%9C%80%E7%AD%89%E5%BE%85.png"
+        ],
         "a": [
+            "此时恰好",
             "唯有沉默",
-            "朗道的选择",
-            "此时恰好"
+            "朗道的选择"
         ],
         "img_path": "img/sr/history/「溯回忆象」014-2期光锥活动跃迁.png"
     },
@@ -2486,6 +3206,9 @@
         "version": "1.6上半",
         "timer": "1.6版本更新后 ~ 2024/01/17 11:59",
         "s": "阮•梅",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/7/7e/4fr0z14ln8pzcws5dwd7jee4s0g0u66.png/45px-%E9%98%AE%E2%80%A2%E6%A2%85.png"
+        ],
         "a": [
             "三月七•存护",
             "停云",
@@ -2500,6 +3223,9 @@
         "version": "1.6上半",
         "timer": "1.6版本更新后 ~ 2024/01/17 11:59",
         "s": "镜中故我",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f2/tv9d87pes7ugfrafdhkbor8atkgp5qi.png/45px-%E9%95%9C%E4%B8%AD%E6%95%85%E6%88%91.png"
+        ],
         "a": [
             "与行星相会",
             "余生的第一天",
@@ -2514,10 +3240,13 @@
         "version": "1.6上半",
         "timer": "1.6版本更新后 ~ 2024/01/17 11:59",
         "s": "刃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4c/h32p7jlxyi00coj1ya4so5ggjbw1g8w.png/45px-%E5%88%83.png"
+        ],
         "a": [
+            "雪衣",
             "三月七•存护",
-            "停云",
-            "雪衣"
+            "停云"
         ],
         "img_path": "img/sr/history/「业途游魂」013-2期角色活动跃迁.png"
     },
@@ -2528,6 +3257,9 @@
         "version": "1.6上半",
         "timer": "1.6版本更新后 ~ 2024/01/17 11:59",
         "s": "到不了的彼岸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c5/11vzcjzj1xcyvw5g8cu7ltktnpzvyko.png/45px-%E5%88%B0%E4%B8%8D%E4%BA%86%E7%9A%84%E5%BD%BC%E5%B2%B8.png"
+        ],
         "a": [
             "与行星相会",
             "余生的第一天",
@@ -2542,6 +3274,9 @@
         "version": "1.5下半",
         "timer": "2023/12/06 12:00 ~ 2023/12/26 15:00",
         "s": "银枝",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d8/mygr5talpfik1ukgmnhgr5c7jc6fq6x.png/45px-%E9%93%B6%E6%9E%9D.png"
+        ],
         "a": [
             "寒鸦",
             "玲可",
@@ -2556,10 +3291,13 @@
         "version": "1.5下半",
         "timer": "2023/12/06 12:00 ~ 2023/12/26 15:00",
         "s": "片刻，留在眼底",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8f/i4n2fslotqkxrmxls8n9gs8s3jjknfe.png/45px-%E7%89%87%E5%88%BB%EF%BC%8C%E7%95%99%E5%9C%A8%E7%9C%BC%E5%BA%95.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "在蓝天下",
             "一场术后对话",
-            "在蓝天下"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「流光定影」012-1期光锥活动跃迁.png"
     },
@@ -2570,6 +3308,9 @@
         "version": "1.5下半",
         "timer": "2023/12/06 12:00 ~ 2023/12/26 15:00",
         "s": "银狼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6a/fy5jpy31k53qtntk0aetrjq9ior9gs2.png/45px-%E9%93%B6%E7%8B%BC.png"
+        ],
         "a": [
             "寒鸦",
             "玲可",
@@ -2584,10 +3325,13 @@
         "version": "1.5下半",
         "timer": "2023/12/06 12:00 ~ 2023/12/26 15:00",
         "s": "雨一直下",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/5o2f5ztwugkgtr3j0tz89maktzlfib7.png/45px-%E9%9B%A8%E4%B8%80%E7%9B%B4%E4%B8%8B.png"
+        ],
         "a": [
-            "「我」的诞生",
+            "在蓝天下",
             "一场术后对话",
-            "在蓝天下"
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「溯回忆象」012-2期光锥活动跃迁.png"
     },
@@ -2598,10 +3342,13 @@
         "version": "1.5上半",
         "timer": "1.5版本更新后 ~ 2023/12/06 11:59",
         "s": "藿藿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/18/mxyemxhumdaxh5fwuyhhxuvckpujai0.png/45px-%E8%97%BF%E8%97%BF.png"
+        ],
         "a": [
             "丹恒",
-            "希露瓦",
-            "阿兰"
+            "阿兰",
+            "希露瓦"
         ],
         "img_path": "img/sr/history/「令奉贞凶」011-1期角色活动跃迁.png"
     },
@@ -2612,10 +3359,13 @@
         "version": "1.5上半",
         "timer": "1.5版本更新后 ~ 2023/12/06 11:59",
         "s": "惊魂夜",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/0c/4fcoke87kz8md11t0j8adbyctcj08hr.png/45px-%E6%83%8A%E9%AD%82%E5%A4%9C.png"
+        ],
         "a": [
             "同一种心情",
-            "宇宙市场趋势",
-            "点个关注吧！"
+            "点个关注吧！",
+            "宇宙市场趋势"
         ],
         "img_path": "img/sr/history/「流光定影」011-1期光锥活动跃迁.png"
     },
@@ -2626,9 +3376,12 @@
         "version": "1.4下半",
         "timer": "2023/10/27 12:00 ~ 2023/11/14 15:00",
         "s": "托帕&账账",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c4/tksvx8yn9bdrxild4w3q99u2hqsdiq0.png/45px-%E6%89%98%E5%B8%95%26%E8%B4%A6%E8%B4%A6.png"
+        ],
         "a": [
-            "卢卡",
             "桂乃芬",
+            "卢卡",
             "素裳"
         ],
         "img_path": "img/sr/history/「落日条款」010-1期角色活动跃迁.png"
@@ -2640,10 +3393,13 @@
         "version": "1.4下半",
         "timer": "2023/10/27 12:00 ~ 2023/11/14 15:00",
         "s": "烦恼着，幸福着",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/84/q5uh78cul6vgnk4aep039tdwk2wbsih.png/45px-%E7%83%A6%E6%81%BC%E7%9D%80%EF%BC%8C%E5%B9%B8%E7%A6%8F%E7%9D%80.png"
+        ],
         "a": [
+            "鼹鼠党欢迎你",
             "决心如汗珠般闪耀",
-            "唯有沉默",
-            "鼹鼠党欢迎你"
+            "唯有沉默"
         ],
         "img_path": "img/sr/history/「流光定影」010-1期光锥活动跃迁.png"
     },
@@ -2654,9 +3410,12 @@
         "version": "1.4下半",
         "timer": "2023/10/27 12:00 ~ 2023/11/14 15:00",
         "s": "希儿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/3/38/3ugfna3k4fw7dfo0qipt4lfrctt50x0.png/45px-%E5%B8%8C%E5%84%BF.png"
+        ],
         "a": [
-            "卢卡",
             "桂乃芬",
+            "卢卡",
             "素裳"
         ],
         "img_path": "img/sr/history/「蝶立锋锷」010-2期角色活动跃迁.png"
@@ -2668,10 +3427,13 @@
         "version": "1.4下半",
         "timer": "2023/10/27 12:00 ~ 2023/11/14 15:00",
         "s": "于夜色中",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/41/eamcuipau38z9mmva47rgb1ppsjjb6l.png/45px-%E4%BA%8E%E5%A4%9C%E8%89%B2%E4%B8%AD.png"
+        ],
         "a": [
+            "鼹鼠党欢迎你",
             "决心如汗珠般闪耀",
-            "唯有沉默",
-            "鼹鼠党欢迎你"
+            "唯有沉默"
         ],
         "img_path": "img/sr/history/「溯回忆象」010-2期光锥活动跃迁.png"
     },
@@ -2682,10 +3444,13 @@
         "version": "1.4上半",
         "timer": "1.4版本更新后 ~ 2023/10/27 11:59",
         "s": "镜流",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4f/eroepj7blbgn986vxmq6yupvn8wwgho.png/45px-%E9%95%9C%E6%B5%81.png"
+        ],
         "a": [
             "停云",
-            "桑博",
-            "青雀"
+            "青雀",
+            "桑博"
         ],
         "img_path": "img/sr/history/「月有薄蚀」009-1期角色活动跃迁.png"
     },
@@ -2696,10 +3461,13 @@
         "version": "1.4上半",
         "timer": "1.4版本更新后 ~ 2023/10/27 11:59",
         "s": "此身为剑",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f4/mf0w98474ew7l3pzib8ifnktdyfofhg.png/45px-%E6%AD%A4%E8%BA%AB%E4%B8%BA%E5%89%91.png"
+        ],
         "a": [
             "别让世界静下来",
-            "猎物的视线",
-            "记忆中的模样"
+            "记忆中的模样",
+            "猎物的视线"
         ],
         "img_path": "img/sr/history/「流光定影」009-1期光锥活动跃迁.png"
     },
@@ -2710,10 +3478,13 @@
         "version": "1.3下半",
         "timer": "2023/09/20 12:00 ~ 2023/10/10 15:00",
         "s": "符玄",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/93/l8whdjtp13zqrhep2pfc4ale839tahz.png/45px-%E7%AC%A6%E7%8E%84.png"
+        ],
         "a": [
-            "佩拉",
             "玲可",
-            "虎克"
+            "虎克",
+            "佩拉"
         ],
         "img_path": "img/sr/history/「穷观妙算」008-1期角色活动跃迁.png"
     },
@@ -2724,10 +3495,13 @@
         "version": "1.3下半",
         "timer": "2023/09/20 12:00 ~ 2023/10/10 15:00",
         "s": "她已闭上双眼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/54/go4f6jbge1b9pew14izl3gurbudzm7t.png/45px-%E5%A5%B9%E5%B7%B2%E9%97%AD%E4%B8%8A%E5%8F%8C%E7%9C%BC.png"
+        ],
         "a": [
-            "在蓝天下",
             "宇宙市场趋势",
-            "此时恰好"
+            "此时恰好",
+            "在蓝天下"
         ],
         "img_path": "img/sr/history/「流光定影」008-1期光锥活动跃迁.png"
     },
@@ -2738,10 +3512,13 @@
         "version": "1.3上半",
         "timer": "1.3版本更新后 ~ 2023/09/20 11:59",
         "s": "丹恒•饮月",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5e/hdu1w3gwyaqtfi8ztdu3f13kjfta8rh.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E9%A5%AE%E6%9C%88.png"
+        ],
         "a": [
-            "三月七•存护",
+            "驭空",
             "艾丝妲",
-            "驭空"
+            "三月七•存护"
         ],
         "img_path": "img/sr/history/「濯世垂虹」007-1期角色活动跃迁.png"
     },
@@ -2752,10 +3529,13 @@
         "version": "1.3上半",
         "timer": "1.3版本更新后 ~ 2023/09/20 11:59",
         "s": "比阳光更明亮的",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/ap3fv056aaq2yd07ieac6ezv20w8r2h.png/45px-%E6%AF%94%E9%98%B3%E5%85%89%E6%9B%B4%E6%98%8E%E4%BA%AE%E7%9A%84.png"
+        ],
         "a": [
             "与行星相会",
-            "朗道的选择",
-            "舞！舞！舞！"
+            "舞！舞！舞！",
+            "朗道的选择"
         ],
         "img_path": "img/sr/history/「流光定影」007-1期光锥活动跃迁.png"
     },
@@ -2766,10 +3546,13 @@
         "version": "1.2下半",
         "timer": "2023/08/09 12:00 ~ 2023/08/29 15:00",
         "s": "卡芙卡",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fe/dohx45e24wwx133a7ys68qtz1hy0mav.png/45px-%E5%8D%A1%E8%8A%99%E5%8D%A1.png"
+        ],
         "a": [
             "卢卡",
-            "希露瓦",
-            "桑博"
+            "桑博",
+            "希露瓦"
         ],
         "img_path": "img/sr/history/「夜将不眠」006-1期角色活动跃迁.png"
     },
@@ -2780,10 +3563,13 @@
         "version": "1.2下半",
         "timer": "2023/08/09 12:00 ~ 2023/08/29 15:00",
         "s": "只需等待",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/efjfno0uzcaf7mji1xs0pvbpvh3d3jl.png/45px-%E5%8F%AA%E9%9C%80%E7%AD%89%E5%BE%85.png"
+        ],
         "a": [
-            "「我」的诞生",
             "决心如汗珠般闪耀",
-            "猎物的视线"
+            "猎物的视线",
+            "「我」的诞生"
         ],
         "img_path": "img/sr/history/「流光定影」006-1期光锥活动跃迁.png"
     },
@@ -2794,10 +3580,13 @@
         "version": "1.2上半",
         "timer": "1.2版本更新后 ~ 2023/08/09 11:59",
         "s": "刃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/4c/h32p7jlxyi00coj1ya4so5ggjbw1g8w.png/45px-%E5%88%83.png"
+        ],
         "a": [
-            "娜塔莎",
+            "阿兰",
             "素裳",
-            "阿兰"
+            "娜塔莎"
         ],
         "img_path": "img/sr/history/「业途游魂」005-1期角色活动跃迁.png"
     },
@@ -2808,10 +3597,13 @@
         "version": "1.2上半",
         "timer": "1.2版本更新后 ~ 2023/08/09 11:59",
         "s": "到不了的彼岸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c5/11vzcjzj1xcyvw5g8cu7ltktnpzvyko.png/45px-%E5%88%B0%E4%B8%8D%E4%BA%86%E7%9A%84%E5%BD%BC%E5%B2%B8.png"
+        ],
         "a": [
-            "同一种心情",
             "秘密誓心",
-            "论剑"
+            "论剑",
+            "同一种心情"
         ],
         "img_path": "img/sr/history/「流光定影」005-1期光锥活动跃迁.png"
     },
@@ -2822,6 +3614,9 @@
         "version": "1.1下半",
         "timer": "2023/06/28 12:00 ~ 2023/07/18 15:00",
         "s": "罗刹",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/25/mk44uvm6gfnven3tuq7rlzm5oz7acvw.png/45px-%E7%BD%97%E5%88%B9.png"
+        ],
         "a": [
             "佩拉",
             "青雀",
@@ -2836,10 +3631,13 @@
         "version": "1.1下半",
         "timer": "2023/06/28 12:00 ~ 2023/07/18 15:00",
         "s": "棺的回响",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/18/b5q02v30rvtdvh1mhnvqsow63m9qddz.png/45px-%E6%A3%BA%E7%9A%84%E5%9B%9E%E5%93%8D.png"
+        ],
         "a": [
-            "天才们的休憩",
             "晚安与睡颜",
-            "舞！舞！舞！"
+            "舞！舞！舞！",
+            "天才们的休憩"
         ],
         "img_path": "img/sr/history/「流光定影」004-1期光锥活动跃迁.png"
     },
@@ -2850,10 +3648,13 @@
         "version": "1.1上半",
         "timer": "1.1版本更新后 ~ 2023/06/28 11:59",
         "s": "银狼",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6a/fy5jpy31k53qtntk0aetrjq9ior9gs2.png/45px-%E9%93%B6%E7%8B%BC.png"
+        ],
         "a": [
             "丹恒",
-            "希露瓦",
-            "艾丝妲"
+            "艾丝妲",
+            "希露瓦"
         ],
         "img_path": "img/sr/history/「零号协议」003-1期角色活动跃迁.png"
     },
@@ -2864,10 +3665,13 @@
         "version": "1.1上半",
         "timer": "1.1版本更新后 ~ 2023/06/28 11:59",
         "s": "雨一直下",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/9/91/5o2f5ztwugkgtr3j0tz89maktzlfib7.png/45px-%E9%9B%A8%E4%B8%80%E7%9B%B4%E4%B8%8B.png"
+        ],
         "a": [
-            "别让世界静下来",
             "点个关注吧！",
-            "记忆中的模样"
+            "记忆中的模样",
+            "别让世界静下来"
         ],
         "img_path": "img/sr/history/「流光定影」003-1期光锥活动跃迁.png"
     },
@@ -2878,10 +3682,13 @@
         "version": "1.0下半",
         "timer": "2023/05/17 18:00 ~ 2023/06/06 15:00",
         "s": "景元",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/1/11/0s6m58osylvmhiqxpqbqlinww9sxvl0.png/45px-%E6%99%AF%E5%85%83.png"
+        ],
         "a": [
+            "素裳",
             "三月七•存护",
-            "停云",
-            "素裳"
+            "停云"
         ],
         "img_path": "img/sr/history/「天戈麾斥」002-1期角色活动跃迁.png"
     },
@@ -2892,10 +3699,13 @@
         "version": "1.0下半",
         "timer": "2023/05/17 18:00 ~ 2023/06/06 15:00",
         "s": "拂晓之前",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/e3yukm7phvszpq69oo727ppjaqtyefu.png/45px-%E6%8B%82%E6%99%93%E4%B9%8B%E5%89%8D.png"
+        ],
         "a": [
-            "与行星相会",
+            "唯有沉默",
             "余生的第一天",
-            "唯有沉默"
+            "与行星相会"
         ],
         "img_path": "img/sr/history/「流光定影」002-1期光锥活动跃迁.png"
     },
@@ -2906,10 +3716,13 @@
         "version": "1.0上半",
         "timer": "正式开服后 ~ 2023/05/17 17:59",
         "s": "希儿",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/3/38/3ugfna3k4fw7dfo0qipt4lfrctt50x0.png/45px-%E5%B8%8C%E5%84%BF.png"
+        ],
         "a": [
-            "佩拉",
             "娜塔莎",
-            "虎克"
+            "虎克",
+            "佩拉"
         ],
         "img_path": "img/sr/history/「蝶立锋锷」001-1期角色活动跃迁.png"
     },
@@ -2920,10 +3733,13 @@
         "version": "1.0上半",
         "timer": "正式开服后 ~ 2023/05/17 17:59",
         "s": "于夜色中",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/4/41/eamcuipau38z9mmva47rgb1ppsjjb6l.png/45px-%E4%BA%8E%E5%A4%9C%E8%89%B2%E4%B8%AD.png"
+        ],
         "a": [
-            "一场术后对话",
             "晚安与睡颜",
-            "鼹鼠党欢迎你"
+            "鼹鼠党欢迎你",
+            "一场术后对话"
         ],
         "img_path": "img/sr/history/「流光定影」001-1期光锥活动跃迁.png"
     }

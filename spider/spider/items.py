@@ -29,6 +29,7 @@ class HistoryItem(scrapy.Item):
     version = scrapy.Field()
     timer = scrapy.Field()
     s = scrapy.Field()
+    s_imgs = scrapy.Field()
     a = scrapy.Field()
     pass
 

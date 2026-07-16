@@ -1,26 +1,30 @@
-import { Card, CardBody, CardFooter, Image } from '@heroui/react';
+import { Card, CardBody } from '@heroui/react';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
+
+import { getHistoryRoleNames, type HistoryRoleDisplay, normalizeHistoryRoleName } from '@/utils/pool-role';
 
 export interface CardPoolProps {
   historyList: any[];
 }
 
 export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps) => {
-  // 某些卡池同一期有多个s角色（如重映），后端会生成多条记录，导致图片和标题重复展示
-  // 按 title 分组合并，相同卡池名称的多条记录合并为一条，s 角色去重保留
+  // 同名卡池要按时间继续拆分，否则会把上半、下半或长期常驻合成一张含义不清的卡。
   const mergedList = useMemo((): any[] => {
     const group: Record<string, any> = {};
     for (const item of historyList as any[]) {
-      const key = item.title;
+      const key = getPoolGroupKey(item);
       if (!group[key]) {
-        // 首次遇到该 title，初始化分组
-        group[key] = { ...item, s: [] };
+        group[key] = { ...item, roles: [] };
       }
-      // 合并 s 角色（数组去重）
-      const existingS = Array.isArray(group[key].s) ? group[key].s : [group[key].s];
-      const newS = Array.isArray(item.s) ? item.s : [item.s];
-      group[key].s = [...new Set([...existingS, ...newS].filter(Boolean))];
+
+      group[key].roles = mergeRoleList(group[key].roles, getDisplayRoles(item));
+      group[key].s = group[key].roles.map((role: HistoryRoleDisplay) => role.title);
+
+      if (!group[key].img && item.img) {
+        group[key].img = item.img;
+      }
     }
+
     return Object.values(group).sort((a: any, b: any) => {
       const endDiff = getHistoryEndTime(a.timer) - getHistoryEndTime(b.timer);
       return endDiff || `${a.title}`.localeCompare(`${b.title}`);
@@ -36,47 +40,173 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
 
   return (
     <div className="flex flex-col gap-4">
-      {normalList.length > 0 && <PoolGrid historyList={normalList} />}
+      {normalList.length > 0 && <PoolSection historyList={normalList} title="限时跃迁" />}
 
       {permanentList.length > 0 && (
-        <section className="flex flex-col gap-3 border-t border-default-200 pt-3">
-          <p className="rounded-medium bg-default-100 px-3 py-2 text-sm text-default-600">
-            以下为永久卡池，开放后长期常驻，不参与当前限时卡池倒计时。
-          </p>
-          <PoolGrid historyList={permanentList} />
-        </section>
+        <PoolSection
+          className="border-t border-default-200 pt-3"
+          historyList={permanentList}
+          title="长期常驻"
+        />
       )}
     </div>
   );
 };
 
-const PoolGrid = ({ historyList }: { historyList: any[] }) => (
-  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-    {historyList.map((item: any, index: number) => (
-      <Card
-        className=""
-        key={`${item.title}-${index}`}
-        isFooterBlurred
-        isPressable
-        shadow="sm"
-        onPress={() => console.log('item pressed')}
-      >
-        <CardBody className="p-0">
-          <Image
-            alt={item.title}
-            className="w-full"
-            shadow="sm"
-            src={item.img}
-          />
-        </CardBody>
-        <CardFooter className="shadow-large justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] ml-1 z-10">
-          <p className="text-base text-white/80">{item.title}</p>
-          {/* <p className="text-default-500">{item.price}</p> */}
-        </CardFooter>
-      </Card>
-    ))}
+const PoolSection = ({
+  className = '',
+  historyList,
+  title,
+}: {
+  className?: string;
+  historyList: any[];
+  title: string;
+}) => (
+  <section className={`flex flex-col gap-3 ${className}`}>
+    <div className="flex items-center justify-between">
+      <h3 className="text-sm font-semibold text-default-700">{title}</h3>
+      <span className="text-xs text-default-400">{historyList.length} 个卡池</span>
+    </div>
+    <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+      {historyList.map((item: any, index: number) => (
+        <PoolCard item={item} key={`${item.title}-${item.timer}-${index}`} />
+      ))}
+    </div>
+  </section>
+);
+
+const PoolCard = ({ item }: { item: any }) => {
+  const roleList = getDisplayRoles(item);
+  const badge = getPoolBadge(item);
+
+  return (
+    <Card className="rounded-lg border border-default-200 bg-content1" shadow="sm">
+      <CardBody className="gap-3 p-3">
+        <div className="flex min-w-0 items-start justify-between gap-3">
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-foreground">{formatPoolTitle(item.title)}</p>
+            <p className="mt-1 truncate text-xs text-default-500">{formatPoolTimer(item.timer)}</p>
+          </div>
+          <span className={`shrink-0 rounded-md px-2 py-1 text-xs font-semibold ${badge.className}`}>
+            {badge.text}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {roleList.map((role) => (
+            <RoleTile key={role.title} role={role} />
+          ))}
+        </div>
+      </CardBody>
+    </Card>
+  );
+};
+
+const RoleTile = ({ role }: { role: HistoryRoleDisplay }) => (
+  <div className="flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2">
+    {role.img ? (
+      <img
+        alt={role.title}
+        className="h-12 w-12 shrink-0 rounded-md object-cover object-top"
+        loading="lazy"
+        src={role.img}
+      />
+    ) : (
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600">
+        {role.title.slice(0, 1)}
+      </div>
+    )}
+    <span className="min-w-0 break-words text-sm font-medium leading-tight text-default-700">{role.title}</span>
   </div>
 );
+
+function getPoolGroupKey(item: any) {
+  return [item.type ?? '', item.title ?? '', item.timer ?? ''].join('|');
+}
+
+function mergeRoleList(currentList: HistoryRoleDisplay[], nextList: HistoryRoleDisplay[]) {
+  const roleMap = new Map<string, HistoryRoleDisplay>();
+
+  [...currentList, ...nextList].forEach((role) => {
+    if (!role.title) {
+      return;
+    }
+
+    const existingRole = roleMap.get(role.title);
+    roleMap.set(role.title, {
+      title: role.title,
+      img: existingRole?.img || role.img,
+    });
+  });
+
+  return [...roleMap.values()];
+}
+
+function getDisplayRoles(item: any) {
+  const explicitRoleList = Array.isArray(item.roles)
+    ? item.roles
+        .map((role: any) => ({
+          title: normalizeHistoryRoleName(role?.title),
+          img: role?.img,
+        }))
+        .filter((role: HistoryRoleDisplay) => role.title)
+    : [];
+
+  if (explicitRoleList.length > 0) {
+    return explicitRoleList;
+  }
+
+  const roleNameList = getHistoryRoleNames(item.s || item.title);
+
+  return roleNameList.map((roleName) => ({
+    title: roleName,
+    img: item.img,
+  }));
+}
+
+function formatPoolTitle(title: string) {
+  const normalizedTitle = `${title ?? ''}`;
+  const titleEndIndex = normalizedTitle.indexOf('」');
+
+  if (titleEndIndex >= 0) {
+    return normalizedTitle.substring(0, titleEndIndex + 1);
+  }
+
+  return normalizedTitle;
+}
+
+function formatPoolTimer(timer: string) {
+  const [startTimer, endTimer] = `${timer ?? ''}`.split('~').map((value) => value?.trim()).filter(Boolean);
+
+  if (!startTimer && !endTimer) {
+    return '时间未知';
+  }
+  if (endTimer === '长期') {
+    return `${startTimer} 起长期`;
+  }
+
+  return [startTimer, endTimer].filter(Boolean).join(' ~ ');
+}
+
+function getPoolBadge(item: any) {
+  if (isPermanentPool(item)) {
+    return { text: '常驻', className: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300' };
+  }
+  if (isRerunPool(item)) {
+    return { text: '复刻', className: 'bg-sky-100 text-sky-700 dark:bg-sky-500/20 dark:text-sky-300' };
+  }
+  if (item.type === '武器') {
+    return { text: '光锥', className: 'bg-violet-100 text-violet-700 dark:bg-violet-500/20 dark:text-violet-300' };
+  }
+
+  return { text: '限定', className: 'bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-300' };
+}
+
+function isRerunPool(item: any) {
+  const title = `${item?.title ?? ''}`;
+
+  return title.includes('铭心之萃') || title.includes('溯回忆象') || title.includes('真意之汇');
+}
 
 function isPermanentPool(item: any) {
   const endTimer = `${item?.timer ?? ''}`.split('~')[1]?.trim();

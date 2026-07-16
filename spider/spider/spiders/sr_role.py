@@ -1,8 +1,16 @@
 import scrapy
+import sys
 from tqdm import tqdm
 
 
 from spider.items import RoleItem
+
+
+def write_progress(message):
+    output_encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
+    safe_message = message.encode(output_encoding, errors="replace").decode(output_encoding)
+
+    tqdm.write(safe_message)
 
 
 class SrRoleSpider(scrapy.Spider):
@@ -33,7 +41,7 @@ class SrRoleSpider(scrapy.Spider):
             chara_load_version = card.xpath('./@data-param4').extract()[0]
             chara_size = card.xpath('./@data-param5').extract()[0]
             
-            tqdm.write(f"当前角色：{title}")
+            write_progress(f"当前角色：{title}")
             # print(href)
             
             # 递归进去

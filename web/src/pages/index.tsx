@@ -15,6 +15,12 @@ import {
   isTimerOverlappingCurrentDate,
   isTimerStartedAndUnexpired,
 } from '@/utils/history';
+import {
+  getHistoryRoleImages,
+  getHistoryRoleNames,
+  normalizeHistoryRoleValue,
+  type HistoryRoleDisplay,
+} from '@/utils/pool-role';
 import { Link } from '@heroui/link';
 import { useLocalStorage } from 'react-use';
 
@@ -216,18 +222,25 @@ export default function IndexPage() {
     }
 
     historyList.forEach((item) => {
-      const roleName = Array.isArray(item[roleKey]) ? item[roleKey][0] : item[roleKey];
-      const promotionImg = role?.[roleName]?.['promotion_img'];
-      const simpleImg = role?.[roleName]?.['simple_img'];
+      const roleNameList = getHistoryRoleNames(item[roleKey]);
+      const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
       const cachedImg = normalizeAssetUrl(item['img_path']);
       const sourceImg = item['img'];
+      const roleList = roleNameList.map((roleName, index) => ({
+        title: roleName,
+        img: getRoleImage(role?.[roleName]) || historyRoleImageList[index],
+      }));
+      const primaryRoleImg = roleList.find((roleItem) => roleItem.img)?.img;
+
+      item[roleKey] = normalizeHistoryRoleValue(item[roleKey]);
+      item.roles = roleList;
 
       if (roleKey === 's') {
-        item['img'] = cachedImg || sourceImg || promotionImg?.[1] || promotionImg?.[0] || simpleImg;
+        item['img'] = cachedImg || sourceImg || primaryRoleImg;
         return;
       }
 
-      item['img'] = promotionImg?.[1] || promotionImg?.[0] || cachedImg || sourceImg || simpleImg;
+      item['img'] = primaryRoleImg || cachedImg || sourceImg;
     });
 
     console.log(`${key} historyList::`, historyList);
@@ -348,6 +361,12 @@ export default function IndexPage() {
     }
 
     return `/${value}`;
+  }
+
+  function getRoleImage(roleInfo: any): HistoryRoleDisplay['img'] {
+    const promotionImg = roleInfo?.['promotion_img'];
+
+    return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
   }
 
   async function resolveHistoryNewPoolFlag(data: any[], fallbackTimer: string, lastPoolUrl: string) {
