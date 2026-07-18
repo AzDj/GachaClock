@@ -41,17 +41,34 @@ def select_current_arknights_items(pool_list, current_time):
 
 
 def get_arknights_maintenance_end_time(pool_list, current_time):
-    current_items = select_current_arknights_items(pool_list, current_time)
-    end_time_list = [
-        end_time
-        for end_time in (extract_end_time(pool.get("timer")) for pool in current_items)
-        if end_time is not None
-    ]
+    current_items_by_section = get_current_arknights_items_by_section(pool_list, current_time)
+    if any(not current_items_by_section[section] for section in ARKNIGHTS_POSITION_SECTIONS):
+        return None
+
+    end_time_list = []
+    for current_items in current_items_by_section.values():
+        end_time_list.extend(
+            end_time
+            for end_time in (extract_end_time(pool.get("timer")) for pool in current_items)
+            if end_time is not None
+        )
 
     if not end_time_list:
         return None
 
     return min(end_time_list)
+
+
+def get_current_arknights_items_by_section(pool_list, current_time):
+    current_items_by_section = {section: [] for section in ARKNIGHTS_POSITION_SECTIONS}
+    for pool in pool_list:
+        section = get_arknights_section(pool)
+        if section not in current_items_by_section:
+            continue
+        if is_timer_started_and_unexpired(pool.get("timer"), current_time):
+            current_items_by_section[section].append(pool)
+
+    return current_items_by_section
 
 
 def merge_arknights_history_items(existing_items, fetched_items, current_time):

@@ -53,6 +53,18 @@ class ArknightsCurrentTest(unittest.TestCase):
 
         self.assertEqual(local_time(2026, 7, 23, 3, 59), end_time)
 
+    def test_maintenance_end_time_is_empty_when_standard_pool_is_missing(self):
+        current_time = local_time(2026, 7, 18, 12)
+        pool_list = [
+            pool("当前限时寻访", "2026-07-10 12:00 ~ 2026-07-24 03:59"),
+            pool("过期标准寻访", "2026-07-02 04:00 ~ 2026-07-16 03:59", "常驻标准寻访"),
+            pool("当前中坚寻访", "2026-07-09 04:00 ~ 2026-07-23 03:59", "常驻中坚寻访&中坚甄选"),
+        ]
+
+        end_time = get_arknights_maintenance_end_time(pool_list, current_time)
+
+        self.assertIsNone(end_time)
+
     def test_merge_keeps_active_existing_pool_and_updates_expired_pool(self):
         current_time = local_time(2026, 7, 16, 12)
         existing_items = [
