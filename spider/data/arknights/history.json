@@ -1,5 +1,18 @@
 [
     {
+        "img": "https://media.prts.wiki/thumb/d/d5/%E6%B0%B8%E4%B8%8D%E8%90%BD%E5%B9%95_%E5%A4%8D%E5%88%BB.jpg/600px-%E6%B0%B8%E4%B8%8D%E8%90%BD%E5%B9%95_%E5%A4%8D%E5%88%BB.jpg?v=oxmv5jxn17wqzcos12atzckm0jmlcwj",
+        "title": "永不落幕 复刻",
+        "type": "角色",
+        "version": "2026-07-20 限时寻访",
+        "timer": "2026-07-20 16:00 ~ 2026-08-03 03:59",
+        "s": "酒神",
+        "a": [
+            "蒂比",
+            "阿兰娜"
+        ],
+        "img_path": "img/arknights/history/永不落幕 复刻.png"
+    },
+    {
         "img": "https://media.prts.wiki/thumb/7/72/%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%B7%B7%E6%B2%8C.png/600px-%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%B7%B7%E6%B2%8C.png?v=qh34a9rmn5y4qtjv10rf8zlddg2daug",
         "title": "确定性混沌",
         "type": "角色",

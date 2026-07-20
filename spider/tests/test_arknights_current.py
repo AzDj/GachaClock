@@ -3,10 +3,8 @@ from datetime import datetime
 
 from spider.arknights_current import (
     get_arknights_maintenance_end_time,
-    get_arknights_position_key,
-    merge_arknights_history_items,
-    select_current_arknights_items,
 )
+from spider.history_merge import merge_history_items, select_current_history_items
 from spider.pool_time import LOCAL_TIMEZONE
 
 
@@ -34,7 +32,7 @@ class ArknightsCurrentTest(unittest.TestCase):
 
         current_titles = [
             item["title"]
-            for item in select_current_arknights_items(pool_list, current_time)
+            for item in select_current_history_items(pool_list, current_time)
         ]
 
         self.assertEqual(["当前标准寻访", "当前中坚寻访"], current_titles)
@@ -81,7 +79,7 @@ class ArknightsCurrentTest(unittest.TestCase):
         ]
         fetched_items = [
             {
-                **pool("当前标准寻访改名", "2026-07-16 04:00 ~ 2026-07-30 03:59", "常驻标准寻访"),
+                **pool("当前标准寻访", "2026-07-16 04:00 ~ 2026-07-30 03:59", "常驻标准寻访"),
                 "s": "新数据",
                 "img_path": "img/new-current.png",
             },
@@ -97,29 +95,40 @@ class ArknightsCurrentTest(unittest.TestCase):
             },
         ]
 
-        merged_items = merge_arknights_history_items(existing_items, fetched_items, current_time)
+        merged_items = merge_history_items(existing_items, fetched_items, current_time)
 
         self.assertEqual("img/old-current.png", merged_items[0]["img_path"])
         self.assertEqual("img/new-expired.png", merged_items[1]["img_path"])
         self.assertEqual("img/new-added.png", merged_items[2]["img_path"])
 
-    def test_position_key_matches_three_sections_by_start_time(self):
-        items = [
-            pool("限时", "2026-07-10 12:00 ~ 2026-07-24 03:59", "限时寻访"),
-            pool("标准", "2026-07-16 04:00 ~ 2026-07-30 03:59", "常驻标准寻访"),
-            pool("中坚", "2026-07-09 04:00 ~ 2026-07-23 03:59", "常驻中坚寻访&中坚甄选"),
+    def test_merge_adds_new_limited_pool_with_same_start_time(self):
+        current_time = local_time(2026, 7, 16, 12)
+        timer = "2026-07-16 04:00 ~ 2026-07-30 03:59"
+        existing_items = [
+            {
+                **pool("当前限定寻访A", timer),
+                "s": "旧限定",
+                "img_path": "img/old-limited-a.png",
+            },
+        ]
+        fetched_items = [
+            {
+                **pool("当前限定寻访A", timer),
+                "s": "新限定",
+                "img_path": "img/new-limited-a.png",
+            },
+            {
+                **pool("当前限定寻访B", timer),
+                "s": "新增限定",
+                "img_path": "img/new-limited-b.png",
+            },
         ]
 
-        position_keys = [get_arknights_position_key(item) for item in items]
+        merged_items = merge_history_items(existing_items, fetched_items, current_time)
 
-        self.assertEqual(
-            [
-                ("限时寻访", "2026-07-10T12:00:00+08:00"),
-                ("常驻标准寻访", "2026-07-16T04:00:00+08:00"),
-                ("常驻中坚寻访&中坚甄选", "2026-07-09T04:00:00+08:00"),
-            ],
-            position_keys,
-        )
+        self.assertEqual(["当前限定寻访A", "当前限定寻访B"], [item["title"] for item in merged_items])
+        self.assertEqual("img/old-limited-a.png", merged_items[0]["img_path"])
+        self.assertEqual("img/new-limited-b.png", merged_items[1]["img_path"])
 
     def test_merge_replaces_same_section_when_start_time_changes(self):
         current_time = local_time(2026, 7, 16, 12)
@@ -138,7 +147,7 @@ class ArknightsCurrentTest(unittest.TestCase):
             }
         ]
 
-        merged_items = merge_arknights_history_items(existing_items, fetched_items, current_time)
+        merged_items = merge_history_items(existing_items, fetched_items, current_time)
 
         self.assertEqual("新标准寻访", merged_items[0]["title"])
         self.assertEqual("img/new-standard.png", merged_items[0]["img_path"])

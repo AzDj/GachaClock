@@ -11,7 +11,7 @@ import requests
 import base64
 from datetime import datetime
 
-from spider.arknights_current import merge_arknights_history_items
+from spider.history_merge import merge_history_items
 from spider.pool_time import LOCAL_TIMEZONE
 
 data_dir = "data"
@@ -59,7 +59,7 @@ def downloaded_path_or_empty(url, save_path):
 
 def update_or_create_meta_key(file_path: str, target_key: str, new_value: object) -> None:
     try:
-        with open(file_path, "r+", encoding="utf-8") as f:
+        with open(file_path, "r+", encoding="utf-8", newline="\n") as f:
             data = json.load(f)
             data[target_key] = new_value
             f.seek(0)
@@ -69,7 +69,7 @@ def update_or_create_meta_key(file_path: str, target_key: str, new_value: object
         directory = os.path.dirname(file_path)
         if directory and not os.path.exists(directory):
             os.makedirs(directory)
-        with open(file_path, "w", encoding="utf-8") as f:
+        with open(file_path, "w", encoding="utf-8", newline="\n") as f:
             json.dump({target_key: new_value}, f, indent=2, ensure_ascii=False)
 
 
@@ -106,7 +106,7 @@ class SpiderPipeline:
             # 检查目录是否存在，如果不存在则创建
             if not os.path.exists(directory):
                 os.makedirs(directory)
-            self.file = open(file_name, "w", encoding="utf-8")
+            self.file = open(file_name, "w", encoding="utf-8", newline="\n")
         except Exception as e:
             print(f"Failed to open file: {e}")
 
@@ -200,7 +200,7 @@ class HistoryPipeline:
                 # 将 SpiderItem 转换为字典
                 serialized_items = [dict(item) for item in self.items]
                 serialized_items = self.merge_history_items(spider, self.file_name, serialized_items)
-                with open(self.file_name, "w", encoding="utf-8") as file:
+                with open(self.file_name, "w", encoding="utf-8", newline="\n") as file:
                     file.write(
                         json.dumps(serialized_items, ensure_ascii=False, indent=4)
                     )
@@ -208,13 +208,13 @@ class HistoryPipeline:
                 print(f"Failed to write to file: {e}")
 
     def merge_history_items(self, spider, file_name, serialized_items):
-        if spider.name != "arknights/history" or not os.path.exists(file_name):
+        if not os.path.exists(file_name):
             return serialized_items
 
         with open(file_name, "r", encoding="utf-8") as file:
             existing_items = json.load(file)
 
-        return merge_arknights_history_items(
+        return merge_history_items(
             existing_items,
             serialized_items,
             datetime.now(LOCAL_TIMEZONE),
@@ -268,7 +268,7 @@ class RolePipeline:
             # 检查目录是否存在，如果不存在则创建
             if not os.path.exists(directory):
                 os.makedirs(directory)
-            self.file = open(file_name, "w", encoding="utf-8")
+            self.file = open(file_name, "w", encoding="utf-8", newline="\n")
         except Exception as e:
             print(f"Failed to open file: {e}")
 
