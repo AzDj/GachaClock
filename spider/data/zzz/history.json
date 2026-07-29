@@ -23,7 +23,7 @@
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/a3/0sgdmn342du4tds4sy1fy82in7xhko6.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5035-2%E6%9C%9F.png",
         "title": "「霓色天使」035-2期独家频段",
         "type": "角色",
-        "version": "3.1",
+        "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2026/08/19 11:59:59",
         "s": "爱芮",
         "a": [],
@@ -33,7 +33,7 @@
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/e/e4/dmc955306ktffsepkz4cm8ru2o8ibgs.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5035-2%E6%9C%9F.png",
         "title": "「壳中之灵」035-2期音擎频段",
         "type": "武器",
-        "version": "3.1",
+        "version": "3.1上半",
         "timer": "3.1版本更新后 ~ 2026/08/19 11:59:59",
         "s": "壳中之灵",
         "a": [],
@@ -47,7 +47,7 @@
         "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
         "s": "诺姆",
         "a": [
-            "本",
+            "可琳",
             "波可娜"
         ],
         "img_path": "img/zzz/history/「天才不等式」034-1期独家频段.png"
@@ -58,9 +58,9 @@
         "type": "武器",
         "version": "3.0下半",
         "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
-        "s": "首席跟班（页面不存在）",
+        "s": "首席跟班",
         "a": [
-            "比格气缸",
+            "家政员",
             "裁纸刀"
         ],
         "img_path": "img/zzz/history/「首席跟班」034-1期音擎频段.png"
@@ -73,7 +73,7 @@
         "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
         "s": "千夏",
         "a": [
-            "本",
+            "可琳",
             "波可娜"
         ],
         "img_path": "img/zzz/history/「四三拍谬想」034-2期独家频段.png"
@@ -86,7 +86,7 @@
         "timer": "2026/07/08 12:00:00 ~ 2026/07/28 14:59:59",
         "s": "思络成歌",
         "a": [
-            "比格气缸",
+            "家政员",
             "裁纸刀"
         ],
         "img_path": "img/zzz/history/「思络成歌」034-2期音擎频段.png"
@@ -1658,5 +1658,25 @@
             "旋钻机-赤轴"
         ],
         "img_path": "img/zzz/history/「喧哗奏鸣」001期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/a3/0sgdmn342du4tds4sy1fy82in7xhko6.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5035-2%E6%9C%9F.png",
+        "title": "「霓色天使」035-2期独家频段",
+        "type": "角色",
+        "version": "3.1",
+        "timer": "3.1版本更新后 ~ 2026/08/19 11:59:59",
+        "s": "爱芮",
+        "a": [],
+        "img_path": "img/zzz/history/「霓色天使」035-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/e/e4/dmc955306ktffsepkz4cm8ru2o8ibgs.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5035-2%E6%9C%9F.png",
+        "title": "「壳中之灵」035-2期音擎频段",
+        "type": "武器",
+        "version": "3.1",
+        "timer": "3.1版本更新后 ~ 2026/08/19 11:59:59",
+        "s": "壳中之灵",
+        "a": [],
+        "img_path": "img/zzz/history/「壳中之灵」035-2期音擎频段.png"
     }
 ]
