@@ -1,0 +1,122 @@
+[
+    {
+        "title": "斟雨祝荷风",
+        "type": "角色",
+        "timer": [
+            "2026-07-30 10:00:00",
+            "2026-08-19 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "穗穗",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/256cdc4a608244c89b4252321e850f3a20260730.jpg",
+                "img_path": "img/ww/穗穗.png"
+            },
+            {
+                "title": "白芷",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2c4c64e6b0de414995261621b755b47b20260730.png",
+                "img_path": "img/ww/白芷.png"
+            },
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/10c5d07959814119946540cfff96db2420260730.png",
+                "img_path": "img/ww/莫特斐.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1b84e8f778c64db5b10e001f3585787620260730.png",
+                "img_path": "img/ww/灯灯.png"
+            }
+        ]
+    },
+    {
+        "title": "飞星自春天启航",
+        "type": "角色",
+        "timer": [
+            "2026-07-30 10:00:00",
+            "2026-08-19 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "爱弥斯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/988655efcc08402c92592c501705c52e20260730.jpg",
+                "img_path": "img/ww/爱弥斯.png"
+            },
+            {
+                "title": "白芷",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9f06b9640a7648a597bd4841ad541f0120260730.png",
+                "img_path": "img/ww/白芷.png"
+            },
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/cad8108588434738a5cc1734953bc7d020260730.png",
+                "img_path": "img/ww/莫特斐.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/70cdf3865f1e42d38396b6fdef207afa20260730.png",
+                "img_path": "img/ww/灯灯.png"
+            }
+        ]
+    },
+    {
+        "title": "栖霞饮露",
+        "type": "武器",
+        "timer": [
+            "2026-07-30 10:00:00",
+            "2026-08-19 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "栖霞饮露",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/eeecf23571f6433dbfaf119d222f049d20260730.png",
+                "img_path": "img/ww/栖霞饮露.png"
+            },
+            {
+                "title": "奇幻变奏",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d057911eb247492c88ee2c84d4741d0b20260730.png",
+                "img_path": "img/ww/奇幻变奏.png"
+            },
+            {
+                "title": "永续坍缩",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/01f33a344373467d8cc6041111cdd5db20260730.png",
+                "img_path": "img/ww/永续坍缩.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9c5f562e262c4b258f08572d773a202f20260730.png",
+                "img_path": "img/ww/悖论喷流.png"
+            }
+        ]
+    },
+    {
+        "title": "永远的启明星",
+        "type": "武器",
+        "timer": [
+            "2026-07-30 10:00:00",
+            "2026-08-19 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "白昼之脊",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c8d4be2ea5c14e9881b1c4af7993d99e20260730.png",
+                "img_path": "img/ww/白昼之脊.png"
+            },
+            {
+                "title": "奇幻变奏",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/04c0a5b1c7204fe8afc7e7163476f5fd20260730.png",
+                "img_path": "img/ww/奇幻变奏.png"
+            },
+            {
+                "title": "永续坍缩",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b87bae5d88ef4494a488b9dad59c9b2b20260730.png",
+                "img_path": "img/ww/永续坍缩.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/76ace75090fd412f902193bf9f45ccb720260730.png",
+                "img_path": "img/ww/悖论喷流.png"
+            }
+        ]
+    }
+]
