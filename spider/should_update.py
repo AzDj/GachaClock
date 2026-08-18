@@ -8,8 +8,8 @@ from spider.pool_time import LOCAL_TIMEZONE, extract_end_time
 
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
-AUTO_GAMES = ["zzz", "sr", "ww", "ys", "arknights"]
-MANUAL_GAMES = ["endfield"]
+AUTO_GAMES = ["zzz", "sr", "ww", "ys", "arknights", "endfield"]
+MANUAL_GAMES = []
 ALL_GAMES = AUTO_GAMES + MANUAL_GAMES
 
 

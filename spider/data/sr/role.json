@@ -270,6 +270,19 @@
         "chara_size": "男青年"
     },
     {
+        "title": "吉尔伽美什",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/2/24/n12tjgacvqu5vg83e8qcja7oistg2n3.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/a/a7/67qy3j74rczy2xaj7z4xdxb5s9lc4u7.png/900px-%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/3/39/ll4rk3wzp486frae9w38726ol506qyz.png"
+        ],
+        "chara_rarity": "5星",
+        "chara_type": "毁灭",
+        "chara_element": "雷",
+        "chara_load_version": "4.4",
+        "chara_size": "成男"
+    },
+    {
         "title": "大丽花",
         "simple_img": "https://patchwiki.biligame.com/images/sr/b/b9/fvr452azci8i8jc9w3flymppljainit.png",
         "promotion_img": [
@@ -825,7 +838,7 @@
         "chara_type": "欢愉",
         "chara_element": "物理",
         "chara_load_version": "4.2",
-        "chara_size": ""
+        "chara_size": "女青年"
     },
     {
         "title": "缇宝",
@@ -948,6 +961,19 @@
         "chara_type": "虚无",
         "chara_element": "量子",
         "chara_load_version": "3.3",
+        "chara_size": "女青年"
+    },
+    {
+        "title": "远坂凛",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/f/f8/4gzpsz2sys1vwbuff0viroqyma7vll8.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/c8/t81a8c139s8o5elfep7vphqg46yf5c8.png/900px-%E8%BF%9C%E5%9D%82%E5%87%9B%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/6/65/1c95h09q5may461le4xquh4v4keq3yw.png"
+        ],
+        "chara_rarity": "5星",
+        "chara_type": "智识",
+        "chara_element": "量子",
+        "chara_load_version": "4.4",
         "chara_size": "女青年"
     },
     {

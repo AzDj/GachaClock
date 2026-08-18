@@ -1,5 +1,6 @@
 from spider.pool_time import (
     extract_start_time,
+    extract_end_time,
     is_timer_ambiguous_and_unexpired,
     is_timer_overlapping_current_day,
     is_timer_started_and_unexpired,
@@ -60,10 +61,35 @@ def merge_history_items(existing_items, fetched_items, current_time):
             emitted_protected_identities.add(identity)
 
     for item in existing_items:
-        if get_history_pool_identity(item) not in fetched_identities:
+        if get_history_pool_identity(item) not in fetched_identities and not is_replaced_ambiguous_pool(
+            item, fetched_items
+        ):
             merged_items.append(item)
 
     return merged_items
+
+
+def is_replaced_ambiguous_pool(item, fetched_items):
+    """新抓取到同版本的明确时间池后，丢弃旧的模糊起始时间兜底项。"""
+    if extract_start_time(item.get("timer")) is not None:
+        return False
+
+    end_time = extract_end_time(item.get("timer"))
+    version = str(item.get("version", "")).strip()
+    if end_time is None or not version:
+        return False
+
+    for fetched_item in fetched_items:
+        if str(fetched_item.get("version", "")).strip() != version:
+            continue
+        fetched_start = extract_start_time(fetched_item.get("timer"))
+        if fetched_start is None:
+            continue
+        fetched_end = extract_end_time(fetched_item.get("timer"))
+        if fetched_end == end_time or fetched_start <= end_time:
+            return True
+
+    return False
 
 
 def get_history_pool_identity(item):
