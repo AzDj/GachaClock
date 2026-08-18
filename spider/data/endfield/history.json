@@ -1,5 +1,18 @@
 [
     {
+        "title": "晨星于此闪耀",
+        "type": "角色",
+        "version": "晨星于此闪耀",
+        "timer": "2026/08/09 12:00:00 ~ 2026/09/02 06:00:00",
+        "s": "梨诺",
+        "s_imgs": [
+            "https://bbs.hycdn.cn/image/common/20260809/4826366/6a77cb73bca140b61da5124c_91c496d2.webp"
+        ],
+        "a": [],
+        "img": "https://bbs.hycdn.cn/image/common/20260809/4826366/6a77cb73bca140b61da5124c_91c496d2.webp",
+        "img_path": ""
+    },
+    {
         "img": "https://i2.hdslb.com/bfs/new_dyn/0650b8679ed4aff6d0b8cd92c2d2dbef1265652806.jpg",
         "title": "拳出无悔",
         "type": "角色",

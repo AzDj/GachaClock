@@ -227,6 +227,23 @@
     },
     {
         "img": "",
+        "title": "「拓星启明」角色活动跃迁",
+        "type": "角色",
+        "version": "4.4上半",
+        "timer": "4.4版本更新后 ~ 2026/08/25 15:00",
+        "s": "姬子•启行",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f6/278wmo88o0zladn1dp24v36dmrzxyy3.png/45px-%E5%A7%AC%E5%AD%90%E2%80%A2%E5%90%AF%E8%A1%8C.png"
+        ],
+        "a": [
+            "貊泽",
+            "寒鸦",
+            "希露瓦"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
         "title": "「流光定影」光锥活动跃迁",
         "type": "武器",
         "version": "4.4上半",
