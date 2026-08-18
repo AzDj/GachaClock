@@ -6,7 +6,9 @@ from spider.items import SpiderItem
 
 class WwSpider(scrapy.Spider):
     name = "ww"
-    allowed_domains = ["api.kurobbs.com"]
+    allowed_domains = ["wiki.kurobbs.com", "api.kurobbs.com", "prod-alicdn-community.kurobbs.com"]
+    source_url = "https://wiki.kurobbs.com/mc/home?bbs_clientSource=12"
+    homepage_api_url = "https://api.kurobbs.com/wiki/core/homepage/getPage"
     custom_settings = {
         "ITEM_PIPELINES": {
             "spider.pipelines.SpiderPipeline": 300,
@@ -15,24 +17,28 @@ class WwSpider(scrapy.Spider):
     headers = {
         'wiki_type': '9',
         'source': 'h5',
-        'referer': 'https://wiki.kurobbs.com/'
+        'referer': source_url,
     }
 
     def start_requests(self):
-        url = 'https://api.kurobbs.com/wiki/core/homepage/getPage'
-        yield scrapy.Request(url, headers=self.headers, method='POST', callback=self.parse)
+        yield scrapy.Request(
+            self.homepage_api_url,
+            headers=self.headers,
+            method='POST',
+            callback=self.parse,
+        )
 
     def parse(self, response):
         data = response.json()
         sideModules = self.safe_get(data, 'data', 'contentJson', 'sideModules', default=[])
         for sideModule in sideModules:
-            content = sideModule['content']
-            title = sideModule['title']
+            content = self.safe_get(sideModule, 'content', default={})
+            title = str(sideModule.get('title', '')).strip()
             
-            if '唤取' not in title:
+            if title not in {'角色活动唤取', '武器活动唤取'}:
                 continue
             
-            tabs = content['tabs']
+            tabs = self.safe_get(content, 'tabs', default=[])
             for tab in tabs:
                 
                 g = []
@@ -46,8 +52,9 @@ class WwSpider(scrapy.Spider):
                     })
                 
 
-                raw_timer = self.safe_get(tab, 'countDown', 'dateRange', default=[])
-                timer= [raw_timer[0] + ':00', raw_timer[1]+":59"]
+                timer = self.build_timer(tab)
+                if not timer:
+                    continue
                 item = SpiderItem()
                 item["title"] = tab['name']
                 item["type"] =  '角色' if '角色' in title else '武器'
@@ -56,6 +63,26 @@ class WwSpider(scrapy.Spider):
                 yield item
             
         pass
+
+    def build_timer(self, tab):
+        """将官方模块的分钟级时间范围规范化为现有卡池时间格式。"""
+        raw_timer = self.safe_get(tab, 'countDown', 'dateRange', default=[])
+        if not isinstance(raw_timer, list) or len(raw_timer) < 2:
+            return None
+
+        start = self.normalize_timer_end(raw_timer[0], ':00')
+        end = self.normalize_timer_end(raw_timer[1], ':59')
+        if not start or not end:
+            return None
+        return [start, end]
+
+    def normalize_timer_end(self, value, suffix):
+        value = str(value or '').strip()
+        if not value:
+            return ''
+        if len(value.split(':')) == 2:
+            return value + suffix
+        return value
 
     def safe_get(self, data, *keys, default=None):
         current = data
