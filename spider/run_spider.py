@@ -11,7 +11,6 @@ from spider.spiders.ww_history import WwHistorySpider
 from spider.spiders.sr_role import SrRoleSpider
 from spider.spiders.ys_history import YsHistorySpider
 from spider.spiders.arknights_history import ArknightsHistorySpider
-from spider.spiders.endfield_calendar import EndfieldCalendarSpider
 from spider.spiders.endfield_recruitment import EndfieldRecruitmentSpider
 
 SPIDER_GROUPS = {
@@ -20,7 +19,7 @@ SPIDER_GROUPS = {
     "ww": [WwSpider, WwHistorySpider],
     "ys": [YsHistorySpider],
     "arknights": [ArknightsHistorySpider],
-    "endfield": [EndfieldCalendarSpider, EndfieldRecruitmentSpider],
+    "endfield": [EndfieldRecruitmentSpider],
 }
 
 

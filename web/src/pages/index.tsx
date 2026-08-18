@@ -191,11 +191,11 @@ export default function IndexPage() {
         if (!role || Object.keys(role).length === 0) {
           historyList = data
             .filter((item: any) => item.type === '角色')
-            .map((item: any) => item.gachas[0]);
+            .flatMap((item: any) => addMetaPoolTimer(item, item.gachas?.slice(0, 1)));
         } else {
           historyList = data
             .filter((item: any) => item.type === '角色')
-            .flatMap((item: any) => item.gachas)
+            .flatMap((item: any) => addMetaPoolTimer(item, item.gachas))
             .filter(
               (item: any) => !role?.[item['title']] || role?.[item['title']].chara_rarity === '5星',
             );
@@ -342,6 +342,15 @@ export default function IndexPage() {
 
       return copy;
     });
+  }
+
+  function addMetaPoolTimer(pool: any, gachas: any[] = []) {
+    return gachas.map((gacha) => ({
+      ...gacha,
+      // 角色项展开后仍需保留父级卡池时间，否则卡片会显示“时间未知”。
+      timer: gacha.timer ?? pool.timer,
+      poolTitle: pool.title,
+    }));
   }
 
   function getMetaTimerRange(timer: string[]) {
