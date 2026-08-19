@@ -5,26 +5,27 @@ from __future__ import annotations
 import re
 
 
-# 角色展示图固定为详情页“意象影画 → 影画展示3”，下载后由前端读取本地静态文件。
+# 角色头像沿用调频接口图标，大图固定为详情页“意象影画 → 影画展示3”。
+# rank 对应调频卡片左上角的 S/A 标记，前端仅展示 S 级角色。
 ENTRY_META = {
-    1624: ("琉音", "角色", "img/zzz/display-three/琉音.png"),
-    1386: ("柚叶", "角色", "img/zzz/display-three/柚叶.png"),
-    997: ("悠真", "角色", "img/zzz/display-three/悠真.png"),
-    2076: ("蕾米埃尔", "角色", "img/zzz/display-three/蕾米埃尔.png"),
-    758: ("赛斯", "角色", "img/zzz/display-three/赛斯.png"),
-    485: ("派派", "角色", "img/zzz/display-three/派派.png"),
-    2079: ("希格莉德", "角色", "img/zzz/display-three/希格莉德.png"),
-    227: ("苍角", "角色", "img/zzz/display-three/苍角.png"),
-    493: ("露西", "角色", "img/zzz/display-three/露西.png"),
-    1689: ("昨夜来电", "武器", ""),
-    1463: ("狸法七变化", "武器", ""),
-    991: ("残心青囊", "武器", ""),
-    2109: ("空羽复归之诗", "武器", ""),
-    761: ("维序者-特化型", "武器", ""),
-    494: ("轰鸣座驾", "武器", ""),
-    2162: ("骁骑礼赞", "武器", ""),
-    215: ("含羞恶面", "武器", ""),
-    486: ("好斗的阿炮", "武器", ""),
+    1624: ("琉音", "角色", "S", "img/zzz/display-three/琉音.png"),
+    1386: ("柚叶", "角色", "S", "img/zzz/display-three/柚叶.png"),
+    997: ("悠真", "角色", "S", "img/zzz/display-three/悠真.png"),
+    2076: ("蕾米埃尔", "角色", "S", "img/zzz/display-three/蕾米埃尔.png"),
+    758: ("赛斯", "角色", "A", "img/zzz/display-three/赛斯.png"),
+    485: ("派派", "角色", "A", "img/zzz/display-three/派派.png"),
+    2079: ("希格莉德", "角色", "S", "img/zzz/display-three/希格莉德.png"),
+    227: ("苍角", "角色", "A", "img/zzz/display-three/苍角.png"),
+    493: ("露西", "角色", "A", "img/zzz/display-three/露西.png"),
+    1689: ("昨夜来电", "武器", "S", ""),
+    1463: ("狸法七变化", "武器", "A", ""),
+    991: ("残心青囊", "武器", "A", ""),
+    2109: ("空羽复归之诗", "武器", "S", ""),
+    761: ("维序者-特化型", "武器", "A", ""),
+    494: ("轰鸣座驾", "武器", "A", ""),
+    2162: ("骁骑礼赞", "武器", "S", ""),
+    215: ("含羞恶面", "武器", "A", ""),
+    486: ("好斗的阿炮", "武器", "A", ""),
 }
 
 
@@ -39,13 +40,15 @@ def build_frequency_items(payload: dict) -> list[dict]:
             meta = ENTRY_META.get(entry_id)
             if not meta:
                 continue
-            name, entry_type, static_path = meta
+            name, entry_type, rank, display_path = meta
             pool_type = pool_type or entry_type
             entries.append(
                 {
                     "title": name,
-                    "img": "" if static_path else entry.get("icon", ""),
-                    "img_path": static_path,
+                    "rank": rank,
+                    "img": entry.get("icon", ""),
+                    "img_path": "",
+                    "display_img_path": display_path,
                 }
             )
         if not entries:

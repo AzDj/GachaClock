@@ -9,18 +9,24 @@
         "gachas": [
             {
                 "title": "琉音",
-                "img": "",
-                "img_path": "img/zzz/display-three/琉音.png"
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/4322c8c041aac8bf33efca8959aad130_7648994679562490265.png",
+                "img_path": "img/zzz/琉音.png",
+                "display_img_path": "img/zzz/display-three/琉音.png"
             },
             {
                 "title": "柚叶",
-                "img": "",
-                "img_path": "img/zzz/display-three/柚叶.png"
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/f288f8b22deafa2493c389fc4465d77b_1673665087748642203.png",
+                "img_path": "img/zzz/柚叶.png",
+                "display_img_path": "img/zzz/display-three/柚叶.png"
             },
             {
                 "title": "悠真",
-                "img": "",
-                "img_path": "img/zzz/display-three/悠真.png"
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/7477bdb2d366fd83b30671812c08e2eb_6582616759248930003.jpg",
+                "img_path": "img/zzz/悠真.png",
+                "display_img_path": "img/zzz/display-three/悠真.png"
             }
         ]
     },
@@ -34,18 +40,24 @@
         "gachas": [
             {
                 "title": "昨夜来电",
+                "rank": "S",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/70db2c7b9e57bba67f0c38f6ee9a3d0d_3115162845931812806.png",
-                "img_path": "img/zzz/昨夜来电.png"
+                "img_path": "img/zzz/昨夜来电.png",
+                "display_img_path": ""
             },
             {
                 "title": "狸法七变化",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/d02bc114b91b0a8b9b34fda67c5fd527_4461719196173619056.png",
-                "img_path": "img/zzz/狸法七变化.png"
+                "img_path": "img/zzz/狸法七变化.png",
+                "display_img_path": ""
             },
             {
                 "title": "残心青囊",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/9861761e3b5e1ff05158695f68ce6320_5700095788092747631.png",
-                "img_path": "img/zzz/残心青囊.png"
+                "img_path": "img/zzz/残心青囊.png",
+                "display_img_path": ""
             }
         ]
     },
@@ -59,18 +71,24 @@
         "gachas": [
             {
                 "title": "蕾米埃尔",
-                "img": "",
-                "img_path": "img/zzz/display-three/蕾米埃尔.png"
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/13b7b06627a8a99ffdf1f397b1daf7d1_391161268313273358.png",
+                "img_path": "img/zzz/蕾米埃尔.png",
+                "display_img_path": "img/zzz/display-three/蕾米埃尔.png"
             },
             {
                 "title": "赛斯",
-                "img": "",
-                "img_path": "img/zzz/display-three/赛斯.png"
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/a99297e48c27c1c09ccee2f8cf3d4745_7566475344715056644.png",
+                "img_path": "img/zzz/赛斯.png",
+                "display_img_path": "img/zzz/display-three/赛斯.png"
             },
             {
                 "title": "派派",
-                "img": "",
-                "img_path": "img/zzz/display-three/派派.png"
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/90668b1414a002827f47c02feccbdf3e_2131822734992264610.png",
+                "img_path": "img/zzz/派派.png",
+                "display_img_path": "img/zzz/display-three/派派.png"
             }
         ]
     },
@@ -84,18 +102,24 @@
         "gachas": [
             {
                 "title": "空羽复归之诗",
+                "rank": "S",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/72de3df7aa987a554de6a9ca97b72789_1189780521811741746.png",
-                "img_path": "img/zzz/空羽复归之诗.png"
+                "img_path": "img/zzz/空羽复归之诗.png",
+                "display_img_path": ""
             },
             {
                 "title": "维序者-特化型",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/0e84a53f3f31d0611aba264f2138b468_2609341094091755748.png",
-                "img_path": "img/zzz/维序者-特化型.png"
+                "img_path": "img/zzz/维序者-特化型.png",
+                "display_img_path": ""
             },
             {
                 "title": "轰鸣座驾",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/59d21937c3fed5bbd95981b7348905f2_5218172143499041320.png",
-                "img_path": "img/zzz/轰鸣座驾.png"
+                "img_path": "img/zzz/轰鸣座驾.png",
+                "display_img_path": ""
             }
         ]
     },
@@ -109,18 +133,24 @@
         "gachas": [
             {
                 "title": "希格莉德",
-                "img": "",
-                "img_path": "img/zzz/display-three/希格莉德.png"
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/57ecf63587c311c0ecf598b45ae8042b_4721199626707519689.png",
+                "img_path": "img/zzz/希格莉德.png",
+                "display_img_path": "img/zzz/display-three/希格莉德.png"
             },
             {
                 "title": "苍角",
-                "img": "",
-                "img_path": "img/zzz/display-three/苍角.png"
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/5dbe373f3e54d4e3033e4dc7567fe9f8_8311309184828315962.png",
+                "img_path": "img/zzz/苍角.png",
+                "display_img_path": "img/zzz/display-three/苍角.png"
             },
             {
                 "title": "露西",
-                "img": "",
-                "img_path": "img/zzz/display-three/露西.png"
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/3fa01447d481351416ef664e21894c29_7192858154155745885.png",
+                "img_path": "img/zzz/露西.png",
+                "display_img_path": "img/zzz/display-three/露西.png"
             }
         ]
     },
@@ -134,18 +164,24 @@
         "gachas": [
             {
                 "title": "骁骑礼赞",
+                "rank": "S",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/b81184023d3add881d9e7ca75c803fa6_4796687382786585190.png",
-                "img_path": "img/zzz/骁骑礼赞.png"
+                "img_path": "img/zzz/骁骑礼赞.png",
+                "display_img_path": ""
             },
             {
                 "title": "含羞恶面",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/9fed705aa18fdde455ded51e4f907096_6413640725937195250.png",
-                "img_path": "img/zzz/含羞恶面.png"
+                "img_path": "img/zzz/含羞恶面.png",
+                "display_img_path": ""
             },
             {
                 "title": "好斗的阿炮",
+                "rank": "A",
                 "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/6de89d4ff56df24f73d020c6f056376a_2736807954332549761.png",
-                "img_path": "img/zzz/好斗的阿炮.png"
+                "img_path": "img/zzz/好斗的阿炮.png",
+                "display_img_path": ""
             }
         ]
     }

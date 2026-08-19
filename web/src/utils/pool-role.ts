@@ -1,6 +1,8 @@
 export interface HistoryRoleDisplay {
   title: string;
   img?: string;
+  largeImg?: string;
+  rarity?: string;
 }
 
 export function getHistoryRoleNames(value: unknown) {

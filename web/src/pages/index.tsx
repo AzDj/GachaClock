@@ -232,15 +232,24 @@ export default function IndexPage() {
       const roleNameList = getHistoryRoleNames(item[roleKey]);
       const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
       const explicitRoleImageMap = new Map(
-        (Array.isArray(item.roles) ? item.roles : []).map((roleItem: any) => [roleItem.title, roleItem.img]),
+        (Array.isArray(item.roles) ? item.roles : []).map((roleItem: any) => [roleItem.title, roleItem]),
       );
       const cachedImg = normalizeAssetUrl(item['img_path']);
       const sourceImg = item['img'];
-      const roleList = roleNameList.map((roleName, index) => ({
-        title: roleName,
-        // 调频静态影画优先于通用角色立绘和历史卡池图。
-        img: explicitRoleImageMap.get(roleName) || getRoleImage(role?.[roleName]) || historyRoleImageList[index],
-      }));
+      const roleList = roleNameList
+        .map((roleName, index) => {
+          const explicitRole = explicitRoleImageMap.get(roleName) as any;
+          const roleInfo = role?.[roleName];
+
+          return {
+            title: roleName,
+            // 小图沿用抓取头像，大图优先使用卡池指定图或角色立绘。
+            img: explicitRole?.img || getRoleSmallImage(roleInfo) || historyRoleImageList[index],
+            largeImg: explicitRole?.largeImg || getRoleLargeImage(roleInfo) || cachedImg || sourceImg,
+            rarity: explicitRole?.rarity || roleInfo?.chara_rarity,
+          };
+        })
+        .filter((roleItem) => shouldDisplayRole(key, item.type, roleItem));
       const primaryRoleImg = roleList.find((roleItem) => roleItem.img)?.img;
 
       item[roleKey] = normalizeHistoryRoleValue(item[roleKey]);
@@ -374,7 +383,9 @@ export default function IndexPage() {
         roles: pool.gachas?.map((gacha: any) => ({
           title: gacha.title,
           img: normalizeAssetUrl(gacha.img_path) || gacha.img,
-        })) ?? [],
+          largeImg: normalizeAssetUrl(gacha.display_img_path) || normalizeAssetUrl(pool.img_path) || pool.img,
+          rarity: gacha.rank,
+        })).filter((roleItem: HistoryRoleDisplay) => pool.type !== '角色' || roleItem.rarity === 'S') ?? [],
       }));
   }
 
@@ -397,10 +408,26 @@ export default function IndexPage() {
     return `/${value}`;
   }
 
-  function getRoleImage(roleInfo: any): HistoryRoleDisplay['img'] {
+  function getRoleSmallImage(roleInfo: any): HistoryRoleDisplay['img'] {
+    return roleInfo?.['simple_img'];
+  }
+
+  function getRoleLargeImage(roleInfo: any): HistoryRoleDisplay['largeImg'] {
     const promotionImg = roleInfo?.['promotion_img'];
 
     return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
+  }
+
+  function shouldDisplayRole(key: string, poolType: string, roleItem: HistoryRoleDisplay) {
+    if (key === 'zzz' && poolType === '角色') {
+      return roleItem.rarity === 'S';
+    }
+    if (key === 'sr') {
+      // 历史数据的 s 字段本身表示五星位；有角色资料时再严格校验五星。
+      return !roleItem.rarity || roleItem.rarity === '5星';
+    }
+
+    return true;
   }
 
   async function resolveHistoryNewPoolFlag(data: any[], fallbackTimer: string, lastPoolUrl: string) {

@@ -4,7 +4,7 @@ from spider.zzz_mihoyo import build_frequency_items, extract_content_id
 
 
 class ZzzMihoyoParserTest(unittest.TestCase):
-    def test_build_frequency_items_uses_static_display_three_image(self):
+    def test_build_frequency_items_separates_avatar_and_display_image(self):
         payload = {
             "data": {
                 "list": [
@@ -26,8 +26,13 @@ class ZzzMihoyoParserTest(unittest.TestCase):
         self.assertEqual("「独家重映」", items[0]["title"])
         self.assertEqual("角色", items[0]["type"])
         self.assertEqual("琉音", items[0]["gachas"][0]["title"])
-        self.assertEqual("img/zzz/display-three/琉音.png", items[0]["gachas"][0]["img_path"])
-        self.assertEqual("", items[0]["gachas"][0]["img"])
+        self.assertEqual("S", items[0]["gachas"][0]["rank"])
+        self.assertEqual("https://example.com/avatar.png", items[0]["gachas"][0]["img"])
+        self.assertEqual("", items[0]["gachas"][0]["img_path"])
+        self.assertEqual(
+            "img/zzz/display-three/琉音.png",
+            items[0]["gachas"][0]["display_img_path"],
+        )
 
     def test_unknown_content_is_not_emitted(self):
         payload = {

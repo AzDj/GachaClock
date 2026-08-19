@@ -1,4 +1,4 @@
-import { Card, CardBody } from '@heroui/react';
+import { Button, ButtonGroup, Card, CardBody } from '@heroui/react';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
 import {
@@ -12,7 +12,10 @@ export interface CardPoolProps {
   historyList: any[];
 }
 
+type PoolImageMode = 'large' | 'small';
+
 export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps) => {
+  const [imageMode, setImageMode] = useState<PoolImageMode>('small');
   // 同名卡池要按时间继续拆分，否则会把上半、下半或长期常驻合成一张含义不清的卡。
   const mergedList = useMemo((): any[] => {
     const group: Record<string, any> = {};
@@ -45,12 +48,30 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
 
   return (
     <div className="flex flex-col gap-4">
-      {normalList.length > 0 && <PoolSection historyList={normalList} title="限时跃迁" />}
+      <div className="flex justify-end">
+        <ButtonGroup aria-label="卡池图片尺寸" size="sm" variant="flat">
+          <Button
+            color={imageMode === 'large' ? 'primary' : 'default'}
+            onPress={() => setImageMode('large')}
+          >
+            大图
+          </Button>
+          <Button
+            color={imageMode === 'small' ? 'primary' : 'default'}
+            onPress={() => setImageMode('small')}
+          >
+            小图
+          </Button>
+        </ButtonGroup>
+      </div>
+
+      {normalList.length > 0 && <PoolSection historyList={normalList} imageMode={imageMode} title="限时跃迁" />}
 
       {permanentList.length > 0 && (
         <PoolSection
           className="border-t border-default-200 pt-3"
           historyList={permanentList}
+          imageMode={imageMode}
           title="长期常驻"
         />
       )}
@@ -61,10 +82,12 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
 const PoolSection = ({
   className = '',
   historyList,
+  imageMode,
   title,
 }: {
   className?: string;
   historyList: any[];
+  imageMode: PoolImageMode;
   title: string;
 }) => (
   <section className={`flex flex-col gap-3 ${className}`}>
@@ -74,13 +97,13 @@ const PoolSection = ({
     </div>
     <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
       {historyList.map((item: any, index: number) => (
-        <PoolCard item={item} key={`${item.title}-${item.timer}-${index}`} />
+        <PoolCard imageMode={imageMode} item={item} key={`${item.title}-${item.timer}-${index}`} />
       ))}
     </div>
   </section>
 );
 
-const PoolCard = ({ item }: { item: any }) => {
+const PoolCard = ({ imageMode, item }: { imageMode: PoolImageMode; item: any }) => {
   const roleList = getDisplayRoles(item);
   const badge = getPoolBadge(item);
 
@@ -97,9 +120,9 @@ const PoolCard = ({ item }: { item: any }) => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <div className={imageMode === 'large' ? 'grid grid-cols-1 gap-2' : 'grid grid-cols-1 gap-2 sm:grid-cols-2'}>
           {roleList.map((role) => (
-            <RoleTile key={role.title} role={role} />
+            <RoleTile imageMode={imageMode} key={role.title} role={role} />
           ))}
         </div>
       </CardBody>
@@ -107,9 +130,38 @@ const PoolCard = ({ item }: { item: any }) => {
   );
 };
 
-const RoleTile = ({ role }: { role: HistoryRoleDisplay }) => {
+const RoleTile = ({ imageMode, role }: { imageMode: PoolImageMode; role: HistoryRoleDisplay }) => {
   const [imageFailed, setImageFailed] = useState(false);
-  const shouldShowImage = role.img && !imageFailed;
+  const selectedImage = imageMode === 'large' ? role.largeImg || role.img : role.img;
+  const shouldShowImage = selectedImage && !imageFailed;
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [selectedImage]);
+
+  if (imageMode === 'large') {
+    return (
+      <div className="relative min-h-40 overflow-hidden rounded-lg bg-default-100">
+        {shouldShowImage ? (
+          <img
+            alt={role.title}
+            className="h-48 w-full object-cover object-center"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            src={selectedImage}
+            onError={() => setImageFailed(true)}
+          />
+        ) : (
+          <div className="flex h-48 items-center justify-center bg-default-200 text-2xl font-semibold text-default-600">
+            {role.title.slice(0, 1)}
+          </div>
+        )}
+        <span className="absolute inset-x-0 bottom-0 bg-black/60 px-3 py-2 text-sm font-semibold text-white">
+          {role.title}
+        </span>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2">
@@ -119,7 +171,7 @@ const RoleTile = ({ role }: { role: HistoryRoleDisplay }) => {
           className="h-12 w-12 shrink-0 rounded-md object-cover object-top"
           loading="lazy"
           referrerPolicy="no-referrer"
-          src={role.img}
+          src={selectedImage}
           onError={() => setImageFailed(true)}
         />
       ) : (
@@ -148,6 +200,8 @@ function mergeRoleList(currentList: HistoryRoleDisplay[], nextList: HistoryRoleD
     roleMap.set(role.title, {
       title: role.title,
       img: existingRole?.img || role.img,
+      largeImg: existingRole?.largeImg || role.largeImg,
+      rarity: existingRole?.rarity || role.rarity,
     });
   });
 
@@ -160,6 +214,8 @@ function getDisplayRoles(item: any) {
         .map((role: any) => ({
           title: normalizeHistoryRoleName(role?.title),
           img: role?.img || item.img,
+          largeImg: role?.largeImg || item.largeImg || item.img,
+          rarity: role?.rarity,
         }))
         .filter((role: HistoryRoleDisplay) => role.title)
     : [];
@@ -174,6 +230,7 @@ function getDisplayRoles(item: any) {
   return roleNameList.map((roleName, index) => ({
     title: roleName,
     img: roleImageList[index] || item.img,
+    largeImg: item.largeImg || item.img || roleImageList[index],
   }));
 }
 
