@@ -1,0 +1,122 @@
+[
+    {
+        "title": "仙风玉影水天清",
+        "type": "角色",
+        "timer": [
+            "2026-08-20 11:00:00",
+            "2026-09-10 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "清宵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/26bbec5f9a2a4129b2ff8f1edff2833a20260819.jpg",
+                "img_path": "img/ww/清宵.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/80599ee504b441a0934fd1aa3b1b995c20260819.png",
+                "img_path": "img/ww/秧秧.png"
+            },
+            {
+                "title": "白芷",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b8a26d99f96a48a2994e8c3de886697f20260819.png",
+                "img_path": "img/ww/白芷.png"
+            },
+            {
+                "title": "散华",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/f0d1f736ae004eb49397f6b7a2aad83b20260819.png",
+                "img_path": "img/ww/散华.png"
+            }
+        ]
+    },
+    {
+        "title": "予明日以谎言",
+        "type": "角色",
+        "timer": [
+            "2026-08-20 11:00:00",
+            "2026-09-10 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "达妮娅",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/144b1a1a76664255b5bfdb9c2a0f4f5d20260819.jpg",
+                "img_path": "img/ww/达妮娅.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e2a0fa9e55b34bb0bbcc396d5f359a6020260819.png",
+                "img_path": "img/ww/秧秧.png"
+            },
+            {
+                "title": "白芷",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2e6d9799187b4f09bdfde7f733410b7820260819.png",
+                "img_path": "img/ww/白芷.png"
+            },
+            {
+                "title": "散华",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ab3f5d76619145019415662ae18fdd0120260819.png",
+                "img_path": "img/ww/散华.png"
+            }
+        ]
+    },
+    {
+        "title": "云琅",
+        "type": "武器",
+        "timer": [
+            "2026-08-20 11:00:00",
+            "2026-09-10 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/3de47834922d4fe3835e7f7bc1ce8d3520260819.png",
+                "img_path": "img/ww/.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ced98d580b334ccd950d65500b5e102220260819.png",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/cfd96b42f20f42dd80603607c7aef9bb20260819.png",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "西升",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a2ad4bca6df04d76a2aec603e7d2323120260819.png",
+                "img_path": "img/ww/西升.png"
+            }
+        ]
+    },
+    {
+        "title": "赝作的矮星",
+        "type": "武器",
+        "timer": [
+            "2026-08-20 11:00:00",
+            "2026-09-10 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "赝作的矮星",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6612512df69f43f0a2c25f06da7d616e20260819.png",
+                "img_path": "img/ww/赝作的矮星.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0edd9f3dffd74f379ad42ed18cc3aa0a20260819.png",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b470b2bed017467ab9298ef59ea16ad920260819.png",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "西升",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6e415c8ee2c040719257ab553e9f599c20260819.png",
+                "img_path": "img/ww/西升.png"
+            }
+        ]
+    }
+]
