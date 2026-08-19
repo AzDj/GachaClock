@@ -164,6 +164,10 @@ export default function IndexPage() {
     let hasNewPool = false;
 
     try {
+      // 绝区零当前卡池只认米游社百科“调频”模块，避免旧的历史抓取结果覆盖新来源。
+      if (key === 'zzz') {
+        throw new Error('zzz 使用调频 meta 来源');
+      }
       roleKey = 's';
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
@@ -188,7 +192,10 @@ export default function IndexPage() {
       if (data[0]?.gachas) {
         roleKey = 'title';
 
-        if (!role || Object.keys(role).length === 0) {
+        if (key === 'zzz') {
+          roleKey = 's';
+          historyList = normalizeMetaPoolList(data);
+        } else if (!role || Object.keys(role).length === 0) {
           historyList = data
             .filter((item: any) => item.type === '角色')
             .flatMap((item: any) => addMetaPoolTimer(item, item.gachas?.slice(0, 1)));
@@ -224,11 +231,15 @@ export default function IndexPage() {
     historyList.forEach((item) => {
       const roleNameList = getHistoryRoleNames(item[roleKey]);
       const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
+      const explicitRoleImageMap = new Map(
+        (Array.isArray(item.roles) ? item.roles : []).map((roleItem: any) => [roleItem.title, roleItem.img]),
+      );
       const cachedImg = normalizeAssetUrl(item['img_path']);
       const sourceImg = item['img'];
       const roleList = roleNameList.map((roleName, index) => ({
         title: roleName,
-        img: getRoleImage(role?.[roleName]) || historyRoleImageList[index],
+        // 调频静态影画优先于通用角色立绘和历史卡池图。
+        img: explicitRoleImageMap.get(roleName) || getRoleImage(role?.[roleName]) || historyRoleImageList[index],
       }));
       const primaryRoleImg = roleList.find((roleItem) => roleItem.img)?.img;
 
@@ -351,6 +362,20 @@ export default function IndexPage() {
       timer: gacha.timer ?? pool.timer,
       poolTitle: pool.title,
     }));
+  }
+
+  function normalizeMetaPoolList(data: any[]) {
+    return data
+      .filter((pool: any) => pool.type === '角色')
+      .map((pool: any) => ({
+        ...pool,
+        timer: normalizeMetaTimer(pool.timer),
+        s: pool.gachas?.map((gacha: any) => gacha.title) ?? [],
+        roles: pool.gachas?.map((gacha: any) => ({
+          title: gacha.title,
+          img: normalizeAssetUrl(gacha.img_path) || gacha.img,
+        })) ?? [],
+      }));
   }
 
   function getMetaTimerRange(timer: string[]) {

@@ -83,6 +83,9 @@ class SpiderPipeline:
         # print(f"==================> {item}")
         # 处理图片为base64
         for gacha in item["gachas"]:
+            # 角色影画使用仓库内静态文件，已有明确路径时不再覆盖或重复下载。
+            if gacha.get("img_path"):
+                continue
             if gacha["img"]:
                 file_name = f"{img_dir}/{spider.name}/{gacha['title']}.png"
                 gacha["img_path"] = downloaded_path_or_empty(gacha["img"], file_name)

@@ -1,0 +1,152 @@
+[
+    {
+        "title": "「独家重映」",
+        "type": "角色",
+        "timer": [
+            "2026/08/19 12:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "琉音",
+                "img": "",
+                "img_path": "img/zzz/display-three/琉音.png"
+            },
+            {
+                "title": "柚叶",
+                "img": "",
+                "img_path": "img/zzz/display-three/柚叶.png"
+            },
+            {
+                "title": "悠真",
+                "img": "",
+                "img_path": "img/zzz/display-three/悠真.png"
+            }
+        ]
+    },
+    {
+        "title": "「音擎回响」",
+        "type": "武器",
+        "timer": [
+            "2026/08/19 12:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "昨夜来电",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/70db2c7b9e57bba67f0c38f6ee9a3d0d_3115162845931812806.png",
+                "img_path": "img/zzz/昨夜来电.png"
+            },
+            {
+                "title": "狸法七变化",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/d02bc114b91b0a8b9b34fda67c5fd527_4461719196173619056.png",
+                "img_path": "img/zzz/狸法七变化.png"
+            },
+            {
+                "title": "残心青囊",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/9861761e3b5e1ff05158695f68ce6320_5700095788092747631.png",
+                "img_path": "img/zzz/残心青囊.png"
+            }
+        ]
+    },
+    {
+        "title": "「复乐园」",
+        "type": "角色",
+        "timer": [
+            "2026/07/29 10:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "蕾米埃尔",
+                "img": "",
+                "img_path": "img/zzz/display-three/蕾米埃尔.png"
+            },
+            {
+                "title": "赛斯",
+                "img": "",
+                "img_path": "img/zzz/display-three/赛斯.png"
+            },
+            {
+                "title": "派派",
+                "img": "",
+                "img_path": "img/zzz/display-three/派派.png"
+            }
+        ]
+    },
+    {
+        "title": "「空羽复归之诗」",
+        "type": "武器",
+        "timer": [
+            "2026/07/29 10:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "空羽复归之诗",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/72de3df7aa987a554de6a9ca97b72789_1189780521811741746.png",
+                "img_path": "img/zzz/空羽复归之诗.png"
+            },
+            {
+                "title": "维序者-特化型",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/0e84a53f3f31d0611aba264f2138b468_2609341094091755748.png",
+                "img_path": "img/zzz/维序者-特化型.png"
+            },
+            {
+                "title": "轰鸣座驾",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/07/29/76099754/59d21937c3fed5bbd95981b7348905f2_5218172143499041320.png",
+                "img_path": "img/zzz/轰鸣座驾.png"
+            }
+        ]
+    },
+    {
+        "title": "「直到天空沉落」",
+        "type": "角色",
+        "timer": [
+            "2026/08/19 12:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "希格莉德",
+                "img": "",
+                "img_path": "img/zzz/display-three/希格莉德.png"
+            },
+            {
+                "title": "苍角",
+                "img": "",
+                "img_path": "img/zzz/display-three/苍角.png"
+            },
+            {
+                "title": "露西",
+                "img": "",
+                "img_path": "img/zzz/display-three/露西.png"
+            }
+        ]
+    },
+    {
+        "title": "「骁骑礼赞」",
+        "type": "武器",
+        "timer": [
+            "2026/08/19 12:00:00",
+            "2026/09/08 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "骁骑礼赞",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/b81184023d3add881d9e7ca75c803fa6_4796687382786585190.png",
+                "img_path": "img/zzz/骁骑礼赞.png"
+            },
+            {
+                "title": "含羞恶面",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/9fed705aa18fdde455ded51e4f907096_6413640725937195250.png",
+                "img_path": "img/zzz/含羞恶面.png"
+            },
+            {
+                "title": "好斗的阿炮",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/08/19/76099754/6de89d4ff56df24f73d020c6f056376a_2736807954332549761.png",
+                "img_path": "img/zzz/好斗的阿炮.png"
+            }
+        ]
+    }
+]

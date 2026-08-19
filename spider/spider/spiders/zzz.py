@@ -1,45 +1,43 @@
+"""从米游社《绝区零》百科“调频”接口读取当前卡池。"""
+
+import json
+
 import scrapy
 
 from spider.items import SpiderItem
+from spider.zzz_mihoyo import build_frequency_items
 
 
 class ZzzSpider(scrapy.Spider):
     name = "zzz"
+    allowed_domains = ["act-api-takumi.mihoyo.com"]
+    start_urls = [
+        "https://act-api-takumi.mihoyo.com/common/blackboard/zzz_wiki/v1/gacha_pool"
+        "?app_sn=zzz_wiki"
+    ]
     custom_settings = {
         "ITEM_PIPELINES": {
             "spider.pipelines.SpiderPipeline": 300,
         },
+        # 当前卡池必须读取实时调频数据，不能使用旧 HTTP 缓存。
+        "HTTPCACHE_ENABLED": False,
     }
-    allowed_domains = ["wiki.biligame.com"]
-    start_urls = ["https://wiki.biligame.com/zzz/%E9%A6%96%E9%A1%B5"]
 
     def parse(self, response):
-        raw_gacha_list = response.xpath('//*[@id="mw-content-text"]/div/div/div[4]/div[1]/div/div')
+        try:
+            payload = json.loads(response.text)
+        except json.JSONDecodeError:
+            self.logger.error("绝区零调频接口返回无效 JSON")
+            return
 
-        for gacha in raw_gacha_list:
-            # banner_title
-            banner_title = gacha.xpath('./a//b/text()').extract_first()
-            if banner_title == None or "频段" not in banner_title:
-                continue
-            
-            
-            # gacha
-            g = []
-            g_title = gacha.xpath('./p//img/@alt').extract()
-            g_img = gacha.xpath('./p//img/@src').extract()
-            for i in range(len(g_title)):
-                g.append({
-                    "title": g_title[i],
-                    "img": g_img[i].replace("56", "112")
-                })
-            
-            # time
-            eventTimer = [gacha.xpath('./div/span/@data-start').extract_first(), gacha.xpath('./div/span/@data-end').extract_first()]
-            
+        if payload.get("retcode") != 0:
+            self.logger.error("绝区零调频接口失败：%s", payload.get("message"))
+            return
+
+        for raw_item in build_frequency_items(payload):
             item = SpiderItem()
-            item["title"] = banner_title
-            item["type"] =  '角色' if '独家' in banner_title else '武器'
-            item["timer"] = eventTimer
-            item["gachas"] = g
+            item["title"] = raw_item["title"]
+            item["type"] = raw_item["type"]
+            item["timer"] = raw_item["timer"]
+            item["gachas"] = raw_item["gachas"]
             yield item
-        pass
