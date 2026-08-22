@@ -164,9 +164,9 @@ export default function IndexPage() {
     let hasNewPool = false;
 
     try {
-      // 绝区零当前卡池只认米游社百科“调频”模块，避免旧的历史抓取结果覆盖新来源。
-      if (key === 'zzz') {
-        throw new Error('zzz 使用调频 meta 来源');
+      // 绝区零与崩铁以 meta 指向的当前池文件为准，避免历史页数据缺池时覆盖当前来源。
+      if (key === 'zzz' || key === 'sr') {
+        throw new Error(`${key} 使用 meta 当前卡池来源`);
       }
       roleKey = 's';
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
@@ -195,6 +195,9 @@ export default function IndexPage() {
         if (key === 'zzz') {
           roleKey = 's';
           historyList = normalizeMetaPoolList(data);
+        } else if (key === 'sr') {
+          roleKey = 's';
+          historyList = normalizeSrMetaPoolList(data, role);
         } else if (!role || Object.keys(role).length === 0) {
           historyList = data
             .filter((item: any) => item.type === '角色')
@@ -387,6 +390,43 @@ export default function IndexPage() {
           rarity: gacha.rank,
         })).filter((roleItem: HistoryRoleDisplay) => pool.type !== '角色' || roleItem.rarity === 'S') ?? [],
       }));
+  }
+
+  function normalizeSrMetaPoolList(data: any[], role: Record<string, any>) {
+    return data
+      .filter((pool: any) => pool.type === '角色')
+      .map((pool: any) => {
+        const featuredRoleNames = getSrFeaturedRoleNames(pool);
+
+        return {
+          ...pool,
+          timer: normalizeMetaTimer(pool.timer),
+          s: featuredRoleNames,
+          roles: featuredRoleNames.map((roleName) => {
+            const gacha = pool.gachas?.find((item: any) => item.title === roleName);
+            const roleInfo = role?.[roleName];
+
+            return {
+              title: roleName,
+              img: normalizeAssetUrl(gacha?.img_path) || gacha?.img || getRoleSmallImage(roleInfo),
+              largeImg: getRoleLargeImage(roleInfo) || normalizeAssetUrl(gacha?.img_path) || gacha?.img,
+              rarity: roleInfo?.chara_rarity || '5星',
+            };
+          }),
+        };
+      });
+  }
+
+  function getSrFeaturedRoleNames(pool: any) {
+    const gachaNames = (pool.gachas ?? []).map((gacha: any) => `${gacha.title ?? ''}`.trim()).filter(Boolean);
+    const titleMatch = `${pool.title ?? ''}`.match(/^「[^」]*?•([^」]+)」角色活动跃迁$/);
+    const titleNames = titleMatch?.[1]
+      ?.split('、')
+      .map((roleName) => roleName.trim())
+      .filter((roleName) => gachaNames.includes(roleName)) ?? [];
+
+    // 单角色池标题通常不含角色名；抓取结果约定首位为当期五星角色。
+    return titleNames.length > 0 ? titleNames : gachaNames.slice(0, 1);
   }
 
   function getMetaTimerRange(timer: string[]) {
