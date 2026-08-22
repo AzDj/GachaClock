@@ -110,7 +110,7 @@ export default function IndexPage() {
                 }
                 indicator={({ isOpen }) => <Link href={`/history/${key}`}>H</Link>}
               >
-                <CardPool historyList={cardGroup[key].historyList} />
+                <CardPool gameKey={key} historyList={cardGroup[key].historyList} />
               </AccordionItem>
             ))}
         </Accordion>

@@ -9,13 +9,15 @@ import {
 } from '@/utils/pool-role';
 
 export interface CardPoolProps {
+  gameKey?: string;
   historyList: any[];
 }
 
 type PoolImageMode = 'large' | 'small';
 
-export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps) => {
+export const CardPool: React.FC<CardPoolProps> = ({ gameKey, historyList }: CardPoolProps) => {
   const [imageMode, setImageMode] = useState<PoolImageMode>('small');
+  const isPoolBannerOnly = gameKey === 'arknights';
   // 同名卡池要按时间继续拆分，否则会把上半、下半或长期常驻合成一张含义不清的卡。
   const mergedList = useMemo((): any[] => {
     const group: Record<string, any> = {};
@@ -48,30 +50,40 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex justify-end">
-        <ButtonGroup aria-label="卡池图片尺寸" size="sm" variant="flat">
-          <Button
-            color={imageMode === 'large' ? 'primary' : 'default'}
-            onPress={() => setImageMode('large')}
-          >
-            大图
-          </Button>
-          <Button
-            color={imageMode === 'small' ? 'primary' : 'default'}
-            onPress={() => setImageMode('small')}
-          >
-            小图
-          </Button>
-        </ButtonGroup>
-      </div>
+      {!isPoolBannerOnly && (
+        <div className="flex justify-end">
+          <ButtonGroup aria-label="卡池图片尺寸" size="sm" variant="flat">
+            <Button
+              color={imageMode === 'large' ? 'primary' : 'default'}
+              onPress={() => setImageMode('large')}
+            >
+              大图
+            </Button>
+            <Button
+              color={imageMode === 'small' ? 'primary' : 'default'}
+              onPress={() => setImageMode('small')}
+            >
+              小图
+            </Button>
+          </ButtonGroup>
+        </div>
+      )}
 
-      {normalList.length > 0 && <PoolSection historyList={normalList} imageMode={imageMode} title="限时跃迁" />}
+      {normalList.length > 0 && (
+        <PoolSection
+          gameKey={gameKey}
+          historyList={normalList}
+          imageMode={isPoolBannerOnly ? 'large' : imageMode}
+          title="当前卡池"
+        />
+      )}
 
       {permanentList.length > 0 && (
         <PoolSection
           className="border-t border-default-200 pt-3"
+          gameKey={gameKey}
           historyList={permanentList}
-          imageMode={imageMode}
+          imageMode={isPoolBannerOnly ? 'large' : imageMode}
           title="长期常驻"
         />
       )}
@@ -81,11 +93,13 @@ export const CardPool: React.FC<CardPoolProps> = ({ historyList }: CardPoolProps
 
 const PoolSection = ({
   className = '',
+  gameKey,
   historyList,
   imageMode,
   title,
 }: {
   className?: string;
+  gameKey?: string;
   historyList: any[];
   imageMode: PoolImageMode;
   title: string;
@@ -97,13 +111,13 @@ const PoolSection = ({
     </div>
     <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
       {historyList.map((item: any, index: number) => (
-        <PoolCard imageMode={imageMode} item={item} key={`${item.title}-${item.timer}-${index}`} />
+        <PoolCard gameKey={gameKey} imageMode={imageMode} item={item} key={`${item.title}-${item.timer}-${index}`} />
       ))}
     </div>
   </section>
 );
 
-const PoolCard = ({ imageMode, item }: { imageMode: PoolImageMode; item: any }) => {
+const PoolCard = ({ gameKey, imageMode, item }: { gameKey?: string; imageMode: PoolImageMode; item: any }) => {
   const roleList = getDisplayRoles(item);
   const badge = getPoolBadge(item);
 
@@ -120,13 +134,49 @@ const PoolCard = ({ imageMode, item }: { imageMode: PoolImageMode; item: any }) 
           </span>
         </div>
 
-        <div className={imageMode === 'large' ? 'grid grid-cols-1 gap-2' : 'grid grid-cols-1 gap-2 sm:grid-cols-2'}>
-          {roleList.map((role) => (
-            <RoleTile imageMode={imageMode} key={role.title} role={role} />
-          ))}
-        </div>
+        {gameKey === 'arknights' ? (
+          <PoolBannerTile item={item} roleList={roleList} />
+        ) : (
+          <div className={imageMode === 'large' ? 'grid grid-cols-1 gap-2' : 'grid grid-cols-1 gap-2 sm:grid-cols-2'}>
+            {roleList.map((role) => (
+              <RoleTile imageMode={imageMode} key={role.title} role={role} />
+            ))}
+          </div>
+        )}
       </CardBody>
     </Card>
+  );
+};
+
+const PoolBannerTile = ({ item, roleList }: { item: any; roleList: HistoryRoleDisplay[] }) => {
+  const [imageFailed, setImageFailed] = useState(false);
+  const poolImage = roleList.find((role) => role.largeImg || role.img)?.largeImg || item.largeImg || item.img;
+  const roleNames = roleList.map((role) => role.title).join(' · ');
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [poolImage]);
+
+  return (
+    <div className="overflow-hidden rounded-lg bg-default-100">
+      {poolImage && !imageFailed ? (
+        <img
+          alt={`${formatPoolTitle(item.title)}卡池`}
+          className="h-64 w-full object-contain object-center sm:h-72"
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          src={poolImage}
+          onError={() => setImageFailed(true)}
+        />
+      ) : (
+        <div className="flex h-64 items-center justify-center bg-default-200 text-2xl font-semibold text-default-600 sm:h-72">
+          {formatPoolTitle(item.title).slice(0, 1)}
+        </div>
+      )}
+      <p className="border-t border-default-200 px-3 py-2 text-sm font-medium leading-relaxed text-default-700">
+        {roleNames || '角色信息待更新'}
+      </p>
+    </div>
   );
 };
 
@@ -141,18 +191,18 @@ const RoleTile = ({ imageMode, role }: { imageMode: PoolImageMode; role: History
 
   if (imageMode === 'large') {
     return (
-      <div className="relative min-h-40 overflow-hidden rounded-lg bg-default-100">
+      <div className="relative overflow-hidden rounded-lg bg-default-100">
         {shouldShowImage ? (
           <img
             alt={role.title}
-            className="h-48 w-full object-cover object-center"
+            className="h-72 w-full object-contain object-center sm:h-80"
             loading="lazy"
             referrerPolicy="no-referrer"
             src={selectedImage}
             onError={() => setImageFailed(true)}
           />
         ) : (
-          <div className="flex h-48 items-center justify-center bg-default-200 text-2xl font-semibold text-default-600">
+          <div className="flex h-72 items-center justify-center bg-default-200 text-2xl font-semibold text-default-600 sm:h-80">
             {role.title.slice(0, 1)}
           </div>
         )}
@@ -168,7 +218,7 @@ const RoleTile = ({ imageMode, role }: { imageMode: PoolImageMode; role: History
       {shouldShowImage ? (
         <img
           alt={role.title}
-          className="h-12 w-12 shrink-0 rounded-md object-cover object-top"
+          className="h-12 w-12 shrink-0 rounded-md bg-default-200/50 object-contain object-center"
           loading="lazy"
           referrerPolicy="no-referrer"
           src={selectedImage}

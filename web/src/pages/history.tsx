@@ -61,15 +61,18 @@ export default function HistoryPage() {
               console.log(`role::: ${key}`, role);
               const roleNameList = getHistoryRoleNames(item['s']);
               const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
+              const cachedImg = normalizeAssetUrl(item['img_path']);
+              const sourceImg = item['img'];
               const roleList = roleNameList.map((roleName, index) => ({
                 title: roleName,
-                img: getRoleImage(role?.[roleName]) || historyRoleImageList[index],
+                img: getRoleSmallImage(role?.[roleName]) || historyRoleImageList[index],
+                largeImg: getRoleLargeImage(role?.[roleName]) || cachedImg || sourceImg || historyRoleImageList[index],
               }));
               const primaryRoleImg = roleList.find((roleItem) => roleItem.img)?.img;
 
               item['s'] = normalizeHistoryRoleValue(item['s']);
               item['roles'] = roleList;
-              item['img'] = primaryRoleImg || item['img_path'] || item['img'];
+              item['img'] = cachedImg || sourceImg || primaryRoleImg;
             });
 
             // 角色图未抓到时仍保留卡池，卡片会用角色名占位。
@@ -143,7 +146,11 @@ export default function HistoryPage() {
     return `/${value}`;
   }
 
-  function getRoleImage(roleInfo: any): HistoryRoleDisplay['img'] {
+  function getRoleSmallImage(roleInfo: any): HistoryRoleDisplay['img'] {
+    return roleInfo?.['simple_img'];
+  }
+
+  function getRoleLargeImage(roleInfo: any): HistoryRoleDisplay['largeImg'] {
     const promotionImg = roleInfo?.['promotion_img'];
 
     return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
@@ -180,7 +187,7 @@ export default function HistoryPage() {
               >
                 {getVersionKeys(versionFamily).map((versionKey) => (
                   <AccordionItem key={versionKey} aria-label={versionKey} startContent={versionKey} subtitle={titleMap[versionKey]}>
-                    <CardPool historyList={cardGroup[versionFamily][versionKey]} />
+                    <CardPool gameKey={key} historyList={cardGroup[versionFamily][versionKey]} />
                   </AccordionItem>
                 ))}
               </Accordion>
