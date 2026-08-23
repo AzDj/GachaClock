@@ -114,6 +114,15 @@ export default function IndexPage() {
                     {renderAccordionActions(key)}
                   </span>
                 }
+                indicator={() => (
+                  <Link
+                    aria-label={`查看${gameLabelMap[key] ?? key}卡池历史`}
+                    href={`/history/${key}`}
+                    onClick={(event) => event.stopPropagation()}
+                  >
+                    H
+                  </Link>
+                )}
               >
                 <CardPool
                   gameKey={key}
@@ -183,9 +192,6 @@ export default function IndexPage() {
             </Button>
           </ButtonGroup>
         )}
-        <Link aria-label={`查看${gameLabelMap[key] ?? key}卡池历史`} href={`/history/${key}`}>
-          H
-        </Link>
       </div>
     );
   }
