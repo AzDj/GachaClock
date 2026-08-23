@@ -102,6 +102,7 @@ export default function IndexPage() {
               <AccordionItem
                 key={key}
                 aria-label={cardGroup[key].currentVersion}
+                disableIndicatorAnimation
                 startContent={renderGameLogo(key)}
                 subtitle={
                   <CountdownTimer
