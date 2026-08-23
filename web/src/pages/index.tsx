@@ -102,16 +102,18 @@ export default function IndexPage() {
               <AccordionItem
                 key={key}
                 aria-label={cardGroup[key].currentVersion}
-                disableIndicatorAnimation
+                classNames={{ subtitle: 'w-full' }}
                 startContent={renderGameLogo(key)}
                 subtitle={
-                  <CountdownTimer
-                    className={'text-lg'}
-                    date={cardGroup[key].currentTimer.split('~')[1]}
-                    prefix={renderGameName(key, cardGroup[key].hasNewPool)}
-                  />
+                  <span className="flex w-full items-center justify-between gap-3">
+                    <CountdownTimer
+                      className={'text-lg'}
+                      date={cardGroup[key].currentTimer.split('~')[1]}
+                      prefix={renderGameName(key, cardGroup[key].hasNewPool)}
+                    />
+                    {renderAccordionActions(key)}
+                  </span>
                 }
-                indicator={() => renderAccordionActions(key)}
               >
                 <CardPool
                   gameKey={key}
