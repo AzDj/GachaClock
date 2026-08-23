@@ -10,6 +10,7 @@ from spider.spiders.zzz_history import ZzzHistorySpider
 from spider.spiders.ww_history import WwHistorySpider
 from spider.spiders.sr_role import SrRoleSpider
 from spider.spiders.ys_history import YsHistorySpider
+from spider.ys_mihoyo import YsMihoyoSpider
 from spider.spiders.arknights_history import ArknightsHistorySpider
 from spider.spiders.endfield_recruitment import EndfieldRecruitmentSpider
 
@@ -17,7 +18,9 @@ SPIDER_GROUPS = {
     "zzz": [ZzzSpider, ZzzHistorySpider],
     "sr": [SrSpider, SrHistorySpider, SrRoleSpider],
     "ww": [WwSpider, WwHistorySpider],
-    "ys": [YsHistorySpider],
+    # 首页原神数据使用官方当前卡池接口；历史抓取通过 ys-history 单独运行，避免 meta 写入竞争。
+    "ys": [YsMihoyoSpider],
+    "ys-history": [YsHistorySpider],
     "arknights": [ArknightsHistorySpider],
     "endfield": [EndfieldRecruitmentSpider],
 }
@@ -28,7 +31,7 @@ def parse_args():
     parser.add_argument(
         "--games",
         default=",".join(SPIDER_GROUPS.keys()),
-        help="要抓取的游戏，使用逗号分隔，可选值：zzz,sr,ww,ys,arknights,endfield",
+        help="要抓取的游戏，使用逗号分隔，可选值：zzz,sr,ww,ys,ys-history,arknights,endfield",
     )
     return parser.parse_args()
 

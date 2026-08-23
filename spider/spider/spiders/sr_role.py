@@ -6,6 +6,16 @@ from tqdm import tqdm
 from spider.items import RoleItem
 
 
+def select_display_image(image_list):
+    """按砂金详情页规则选择“立绘2”，避免依赖图片在 DOM 中的下标。"""
+    for image in image_list:
+        alt = image.get("alt", "")
+        if "立绘2." in alt:
+            return image.get("src", "")
+
+    return ""
+
+
 def write_progress(message):
     output_encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
     safe_message = message.encode(output_encoding, errors="replace").decode(output_encoding)
@@ -65,13 +75,19 @@ class SrRoleSpider(scrapy.Spider):
         chara_load_version = meta['chara_load_version']
         chara_size = meta['chara_size']
         
-        # 立绘 list
-        img_list = response.xpath('//*[@id="mw-content-text"]//div[@class="resp-tabs-container"]/div[@class="resp-tab-content"]/a/img[@src]/@src').extract()
+        # 立绘列表与大图分开保存；大图固定取详情页中语义明确的“立绘2”。
+        img_nodes = response.xpath('//*[@id="mw-content-text"]//div[@class="resp-tabs-container"]/div[@class="resp-tab-content"]/a/img[@src]')
+        image_list = [
+            {"alt": image.xpath("./@alt").get() or "", "src": image.xpath("./@src").get() or ""}
+            for image in img_nodes
+        ]
+        img_list = [image["src"] for image in image_list]
         # print(img_list)
         item = RoleItem()
         item['title'] = title
         item['simple_img'] = simple_img
         item['promotion_img'] = img_list
+        item['display_img'] = select_display_image(image_list)
         item['chara_rarity'] = chara_rarity
         item['chara_type'] = chara_type
         item['chara_element'] = chara_element

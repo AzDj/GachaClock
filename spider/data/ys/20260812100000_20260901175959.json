@@ -1,0 +1,70 @@
+[
+    {
+        "title": "「冰绡鹄影」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-08-12 10:00:00",
+            "2026-09-01 17:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "奥黛塔",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/739bbb437b9c7b38f87bc1fcad395def_1244773096143405172.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/08/04/50494840/796b328ee6824c1ba91973968df34507_6223184359767299789.png",
+                "img_path": "img/ys/奥黛塔.png"
+            },
+            {
+                "title": "阿罗夏",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/d25f426b7848a677a73fe4cd95e3485a_6929533805057083226.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/08/06/50494840/cfd6b6ff9693b594661954afc67d4306_3570505667208987946.png",
+                "img_path": "img/ys/阿罗夏.png"
+            },
+            {
+                "title": "砂糖",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/8e90e2981d76a103983b2390b321cdc2_6340978947994901559.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/16/317305234/c6ec7cf998ffb58237dacfd3661598b8_2241984060061484046.png",
+                "img_path": "img/ys/砂糖.png"
+            },
+            {
+                "title": "琳妮特",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/e0d3c9e29982da4a453f5561eb14fb67_5066330561434711939.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/12/50494840/5a16ee6df60335fa3a26d7623f3d00ef_5997899917142800854.jpg",
+                "img_path": "img/ys/琳妮特.png"
+            }
+        ]
+    },
+    {
+        "title": "「炉边烬影」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-08-12 10:00:00",
+            "2026-09-01 17:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "阿蕾奇诺",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/84561c3def5abc6eafdedaf4facba566_5064231549226813460.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/04/24/50494840/0d84d1bdb738120492c6f6fa77c97b4e_6166187600231689831.jpg",
+                "img_path": "img/ys/阿蕾奇诺.png"
+            },
+            {
+                "title": "阿罗夏",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/d25f426b7848a677a73fe4cd95e3485a_2160013403143510280.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/08/06/50494840/cfd6b6ff9693b594661954afc67d4306_3570505667208987946.png",
+                "img_path": "img/ys/阿罗夏.png"
+            },
+            {
+                "title": "砂糖",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/8e90e2981d76a103983b2390b321cdc2_5504004147189805480.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/16/317305234/c6ec7cf998ffb58237dacfd3661598b8_2241984060061484046.png",
+                "img_path": "img/ys/砂糖.png"
+            },
+            {
+                "title": "琳妮特",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/08/12/141047435/e0d3c9e29982da4a453f5561eb14fb67_3693835394264387828.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/12/50494840/5a16ee6df60335fa3a26d7623f3d00ef_5997899917142800854.jpg",
+                "img_path": "img/ys/琳妮特.png"
+            }
+        ]
+    }
+]

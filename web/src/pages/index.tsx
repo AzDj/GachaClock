@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem } from '@heroui/react';
+import { Accordion, AccordionItem, Button, ButtonGroup } from '@heroui/react';
 import { useEffect, useRef, useState } from 'react';
 
 import {
@@ -7,6 +7,7 @@ import {
   CountdownTimer,
   getHistoryEndTime,
   parseDateTime,
+  type PoolImageMode,
 } from '@/components/card-pool';
 import DefaultLayout from '@/layouts/default';
 import {
@@ -46,6 +47,7 @@ export default function IndexPage() {
   const [cardGroup, setCardGroup] = useState<Record<string, CurrentCardGroup>>();
   const [storedExpandedKeys, setStoredExpandedKeys] = useLocalStorage<string[] | null>('expandedKeys', null);
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
+  const [poolImageModes, setPoolImageModes] = useState<Record<string, PoolImageMode>>({});
   const roleCache = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -108,9 +110,13 @@ export default function IndexPage() {
                     prefix={renderGameName(key, cardGroup[key].hasNewPool)}
                   />
                 }
-                indicator={({ isOpen }) => <Link href={`/history/${key}`}>H</Link>}
+                indicator={() => renderAccordionActions(key)}
               >
-                <CardPool gameKey={key} historyList={cardGroup[key].historyList} />
+                <CardPool
+                  gameKey={key}
+                  historyList={cardGroup[key].historyList}
+                  imageMode={poolImageModes[key] ?? 'small'}
+                />
               </AccordionItem>
             ))}
         </Accordion>
@@ -150,6 +156,34 @@ export default function IndexPage() {
           </span>
         )}
       </>
+    );
+  }
+
+  function renderAccordionActions(key: string) {
+    const imageMode = poolImageModes[key] ?? 'small';
+
+    return (
+      <div className="flex items-center gap-2" onClick={(event) => event.stopPropagation()}>
+        {key !== 'arknights' && (
+          <ButtonGroup aria-label={`${gameLabelMap[key] ?? key}卡池图片尺寸`} size="sm" variant="flat">
+            <Button
+              color={imageMode === 'large' ? 'primary' : 'default'}
+              onPress={() => setPoolImageModes((current) => ({ ...current, [key]: 'large' }))}
+            >
+              大图
+            </Button>
+            <Button
+              color={imageMode === 'small' ? 'primary' : 'default'}
+              onPress={() => setPoolImageModes((current) => ({ ...current, [key]: 'small' }))}
+            >
+              小图
+            </Button>
+          </ButtonGroup>
+        )}
+        <Link aria-label={`查看${gameLabelMap[key] ?? key}卡池历史`} href={`/history/${key}`}>
+          H
+        </Link>
+      </div>
     );
   }
 
@@ -248,7 +282,12 @@ export default function IndexPage() {
             title: roleName,
             // 小图沿用抓取头像，大图优先使用卡池指定图或角色立绘。
             img: explicitRole?.img || getRoleSmallImage(roleInfo) || historyRoleImageList[index],
-            largeImg: explicitRole?.largeImg || getRoleLargeImage(roleInfo) || cachedImg || sourceImg,
+            largeImg:
+              explicitRole?.largeImg ||
+              getRoleLargeImage(roleInfo) ||
+              normalizeAssetUrl(item.display_img) ||
+              cachedImg ||
+              sourceImg,
             rarity: explicitRole?.rarity || roleInfo?.chara_rarity,
           };
         })
@@ -386,7 +425,11 @@ export default function IndexPage() {
         roles: pool.gachas?.map((gacha: any) => ({
           title: gacha.title,
           img: normalizeAssetUrl(gacha.img_path) || gacha.img,
-          largeImg: normalizeAssetUrl(gacha.display_img_path) || normalizeAssetUrl(pool.img_path) || pool.img,
+          largeImg:
+            normalizeAssetUrl(gacha.display_img_path) ||
+            normalizeAssetUrl(gacha.display_img) ||
+            normalizeAssetUrl(pool.img_path) ||
+            pool.img,
           rarity: gacha.rank,
         })).filter((roleItem: HistoryRoleDisplay) => pool.type !== '角色' || roleItem.rarity === 'S') ?? [],
       }));
@@ -453,9 +496,7 @@ export default function IndexPage() {
   }
 
   function getRoleLargeImage(roleInfo: any): HistoryRoleDisplay['largeImg'] {
-    const promotionImg = roleInfo?.['promotion_img'];
-
-    return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
+    return roleInfo?.['display_img'] || roleInfo?.['simple_img'];
   }
 
   function shouldDisplayRole(key: string, poolType: string, roleItem: HistoryRoleDisplay) {

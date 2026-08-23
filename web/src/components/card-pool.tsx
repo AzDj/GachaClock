@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Card, CardBody } from '@heroui/react';
+import { Card, CardBody } from '@heroui/react';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
 import {
@@ -11,12 +11,12 @@ import {
 export interface CardPoolProps {
   gameKey?: string;
   historyList: any[];
+  imageMode?: PoolImageMode;
 }
 
-type PoolImageMode = 'large' | 'small';
+export type PoolImageMode = 'large' | 'small';
 
-export const CardPool: React.FC<CardPoolProps> = ({ gameKey, historyList }: CardPoolProps) => {
-  const [imageMode, setImageMode] = useState<PoolImageMode>('small');
+export const CardPool: React.FC<CardPoolProps> = ({ gameKey, historyList, imageMode = 'small' }: CardPoolProps) => {
   const isPoolBannerOnly = gameKey === 'arknights';
   // 同名卡池要按时间继续拆分，否则会把上半、下半或长期常驻合成一张含义不清的卡。
   const mergedList = useMemo((): any[] => {
@@ -50,25 +50,6 @@ export const CardPool: React.FC<CardPoolProps> = ({ gameKey, historyList }: Card
 
   return (
     <div className="flex flex-col gap-4">
-      {!isPoolBannerOnly && (
-        <div className="flex justify-end">
-          <ButtonGroup aria-label="卡池图片尺寸" size="sm" variant="flat">
-            <Button
-              color={imageMode === 'large' ? 'primary' : 'default'}
-              onPress={() => setImageMode('large')}
-            >
-              大图
-            </Button>
-            <Button
-              color={imageMode === 'small' ? 'primary' : 'default'}
-              onPress={() => setImageMode('small')}
-            >
-              小图
-            </Button>
-          </ButtonGroup>
-        </div>
-      )}
-
       {normalList.length > 0 && (
         <PoolSection
           gameKey={gameKey}

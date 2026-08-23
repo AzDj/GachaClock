@@ -20,6 +20,7 @@ class GachaItem(TypedDict):
     title: str
     img: str
     img_path: str
+    display_img: str
     
 class HistoryItem(scrapy.Item):
     title = scrapy.Field()
@@ -37,6 +38,7 @@ class RoleItem(scrapy.Item):
     title = scrapy.Field()
     simple_img = scrapy.Field()
     promotion_img = scrapy.Field()
+    display_img = scrapy.Field()
     chara_rarity = scrapy.Field()
     chara_type = scrapy.Field()
     chara_element = scrapy.Field()

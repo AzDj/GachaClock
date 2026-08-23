@@ -151,9 +151,7 @@ export default function HistoryPage() {
   }
 
   function getRoleLargeImage(roleInfo: any): HistoryRoleDisplay['largeImg'] {
-    const promotionImg = roleInfo?.['promotion_img'];
-
-    return promotionImg?.[1] || promotionImg?.[0] || roleInfo?.['simple_img'];
+    return roleInfo?.['display_img'] || roleInfo?.['simple_img'];
   }
 
   return (
