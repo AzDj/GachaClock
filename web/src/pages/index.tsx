@@ -207,8 +207,8 @@ export default function IndexPage() {
     let hasNewPool = false;
 
     try {
-      // 绝区零与崩铁以 meta 指向的当前池文件为准，避免历史页数据缺池时覆盖当前来源。
-      if (key === 'zzz' || key === 'sr') {
+      // 绝区零、崩铁与原神使用官方当前池文件，避免历史数据覆盖独立的大图字段。
+      if (key === 'zzz' || key === 'sr' || key === 'ys') {
         throw new Error(`${key} 使用 meta 当前卡池来源`);
       }
       roleKey = 's';
