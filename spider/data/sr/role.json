@@ -833,6 +833,21 @@
         "chara_size": "女青年"
     },
     {
+        "title": "知更鸟•晴歌",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/c/cf/6vjd69pbtsl5bq8p2f07xvarpzw60zf.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/8/8f/mrlgjys60f1r21krm5mn4jxvanbez0c.png/900px-%E7%9F%A5%E6%9B%B4%E9%B8%9F%E2%80%A2%E6%99%B4%E6%AD%8C%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/8/87/1jb8jwdahtzauvk27w3s1z9va4kwga0.png",
+            "https://patchwiki.biligame.com/images/sr/b/bf/1qak9wct8wt147w21fnfff5g9mhcxpz.jpg"
+        ],
+        "display_img": "https://patchwiki.biligame.com/images/sr/8/87/1jb8jwdahtzauvk27w3s1z9va4kwga0.png",
+        "chara_rarity": "5星",
+        "chara_type": "记忆",
+        "chara_element": "风",
+        "chara_load_version": "4.5",
+        "chara_size": "女青年"
+    },
+    {
         "title": "砂金",
         "simple_img": "https://patchwiki.biligame.com/images/sr/1/10/nzd0t84uinengcf9gfyid23jj00seaf.png",
         "promotion_img": [

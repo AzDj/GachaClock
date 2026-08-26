@@ -6,7 +6,9 @@
         "version": "4.5下半",
         "timer": "2026/09/12 12:00 ~ 2026/09/28 03:59",
         "s": "砂金•戏浪",
-        "s_imgs": [],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/0/07/quknrfe0iulxo8afzurl706gb7xz00t.png/45px-%E7%A0%82%E9%87%91%E2%80%A2%E6%88%8F%E6%B5%AA.png"
+        ],
         "a": [
             "桑博",
             "虎克",
@@ -21,7 +23,9 @@
         "version": "4.5下半",
         "timer": "2026/09/12 12:00 ~ 2026/09/28 03:59",
         "s": "向浪花掷下盛夏",
-        "s_imgs": [],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/a/a1/in4jbydywyqtrgn3spe6z2vm7d8ry6c.png/45px-%E5%90%91%E6%B5%AA%E8%8A%B1%E6%8E%B7%E4%B8%8B%E7%9B%9B%E5%A4%8F.png"
+        ],
         "a": [
             "唯有沉默",
             "此时恰好",
@@ -70,7 +74,9 @@
         "version": "4.5上半",
         "timer": "4.5版本更新后 ~ 2026/09/12 11:59",
         "s": "知更鸟•晴歌",
-        "s_imgs": [],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/fa/jhnblbtuxw94nitgbzj7h2ugsbofuh6.png/45px-%E7%9F%A5%E6%9B%B4%E9%B8%9F%E2%80%A2%E6%99%B4%E6%AD%8C.png"
+        ],
         "a": [
             "丹恒",
             "青雀",
@@ -85,7 +91,9 @@
         "version": "4.5上半",
         "timer": "4.5版本更新后 ~ 2026/09/12 11:59",
         "s": "你将起身歌唱",
-        "s_imgs": [],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/ee/jdjk0okt358krkoe4mgzpi3leit4xro.png/45px-%E4%BD%A0%E5%B0%86%E8%B5%B7%E8%BA%AB%E6%AD%8C%E5%94%B1.png"
+        ],
         "a": [
             "梦的蒙太奇",
             "天才们的问候",

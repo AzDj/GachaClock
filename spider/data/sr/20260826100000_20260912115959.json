@@ -1,0 +1,122 @@
+[
+    {
+        "title": "「晴音和鸣」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/08/26 10:00:00",
+            "2026/09/12 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "知更鸟•晴歌",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/fa/jhnblbtuxw94nitgbzj7h2ugsbofuh6.png/112px-%E7%9F%A5%E6%9B%B4%E9%B8%9F%E2%80%A2%E6%99%B4%E6%AD%8C.png",
+                "img_path": "img/sr/知更鸟•晴歌.png"
+            },
+            {
+                "title": "丹恒",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/5/50/dy9w38du3j7gr0bwmkdapzx7v2yq9xu.png/112px-%E4%B8%B9%E6%81%92.png",
+                "img_path": "img/sr/丹恒.png"
+            },
+            {
+                "title": "青雀",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/40/szkhonn9zbsqwp4fd3g4t88a5mdo94w.png/112px-%E9%9D%92%E9%9B%80.png",
+                "img_path": "img/sr/青雀.png"
+            },
+            {
+                "title": "加拉赫",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/45/635ho4kx5ge6epx3bkn6pzp3mbsvezk.png/112px-%E5%8A%A0%E6%8B%89%E8%B5%AB.png",
+                "img_path": "img/sr/加拉赫.png"
+            }
+        ]
+    },
+    {
+        "title": "「虹隽晨昏」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/08/26 10:00:00",
+            "2026/09/12 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "风堇",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/fe/btad3oegk6v46b3xswvvtl370ib8zbm.png/112px-%E9%A3%8E%E5%A0%87.png",
+                "img_path": "img/sr/风堇.png"
+            },
+            {
+                "title": "丹恒",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/5/50/dy9w38du3j7gr0bwmkdapzx7v2yq9xu.png/112px-%E4%B8%B9%E6%81%92.png",
+                "img_path": "img/sr/丹恒.png"
+            },
+            {
+                "title": "青雀",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/40/szkhonn9zbsqwp4fd3g4t88a5mdo94w.png/112px-%E9%9D%92%E9%9B%80.png",
+                "img_path": "img/sr/青雀.png"
+            },
+            {
+                "title": "加拉赫",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/45/635ho4kx5ge6epx3bkn6pzp3mbsvezk.png/112px-%E5%8A%A0%E6%8B%89%E8%B5%AB.png",
+                "img_path": "img/sr/加拉赫.png"
+            }
+        ]
+    },
+    {
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/08/26 10:00:00",
+            "2026/09/12 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "你将起身歌唱",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/ee/jdjk0okt358krkoe4mgzpi3leit4xro.png/112px-%E4%BD%A0%E5%B0%86%E8%B5%B7%E8%BA%AB%E6%AD%8C%E5%94%B1.png",
+                "img_path": "img/sr/你将起身歌唱.png"
+            },
+            {
+                "title": "梦的蒙太奇",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/dd/fem95c444i5dl6iknqg29lquwo7kp34.png/112px-%E6%A2%A6%E7%9A%84%E8%92%99%E5%A4%AA%E5%A5%87.png",
+                "img_path": "img/sr/梦的蒙太奇.png"
+            },
+            {
+                "title": "天才们的问候",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/27/85gq1ozd2998q064cek1ylowv3sb17n.png/112px-%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E9%97%AE%E5%80%99.png",
+                "img_path": "img/sr/天才们的问候.png"
+            },
+            {
+                "title": "放个短假",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/25/nayd0pg02qlvqd9tqoe6wmfgjevyifq.png/112px-%E6%94%BE%E4%B8%AA%E7%9F%AD%E5%81%87.png",
+                "img_path": "img/sr/放个短假.png"
+            }
+        ]
+    },
+    {
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/08/26 10:00:00",
+            "2026/09/12 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "愿虹光永驻天空",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/c/c2/3ntgy78x59gaxaaerxxm4ud0t179dxu.png/112px-%E6%84%BF%E8%99%B9%E5%85%89%E6%B0%B8%E9%A9%BB%E5%A4%A9%E7%A9%BA.png",
+                "img_path": "img/sr/愿虹光永驻天空.png"
+            },
+            {
+                "title": "梦的蒙太奇",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/dd/fem95c444i5dl6iknqg29lquwo7kp34.png/112px-%E6%A2%A6%E7%9A%84%E8%92%99%E5%A4%AA%E5%A5%87.png",
+                "img_path": "img/sr/梦的蒙太奇.png"
+            },
+            {
+                "title": "天才们的问候",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/27/85gq1ozd2998q064cek1ylowv3sb17n.png/112px-%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E9%97%AE%E5%80%99.png",
+                "img_path": "img/sr/天才们的问候.png"
+            },
+            {
+                "title": "放个短假",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/25/nayd0pg02qlvqd9tqoe6wmfgjevyifq.png/112px-%E6%94%BE%E4%B8%AA%E7%9F%AD%E5%81%87.png",
+                "img_path": "img/sr/放个短假.png"
+            }
+        ]
+    }
+]
