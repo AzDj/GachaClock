@@ -1,0 +1,70 @@
+[
+    {
+        "title": "「孤灯夜访」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-09-01 18:00:00",
+            "2026-09-22 14:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "菲林斯",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/580bb3983dcd02b1deee98cbdab99f0b_3061880723579744159.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/09/01/50494840/65f973929f365ff076bc437c93e442e5_2437943897429824949.png",
+                "img_path": "img/ys/菲林斯.png"
+            },
+            {
+                "title": "爱诺",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/b1ee842a84eca650e1bfe380113e02bd_885650194631543295.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/09/02/50494840/aa697f35196ddc79d87172c004604edd_3919435257693091460.png",
+                "img_path": "img/ys/爱诺.png"
+            },
+            {
+                "title": "伊安珊",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/af5a02b2a5ea15640b1865c3db117b8c_8421110649720678606.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/03/20/50494840/c801f74c314b999daa7249bea3614e17_887905790047562389.jpg",
+                "img_path": "img/ys/伊安珊.png"
+            },
+            {
+                "title": "蓝砚",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/297961c14b4bf8737c1a49540a5ca11e_3477526597308019470.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/01/23/50494840/b931a5171d35e7884bae52cbb4b5e119_7666017284215714019.jpg",
+                "img_path": "img/ys/蓝砚.png"
+            }
+        ]
+    },
+    {
+        "title": "「聚星源动」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-09-01 18:00:00",
+            "2026-09-22 14:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "伊涅芙",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/bd297354e4709df7963f6dc976ab8784_3780170547753272242.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/07/22/50494840/8fe96cdfcceb9f5ba96f55ffc6cf9c3c_8737696914024193540.png",
+                "img_path": "img/ys/伊涅芙.png"
+            },
+            {
+                "title": "爱诺",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/b1ee842a84eca650e1bfe380113e02bd_1273515345637510250.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/09/02/50494840/aa697f35196ddc79d87172c004604edd_3919435257693091460.png",
+                "img_path": "img/ys/爱诺.png"
+            },
+            {
+                "title": "伊安珊",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/af5a02b2a5ea15640b1865c3db117b8c_1097526600813913398.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/03/20/50494840/c801f74c314b999daa7249bea3614e17_887905790047562389.jpg",
+                "img_path": "img/ys/伊安珊.png"
+            },
+            {
+                "title": "蓝砚",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/09/01/141047435/297961c14b4bf8737c1a49540a5ca11e_1228369371147272726.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2025/01/23/50494840/b931a5171d35e7884bae52cbb4b5e119_7666017284215714019.jpg",
+                "img_path": "img/ys/蓝砚.png"
+            }
+        ]
+    }
+]
