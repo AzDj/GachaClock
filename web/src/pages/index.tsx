@@ -293,6 +293,7 @@ export default function IndexPage() {
             img: explicitRole?.img || getRoleSmallImage(roleInfo) || historyRoleImageList[index],
             largeImg:
               explicitRole?.largeImg ||
+              normalizeAssetUrl(item.largeImg) ||
               getRoleLargeImage(roleInfo) ||
               normalizeAssetUrl(item.display_img) ||
               cachedImg ||

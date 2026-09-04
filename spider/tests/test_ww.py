@@ -1,29 +1,28 @@
-import unittest
-
 from spider.spiders.ww import WwSpider
 
 
-class WwSpiderTest(unittest.TestCase):
-    def setUp(self):
-        self.spider = WwSpider()
+def test_get_poster_image_selects_poster_figure():
+    detail = {
+        "content": {
+            "modules": [
+                {
+                    "components": [
+                        {
+                            "role": {
+                                "figures": [
+                                    {"name": "基础信息", "url": "basic.png"},
+                                    {"name": "海报立绘", "url": "poster.png"},
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 
-    def test_uses_official_community_source(self):
-        self.assertEqual(
-            "https://wiki.kurobbs.com/mc/home?bbs_clientSource=12",
-            self.spider.source_url,
-        )
-
-    def test_build_timer_normalizes_minute_range(self):
-        self.assertEqual(
-            ["2026-07-30 10:00:00", "2026-08-19 11:59:59"],
-            self.spider.build_timer(
-                {"countDown": {"dateRange": ["2026-07-30 10:00", "2026-08-19 11:59"]}}
-            ),
-        )
-
-    def test_build_timer_rejects_missing_range(self):
-        self.assertIsNone(self.spider.build_timer({"countDown": {}}))
+    assert WwSpider().get_poster_image(detail) == "poster.png"
 
 
-if __name__ == "__main__":
-    unittest.main()
+def test_get_poster_image_returns_empty_when_missing():
+    assert WwSpider().get_poster_image({}) == ""

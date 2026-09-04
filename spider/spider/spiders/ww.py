@@ -45,10 +45,12 @@ class WwSpider(scrapy.Spider):
                 for img in tab['imgs']:
                     # title 
                     entryId = self.safe_get(img, 'linkConfig', 'entryId', default='')
-                    sub_title = self.get_title(entryId)
+                    detail = self.get_entry_detail(entryId)
                     g.append({
-                        'title': sub_title,
-                        'img': img['img']
+                        # 活动页图片作为小图；角色详情的海报立绘作为大图。
+                        'title': detail.get('name') or entryId,
+                        'img': img['img'],
+                        'largeImg': self.get_poster_image(detail),
                     })
                 
 
@@ -94,6 +96,12 @@ class WwSpider(scrapy.Spider):
         return current
     
     def get_title(self, data):
+        detail = self.get_entry_detail(data)
+        return detail.get('name') or data
+
+    def get_entry_detail(self, data):
+        if not data:
+            return {}
         url = f'https://api.kurobbs.com/wiki/core/catalogue/item/getEntryDetail'
         headers = {
             **self.headers,
@@ -102,13 +110,23 @@ class WwSpider(scrapy.Spider):
         try:
             response = requests.post(url, headers=headers, data=f'id={data}')
             response.raise_for_status()  # 检查响应状态码，如果不是 200 会抛出异常
-            json_data = response.json()
-            name = self.safe_get(json_data, 'data', 'name', default='')
-            return name
+            return self.safe_get(response.json(), 'data', default={}) or {}
         except requests.RequestException as e:
             print(f"请求发生错误: {e}")
         except ValueError:
             print(f"无法解析响应的 JSON 数据，响应内容: {response.text}")
         except KeyError:
             print(f"响应中缺少所需的键，响应内容: {response.text}")
-        return data
+        return {}
+
+    def get_poster_image(self, detail):
+        """从角色基础资料中选择“海报立绘”，避免把活动卡片图误当作大图。"""
+        modules = self.safe_get(detail, 'content', 'modules', default=[])
+        for module in modules if isinstance(modules, list) else []:
+            role = module.get('components', []) if isinstance(module, dict) else []
+            for component in role if isinstance(role, list) else []:
+                figures = self.safe_get(component, 'role', 'figures', default=[])
+                for figure in figures if isinstance(figures, list) else []:
+                    if figure.get('name') == '海报立绘':
+                        return figure.get('url') or figure.get('verticalFigureUrl') or ''
+        return ''

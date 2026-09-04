@@ -120,7 +120,7 @@ const PoolCard = ({ gameKey, imageMode, item }: { gameKey?: string; imageMode: P
         ) : (
           <div className={imageMode === 'large' ? 'grid grid-cols-1 gap-2' : 'grid grid-cols-1 gap-2 sm:grid-cols-2'}>
             {roleList.map((role) => (
-              <RoleTile imageMode={imageMode} key={role.title} role={role} />
+              <RoleTile gameKey={gameKey} imageMode={imageMode} key={role.title} role={role} />
             ))}
           </div>
         )}
@@ -161,17 +161,19 @@ const PoolBannerTile = ({ item, roleList }: { item: any; roleList: HistoryRoleDi
   );
 };
 
-const RoleTile = ({ imageMode, role }: { imageMode: PoolImageMode; role: HistoryRoleDisplay }) => {
+const RoleTile = ({ gameKey, imageMode, role }: { gameKey?: string; imageMode: PoolImageMode; role: HistoryRoleDisplay }) => {
   const [imageFailed, setImageFailed] = useState(false);
   const selectedImage = imageMode === 'large' ? role.largeImg || role.img : role.img;
   const shouldShowImage = selectedImage && !imageFailed;
+  const wikiUrl = getRoleWikiUrl(gameKey, role.title);
+  const isWutheringWaves = gameKey === 'ww';
 
   useEffect(() => {
     setImageFailed(false);
   }, [selectedImage]);
 
   if (imageMode === 'large') {
-    return (
+    const tile = (
       <div className="relative overflow-hidden rounded-lg bg-default-100">
         {shouldShowImage ? (
           <img
@@ -192,28 +194,59 @@ const RoleTile = ({ imageMode, role }: { imageMode: PoolImageMode; role: History
         </span>
       </div>
     );
+
+    return wikiUrl ? (
+      <a className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href={wikiUrl} target="_blank" rel="noreferrer" aria-label={`查看${role.title} Wiki角色页面`}>
+        {tile}
+      </a>
+    ) : tile;
   }
 
-  return (
-    <div className="flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2">
+  const tile = (
+    <div className={`flex min-w-0 items-center gap-2 rounded-md bg-default-100 p-2 ${isWutheringWaves ? 'items-start' : ''}`}>
       {shouldShowImage ? (
         <img
           alt={role.title}
-          className="h-12 w-12 shrink-0 rounded-md bg-default-200/50 object-contain object-center"
+          className={isWutheringWaves
+            ? 'h-20 w-16 shrink-0 rounded-md bg-default-200/50 object-cover object-center'
+            : 'h-12 w-12 shrink-0 rounded-md bg-default-200/50 object-contain object-center'}
           loading="lazy"
           referrerPolicy="no-referrer"
           src={selectedImage}
           onError={() => setImageFailed(true)}
         />
       ) : (
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600">
+        <div className={isWutheringWaves
+          ? 'flex h-20 w-16 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600'
+          : 'flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600'}>
           {role.title.slice(0, 1)}
         </div>
       )}
       <span className="min-w-0 break-words text-sm font-medium leading-tight text-default-700">{role.title}</span>
     </div>
   );
+
+  return wikiUrl ? (
+    <a className="block min-w-0 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href={wikiUrl} target="_blank" rel="noreferrer" aria-label={`查看${role.title} Wiki角色页面`}>
+      {tile}
+    </a>
+  ) : tile;
 };
+
+/** 根据游戏 Wiki 的角色页命名规则生成直达链接；方舟卡池使用整图展示，保持不跳转。 */
+function getRoleWikiUrl(gameKey: string | undefined, roleTitle: string) {
+  const wikiBaseMap: Record<string, string> = {
+    sr: 'https://wiki.biligame.com/sr/',
+    ww: 'https://wiki.biligame.com/wutheringwaves/',
+    zzz: 'https://wiki.biligame.com/zzz/',
+    ys: 'https://wiki.biligame.com/ys/',
+    endfield: 'https://wiki.skland.com/endfield/',
+  };
+  const baseUrl = gameKey ? wikiBaseMap[gameKey] : undefined;
+  const title = `${roleTitle ?? ''}`.trim();
+
+  return baseUrl && title ? `${baseUrl}${encodeURIComponent(title)}` : undefined;
+}
 
 function getPoolGroupKey(item: any) {
   return [item.type ?? '', item.title ?? '', item.timer ?? ''].join('|');

@@ -20,6 +20,7 @@ class GachaItem(TypedDict):
     title: str
     img: str
     img_path: str
+    largeImg: str
     display_img: str
     
 class HistoryItem(scrapy.Item):

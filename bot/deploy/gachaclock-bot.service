@@ -1,0 +1,15 @@
+[Unit]
+Description=GachaClock 微信查询机器人
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/gachaclock-bot
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/root/gachaclock-bot/.venv/bin/python -m gachaclock_bot
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

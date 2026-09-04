@@ -1,3 +1,12 @@
 # 本机开发工具配置，不提交到 Git
 .vscode/mcp.json
 .serena/
+
+# NoneBot 本地运行环境与微信登录凭据
+bot/.venv/
+bot/.env
+bot/**/__pycache__/
+bot/.pytest_cache/
+bot/.coverage
+bot/dist/
+.coverage
