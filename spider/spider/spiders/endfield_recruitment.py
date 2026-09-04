@@ -135,10 +135,27 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
         history_item["version"] = history_item["title"]
         history_item["timer"] = response.meta["timer"]
         history_item["s"] = name
-        history_item["s_imgs"] = [image]
+        avatar = self.extract_avatar_image(char) or image
+        history_item["s_imgs"] = [avatar]
         history_item["a"] = []
         history_item["img"] = image
         yield history_item
+
+    @classmethod
+    def extract_avatar_image(cls, char):
+        """优先读取干员寻访返回的百科角色头像，不把详情大图当作小图。"""
+        avatar_keys = (
+            "avatar", "avatarUrl", "avatarURL", "icon", "iconUrl", "iconURL",
+            "headPic", "headPicUrl", "portrait", "portraitUrl",
+        )
+        if not isinstance(char, dict):
+            return ""
+        for key in avatar_keys:
+            value = char.get(key)
+            image = cls.find_image_url(value)
+            if image:
+                return image
+        return ""
 
     def parse_item_error(self, failure):
         status = getattr(getattr(failure, "value", None), "response", None)
@@ -234,6 +251,10 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
 
     @classmethod
     def find_image_url(cls, value):
+        if isinstance(value, str):
+            if value.startswith("//"):
+                return "https:" + value
+            return value if value.startswith(("http://", "https://")) else ""
         if isinstance(value, dict):
             for key in ("url", "src", "imageUrl"):
                 candidate = value.get(key)

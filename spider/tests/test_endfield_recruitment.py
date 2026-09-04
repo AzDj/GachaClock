@@ -106,6 +106,14 @@ class EndfieldRecruitmentTest(unittest.TestCase):
         }
         self.assertEqual("", EndfieldRecruitmentSpider.extract_demo_image(item))
 
+    def test_extract_avatar_image_prefers_recruitment_avatar(self):
+        self.assertEqual(
+            "https://bbs.hycdn.cn/image/endfield/lino-avatar.png",
+            EndfieldRecruitmentSpider.extract_avatar_image(
+                {"name": "梨诺", "avatarUrl": "https://bbs.hycdn.cn/image/endfield/lino-avatar.png"}
+            ),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
