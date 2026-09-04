@@ -2,6 +2,7 @@ import hashlib
 import hmac
 import json
 import os
+import tempfile
 import unittest
 
 from spider.spiders.endfield_recruitment import EndfieldRecruitmentSpider
@@ -113,6 +114,24 @@ class EndfieldRecruitmentTest(unittest.TestCase):
                 {"name": "梨诺", "avatarUrl": "https://bbs.hycdn.cn/image/endfield/lino-avatar.png"}
             ),
         )
+
+    def test_load_avatar_map_from_configured_file(self):
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".json", delete=False) as file:
+            file.write('{"提弗洛斯":"https://bbs.hycdn.cn/image/avatar.png"}')
+            path = file.name
+        previous = os.environ.get("ENDFIELD_AVATAR_MAP_FILE")
+        os.environ["ENDFIELD_AVATAR_MAP_FILE"] = path
+        try:
+            self.assertEqual(
+                {"提弗洛斯": "https://bbs.hycdn.cn/image/avatar.png"},
+                EndfieldRecruitmentSpider.load_avatar_map(),
+            )
+        finally:
+            os.unlink(path)
+            if previous is None:
+                os.environ.pop("ENDFIELD_AVATAR_MAP_FILE", None)
+            else:
+                os.environ["ENDFIELD_AVATAR_MAP_FILE"] = previous
 
 
 if __name__ == "__main__":

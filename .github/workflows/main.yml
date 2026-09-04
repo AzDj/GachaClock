@@ -129,6 +129,13 @@ jobs:
           else
             echo "自动获取设备标识失败，使用 ENDFIELD_DEVICE_ID Secret 回退。"
           fi
+          avatar_map_file="$RUNNER_TEMP/endfield-avatar-map.json"
+          if python get_endfield_device_id.py --avatars > "$avatar_map_file"; then
+            echo "ENDFIELD_AVATAR_MAP_FILE=$avatar_map_file" >> "$GITHUB_ENV"
+          else
+            echo '{}' > "$avatar_map_file"
+            echo "自动获取终末地角色头像映射失败，使用接口字段回退。"
+          fi
           python run_spider.py --games "${{ steps.maintenance.outputs.games }}"
 
       - name: 持久化定时维护数据

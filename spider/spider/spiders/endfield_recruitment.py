@@ -43,6 +43,22 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
         },
     }
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.avatar_map = self.load_avatar_map()
+
+    @staticmethod
+    def load_avatar_map():
+        path = os.getenv("ENDFIELD_AVATAR_MAP_FILE", "").strip()
+        if not path:
+            return {}
+        try:
+            with open(path, encoding="utf-8") as avatar_file:
+                value = json.load(avatar_file)
+            return value if isinstance(value, dict) else {}
+        except (OSError, TypeError, json.JSONDecodeError):
+            return {}
+
     @classmethod
     def base_headers(cls):
         # 官方 Wiki 现要求 Shumei 设备标识；通过 Actions Secret 注入，禁止写入仓库。
@@ -135,7 +151,7 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
         history_item["version"] = history_item["title"]
         history_item["timer"] = response.meta["timer"]
         history_item["s"] = name
-        avatar = self.extract_avatar_image(char) or image
+        avatar = self.avatar_map.get(name, "") or self.extract_avatar_image(char) or image
         history_item["s_imgs"] = [avatar]
         history_item["a"] = []
         history_item["img"] = image
