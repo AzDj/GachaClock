@@ -2,3 +2,4 @@ Scrapy==2.12.0
 Twisted<26.0.0
 requests
 tqdm
+playwright

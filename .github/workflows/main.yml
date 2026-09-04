@@ -106,6 +106,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          playwright install --with-deps chromium
 
       - name: 检查爬虫语法
         if: steps.crawl_decision.outputs.should_crawl == 'true'
@@ -117,7 +118,15 @@ jobs:
         working-directory: spider
         env:
           ENDFIELD_DEVICE_ID: ${{ secrets.ENDFIELD_DEVICE_ID }}
-        run: python run_spider.py --games "${{ steps.maintenance.outputs.games }}"
+        run: |
+          # 优先自动获取设备标识；失败时保留 Secret 回退值。
+          if device_id=$(python get_endfield_device_id.py); then
+            echo "::add-mask::$device_id"
+            echo "ENDFIELD_DEVICE_ID=$device_id" >> "$GITHUB_ENV"
+          else
+            echo "自动获取设备标识失败，使用 ENDFIELD_DEVICE_ID Secret 回退。"
+          fi
+          python run_spider.py --games "${{ steps.maintenance.outputs.games }}"
 
       - name: 持久化定时维护数据
         if: steps.crawl_decision.outputs.should_crawl == 'true' && github.event_name == 'schedule'
