@@ -3,6 +3,7 @@
 import hashlib
 import hmac
 import json
+import os
 import time
 from datetime import datetime
 from urllib.parse import urlencode
@@ -44,13 +45,18 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
 
     @classmethod
     def base_headers(cls):
-        return {
+        # 官方 Wiki 现要求 Shumei 设备标识；通过 Actions Secret 注入，禁止写入仓库。
+        device_id = os.getenv("ENDFIELD_DEVICE_ID", "").strip()
+        headers = {
             "Accept": "application/json",
             "Origin": "https://wiki.skland.com",
             "Referer": "https://wiki.skland.com/",
             "platform": "3",
             "vName": "1.0.0",
         }
+        if device_id:
+            headers["dId"] = device_id
+        return headers
 
     def start_requests(self):
         yield scrapy.Request(
@@ -161,7 +167,7 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
         sign_headers = {
             "platform": "3",
             "timestamp": timestamp,
-            "dId": "",
+            "dId": os.getenv("ENDFIELD_DEVICE_ID", "").strip(),
             "vName": "1.0.0",
         }
         raw = path + query_string + timestamp + json.dumps(

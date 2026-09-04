@@ -1,12 +1,27 @@
 import hashlib
 import hmac
 import json
+import os
 import unittest
 
 from spider.spiders.endfield_recruitment import EndfieldRecruitmentSpider
 
 
 class EndfieldRecruitmentTest(unittest.TestCase):
+    def test_signed_headers_include_configured_device_id(self):
+        previous = os.environ.get("ENDFIELD_DEVICE_ID")
+        os.environ["ENDFIELD_DEVICE_ID"] = "device-test"
+        try:
+            headers = EndfieldRecruitmentSpider.signed_headers(
+                "/web/v1/wiki/char-pool", "token", timestamp="1"
+            )
+            self.assertEqual("device-test", headers["dId"])
+        finally:
+            if previous is None:
+                os.environ.pop("ENDFIELD_DEVICE_ID", None)
+            else:
+                os.environ["ENDFIELD_DEVICE_ID"] = previous
+
     def test_signed_headers_follow_official_algorithm(self):
         token = "token"
         timestamp = "1787072643"

@@ -115,6 +115,8 @@ jobs:
       - name: 抓取最新卡池数据
         if: steps.crawl_decision.outputs.should_crawl == 'true'
         working-directory: spider
+        env:
+          ENDFIELD_DEVICE_ID: ${{ secrets.ENDFIELD_DEVICE_ID }}
         run: python run_spider.py --games "${{ steps.maintenance.outputs.games }}"
 
       - name: 持久化定时维护数据
