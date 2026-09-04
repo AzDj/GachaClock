@@ -14,8 +14,10 @@ on:
         type: string
         default: "all"
   schedule:
-    # GitHub Actions 使用 UTC；这里对应北京时间/新加坡时间 08:00、12:00、16:00、20:00。
+    # GitHub Actions 使用 UTC；常规维护对应北京时间/新加坡时间 08:00、12:00、16:00、20:00。
     - cron: "0 0,4,8,12 * * *"
+    # 明日方舟数据每天只抓取一次，对应北京时间/新加坡时间 09:00。
+    - cron: "0 1 * * *"
   push:
     branches:
       - main
@@ -67,6 +69,7 @@ jobs:
         env:
           FORCE_UPDATE: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update }}
           FORCE_GAMES: ${{ github.event_name == 'workflow_dispatch' && inputs.games || 'auto' }}
+          SCHEDULE_CRON: ${{ github.event_name == 'schedule' && github.event.schedule || '' }}
         run: python should_update.py
 
       - name: 判断是否执行爬虫

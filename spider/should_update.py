@@ -11,6 +11,7 @@ DATA_DIR = Path(__file__).resolve().parent / "data"
 AUTO_GAMES = ["zzz", "sr", "ww", "ys", "arknights", "endfield"]
 MANUAL_GAMES = []
 ALL_GAMES = AUTO_GAMES + MANUAL_GAMES
+ARKNIGHTS_DAILY_CRON = "0 1 * * *"
 
 
 def parse_bool(value):
@@ -79,6 +80,11 @@ def write_github_output(result):
             output_file.write(f"{key}={value}\n")
 
 
+def is_arknights_daily_schedule():
+    """判断当前定时事件是否为明日方舟每日抓取时段。"""
+    return os.getenv("SCHEDULE_CRON", "").strip() == ARKNIGHTS_DAILY_CRON
+
+
 def main():
     force_update = parse_bool(os.getenv("FORCE_UPDATE"))
     force_games = parse_force_games(os.getenv("FORCE_GAMES"))
@@ -102,6 +108,14 @@ def main():
     due_games = []
     status_messages = []
     for game in AUTO_GAMES:
+        if game == "arknights":
+            if is_arknights_daily_schedule():
+                due_games.append(game)
+                status_messages.append("arknights: 每日定时抓取")
+            else:
+                status_messages.append("arknights: 非每日定时，跳过抓取")
+            continue
+
         if game not in meta:
             due_games.append(game)
             status_messages.append(f"{game}: meta 缺失，纳入维护")
