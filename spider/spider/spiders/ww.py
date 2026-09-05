@@ -47,9 +47,9 @@ class WwSpider(scrapy.Spider):
                     entryId = self.safe_get(img, 'linkConfig', 'entryId', default='')
                     detail = self.get_entry_detail(entryId)
                     g.append({
-                        # 活动页图片作为小图；角色详情的海报立绘作为大图。
+                        # 角色详情“基础信息”作为小图，海报立绘仅用于大图。
                         'title': detail.get('name') or entryId,
-                        'img': img['img'],
+                        'img': self.get_avatar_image(detail) or img['img'],
                         'largeImg': self.get_poster_image(detail),
                     })
                 
@@ -128,5 +128,17 @@ class WwSpider(scrapy.Spider):
                 figures = self.safe_get(component, 'role', 'figures', default=[])
                 for figure in figures if isinstance(figures, list) else []:
                     if figure.get('name') == '海报立绘':
+                        return figure.get('url') or figure.get('verticalFigureUrl') or ''
+        return ''
+
+    def get_avatar_image(self, detail):
+        """从角色详情选择近方形的基础信息图，避免使用卡池横幅/卡片图。"""
+        modules = self.safe_get(detail, 'content', 'modules', default=[])
+        for module in modules if isinstance(modules, list) else []:
+            components = module.get('components', []) if isinstance(module, dict) else []
+            for component in components if isinstance(components, list) else []:
+                figures = self.safe_get(component, 'role', 'figures', default=[])
+                for figure in figures if isinstance(figures, list) else []:
+                    if figure.get('name') == '基础信息':
                         return figure.get('url') or figure.get('verticalFigureUrl') or ''
         return ''

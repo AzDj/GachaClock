@@ -26,3 +26,19 @@ def test_get_poster_image_selects_poster_figure():
 
 def test_get_poster_image_returns_empty_when_missing():
     assert WwSpider().get_poster_image({}) == ""
+
+
+def test_get_avatar_image_selects_basic_info_figure():
+    detail = {
+        "content": {
+            "modules": [{
+                "components": [{
+                    "role": {"figures": [
+                        {"name": "基础信息", "url": "avatar.png"},
+                        {"name": "海报立绘", "url": "poster.png"},
+                    ]}
+                }]
+            }]
+        }
+    }
+    assert WwSpider().get_avatar_image(detail) == "avatar.png"
