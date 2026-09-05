@@ -232,9 +232,13 @@ const RoleTile = ({ gameKey, imageMode, role }: { gameKey?: string; imageMode: P
 
 /** 根据游戏 Wiki 的角色页命名规则生成直达链接；方舟卡池使用整图展示，保持不跳转。 */
 function getRoleWikiUrl(gameKey: string | undefined, roleTitle: string) {
+  // 鸣潮库街区使用统一百科入口，入口页不支持按角色名拼接路径。
+  if (gameKey === 'ww') {
+    return 'https://wiki.kurobbs.com/mc/home?bbs_clientSource=12';
+  }
+
   const wikiBaseMap: Record<string, string> = {
     sr: 'https://wiki.biligame.com/sr/',
-    ww: 'https://wiki.biligame.com/wutheringwaves/',
     zzz: 'https://wiki.biligame.com/zzz/',
     ys: 'https://wiki.biligame.com/ys/',
     endfield: 'https://wiki.skland.com/endfield/',
