@@ -207,18 +207,15 @@ const RoleTile = ({ gameKey, imageMode, role }: { gameKey?: string; imageMode: P
       {shouldShowImage ? (
         <img
           alt={role.title}
-          className={isWutheringWaves
-            ? 'h-20 w-16 shrink-0 rounded-md bg-default-200/50 object-cover object-center'
-            : 'h-12 w-12 shrink-0 rounded-md bg-default-200/50 object-contain object-center'}
+          // 小图统一使用方形裁剪，避免终末地横幅图被 object-contain 压成细条。
+          className="h-16 w-16 shrink-0 rounded-md bg-default-200/50 object-cover object-center"
           loading="lazy"
           referrerPolicy="no-referrer"
           src={selectedImage}
           onError={() => setImageFailed(true)}
         />
       ) : (
-        <div className={isWutheringWaves
-          ? 'flex h-20 w-16 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600'
-          : 'flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600'}>
+        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-default-200 text-sm font-semibold text-default-600">
           {role.title.slice(0, 1)}
         </div>
       )}
