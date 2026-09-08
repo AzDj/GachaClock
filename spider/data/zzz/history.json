@@ -1,5 +1,85 @@
 [
     {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/58/ly2aimdoxf2f9rvx1aqej5i5kifstbh.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5036-1%E6%9C%9F.png",
+        "title": "「直到天空沉落」036-1期独家频段",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "希格莉德",
+        "a": [],
+        "img_path": "img/zzz/history/「直到天空沉落」036-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/bb/lhrdfuv4ytbbtcrcxzm1eog3ghwab51.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5036-1%E6%9C%9F.png",
+        "title": "「骁骑礼赞」036-1期音擎频段",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "骁骑礼赞",
+        "a": [],
+        "img_path": "img/zzz/history/「骁骑礼赞」036-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/8/85/hpnltrjtgne55gu2rm34a3tifbqgl0x.png/900px-%E7%8B%AC%E5%AE%B6%E9%87%8D%E6%98%A0002%E6%9C%9F.png",
+        "title": "3.1版本独家重映",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "琉音",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本独家重映.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/8/85/hpnltrjtgne55gu2rm34a3tifbqgl0x.png/900px-%E7%8B%AC%E5%AE%B6%E9%87%8D%E6%98%A0002%E6%9C%9F.png",
+        "title": "3.1版本独家重映",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "柚叶",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本独家重映.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/8/85/hpnltrjtgne55gu2rm34a3tifbqgl0x.png/900px-%E7%8B%AC%E5%AE%B6%E9%87%8D%E6%98%A0002%E6%9C%9F.png",
+        "title": "3.1版本独家重映",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "悠真",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本独家重映.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/b0/ba3yx3myuumogvcf13gl9ppdpzdp2c0.png/900px-%E9%9F%B3%E6%93%8E%E5%9B%9E%E5%93%8D002%E6%9C%9F.png",
+        "title": "3.1版本音擎回响",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "昨夜来电",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本音擎回响.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/b0/ba3yx3myuumogvcf13gl9ppdpzdp2c0.png/900px-%E9%9F%B3%E6%93%8E%E5%9B%9E%E5%93%8D002%E6%9C%9F.png",
+        "title": "3.1版本音擎回响",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "狸法七变化",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本音擎回响.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/b/b0/ba3yx3myuumogvcf13gl9ppdpzdp2c0.png/900px-%E9%9F%B3%E6%93%8E%E5%9B%9E%E5%93%8D002%E6%9C%9F.png",
+        "title": "3.1版本音擎回响",
+        "type": "武器",
+        "version": "3.1下半",
+        "timer": "2026/08/19 12:00:00 ~ 2026/09/08 14:59:59",
+        "s": "残心青囊",
+        "a": [],
+        "img_path": "img/zzz/history/3.1版本音擎回响.png"
+    },
+    {
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/3/36/ncvzf6b1yf3tjcb3ch5q33pn9w82lwu.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5035-1%E6%9C%9F.png",
         "title": "「复乐园」035-1期独家频段",
         "type": "角色",
@@ -15,7 +95,7 @@
         "type": "武器",
         "version": "3.1",
         "timer": "3.1版本更新后 ~ 2026/09/08 14:59:59",
-        "s": "空羽复归之诗（页面不存在）",
+        "s": "空羽复归之诗",
         "a": [],
         "img_path": "img/zzz/history/「空羽复归之诗」035-1期音擎频段.png"
     },
@@ -1658,6 +1738,16 @@
             "旋钻机-赤轴"
         ],
         "img_path": "img/zzz/history/「喧哗奏鸣」001期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/5a/t0jennlqw8kzrgwffdexee9aloyv6ga.png/900px-%E9%9F%B3%E6%93%8E%E9%A2%91%E6%AE%B5035-1%E6%9C%9F.png",
+        "title": "「空羽复归之诗」035-1期音擎频段",
+        "type": "武器",
+        "version": "3.1",
+        "timer": "3.1版本更新后 ~ 2026/09/08 14:59:59",
+        "s": "空羽复归之诗（页面不存在）",
+        "a": [],
+        "img_path": "img/zzz/history/「空羽复归之诗」035-1期音擎频段.png"
     },
     {
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/a/a3/0sgdmn342du4tds4sy1fy82in7xhko6.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5035-2%E6%9C%9F.png",
