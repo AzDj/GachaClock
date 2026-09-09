@@ -45,9 +45,13 @@ interface CurrentCardGroup {
 
 export default function IndexPage() {
   const [cardGroup, setCardGroup] = useState<Record<string, CurrentCardGroup>>();
-  const [storedExpandedKeys, setStoredExpandedKeys] = useLocalStorage<string[] | null>('expandedKeys', null);
+  const [storedExpandedKeys, setStoredExpandedKeys] = useLocalStorage<string[] | null>(
+    'expandedKeys',
+    null,
+  );
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
   const [poolImageModes, setPoolImageModes] = useState<Record<string, PoolImageMode>>({});
+  const [currentGameKey, setCurrentGameKey] = useState<string>();
   const roleCache = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -75,62 +79,109 @@ export default function IndexPage() {
     setExpandedKeys(Object.keys(cardGroup));
   }, [cardGroup, storedExpandedKeys]);
 
+  const sortedGameKeys = cardGroup
+    ? Object.keys(cardGroup).sort((a, b) => {
+        const endDiff =
+          getHistoryEndTime(cardGroup[a].currentTimer) -
+          getHistoryEndTime(cardGroup[b].currentTimer);
+        return endDiff || a.localeCompare(b);
+      })
+    : [];
+
+  useEffect(() => {
+    if (sortedGameKeys.length === 0) {
+      return;
+    }
+
+    setCurrentGameKey((current) =>
+      current && sortedGameKeys.includes(current) ? current : sortedGameKeys[0],
+    );
+
+    // 使用滚动位置而非卡池内部数据推断当前游戏，兼容 Accordion 展开/收起导致的高度变化。
+    const updateCurrentGame = () => {
+      const navHeight = document.querySelector('nav')?.getBoundingClientRect().height ?? 64;
+      const threshold = navHeight + 24;
+      let candidate: string | undefined;
+
+      for (const key of sortedGameKeys) {
+        const element = document.querySelector<HTMLElement>(`[data-game-key="${CSS.escape(key)}"]`);
+        if (element && element.getBoundingClientRect().top <= threshold) {
+          candidate = key;
+        }
+      }
+
+      if (!candidate) {
+        candidate = sortedGameKeys[0];
+      }
+
+      setCurrentGameKey((current) => (current === candidate ? current : candidate));
+    };
+
+    updateCurrentGame();
+    window.addEventListener('scroll', updateCurrentGame, { passive: true });
+    window.addEventListener('resize', updateCurrentGame);
+
+    return () => {
+      window.removeEventListener('scroll', updateCurrentGame);
+      window.removeEventListener('resize', updateCurrentGame);
+    };
+  }, [sortedGameKeys.join('|'), expandedKeys]);
+
   if (!cardGroup || Object.keys(cardGroup).length == 0) {
     return <div>Loading...</div>;
   }
 
   return (
-    <DefaultLayout>
+    <DefaultLayout
+      currentGameName={gameLabelMap[currentGameKey?.toLocaleLowerCase() ?? ''] ?? currentGameKey}
+    >
       <div>
         <Accordion
           selectedKeys={expandedKeys}
           selectionMode="multiple"
           variant="splitted"
           onSelectionChange={(keys) => {
-            const nextExpandedKeys = keys === 'all' ? Object.keys(cardGroup) : [...keys].map(String);
+            const nextExpandedKeys =
+              keys === 'all' ? Object.keys(cardGroup) : [...keys].map(String);
 
             setExpandedKeys(nextExpandedKeys);
             setStoredExpandedKeys(nextExpandedKeys);
           }}
         >
-          {Object.keys(cardGroup)
-            .sort((a, b) => {
-              const endDiff = getHistoryEndTime(cardGroup[a].currentTimer) - getHistoryEndTime(cardGroup[b].currentTimer);
-              return endDiff || a.localeCompare(b);
-            })
-            .map((key) => (
-              <AccordionItem
-                key={key}
-                aria-label={cardGroup[key].currentVersion}
-                classNames={{ subtitle: 'w-full' }}
-                startContent={renderGameLogo(key)}
-                subtitle={
-                  <span className="flex w-full items-center justify-between gap-3">
-                    <CountdownTimer
-                      className={'text-lg'}
-                      date={cardGroup[key].currentTimer.split('~')[1]}
-                      prefix={renderGameName(key, cardGroup[key].hasNewPool)}
-                    />
-                    {renderAccordionActions(key)}
-                  </span>
-                }
-                indicator={() => (
-                  <Link
-                    aria-label={`查看${gameLabelMap[key] ?? key}卡池历史`}
-                    href={`/history/${key}`}
-                    onClick={(event) => event.stopPropagation()}
-                  >
-                    H
-                  </Link>
-                )}
-              >
-                <CardPool
-                  gameKey={key}
-                  historyList={cardGroup[key].historyList}
-                  imageMode={poolImageModes[key] ?? 'small'}
-                />
-              </AccordionItem>
-            ))}
+          {sortedGameKeys.map((key) => (
+            <AccordionItem
+              key={key}
+              data-game-key={key}
+              aria-label={cardGroup[key].currentVersion}
+              classNames={{ subtitle: 'w-full' }}
+              startContent={renderGameLogo(key)}
+              subtitle={
+                <span className="flex w-full items-center justify-between gap-3">
+                  <CountdownTimer
+                    className={'text-lg'}
+                    date={cardGroup[key].currentTimer.split('~')[1]}
+                    prefix={renderGameName(key, cardGroup[key].hasNewPool)}
+                  />
+                  {renderAccordionActions(key)}
+                </span>
+              }
+              indicator={() => (
+                <Link
+                  aria-label={`查看${gameLabelMap[key] ?? key}卡池历史`}
+                  href={`/history/${key}`}
+                  onClick={(event) => event.stopPropagation()}
+                >
+                  H
+                </Link>
+              )}
+            >
+              <CardPool
+                gameKey={key}
+                historyList={cardGroup[key].historyList}
+                imageMode={poolImageModes[key] ?? 'small'}
+              />
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
     </DefaultLayout>
@@ -140,13 +191,7 @@ export default function IndexPage() {
     const normalizedKey = key.toLocaleLowerCase();
 
     if (imageLogoKeys.has(normalizedKey)) {
-      return (
-        <img
-          alt="Logo"
-          className="w-10 h-10 rounded-full"
-          src={`${normalizedKey}.png`}
-        />
-      );
+      return <img alt="Logo" className="w-10 h-10 rounded-full" src={`${normalizedKey}.png`} />;
     }
 
     return (
@@ -177,7 +222,11 @@ export default function IndexPage() {
     return (
       <div className="flex items-center gap-2" onClick={(event) => event.stopPropagation()}>
         {key !== 'arknights' && (
-          <ButtonGroup aria-label={`${gameLabelMap[key] ?? key}卡池图片尺寸`} size="sm" variant="flat">
+          <ButtonGroup
+            aria-label={`${gameLabelMap[key] ?? key}卡池图片尺寸`}
+            size="sm"
+            variant="flat"
+          >
             <Button
               color={imageMode === 'large' ? 'primary' : 'default'}
               onPress={() => setPoolImageModes((current) => ({ ...current, [key]: 'large' }))}
@@ -278,7 +327,10 @@ export default function IndexPage() {
       const roleNameList = getHistoryRoleNames(item[roleKey]);
       const historyRoleImageList = getHistoryRoleImages(item['s_imgs']);
       const explicitRoleImageMap = new Map(
-        (Array.isArray(item.roles) ? item.roles : []).map((roleItem: any) => [roleItem.title, roleItem]),
+        (Array.isArray(item.roles) ? item.roles : []).map((roleItem: any) => [
+          roleItem.title,
+          roleItem,
+        ]),
       );
       const cachedImg = normalizeAssetUrl(item['img_path']);
       const sourceImg = item['img'];
@@ -334,23 +386,30 @@ export default function IndexPage() {
     }
 
     const currentTime = new Date().getTime();
-    const finiteCurrentList = data.filter((item: any) => isTimerStartedAndUnexpired(item.timer, currentTime));
-    const finiteLimitedCurrentList = finiteCurrentList.filter((item: any) => !isPermanentHistoryPool(item));
+    const finiteCurrentList = data.filter((item: any) =>
+      isTimerStartedAndUnexpired(item.timer, currentTime),
+    );
+    const finiteLimitedCurrentList = finiteCurrentList.filter(
+      (item: any) => !isPermanentHistoryPool(item),
+    );
     const permanentCurrentList = finiteCurrentList.filter(isPermanentHistoryPool);
 
     if (finiteLimitedCurrentList.length > 0) {
       return appendPermanentHistoryPools(finiteLimitedCurrentList, permanentCurrentList);
     }
 
-    const currentDateList = key === 'arknights'
-      ? data.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
-      : [];
+    const currentDateList =
+      key === 'arknights'
+        ? data.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
+        : [];
 
     if (currentDateList.length > 0) {
       return appendPermanentHistoryPools(currentDateList, permanentCurrentList);
     }
 
-    const ambiguousCurrentList = data.filter((item: any) => isTimerAmbiguousAndUnexpired(item.timer, currentTime));
+    const ambiguousCurrentList = data.filter((item: any) =>
+      isTimerAmbiguousAndUnexpired(item.timer, currentTime),
+    );
 
     if (ambiguousCurrentList.length > 0) {
       return appendPermanentHistoryPools(ambiguousCurrentList, permanentCurrentList);
@@ -394,7 +453,13 @@ export default function IndexPage() {
     const currentTime = new Date().getTime();
     const currentList = data
       .map((item: any) => ({ item, range: getMetaTimerRange(item.timer) }))
-      .filter(({ range }) => Number.isFinite(range.start) && Number.isFinite(range.end) && range.start <= currentTime && currentTime <= range.end)
+      .filter(
+        ({ range }) =>
+          Number.isFinite(range.start) &&
+          Number.isFinite(range.end) &&
+          range.start <= currentTime &&
+          currentTime <= range.end,
+      )
       .sort((a, b) => a.range.end - b.range.end);
 
     return (currentList[0]?.item ?? data[data.length - 1]) as any;
@@ -432,16 +497,21 @@ export default function IndexPage() {
         ...pool,
         timer: normalizeMetaTimer(pool.timer),
         s: pool.gachas?.map((gacha: any) => gacha.title) ?? [],
-        roles: pool.gachas?.map((gacha: any) => ({
-          title: gacha.title,
-          img: normalizeAssetUrl(gacha.img_path) || gacha.img,
-          largeImg:
-            normalizeAssetUrl(gacha.display_img_path) ||
-            normalizeAssetUrl(gacha.display_img) ||
-            normalizeAssetUrl(pool.img_path) ||
-            pool.img,
-          rarity: gacha.rank,
-        })).filter((roleItem: HistoryRoleDisplay) => pool.type !== '角色' || roleItem.rarity === 'S') ?? [],
+        roles:
+          pool.gachas
+            ?.map((gacha: any) => ({
+              title: gacha.title,
+              img: normalizeAssetUrl(gacha.img_path) || gacha.img,
+              largeImg:
+                normalizeAssetUrl(gacha.display_img_path) ||
+                normalizeAssetUrl(gacha.display_img) ||
+                normalizeAssetUrl(pool.img_path) ||
+                pool.img,
+              rarity: gacha.rank,
+            }))
+            .filter(
+              (roleItem: HistoryRoleDisplay) => pool.type !== '角色' || roleItem.rarity === 'S',
+            ) ?? [],
       }));
   }
 
@@ -462,7 +532,8 @@ export default function IndexPage() {
             return {
               title: roleName,
               img: normalizeAssetUrl(gacha?.img_path) || gacha?.img || getRoleSmallImage(roleInfo),
-              largeImg: getRoleLargeImage(roleInfo) || normalizeAssetUrl(gacha?.img_path) || gacha?.img,
+              largeImg:
+                getRoleLargeImage(roleInfo) || normalizeAssetUrl(gacha?.img_path) || gacha?.img,
               rarity: roleInfo?.chara_rarity || '5星',
             };
           }),
@@ -471,12 +542,15 @@ export default function IndexPage() {
   }
 
   function getSrFeaturedRoleNames(pool: any) {
-    const gachaNames = (pool.gachas ?? []).map((gacha: any) => `${gacha.title ?? ''}`.trim()).filter(Boolean);
+    const gachaNames = (pool.gachas ?? [])
+      .map((gacha: any) => `${gacha.title ?? ''}`.trim())
+      .filter(Boolean);
     const titleMatch = `${pool.title ?? ''}`.match(/^「[^」]*?•([^」]+)」角色活动跃迁$/);
-    const titleNames = titleMatch?.[1]
-      ?.split('、')
-      .map((roleName) => roleName.trim())
-      .filter((roleName) => gachaNames.includes(roleName)) ?? [];
+    const titleNames =
+      titleMatch?.[1]
+        ?.split('、')
+        .map((roleName) => roleName.trim())
+        .filter((roleName) => gachaNames.includes(roleName)) ?? [];
 
     // 单角色池标题通常不含角色名；抓取结果约定首位为当期五星角色。
     return titleNames.length > 0 ? titleNames : gachaNames.slice(0, 1);
@@ -521,7 +595,11 @@ export default function IndexPage() {
     return true;
   }
 
-  async function resolveHistoryNewPoolFlag(data: any[], fallbackTimer: string, lastPoolUrl: string) {
+  async function resolveHistoryNewPoolFlag(
+    data: any[],
+    fallbackTimer: string,
+    lastPoolUrl: string,
+  ) {
     const finiteStartList = data
       .map((item: any) => getPoolStartTime(`${item.timer ?? ''}`))
       .filter(Number.isFinite);
@@ -565,9 +643,11 @@ export default function IndexPage() {
     const leftEndTime = getHistoryEndTime(leftTimer);
     const rightEndTime = getHistoryEndTime(rightTimer);
 
-    return Number.isFinite(leftEndTime)
-      && Number.isFinite(rightEndTime)
-      && Math.abs(leftEndTime - rightEndTime) < 60 * 1000;
+    return (
+      Number.isFinite(leftEndTime) &&
+      Number.isFinite(rightEndTime) &&
+      Math.abs(leftEndTime - rightEndTime) < 60 * 1000
+    );
   }
 
   function isRecentNewPool(timer: string) {
@@ -583,9 +663,11 @@ export default function IndexPage() {
   function isRecentStartTime(startTime: number) {
     const currentTime = new Date().getTime();
 
-    return Number.isFinite(startTime)
-      && startTime <= currentTime
-      && currentTime < startTime + newPoolVisibleDuration;
+    return (
+      Number.isFinite(startTime) &&
+      startTime <= currentTime &&
+      currentTime < startTime + newPoolVisibleDuration
+    );
   }
 
   async function fetchEachGameRole(key: string) {
