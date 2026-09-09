@@ -51,7 +51,6 @@ export default function IndexPage() {
   );
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
   const [poolImageModes, setPoolImageModes] = useState<Record<string, PoolImageMode>>({});
-  const [currentGameKey, setCurrentGameKey] = useState<string>();
   const roleCache = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -88,53 +87,12 @@ export default function IndexPage() {
       })
     : [];
 
-  useEffect(() => {
-    if (sortedGameKeys.length === 0) {
-      return;
-    }
-
-    setCurrentGameKey((current) =>
-      current && sortedGameKeys.includes(current) ? current : sortedGameKeys[0],
-    );
-
-    // 使用滚动位置而非卡池内部数据推断当前游戏，兼容 Accordion 展开/收起导致的高度变化。
-    const updateCurrentGame = () => {
-      const navHeight = document.querySelector('nav')?.getBoundingClientRect().height ?? 64;
-      const threshold = navHeight + 24;
-      let candidate: string | undefined;
-
-      for (const key of sortedGameKeys) {
-        const element = document.querySelector<HTMLElement>(`[data-game-key="${CSS.escape(key)}"]`);
-        if (element && element.getBoundingClientRect().top <= threshold) {
-          candidate = key;
-        }
-      }
-
-      if (!candidate) {
-        candidate = sortedGameKeys[0];
-      }
-
-      setCurrentGameKey((current) => (current === candidate ? current : candidate));
-    };
-
-    updateCurrentGame();
-    window.addEventListener('scroll', updateCurrentGame, { passive: true });
-    window.addEventListener('resize', updateCurrentGame);
-
-    return () => {
-      window.removeEventListener('scroll', updateCurrentGame);
-      window.removeEventListener('resize', updateCurrentGame);
-    };
-  }, [sortedGameKeys.join('|'), expandedKeys]);
-
   if (!cardGroup || Object.keys(cardGroup).length == 0) {
     return <div>Loading...</div>;
   }
 
   return (
-    <DefaultLayout
-      currentGameName={gameLabelMap[currentGameKey?.toLocaleLowerCase() ?? ''] ?? currentGameKey}
-    >
+    <DefaultLayout>
       <div>
         <Accordion
           selectedKeys={expandedKeys}
@@ -151,9 +109,12 @@ export default function IndexPage() {
           {sortedGameKeys.map((key) => (
             <AccordionItem
               key={key}
-              data-game-key={key}
               aria-label={cardGroup[key].currentVersion}
-              classNames={{ subtitle: 'w-full' }}
+              classNames={{
+                heading:
+                  'sticky top-0 z-20 -mx-3 rounded-t-lg bg-content1 px-3 shadow-sm sm:-mx-4 sm:px-4',
+                subtitle: 'w-full',
+              }}
               startContent={renderGameLogo(key)}
               subtitle={
                 <span className="flex w-full items-center justify-between gap-3">

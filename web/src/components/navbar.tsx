@@ -18,12 +18,7 @@ import { ThemeSwitch } from '@/components/theme-switch';
 import { siteConfig } from '@/config/site';
 import { Button } from '@heroui/button';
 
-export interface NavbarProps {
-  /** 当前滚动到的游戏名称；未传入时仅展示固定导航文案。 */
-  currentGameName?: string;
-}
-
-export const Navbar = ({ currentGameName }: NavbarProps) => {
+export const Navbar = () => {
   // const searchInput = (
   //   <Input
   //     aria-label="Search"
@@ -52,14 +47,6 @@ export const Navbar = ({ currentGameName }: NavbarProps) => {
           <Link className="flex justify-start items-center gap-1" color="foreground" href="/">
             <img alt="Logo" className="w-8 h-8" src="/favicon.svg" />
             <p className="font-bold text-inherit">gclock</p>
-            {currentGameName && (
-              <span
-                className="ml-2 max-w-[38vw] truncate border-l border-default-300 pl-2 text-sm font-medium text-primary sm:hidden"
-                aria-live="polite"
-              >
-                {currentGameName}
-              </span>
-            )}
           </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -74,14 +61,6 @@ export const Navbar = ({ currentGameName }: NavbarProps) => {
                 href={item.href}
               >
                 {item.label}
-                {currentGameName && item.href === '/' && (
-                  <span
-                    className="ml-2 border-l border-default-300 pl-2 text-sm font-medium text-primary"
-                    aria-live="polite"
-                  >
-                    {currentGameName}
-                  </span>
-                )}
               </Link>
             </NavbarItem>
           ))}
