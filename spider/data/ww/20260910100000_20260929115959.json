@@ -1,0 +1,206 @@
+[
+    {
+        "title": "身赴三途",
+        "type": "角色",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": " 景燃",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/24421777c8234064a11580b9303ac7de20260909.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/3f5e8a169bfe4c6d8d960ec6f026bf7320260910.png",
+                "img_path": "img/ww/ 景燃.png"
+            },
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ec386e815ad742ae862e3e6ccece537b20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/莫特斐.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c39506a72e1f4b4c8784b943b9c237e120260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "渊武",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/dc3a226d00584eac8064db072b6f65ad20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/渊武.png"
+            }
+        ]
+    },
+    {
+        "title": "雪色所映千般未来",
+        "type": "角色",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "绯雪",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2cdff1046ab144c58a2d655e290fd22a20260909.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/7f1b9ec2526f41dc985b64ca16f4402c20260430.png",
+                "img_path": "img/ww/绯雪.png"
+            },
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/3e86808e6d0a49d79343e1e71f9fee4720260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/莫特斐.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ba9585f2e40a46999993e39cd953d2d420260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "渊武",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/43d6b20abe164cc29ae8c7bca4f9ec8e20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/渊武.png"
+            }
+        ]
+    },
+    {
+        "title": "纵使星光于无穷远",
+        "type": "角色",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "莫特斐",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/abe5058698a54cb695b9c8c10a9326e320260909.jpg",
+                "largeImg": "",
+                "img_path": "img/ww/莫特斐.png"
+            },
+            {
+                "title": "",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/dd21fc68871f452d910efadfe44b06e520260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/7ef387bfae784596ac959ba0a89bc46f20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "渊武",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/29b2a25a271e440a947ae1edba4e5f8320260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/渊武.png"
+            }
+        ]
+    },
+    {
+        "title": "千般渡",
+        "type": "武器",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "千般渡",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/cad80882a8344746aa40e900158ab34020260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/千般渡.png"
+            },
+            {
+                "title": "凋亡频移",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/55e38ce4d03f48c789553e8df8a9def120260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/凋亡频移.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9adccfa9f4494e1a9a313c7ae38fb9e420260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/异响空灵.png"
+            },
+            {
+                "title": "飞逝",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/007e5a5fa91948acbb53fafc841899f320260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/飞逝.png"
+            }
+        ]
+    },
+    {
+        "title": "灼霜",
+        "type": "武器",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "灼霜",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/44f48311f5314092972e33d4a0ef884120260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/灼霜.png"
+            },
+            {
+                "title": "凋亡频移",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e2e0726357c54ce8b51b8e91ad6ab7b820260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/凋亡频移.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/66c00cec9c224118bfadae27d936f04420260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/异响空灵.png"
+            },
+            {
+                "title": "飞逝",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0b22bd134d574b93b6d332cd3fdb750820260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/飞逝.png"
+            }
+        ]
+    },
+    {
+        "title": "宙算仪轨",
+        "type": "武器",
+        "timer": [
+            "2026-09-10 10:00:00",
+            "2026-09-29 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "宙算仪轨",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/6189eaddfc404ff4ba7a8b26b7ed0edc20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/宙算仪轨.png"
+            },
+            {
+                "title": "凋亡频移",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2d433bc866714cd9ba28eb74d8d4c2fd20260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/凋亡频移.png"
+            },
+            {
+                "title": "异响空灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/5292059ed57240f0871dbd774b685f0520260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/异响空灵.png"
+            },
+            {
+                "title": "飞逝",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c187348bf6474e5795746b5d77f0796020260909.png",
+                "largeImg": "",
+                "img_path": "img/ww/飞逝.png"
+            }
+        ]
+    }
+]
