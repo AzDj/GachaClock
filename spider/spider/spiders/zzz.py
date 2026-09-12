@@ -34,7 +34,8 @@ class ZzzSpider(scrapy.Spider):
             self.logger.error("绝区零调频接口失败：%s", payload.get("message"))
             return
 
-        for raw_item in build_frequency_items(payload):
+        # S 级角色的大图必须来自详情页“意象影画 → 影画展示3”，抓取失败直接中止本次发布。
+        for raw_item in build_frequency_items(payload, fetch_display_images=True):
             item = SpiderItem()
             item["title"] = raw_item["title"]
             item["type"] = raw_item["type"]

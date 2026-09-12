@@ -78,24 +78,48 @@ class SpiderPipeline:
     def open_spider(self, spider):
         # 爬虫启动时初始化数据列表和打开文件
         self.items = []
+        self.failed = False
 
     def process_item(self, item, spider):
         # print(f"==================> {item}")
         # 处理图片为base64
         for gacha in item["gachas"]:
-            # 角色影画使用仓库内静态文件，已有明确路径时不再覆盖或重复下载。
-            if gacha.get("img_path"):
-                continue
-            if gacha["img"]:
+            # 小图使用调频接口 icon；已有静态路径时保留，不重复下载。
+            if not gacha.get("img_path") and gacha["img"]:
                 file_name = f"{img_dir}/{spider.name}/{gacha['title']}.png"
                 gacha["img_path"] = downloaded_path_or_empty(gacha["img"], file_name)
-            else:
+            elif not gacha.get("img_path"):
                 gacha["img_path"] = ''
+
+            if spider.name == "zzz":
+                # 绝区零 S 级角色大图必须使用详情页“影画展示3”，禁止回退到小图。
+                if gacha.get("display_img"):
+                    display_file_name = f"{img_dir}/{spider.name}/display-three/{gacha['title']}.png"
+                    gacha["display_img_path"] = downloaded_path_or_empty(
+                        gacha["display_img"], display_file_name
+                    )
+                elif not gacha.get("display_img_path"):
+                    gacha["display_img_path"] = ''
+
+                if (
+                    item.get("type") == "角色"
+                    and gacha.get("rank") == "S"
+                    and not gacha.get("display_img_path")
+                ):
+                    self.failed = True
+                    raise ValueError(f"绝区零 S 级角色缺少“影画展示3”大图：{gacha.get('title', '')}")
+
+                # display_img 仅是下载输入，不写入最终数据文件。
+                gacha.pop("display_img", None)
         # 爬虫处理数据时将数据添加到列表
         self.items.append(item)
         return item
 
     def close_spider(self, spider):
+
+        if getattr(self, "failed", False):
+            print(f"{spider.name} 存在未满足的图片约束，跳过数据文件发布")
+            return
 
         try:
             timer = self.items[0]["timer"]

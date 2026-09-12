@@ -1,6 +1,10 @@
 import unittest
 
-from spider.zzz_mihoyo import build_frequency_items, extract_content_id
+from spider.zzz_mihoyo import (
+    build_frequency_items,
+    extract_content_id,
+    extract_display_three_image,
+)
 
 
 class ZzzMihoyoParserTest(unittest.TestCase):
@@ -62,6 +66,47 @@ class ZzzMihoyoParserTest(unittest.TestCase):
     def test_extract_content_id(self):
         self.assertEqual(2145, extract_content_id("https://baike.mihoyo.com/zzz/wiki/content/2145/detail"))
         self.assertIsNone(extract_content_id("https://baike.mihoyo.com/zzz/wiki/"))
+
+    def test_extract_display_three_image_by_tab_name(self):
+        payload = {
+            "data": {
+                "page": {
+                    "modules": [
+                        {
+                            "components": [
+                                {
+                                    "component_id": "map_desc",
+                                    "data": '{"list":[{"tab_name":"影画展示1","image":"small.png"},{"tab_name":"影画展示3","image":"large.png"}]}',
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+        self.assertEqual("large.png", extract_display_three_image(payload))
+
+    def test_build_frequency_items_fetches_only_s_role_display_image(self):
+        payload = {
+            "data": {
+                "list": [
+                    {
+                        "title": "当前卡池",
+                        "pool": [
+                            {"url": "https://baike.mihoyo.com/zzz/wiki/content/2145/detail"},
+                            {"url": "https://baike.mihoyo.com/zzz/wiki/content/147/detail"},
+                        ],
+                    }
+                ]
+            }
+        }
+        from unittest.mock import patch
+
+        with patch("spider.zzz_mihoyo.fetch_display_three_image", return_value="large.png") as fetch:
+            items = build_frequency_items(payload, fetch_display_images=True)
+        self.assertEqual("large.png", items[0]["gachas"][0]["display_img"])
+        self.assertNotIn("display_img", items[0]["gachas"][1])
+        fetch.assert_called_once()
 
 
 if __name__ == "__main__":
