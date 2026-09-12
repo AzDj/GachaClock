@@ -5,27 +5,17 @@ from __future__ import annotations
 import re
 
 
-# 角色头像沿用调频接口图标，大图固定为详情页“意象影画 → 影画展示3”。
-# rank 对应调频卡片左上角的 S/A 标记，前端仅展示 S 级角色。
+# 当前调频接口只提供图片和百科内容 ID，名称、类型及稀有度需在版本更新时核对官方公告。
+# 未知内容 ID 必须中止抓取，避免工作流成功但继续发布过期卡池。
 ENTRY_META = {
-    1624: ("琉音", "角色", "S", "img/zzz/display-three/琉音.png"),
-    1386: ("柚叶", "角色", "S", "img/zzz/display-three/柚叶.png"),
-    997: ("悠真", "角色", "S", "img/zzz/display-three/悠真.png"),
-    2076: ("蕾米埃尔", "角色", "S", "img/zzz/display-three/蕾米埃尔.png"),
-    758: ("赛斯", "角色", "A", "img/zzz/display-three/赛斯.png"),
-    485: ("派派", "角色", "A", "img/zzz/display-three/派派.png"),
-    2079: ("希格莉德", "角色", "S", "img/zzz/display-three/希格莉德.png"),
-    227: ("苍角", "角色", "A", "img/zzz/display-three/苍角.png"),
-    493: ("露西", "角色", "A", "img/zzz/display-three/露西.png"),
-    1689: ("昨夜来电", "武器", "S", ""),
-    1463: ("狸法七变化", "武器", "A", ""),
-    991: ("残心青囊", "武器", "A", ""),
-    2109: ("空羽复归之诗", "武器", "S", ""),
-    761: ("维序者-特化型", "武器", "A", ""),
-    494: ("轰鸣座驾", "武器", "A", ""),
-    2162: ("骁骑礼赞", "武器", "S", ""),
-    215: ("含羞恶面", "武器", "A", ""),
-    486: ("好斗的阿炮", "武器", "A", ""),
+    2145: ("克拉蕾", "角色", "S", ""),
+    147: ("安东", "角色", "A", ""),
+    80: ("妮可", "角色", "A", ""),
+    2188: ("猩红渴望", "武器", "S", ""),
+    265: ("旋钻机-赤轴", "武器", "A", ""),
+    217: ("聚宝箱", "武器", "A", ""),
+    1852: ("南宫羽", "角色", "S", ""),
+    1908: ("霓虹妄想", "武器", "S", ""),
 }
 
 
@@ -37,9 +27,11 @@ def build_frequency_items(payload: dict) -> list[dict]:
         pool_type = ""
         for entry in pool.get("pool") or []:
             entry_id = extract_content_id(entry.get("url", ""))
+            if entry_id is None:
+                raise ValueError(f"绝区零调频内容 URL 无法识别：{entry.get('url', '')}")
             meta = ENTRY_META.get(entry_id)
             if not meta:
-                continue
+                raise ValueError(f"绝区零调频内容 ID 未配置：{entry_id}")
             name, entry_type, rank, display_path = meta
             pool_type = pool_type or entry_type
             entries.append(

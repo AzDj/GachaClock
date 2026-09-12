@@ -48,6 +48,17 @@ def resolve_spiders(games):
     return spider_list
 
 
+def ensure_spiders_produced_items(crawlers):
+    """所有已执行爬虫都必须产出数据，禁止以成功状态发布旧文件。"""
+    empty_spiders = [
+        spider_name
+        for spider_name, crawler in crawlers
+        if crawler.stats.get_value("item_scraped_count", 0) == 0
+    ]
+    if empty_spiders:
+        raise RuntimeError(f"以下爬虫未产出任何数据：{','.join(empty_spiders)}")
+
+
 def main():
     spider_list = resolve_spiders(parse_args().games)
     if not spider_list:
@@ -57,9 +68,13 @@ def main():
     # 获取项目的配置，并创建 CrawlerProcess 实例。
     settings = get_project_settings()
     process = CrawlerProcess(settings)
-    for spider in spider_list:
-        process.crawl(spider)
+    crawlers = []
+    for spider_class in spider_list:
+        crawler = process.create_crawler(spider_class)
+        process.crawl(crawler)
+        crawlers.append((spider_class.name, crawler))
     process.start()
+    ensure_spiders_produced_items(crawlers)
 
 
 if __name__ == "__main__":

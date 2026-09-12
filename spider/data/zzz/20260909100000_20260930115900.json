@@ -1,0 +1,126 @@
+[
+    {
+        "title": "「红月初升」",
+        "type": "角色",
+        "timer": [
+            "2026/09/09 10:00:00",
+            "2026/09/30 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "克拉蕾",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/3bddde3ed114b2f9d77e344c6520021f_976793146489353528.png",
+                "img_path": "img/zzz/克拉蕾.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "安东",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/b323dfb93362d929e64562c004cdd0e1_4218309371964390744.png",
+                "img_path": "img/zzz/安东.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "妮可",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/1cb64706be3eca5400e7cc02b8a82e60_1737679783020560782.png",
+                "img_path": "img/zzz/妮可.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「猩红渴望」",
+        "type": "武器",
+        "timer": [
+            "2026/09/09 10:00:00",
+            "2026/09/30 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "猩红渴望",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/b0f45fa155fc25456e948ebf56e67465_4652451184067029590.png",
+                "img_path": "img/zzz/猩红渴望.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "旋钻机-赤轴",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/51cfdbcf65d8bca2826acec5ba5bd34c_8938776999250700009.png",
+                "img_path": "img/zzz/旋钻机-赤轴.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "聚宝箱",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/1e501eb6d186edb508944520bcca4aad_1543151230832613796.png",
+                "img_path": "img/zzz/聚宝箱.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「视线定格公理」",
+        "type": "角色",
+        "timer": [
+            "2026/09/09 10:00:00",
+            "2026/09/30 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "南宫羽",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/47fa944608544745d4b648e2224b9381_5210269600029239584.png",
+                "img_path": "img/zzz/南宫羽.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "安东",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/b323dfb93362d929e64562c004cdd0e1_3184614830643762438.png",
+                "img_path": "img/zzz/安东.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "妮可",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/1cb64706be3eca5400e7cc02b8a82e60_1424976377832760584.png",
+                "img_path": "img/zzz/妮可.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「霓虹妄想」",
+        "type": "武器",
+        "timer": [
+            "2026/09/09 10:00:00",
+            "2026/09/30 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "霓虹妄想",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/d8accf2aab217b81fe41314afe796d87_2524867280760038032.png",
+                "img_path": "img/zzz/霓虹妄想.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "旋钻机-赤轴",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/51cfdbcf65d8bca2826acec5ba5bd34c_5353255815531691173.png",
+                "img_path": "img/zzz/旋钻机-赤轴.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "聚宝箱",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/09/09/76099754/1e501eb6d186edb508944520bcca4aad_5199892174248004511.png",
+                "img_path": "img/zzz/聚宝箱.png",
+                "display_img_path": ""
+            }
+        ]
+    }
+]

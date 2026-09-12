@@ -9,12 +9,12 @@ class ZzzMihoyoParserTest(unittest.TestCase):
             "data": {
                 "list": [
                     {
-                        "title": "「独家重映」",
-                        "start_time": "2026-08-19 12:00:00",
-                        "end_time": "2026-09-08 14:59:00",
+                        "title": "「红月初升」",
+                        "start_time": "2026-09-09 10:00:00",
+                        "end_time": "2026-09-30 11:59:00",
                         "pool": [
                             {
-                                "url": "https://baike.mihoyo.com/zzz/wiki/content/1624/detail",
+                                "url": "https://baike.mihoyo.com/zzz/wiki/content/2145/detail",
                                 "icon": "https://example.com/avatar.png",
                             }
                         ],
@@ -23,18 +23,15 @@ class ZzzMihoyoParserTest(unittest.TestCase):
             }
         }
         items = build_frequency_items(payload)
-        self.assertEqual("「独家重映」", items[0]["title"])
+        self.assertEqual("「红月初升」", items[0]["title"])
         self.assertEqual("角色", items[0]["type"])
-        self.assertEqual("琉音", items[0]["gachas"][0]["title"])
+        self.assertEqual("克拉蕾", items[0]["gachas"][0]["title"])
         self.assertEqual("S", items[0]["gachas"][0]["rank"])
         self.assertEqual("https://example.com/avatar.png", items[0]["gachas"][0]["img"])
         self.assertEqual("", items[0]["gachas"][0]["img_path"])
-        self.assertEqual(
-            "img/zzz/display-three/琉音.png",
-            items[0]["gachas"][0]["display_img_path"],
-        )
+        self.assertEqual("", items[0]["gachas"][0]["display_img_path"])
 
-    def test_unknown_content_is_not_emitted(self):
+    def test_unknown_content_fails_explicitly(self):
         payload = {
             "data": {
                 "list": [
@@ -45,10 +42,25 @@ class ZzzMihoyoParserTest(unittest.TestCase):
                 ]
             }
         }
-        self.assertEqual([], build_frequency_items(payload))
+        with self.assertRaisesRegex(ValueError, "99999"):
+            build_frequency_items(payload)
+
+    def test_invalid_content_url_fails_explicitly(self):
+        payload = {
+            "data": {
+                "list": [
+                    {
+                        "title": "异常卡池",
+                        "pool": [{"url": "https://baike.mihoyo.com/zzz/wiki/"}],
+                    }
+                ]
+            }
+        }
+        with self.assertRaisesRegex(ValueError, "URL 无法识别"):
+            build_frequency_items(payload)
 
     def test_extract_content_id(self):
-        self.assertEqual(1624, extract_content_id("https://baike.mihoyo.com/zzz/wiki/content/1624/detail"))
+        self.assertEqual(2145, extract_content_id("https://baike.mihoyo.com/zzz/wiki/content/2145/detail"))
         self.assertIsNone(extract_content_id("https://baike.mihoyo.com/zzz/wiki/"))
 
 
