@@ -863,6 +863,21 @@
         "chara_size": "男青年"
     },
     {
+        "title": "砂金•戏浪",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/6/63/f3bi3zkt50slwzt6yxq362oqrfvktft.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/2/21/qbq3ve2mon1ye91wlw5bgax5hkvez4u.png/900px-%E7%A0%82%E9%87%91%E2%80%A2%E6%88%8F%E6%B5%AA%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/0/0c/czq3eqxzczdzlzkkjlry90tkaaa4jdk.png",
+            "https://patchwiki.biligame.com/images/sr/7/71/3heo845rsjoj0i2zuosqzehpp2an511.jpg"
+        ],
+        "display_img": "https://patchwiki.biligame.com/images/sr/0/0c/czq3eqxzczdzlzkkjlry90tkaaa4jdk.png",
+        "chara_rarity": "5星",
+        "chara_type": "欢愉",
+        "chara_element": "量子",
+        "chara_load_version": "4.5",
+        "chara_size": "男青年"
+    },
+    {
         "title": "符玄",
         "simple_img": "https://patchwiki.biligame.com/images/sr/a/a9/4w8gz8e5r0rpqoerl7ob35czlv83725.png",
         "promotion_img": [

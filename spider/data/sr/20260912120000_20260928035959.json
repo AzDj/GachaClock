@@ -1,0 +1,122 @@
+[
+    {
+        "title": "「激浪跃金」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/09/12 12:00:00",
+            "2026/09/28 03:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "砂金•戏浪",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/07/quknrfe0iulxo8afzurl706gb7xz00t.png/112px-%E7%A0%82%E9%87%91%E2%80%A2%E6%88%8F%E6%B5%AA.png",
+                "img_path": "img/sr/砂金•戏浪.png"
+            },
+            {
+                "title": "桑博",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/4f/o084kh5szvjt4c9pg2u5u0djj3qg8xt.png/112px-%E6%A1%91%E5%8D%9A.png",
+                "img_path": "img/sr/桑博.png"
+            },
+            {
+                "title": "虎克",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/d9/cng0jc28j1hikbidgetsoyeq81pp2he.png/112px-%E8%99%8E%E5%85%8B.png",
+                "img_path": "img/sr/虎克.png"
+            },
+            {
+                "title": "桂乃芬",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/12/atc2i0g1s6acih7zoydpgthv0sxdrii.png/112px-%E6%A1%82%E4%B9%83%E8%8A%AC.png",
+                "img_path": "img/sr/桂乃芬.png"
+            }
+        ]
+    },
+    {
+        "title": "「长夜狩影」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/09/12 12:00:00",
+            "2026/09/28 03:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "不死途",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/04/oha65dklgc3lfjlmazp0t5la8bdkqll.png/112px-%E4%B8%8D%E6%AD%BB%E9%80%94.png",
+                "img_path": "img/sr/不死途.png"
+            },
+            {
+                "title": "桑博",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/4f/o084kh5szvjt4c9pg2u5u0djj3qg8xt.png/112px-%E6%A1%91%E5%8D%9A.png",
+                "img_path": "img/sr/桑博.png"
+            },
+            {
+                "title": "虎克",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/d9/cng0jc28j1hikbidgetsoyeq81pp2he.png/112px-%E8%99%8E%E5%85%8B.png",
+                "img_path": "img/sr/虎克.png"
+            },
+            {
+                "title": "桂乃芬",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/12/atc2i0g1s6acih7zoydpgthv0sxdrii.png/112px-%E6%A1%82%E4%B9%83%E8%8A%AC.png",
+                "img_path": "img/sr/桂乃芬.png"
+            }
+        ]
+    },
+    {
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/09/12 12:00:00",
+            "2026/09/28 03:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "向浪花掷下盛夏",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/a/a1/in4jbydywyqtrgn3spe6z2vm7d8ry6c.png/112px-%E5%90%91%E6%B5%AA%E8%8A%B1%E6%8E%B7%E4%B8%8B%E7%9B%9B%E5%A4%8F.png",
+                "img_path": "img/sr/向浪花掷下盛夏.png"
+            },
+            {
+                "title": "唯有沉默",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/7/79/44ade58u6pk7hhn2ailtz0fuggwr7dv.png/112px-%E5%94%AF%E6%9C%89%E6%B2%89%E9%BB%98.png",
+                "img_path": "img/sr/唯有沉默.png"
+            },
+            {
+                "title": "此时恰好",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/61/13lzfrkuie9lrmaomci8qmx1og1me90.png/112px-%E6%AD%A4%E6%97%B6%E6%81%B0%E5%A5%BD.png",
+                "img_path": "img/sr/此时恰好.png"
+            },
+            {
+                "title": "故事的下一页",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/8/85/g0icttfnclt0aek7irr63npsvrlgdl2.png/112px-%E6%95%85%E4%BA%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E9%A1%B5.png",
+                "img_path": "img/sr/故事的下一页.png"
+            }
+        ]
+    },
+    {
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/09/12 12:00:00",
+            "2026/09/28 03:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "一场谎言的终幕",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/8/8a/38w5dwlm4wvfpkj5sohtc5ocvbti2ww.png/112px-%E4%B8%80%E5%9C%BA%E8%B0%8E%E8%A8%80%E7%9A%84%E7%BB%88%E5%B9%95.png",
+                "img_path": "img/sr/一场谎言的终幕.png"
+            },
+            {
+                "title": "唯有沉默",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/7/79/44ade58u6pk7hhn2ailtz0fuggwr7dv.png/112px-%E5%94%AF%E6%9C%89%E6%B2%89%E9%BB%98.png",
+                "img_path": "img/sr/唯有沉默.png"
+            },
+            {
+                "title": "此时恰好",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/61/13lzfrkuie9lrmaomci8qmx1og1me90.png/112px-%E6%AD%A4%E6%97%B6%E6%81%B0%E5%A5%BD.png",
+                "img_path": "img/sr/此时恰好.png"
+            },
+            {
+                "title": "故事的下一页",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/8/85/g0icttfnclt0aek7irr63npsvrlgdl2.png/112px-%E6%95%85%E4%BA%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E9%A1%B5.png",
+                "img_path": "img/sr/故事的下一页.png"
+            }
+        ]
+    }
+]
