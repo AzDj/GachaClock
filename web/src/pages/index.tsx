@@ -5,6 +5,7 @@ import {
   CardPool,
   type CardPoolProps,
   CountdownTimer,
+  getArknightsPoolStatus,
   getHistoryEndTime,
   parseDateTime,
   type PoolImageMode,
@@ -170,7 +171,7 @@ export default function IndexPage() {
         <span className="font-medium text-foreground">{gameLabelMap[normalizedKey] ?? key}</span>
         {hasNewPool && (
           <span className="rounded-small bg-orange-100 px-1.5 py-0.5 text-[11px] font-semibold leading-none text-orange-600 dark:bg-orange-500/20 dark:text-orange-300">
-            new
+            {normalizedKey === 'arknights' ? '上新啦' : 'new'}
           </span>
         )}
       </>
@@ -225,7 +226,8 @@ export default function IndexPage() {
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
 
-      const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data), key);
+      const sourceData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+      const selectedHistoryList = selectCurrentHistoryList(sourceData, key);
       historyList = normalizeHistoryList(selectedHistoryList);
 
       if (historyList.length === 0) {
@@ -270,7 +272,8 @@ export default function IndexPage() {
         hasNewPool = isRecentNewPool(timer);
       } else {
         roleKey = 's';
-        const selectedHistoryList = selectCurrentHistoryList(filterOpenedHistoryItems(data), key);
+        const sourceData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+        const selectedHistoryList = selectCurrentHistoryList(sourceData, key);
         historyList = normalizeHistoryList(selectedHistoryList);
 
         if (historyList.length === 0) {
@@ -354,9 +357,16 @@ export default function IndexPage() {
       (item: any) => !isPermanentHistoryPool(item),
     );
     const permanentCurrentList = finiteCurrentList.filter(isPermanentHistoryPool);
+    const upcomingArknightsList =
+      key === 'arknights'
+        ? data.filter((item: any) => getArknightsPoolStatus(item.timer, currentTime) === 'upcoming')
+        : [];
 
     if (finiteLimitedCurrentList.length > 0) {
-      return appendPermanentHistoryPools(finiteLimitedCurrentList, permanentCurrentList);
+      return appendPermanentHistoryPools(
+        [...finiteLimitedCurrentList, ...upcomingArknightsList],
+        permanentCurrentList,
+      );
     }
 
     const currentDateList =
@@ -365,7 +375,7 @@ export default function IndexPage() {
         : [];
 
     if (currentDateList.length > 0) {
-      return appendPermanentHistoryPools(currentDateList, permanentCurrentList);
+      return appendPermanentHistoryPools([...currentDateList, ...upcomingArknightsList], permanentCurrentList);
     }
 
     const ambiguousCurrentList = data.filter((item: any) =>
@@ -373,7 +383,11 @@ export default function IndexPage() {
     );
 
     if (ambiguousCurrentList.length > 0) {
-      return appendPermanentHistoryPools(ambiguousCurrentList, permanentCurrentList);
+      return appendPermanentHistoryPools([...ambiguousCurrentList, ...upcomingArknightsList], permanentCurrentList);
+    }
+
+    if (upcomingArknightsList.length > 0) {
+      return appendPermanentHistoryPools(upcomingArknightsList, permanentCurrentList);
     }
 
     return finiteCurrentList;

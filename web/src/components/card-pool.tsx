@@ -16,6 +16,33 @@ export interface CardPoolProps {
 
 export type PoolImageMode = 'large' | 'small';
 
+export type ArknightsPoolStatus = 'upcoming' | 'new';
+
+const arknightsUpcomingVisibleDuration = 24 * 60 * 60 * 1000;
+const arknightsNewVisibleDuration = 7 * 24 * 60 * 60 * 1000;
+
+/** 根据卡池开始时间判断方舟卡池是否即将更新或刚刚上新。 */
+export const getArknightsPoolStatus = (
+  timer: string | undefined,
+  currentTime = new Date().getTime(),
+): ArknightsPoolStatus | undefined => {
+  const startTime = parseDateTime(`${timer ?? ''}`.split('~')[0]);
+
+  if (!Number.isFinite(startTime)) {
+    return undefined;
+  }
+
+  if (startTime > currentTime && startTime <= currentTime + arknightsUpcomingVisibleDuration) {
+    return 'upcoming';
+  }
+
+  if (startTime <= currentTime && currentTime < startTime + arknightsNewVisibleDuration) {
+    return 'new';
+  }
+
+  return undefined;
+};
+
 export const CardPool: React.FC<CardPoolProps> = ({ gameKey, historyList, imageMode = 'small' }: CardPoolProps) => {
   const isPoolBannerOnly = gameKey === 'arknights';
   // 同名卡池要按时间继续拆分，否则会把上半、下半或长期常驻合成一张含义不清的卡。
@@ -101,13 +128,21 @@ const PoolSection = ({
 const PoolCard = ({ gameKey, imageMode, item }: { gameKey?: string; imageMode: PoolImageMode; item: any }) => {
   const roleList = getDisplayRoles(item);
   const badge = getPoolBadge(item);
+  const status = gameKey === 'arknights' ? getArknightsPoolStatus(item.timer) : undefined;
 
   return (
     <Card className="rounded-lg border border-default-200 bg-content1" shadow="sm">
       <CardBody className="gap-3 p-3">
         <div className="flex min-w-0 items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold text-foreground">{formatPoolTitle(item.title)}</p>
+            <div className="flex min-w-0 items-center gap-2">
+              <p className="min-w-0 truncate text-sm font-semibold text-foreground">{formatPoolTitle(item.title)}</p>
+              {status && (
+                <span className="shrink-0 rounded-md bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-600 dark:bg-orange-500/20 dark:text-orange-300">
+                  {status === 'upcoming' ? '即将更新' : 'new'}
+                </span>
+              )}
+            </div>
             <p className="mt-1 truncate text-xs text-default-500">{formatPoolTimer(item.timer)}</p>
           </div>
           <span className={`shrink-0 rounded-md px-2 py-1 text-xs font-semibold ${badge.className}`}>
