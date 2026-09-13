@@ -256,11 +256,15 @@ export default function IndexPage() {
         } else if (!role || Object.keys(role).length === 0) {
           historyList = data
             .filter((item: any) => item.type === '角色')
+            .filter((item: any) => key !== 'ww' || isRenderableWwPool(item))
             .flatMap((item: any) => addMetaPoolTimer(item, item.gachas?.slice(0, 1)));
         } else {
           historyList = data
             .filter((item: any) => item.type === '角色')
-            .flatMap((item: any) => addMetaPoolTimer(item, item.gachas))
+            .filter((item: any) => key !== 'ww' || isRenderableWwPool(item))
+            .flatMap((item: any) =>
+              addMetaPoolTimer(item, key === 'ww' ? item.gachas?.slice(0, 1) : item.gachas),
+            )
             .filter(
               (item: any) => !role?.[item['title']] || role?.[item['title']].chara_rarity === '5星',
             );
@@ -463,6 +467,15 @@ export default function IndexPage() {
       timer: gacha.timer ?? pool.timer,
       poolTitle: pool.title,
     }));
+  }
+
+  function isRenderableWwPool(pool: any) {
+    const gachas = Array.isArray(pool?.gachas) ? pool.gachas : [];
+    return (
+      gachas.length > 0 &&
+      gachas.some((gacha: any) => `${gacha?.largeImg ?? ''}`.trim()) &&
+      gachas.every((gacha: any) => `${gacha?.title ?? ''}`.trim() && `${gacha?.img ?? ''}`.trim())
+    );
   }
 
   function normalizeMetaPoolList(data: any[]) {

@@ -42,3 +42,40 @@ def test_get_avatar_image_selects_basic_info_figure():
         }
     }
     assert WwSpider().get_avatar_image(detail) == "avatar.png"
+
+
+def test_build_gachas_rejects_incomplete_pool(monkeypatch):
+    spider = WwSpider()
+    monkeypatch.setattr(
+        spider,
+        "get_entry_detail",
+        lambda entry_id: {"name": " 景燃" if entry_id == "featured" else "莫特斐"},
+    )
+
+    assert spider.build_gachas([
+        {"linkConfig": {"entryId": "featured"}, "img": "featured.png"},
+        {"linkConfig": {}, "img": "broken.png"},
+    ]) == []
+
+
+def test_build_gachas_strips_role_name():
+    spider = WwSpider()
+    spider.get_entry_detail = lambda entry_id: {"name": " 景燃"}
+
+    result = spider.build_gachas([
+        {"linkConfig": {"entryId": "featured"}, "img": "featured.png"},
+    ])
+
+    assert result[0]["title"] == "景燃"
+
+
+def test_role_pool_requires_featured_poster():
+    spider = WwSpider()
+    spider.get_entry_detail = lambda entry_id: {"name": "莫特斐"}
+    gachas = spider.build_gachas([
+        {"linkConfig": {"entryId": "featured"}, "img": "featured.png"},
+    ])
+
+    assert gachas and not any(gacha["largeImg"] for gacha in gachas)
+    assert not spider.is_featured_role_pool("角色活动唤取", gachas)
+    assert spider.is_featured_role_pool("角色活动唤取", [{"largeImg": "poster.png"}])

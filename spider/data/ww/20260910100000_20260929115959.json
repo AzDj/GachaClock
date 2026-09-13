@@ -8,10 +8,10 @@
         ],
         "gachas": [
             {
-                "title": " 景燃",
+                "title": "景燃",
                 "img": "https://prod-alicdn-community.kurobbs.com/forum/24421777c8234064a11580b9303ac7de20260909.jpg",
                 "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/3f5e8a169bfe4c6d8d960ec6f026bf7320260910.png",
-                "img_path": "img/ww/ 景燃.png"
+                "img_path": "img/ww/景燃.png"
             },
             {
                 "title": "莫特斐",
@@ -62,40 +62,6 @@
             {
                 "title": "渊武",
                 "img": "https://prod-alicdn-community.kurobbs.com/forum/43d6b20abe164cc29ae8c7bca4f9ec8e20260909.png",
-                "largeImg": "",
-                "img_path": "img/ww/渊武.png"
-            }
-        ]
-    },
-    {
-        "title": "纵使星光于无穷远",
-        "type": "角色",
-        "timer": [
-            "2026-09-10 10:00:00",
-            "2026-09-29 11:59:59"
-        ],
-        "gachas": [
-            {
-                "title": "莫特斐",
-                "img": "https://prod-alicdn-community.kurobbs.com/forum/abe5058698a54cb695b9c8c10a9326e320260909.jpg",
-                "largeImg": "",
-                "img_path": "img/ww/莫特斐.png"
-            },
-            {
-                "title": "",
-                "img": "https://prod-alicdn-community.kurobbs.com/forum/dd21fc68871f452d910efadfe44b06e520260909.png",
-                "largeImg": "",
-                "img_path": "img/ww/.png"
-            },
-            {
-                "title": "秋水",
-                "img": "https://prod-alicdn-community.kurobbs.com/forum/7ef387bfae784596ac959ba0a89bc46f20260909.png",
-                "largeImg": "",
-                "img_path": "img/ww/秋水.png"
-            },
-            {
-                "title": "渊武",
-                "img": "https://prod-alicdn-community.kurobbs.com/forum/29b2a25a271e440a947ae1edba4e5f8320260909.png",
                 "largeImg": "",
                 "img_path": "img/ww/渊武.png"
             }

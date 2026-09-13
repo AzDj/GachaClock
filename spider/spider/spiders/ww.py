@@ -40,19 +40,13 @@ class WwSpider(scrapy.Spider):
             
             tabs = self.safe_get(content, 'tabs', default=[])
             for tab in tabs:
-                
-                g = []
-                for img in tab['imgs']:
-                    # title 
-                    entryId = self.safe_get(img, 'linkConfig', 'entryId', default='')
-                    detail = self.get_entry_detail(entryId)
-                    g.append({
-                        # 角色详情“基础信息”作为小图，海报立绘仅用于大图。
-                        'title': detail.get('name') or entryId,
-                        'img': self.get_avatar_image(detail) or img['img'],
-                        'largeImg': self.get_poster_image(detail),
-                    })
-                
+                # 官方接口偶尔会返回残缺的角色页签（图片没有 entryId）。
+                # 这类页签不能被提升为独立限定卡池，否则首张图片会被误显示成角色卡。
+                g = self.build_gachas(self.safe_get(tab, 'imgs', default=[]))
+                if not g:
+                    continue
+                if not self.is_featured_role_pool(title, g):
+                    continue
 
                 timer = self.build_timer(tab)
                 if not timer:
@@ -65,6 +59,36 @@ class WwSpider(scrapy.Spider):
                 yield item
             
         pass
+
+    def build_gachas(self, images):
+        """构造完整角色列表；任一图片缺少角色详情时丢弃整个页签。"""
+        if not isinstance(images, list) or not images:
+            return []
+
+        gachas = []
+        for image in images:
+            entry_id = self.safe_get(image, 'linkConfig', 'entryId', default='')
+            if not entry_id:
+                return []
+
+            detail = self.get_entry_detail(entry_id)
+            title = str(detail.get('name') or '').strip()
+            image_url = str(image.get('img') or '').strip()
+            if not title or not image_url:
+                return []
+
+            gachas.append({
+                # 角色详情“基础信息”作为小图，海报立绘仅用于大图。
+                'title': title,
+                'img': self.get_avatar_image(detail) or image_url,
+                'largeImg': self.get_poster_image(detail),
+            })
+
+        return gachas
+
+    def is_featured_role_pool(self, module_title, gachas):
+        """角色限定池必须有主推角色海报，过滤四星或残缺页签。"""
+        return '角色' not in module_title or any(gacha.get('largeImg') for gacha in gachas)
 
     def build_timer(self, tab):
         """将官方模块的分钟级时间范围规范化为现有卡池时间格式。"""
