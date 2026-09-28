@@ -1,0 +1,122 @@
+[
+    {
+        "title": "「沧海萃珠」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/09/28 10:00:00",
+            "2026/11/10 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "真珠",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/64/7q3uk831907lwvw9tc3l53mr8qg6mf2.png/112px-%E7%9C%9F%E7%8F%A0.png",
+                "img_path": "img/sr/真珠.png"
+            },
+            {
+                "title": "青雀",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/40/szkhonn9zbsqwp4fd3g4t88a5mdo94w.png/112px-%E9%9D%92%E9%9B%80.png",
+                "img_path": "img/sr/青雀.png"
+            },
+            {
+                "title": "雪衣",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/3/3e/hybs1m6az92iylukqp98bhmwzwdmkru.png/112px-%E9%9B%AA%E8%A1%A3.png",
+                "img_path": "img/sr/雪衣.png"
+            },
+            {
+                "title": "米沙",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/b/b4/kdjdbpwwvnyrrtap9bv06svosz0z4a3.png/112px-%E7%B1%B3%E6%B2%99.png",
+                "img_path": "img/sr/米沙.png"
+            }
+        ]
+    },
+    {
+        "title": "「韶艾裁英」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/09/28 10:00:00",
+            "2026/10/21 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "绯英",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/eb/cxbonjd73t3awbiv7w19iyztg8nim9k.png/112px-%E7%BB%AF%E8%8B%B1.png",
+                "img_path": "img/sr/绯英.png"
+            },
+            {
+                "title": "青雀",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/40/szkhonn9zbsqwp4fd3g4t88a5mdo94w.png/112px-%E9%9D%92%E9%9B%80.png",
+                "img_path": "img/sr/青雀.png"
+            },
+            {
+                "title": "雪衣",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/3/3e/hybs1m6az92iylukqp98bhmwzwdmkru.png/112px-%E9%9B%AA%E8%A1%A3.png",
+                "img_path": "img/sr/雪衣.png"
+            },
+            {
+                "title": "米沙",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/b/b4/kdjdbpwwvnyrrtap9bv06svosz0z4a3.png/112px-%E7%B1%B3%E6%B2%99.png",
+                "img_path": "img/sr/米沙.png"
+            }
+        ]
+    },
+    {
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/09/28 10:00:00",
+            "2026/11/10 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "献给明日的色彩",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/f4/oytd1wtozjyq3pgmwwqlfqgi4rtkb7b.png/112px-%E7%8C%AE%E7%BB%99%E6%98%8E%E6%97%A5%E7%9A%84%E8%89%B2%E5%BD%A9.png",
+                "img_path": "img/sr/献给明日的色彩.png"
+            },
+            {
+                "title": "一场术后对话",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/2e/7j4m4ov44ny78wdvacllk16073z6aoh.png/112px-%E4%B8%80%E5%9C%BA%E6%9C%AF%E5%90%8E%E5%AF%B9%E8%AF%9D.png",
+                "img_path": "img/sr/一场术后对话.png"
+            },
+            {
+                "title": "与行星相会",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/00/l66yszhlv3n1qhxpow938qguf557tc1.png/112px-%E4%B8%8E%E8%A1%8C%E6%98%9F%E7%9B%B8%E4%BC%9A.png",
+                "img_path": "img/sr/与行星相会.png"
+            },
+            {
+                "title": "无边曼舞",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/a/ad/51fw7qrx03g3f1243rjpdiyswbhlgin.png/112px-%E6%97%A0%E8%BE%B9%E6%9B%BC%E8%88%9E.png",
+                "img_path": "img/sr/无边曼舞.png"
+            }
+        ]
+    },
+    {
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/09/28 10:00:00",
+            "2026/10/21 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "邂逅于下一个花季",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/65/k5qsoohh4xowa112314irudnbp2d0rde.png/112px-%E9%82%82%E9%80%85%E4%BA%8E%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%B1%E5%AD%A3.png",
+                "img_path": ""
+            },
+            {
+                "title": "一场术后对话",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/2/2e/7j4m4ov44ny78wdvacllk16073z6aoh.png/112px-%E4%B8%80%E5%9C%BA%E6%9C%AF%E5%90%8E%E5%AF%B9%E8%AF%9D.png",
+                "img_path": "img/sr/一场术后对话.png"
+            },
+            {
+                "title": "与行星相会",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/0/00/l66yszhlv3n1qhxpow938qguf557tc1.png/112px-%E4%B8%8E%E8%A1%8C%E6%98%9F%E7%9B%B8%E4%BC%9A.png",
+                "img_path": "img/sr/与行星相会.png"
+            },
+            {
+                "title": "无边曼舞",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/a/ad/51fw7qrx03g3f1243rjpdiyswbhlgin.png/112px-%E6%97%A0%E8%BE%B9%E6%9B%BC%E8%88%9E.png",
+                "img_path": "img/sr/无边曼舞.png"
+            }
+        ]
+    }
+]

@@ -803,6 +803,21 @@
         "chara_size": "幼女"
     },
     {
+        "title": "真珠",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/d/d0/qrp15fl03farayr1e8gb7sucjscn0hi.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/a/ab/4wkacgj2wx8nhebn8i1uqruyw4j0o4i.png/900px-%E7%9C%9F%E7%8F%A0%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/b/b7/q295xcvx6iut6zwrns5cz8956u9k5ko.png",
+            "https://patchwiki.biligame.com/images/sr/e/ed/kj8n0fo0d0asv28onvhkcinr2cg7bbo.jpg"
+        ],
+        "display_img": "https://patchwiki.biligame.com/images/sr/b/b7/q295xcvx6iut6zwrns5cz8956u9k5ko.png",
+        "chara_rarity": "5星",
+        "chara_type": "欢愉",
+        "chara_element": "冰",
+        "chara_load_version": "4.6",
+        "chara_size": ""
+    },
+    {
         "title": "真理医生",
         "simple_img": "https://patchwiki.biligame.com/images/sr/8/88/gy36rwsmogrwv3biqruzypvje4ag56q.png",
         "promotion_img": [

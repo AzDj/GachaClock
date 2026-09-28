@@ -1,6 +1,108 @@
 [
     {
         "img": "",
+        "title": "「我身即刃」角色活动跃迁",
+        "type": "角色",
+        "version": "4.6下半",
+        "timer": "2026/10/21 12:00 ~ 2026/11/10 15:00",
+        "s": "千冶•刃",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6d/fmmvaxj6k2orw5zbw9y3ur7z6b7cdag.png/45px-%E5%8D%83%E5%86%B6%E2%80%A2%E5%88%83.png"
+        ],
+        "a": [
+            "青雀",
+            "雪衣",
+            "米沙"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.6下半",
+        "timer": "2026/10/21 12:00 ~ 2026/11/10 15:00",
+        "s": "灼尽炼狱的新骸",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/d/d4/n4cu3qdsxorat732t0eow0aiu4ty6ea.png/45px-%E7%81%BC%E5%B0%BD%E7%82%BC%E7%8B%B1%E7%9A%84%E6%96%B0%E9%AA%B8.png"
+        ],
+        "a": [
+            "一场术后对话",
+            "与行星相会",
+            "无边曼舞"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「沧海萃珠」角色活动跃迁",
+        "type": "角色",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
+        "s": "真珠",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/64/7q3uk831907lwvw9tc3l53mr8qg6mf2.png/45px-%E7%9C%9F%E7%8F%A0.png"
+        ],
+        "a": [
+            "青雀",
+            "雪衣",
+            "米沙"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
+        "s": "献给明日的色彩",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f4/oytd1wtozjyq3pgmwwqlfqgi4rtkb7b.png/45px-%E7%8C%AE%E7%BB%99%E6%98%8E%E6%97%A5%E7%9A%84%E8%89%B2%E5%BD%A9.png"
+        ],
+        "a": [
+            "一场术后对话",
+            "与行星相会",
+            "无边曼舞"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「韶艾裁英」角色活动跃迁",
+        "type": "角色",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2026/10/21 11:59",
+        "s": "绯英",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/eb/cxbonjd73t3awbiv7w19iyztg8nim9k.png/45px-%E7%BB%AF%E8%8B%B1.png"
+        ],
+        "a": [
+            "青雀",
+            "雪衣",
+            "米沙"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.6上半",
+        "timer": "4.6版本更新后 ~ 2026/10/21 11:59",
+        "s": "邂逅于下一个花季",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/65/k5qsoohh4xowa56314irudnbp2d0rde.png/45px-%E9%82%82%E9%80%85%E4%BA%8E%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%B1%E5%AD%A3.png"
+        ],
+        "a": [
+            "一场术后对话",
+            "与行星相会",
+            "无边曼舞"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
         "title": "「激浪跃金」角色活动跃迁",
         "type": "角色",
         "version": "4.5下半",
