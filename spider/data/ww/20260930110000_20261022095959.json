@@ -1,0 +1,172 @@
+[
+    {
+        "title": "曙暮一线之间",
+        "type": "角色",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "千咲",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/24ce9ff3616c4dcdbbdd5eb700644d1e20260929.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/af4f9ebcb13645d0a2a1e702eb8f0d0620251120.png",
+                "img_path": "img/ww/千咲.png"
+            },
+            {
+                "title": "卜灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9b01acf89fc844af9d177f839ffba7e620251019.png",
+                "largeImg": "",
+                "img_path": "img/ww/卜灵.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/db6f2393cdc946118d6154ab09e99d3120260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/桃祈.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2f30aaaa471e400f96f37989d13d336720260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            }
+        ]
+    },
+    {
+        "title": "漫于盈缺时轴",
+        "type": "角色",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "尤诺",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e262bcd36a3c44bda00c4c2655e1918d20260929.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/a04816404feb47d0bc8ef99809f1187520250916.png",
+                "img_path": "img/ww/尤诺.png"
+            },
+            {
+                "title": "卜灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9b01acf89fc844af9d177f839ffba7e620251019.png",
+                "largeImg": "",
+                "img_path": "img/ww/卜灵.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1af94f2767b04ecab0163306d9ae06e120260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/桃祈.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/50918db1370c41aca90ac5aff98e699a20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            }
+        ]
+    },
+    {
+        "title": "玉阙玄华",
+        "type": "武器",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "千般渡",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/484af067e07d479c9854236da505f25020260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/千般渡.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1ac8e5953a4546bf811d56b9c4f8727e20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/856db0099d8b45d3bc1cf5e4df6d16cf20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "永夜长明",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1c0de327b9554242a4bc7fc207c6b15920260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/永夜长明.png"
+            }
+        ]
+    },
+    {
+        "title": "昙切",
+        "type": "武器",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "昙切",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ef71c68d4a444cf9b61ad64e5dccb30c20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/昙切.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/123ede7416f5416282ab9cac3fe6d48f20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d99c9164d8864adcafb666e5bc0920df20260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "永夜长明",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c1e734dff0f942a890f9bdc5c87e4ab020260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/永夜长明.png"
+            }
+        ]
+    },
+    {
+        "title": "万物持存的注释",
+        "type": "武器",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "万物持存的注释",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c88352b116af462da1f91f180dea7be820260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/万物持存的注释.png"
+            },
+            {
+                "title": "核熔星盘",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/58d8b1417590407cbb9119e395f1bef120260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/核熔星盘.png"
+            },
+            {
+                "title": "不归孤军",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/7fce58ad56e644b6a275aaf84038e40020260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/不归孤军.png"
+            },
+            {
+                "title": "永夜长明",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d337e72e09da4c398692fe8284da078420260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/永夜长明.png"
+            }
+        ]
+    }
+]
