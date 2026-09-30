@@ -226,7 +226,8 @@ export default function IndexPage() {
       const data = await fetch(`data/${key}/history.json`).then((res) => res.json());
       console.log(`${key} history`, data);
 
-      const sourceData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+      const openedData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+      const sourceData = openedData.length > 0 ? openedData : data;
       const selectedHistoryList = selectCurrentHistoryList(sourceData, key);
       historyList = normalizeHistoryList(selectedHistoryList);
 
@@ -276,7 +277,8 @@ export default function IndexPage() {
         hasNewPool = isRecentNewPool(timer);
       } else {
         roleKey = 's';
-        const sourceData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+        const openedData = key === 'arknights' ? data : filterOpenedHistoryItems(data);
+        const sourceData = openedData.length > 0 ? openedData : data;
         const selectedHistoryList = selectCurrentHistoryList(sourceData, key);
         historyList = normalizeHistoryList(selectedHistoryList);
 
@@ -394,7 +396,8 @@ export default function IndexPage() {
       return appendPermanentHistoryPools(upcomingArknightsList, permanentCurrentList);
     }
 
-    return finiteCurrentList;
+    // 当前没有进行中的卡池时保留最近一条历史记录，避免游戏项因卡池结束而从首页消失。
+    return finiteCurrentList.length > 0 ? finiteCurrentList : [selectLatestHistoryItem(data)];
   }
 
   function appendPermanentHistoryPools(currentList: any[], permanentList: any[]) {
@@ -418,13 +421,20 @@ export default function IndexPage() {
       return currentTime <= endTime;
     });
 
-    return selectNearestHistoryItem(unexpiredList.length > 0 ? unexpiredList : data);
+    return unexpiredList.length > 0 ? selectNearestHistoryItem(unexpiredList) : selectLatestHistoryItem(data);
   }
 
   function selectNearestHistoryItem(data: any[]) {
     return [...data].sort((a: any, b: any) => {
       const endDiff = getHistoryEndTime(a.timer) - getHistoryEndTime(b.timer);
       return endDiff || `${a.title}`.localeCompare(`${b.title}`);
+    })[0];
+  }
+
+  function selectLatestHistoryItem(data: any[]) {
+    return [...data].sort((a: any, b: any) => {
+      const endDiff = getHistoryEndTime(b.timer) - getHistoryEndTime(a.timer);
+      return endDiff || `${b.title}`.localeCompare(`${a.title}`);
     })[0];
   }
 
