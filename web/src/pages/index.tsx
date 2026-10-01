@@ -355,8 +355,14 @@ export default function IndexPage() {
       return [];
     }
 
+    // 鸣潮首页只展示角色唤取；武器池仍由历史数据单独保存，不参与首页兜底。
+    const candidateData = key === 'ww' ? data.filter((item: any) => item.type === '角色') : data;
+    if (candidateData.length === 0) {
+      return [];
+    }
+
     const currentTime = new Date().getTime();
-    const finiteCurrentList = data.filter((item: any) =>
+    const finiteCurrentList = candidateData.filter((item: any) =>
       isTimerStartedAndUnexpired(item.timer, currentTime),
     );
     const finiteLimitedCurrentList = finiteCurrentList.filter(
@@ -377,14 +383,14 @@ export default function IndexPage() {
 
     const currentDateList =
       key === 'arknights'
-        ? data.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
+        ? candidateData.filter((item: any) => isTimerOverlappingCurrentDate(item.timer, currentTime))
         : [];
 
     if (currentDateList.length > 0) {
       return appendPermanentHistoryPools([...currentDateList, ...upcomingArknightsList], permanentCurrentList);
     }
 
-    const ambiguousCurrentList = data.filter((item: any) =>
+    const ambiguousCurrentList = candidateData.filter((item: any) =>
       isTimerAmbiguousAndUnexpired(item.timer, currentTime),
     );
 
@@ -397,7 +403,8 @@ export default function IndexPage() {
     }
 
     // 当前没有进行中的卡池时保留最近一条历史记录，避免游戏项因卡池结束而从首页消失。
-    return finiteCurrentList.length > 0 ? finiteCurrentList : [selectLatestHistoryItem(data)];
+    // 新替换池尚未抓到时，保留最近的旧角色池并显示结束状态。
+    return finiteCurrentList.length > 0 ? finiteCurrentList : [selectLatestHistoryItem(candidateData)];
   }
 
   function appendPermanentHistoryPools(currentList: any[], permanentList: any[]) {

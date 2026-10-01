@@ -63,6 +63,15 @@ class HistoryMergeTest(unittest.TestCase):
 
         self.assertEqual(existing_items, merged_items)
 
+    def test_expired_pool_is_kept_in_history_when_replacement_is_not_fetched(self):
+        current_time = local_time(2026, 7, 31, 12)
+        expired_timer = "2026-07-01 04:00 ~ 2026-07-30 03:59"
+        existing_items = [pool("已结束角色池", expired_timer)]
+
+        merged_items = merge_history_items(existing_items, [], current_time)
+
+        self.assertEqual(["已结束角色池"], [item["title"] for item in merged_items])
+
     def test_replaced_ambiguous_pool_is_removed_when_same_version_is_refreshed(self):
         existing_items = [
             pool("旧模糊池", "4.4版本更新后 ~ 2026/08/25 15:00", version="4.4"),
