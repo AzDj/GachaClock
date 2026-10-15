@@ -1,12 +1,25 @@
 [
     {
+        "title": "万物更新",
+        "type": "角色",
+        "version": "万物更新",
+        "timer": "2026/10/15 12:00:00 ~ 2026/11/05 11:59:59",
+        "s": "祀",
+        "s_imgs": [
+            "https://bbs.hycdn.cn/image/common/20261007/4826366/6ac5cbcb9da5ba571c0209a9_0095c241.webp"
+        ],
+        "a": [],
+        "img": "https://bbs.hycdn.cn/image/common/20261007/4826366/6ac5cbcb9da5ba571c0209a9_0095c241.webp",
+        "img_path": ""
+    },
+    {
         "title": "冬猎",
         "type": "角色",
         "version": "冬猎",
         "timer": "2026/09/02 11:30:00 ~ 2026/09/30 11:59:59",
         "s": "提弗洛斯",
         "s_imgs": [
-        "https://bbs.hycdn.cn/image/common/20260902/221109/6a9772282e39b624e0143815_3eac6ad0.png"
+            "https://bbs.hycdn.cn/image/common/20260902/221109/6a9772282e39b624e0143815_3eac6ad0.png"
         ],
         "a": [],
         "img": "https://bbs.hycdn.cn/image/common/20260822/4826366/6a891df4b314f9222698de31_96d20048.webp",
