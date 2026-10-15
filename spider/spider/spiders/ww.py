@@ -13,6 +13,11 @@ class WwSpider(scrapy.Spider):
         "ITEM_PIPELINES": {
             "spider.pipelines.SpiderPipeline": 300,
         },
+        # kurobbs 为国内源，海外 CI runner 访问不稳定：缩短超时并加重试，
+        # 避免单次网络抖动导致整个爬虫静默 0 产出。
+        "DOWNLOAD_TIMEOUT": 30,
+        "RETRY_TIMES": 3,
+        "RETRY_HTTP_CODES": [408, 429, 500, 502, 503, 504, 522, 524],
     }
     headers = {
         'wiki_type': '9',
@@ -29,15 +34,28 @@ class WwSpider(scrapy.Spider):
         )
 
     def parse(self, response):
-        data = response.json()
-        sideModules = self.safe_get(data, 'data', 'contentJson', 'sideModules', default=[])
+        try:
+            data = response.json()
+        except ValueError as e:
+            raise ValueError(f"鸣潮首页接口返回非 JSON 响应：{response.text[:200]}") from e
+
+        code = self.safe_get(data, 'code')
+        if code != 200:
+            raise ValueError(f"鸣潮首页接口返回异常 code={code}：{str(data)[:200]}")
+
+        sideModules = self.safe_get(data, 'data', 'contentJson', 'sideModules')
+        if not isinstance(sideModules, list) or not sideModules:
+            raise ValueError("鸣潮首页接口未返回 sideModules，页面结构可能已变更")
+
+        pool_modules = 0
         for sideModule in sideModules:
             content = self.safe_get(sideModule, 'content', default={})
             title = str(sideModule.get('title', '')).strip()
-            
+
             if title not in {'角色活动唤取', '武器活动唤取'}:
                 continue
-            
+            pool_modules += 1
+
             tabs = self.safe_get(content, 'tabs', default=[])
             for tab in tabs:
                 # 官方接口偶尔会返回残缺的角色页签（图片没有 entryId）。
@@ -57,8 +75,12 @@ class WwSpider(scrapy.Spider):
                 item["timer"] = timer
                 item["gachas"] = g
                 yield item
-            
-        pass
+
+        # 模块整体消失说明页面结构变更或接口异常，必须显式报错，
+        # 避免 run_spider.py 只给出笼统的“未产出任何数据”。
+        if pool_modules == 0:
+            titles = [str(m.get('title', '')).strip() for m in sideModules if isinstance(m, dict)]
+            raise ValueError(f"鸣潮首页接口未找到卡池模块，当前模块标题：{titles}")
 
     def build_gachas(self, images):
         """构造完整角色列表；任一图片缺少角色详情时丢弃整个页签。"""
@@ -131,16 +153,23 @@ class WwSpider(scrapy.Spider):
             **self.headers,
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        try:
-            response = requests.post(url, headers=headers, data=f'id={data}')
-            response.raise_for_status()  # 检查响应状态码，如果不是 200 会抛出异常
-            return self.safe_get(response.json(), 'data', default={}) or {}
-        except requests.RequestException as e:
-            print(f"请求发生错误: {e}")
-        except ValueError:
-            print(f"无法解析响应的 JSON 数据，响应内容: {response.text}")
-        except KeyError:
-            print(f"响应中缺少所需的键，响应内容: {response.text}")
+        last_error = None
+        for attempt in range(3):
+            try:
+                # 必须带超时，否则 CI runner 到 kurobbs 的网络抖动会把整个爬虫挂起数十分钟。
+                response = requests.post(url, headers=headers, data=f'id={data}', timeout=30)
+                response.raise_for_status()  # 检查响应状态码，如果不是 200 会抛出异常
+                return self.safe_get(response.json(), 'data', default={}) or {}
+            except requests.RequestException as e:
+                last_error = e
+                print(f"请求发生错误（第 {attempt + 1} 次）: {e}")
+            except ValueError:
+                print(f"无法解析响应的 JSON 数据，响应内容: {response.text}")
+                return {}
+            except KeyError:
+                print(f"响应中缺少所需的键，响应内容: {response.text}")
+                return {}
+        print(f"详情接口重试耗尽：{last_error}")
         return {}
 
     def get_poster_image(self, detail):
