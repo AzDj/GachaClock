@@ -1,5 +1,45 @@
 [
     {
+        "img": "https://patchwiki.biligame.com/images/zzz/7/78/s5skd5hvhd5pfdpolf4t9cz6rlm4qyj.png",
+        "title": "「红月初升」037-1期独家频段",
+        "type": "角色",
+        "version": "3.2上半",
+        "timer": "3.2版本更新后 ~ 2026/09/30 11:59:59",
+        "s": "克拉蕾",
+        "a": [],
+        "img_path": "img/zzz/history/「红月初升」037-1期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/a/aa/9uqah6ajxyuue7afp34ww7cw3raqvee.png",
+        "title": "「猩红渴望」037-1期音擎频段",
+        "type": "武器",
+        "version": "3.2上半",
+        "timer": "3.2版本更新后 ~ 2026/09/30 11:59:59",
+        "s": "猩红渴望",
+        "a": [],
+        "img_path": "img/zzz/history/「猩红渴望」037-1期音擎频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/0/08/eyktvfne1qnwoorj4tjln6kddbdk1u5.png",
+        "title": "「视线定格公理」037-2期独家频段",
+        "type": "角色",
+        "version": "3.2上半",
+        "timer": "3.2版本更新后 ~ 2026/09/30 11:59:59",
+        "s": "南宫羽",
+        "a": [],
+        "img_path": "img/zzz/history/「视线定格公理」037-2期独家频段.png"
+    },
+    {
+        "img": "https://patchwiki.biligame.com/images/zzz/f/f2/eb2n5aqk81w9ayf7u5hwxqfftzx9kbr.png",
+        "title": "「霓虹妄想」037-2期音擎频段",
+        "type": "武器",
+        "version": "3.2上半",
+        "timer": "3.2版本更新后 ~ 2026/09/30 11:59:59",
+        "s": "霓虹妄想",
+        "a": [],
+        "img_path": "img/zzz/history/「霓虹妄想」037-2期音擎频段.png"
+    },
+    {
         "img": "https://patchwiki.biligame.com/images/zzz/thumb/5/58/ly2aimdoxf2f9rvx1aqej5i5kifstbh.png/900px-%E7%8B%AC%E5%AE%B6%E9%A2%91%E6%AE%B5036-1%E6%9C%9F.png",
         "title": "「直到天空沉落」036-1期独家频段",
         "type": "角色",
