@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import re
+import time
+
 import requests
 
 
@@ -79,27 +81,39 @@ def extract_content_id(url: str) -> int | None:
     return int(match.group(1)) if match else None
 
 
-def fetch_display_three_image(detail_url: str) -> str:
-    """从角色详情页的“意象影画 → 影画展示3”读取原图 URL。"""
+def fetch_display_three_image(detail_url: str, retries: int = 3) -> str:
+    """从角色详情页的“意象影画 → 影画展示3”读取原图 URL。
+
+    CI runner 到米哈游接口偶发 SSL 握手/读取超时，单次请求失败不应让整个爬虫崩溃。
+    """
     content_id = extract_content_id(detail_url)
     if content_id is None:
         raise ValueError(f"绝区零角色详情 URL 无法识别内容 ID：{detail_url}")
 
-    response = requests.get(
-        DETAIL_API_BASE,
-        params={"entry_page_id": content_id, "lang": "zh-cn", "app_sn": "zzz_wiki"},
-        headers={"x-rpc-wiki_app": WIKI_APP_HEADER},
-        timeout=30,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    if payload.get("retcode") != 0:
-        raise ValueError(f"绝区零角色详情接口失败：{payload.get('message', '')}")
+    last_error: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.get(
+                DETAIL_API_BASE,
+                params={"entry_page_id": content_id, "lang": "zh-cn", "app_sn": "zzz_wiki"},
+                headers={"x-rpc-wiki_app": WIKI_APP_HEADER},
+                timeout=30,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            if payload.get("retcode") != 0:
+                raise ValueError(f"绝区零角色详情接口失败：{payload.get('message', '')}")
 
-    image_url = extract_display_three_image(payload)
-    if not image_url:
-        raise ValueError(f"绝区零内容 {content_id} 未找到“影画展示3”大图")
-    return image_url
+            image_url = extract_display_three_image(payload)
+            if not image_url:
+                raise ValueError(f"绝区零内容 {content_id} 未找到“影画展示3”大图")
+            return image_url
+        except (requests.RequestException, ValueError) as e:
+            last_error = e
+            print(f"获取绝区零内容 {content_id} 影画展示3失败（第 {attempt}/{retries} 次）: {e}")
+            time.sleep(2 * attempt)
+
+    raise last_error
 
 
 def extract_display_three_image(payload: dict) -> str:
