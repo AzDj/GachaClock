@@ -1,7 +1,11 @@
+import logging
+
 import scrapy
 import requests
 
 from spider.items import SpiderItem
+
+logger = logging.getLogger(__name__)
 
 
 class WwSpider(scrapy.Spider):
@@ -25,7 +29,9 @@ class WwSpider(scrapy.Spider):
         'referer': source_url,
     }
 
-    def start_requests(self):
+    async def start(self):
+        # Scrapy 2.13 起以 start() 取代旧的 start_requests() 钩子；
+        # 继续使用旧钩子会导致爬虫启动即结束、静默 0 产出。
         yield scrapy.Request(
             self.homepage_api_url,
             headers=self.headers,
@@ -60,14 +66,35 @@ class WwSpider(scrapy.Spider):
             for tab in tabs:
                 # 官方接口偶尔会返回残缺的角色页签（图片没有 entryId）。
                 # 这类页签不能被提升为独立限定卡池，否则首张图片会被误显示成角色卡。
-                g = self.build_gachas(self.safe_get(tab, 'imgs', default=[]))
+                imgs = self.safe_get(tab, 'imgs', default=[])
+                g = self.build_gachas(imgs)
                 if not g:
+                    logger.warning(
+                        "鸣潮页签[%s]无可用的角色图列表，跳过：imgs=%s",
+                        tab.get('name'),
+                        [
+                            {
+                                'entry_id': self.safe_get(i, 'linkConfig', 'entryId'),
+                                'img': bool(i.get('img')) if isinstance(i, dict) else False,
+                            }
+                            for i in imgs if isinstance(i, dict)
+                        ],
+                    )
                     continue
                 if not self.is_featured_role_pool(title, g):
+                    logger.warning(
+                        "鸣潮页签[%s]缺少主推海报立绘，按非限定池跳过：gachas=%s",
+                        tab.get('name'),
+                        [(x['title'], bool(x.get('largeImg'))) for x in g],
+                    )
                     continue
 
                 timer = self.build_timer(tab)
                 if not timer:
+                    logger.warning(
+                        "鸣潮页签[%s]缺少有效时间范围，跳过：countDown=%s",
+                        tab.get('name'), self.safe_get(tab, 'countDown'),
+                    )
                     continue
                 item = SpiderItem()
                 item["title"] = tab['name']
