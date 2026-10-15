@@ -74,7 +74,8 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
             headers["dId"] = device_id
         return headers
 
-    def start_requests(self):
+    async def start(self):
+        # Scrapy 2.13 起以 start() 取代旧的 start_requests() 钩子。
         yield scrapy.Request(
             f"{self.api_host}{self.auth_path}",
             headers=self.base_headers(),
