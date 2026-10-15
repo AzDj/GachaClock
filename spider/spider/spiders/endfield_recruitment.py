@@ -41,6 +41,8 @@ class EndfieldRecruitmentSpider(scrapy.Spider):
         "ITEM_PIPELINES": {
             "spider.spiders.endfield_recruitment.EndfieldHistoryPipeline": 300,
         },
+        # 接口均为小 JSON，缩短超时避免 runner 到 skland 网络劣化时挂起数十分钟。
+        "DOWNLOAD_TIMEOUT": 90,
     }
 
     def __init__(self, *args, **kwargs):
