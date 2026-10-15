@@ -121,6 +121,12 @@ class SpiderPipeline:
             print(f"{spider.name} 存在未满足的图片约束，跳过数据文件发布")
             return
 
+        if not self.items:
+            # 爬虫 0 产出时没有卡池时间可用于命名文件，无法写数据文件；
+            # 真正的失败原因由 run_spider.py 的 ensure_spiders_produced_items 统一报告。
+            print(f"{spider.name} 未产出任何数据，跳过数据文件发布")
+            return
+
         try:
             timer = self.items[0]["timer"]
             format_timer = self.convert_to_filename_format(timer)
