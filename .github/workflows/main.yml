@@ -13,6 +13,11 @@ on:
         required: true
         type: string
         default: "all"
+      persist_data:
+        description: "抓取成功后提交数据（与定时任务相同的数据落库行为）"
+        required: true
+        type: boolean
+        default: true
   schedule:
     # GitHub Actions 使用 UTC；常规维护对应北京时间/新加坡时间 08:00、12:00、16:00、20:00。
     - cron: "0 0,4,8,12 * * *"
@@ -142,7 +147,8 @@ jobs:
         # 爬虫步骤部分失败时也要保存已成功抓取的数据：各爬虫独立写各自的
         # 数据文件，失败方不会写文件，持久化不会污染成功方的成果。
         # 任务保持失败状态（红叉告警），站点构建仍跳过，待下次全绿再部署。
-        if: always() && steps.crawl_decision.outputs.should_crawl == 'true' && github.event_name == 'schedule'
+        # 手动运行默认同样落库（inputs.persist_data），避免验证成功后仍需等定时任务。
+        if: always() && steps.crawl_decision.outputs.should_crawl == 'true' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.persist_data))
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
