@@ -1,4 +1,7 @@
 import argparse
+import os
+import subprocess
+import sys
 
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
@@ -24,6 +27,10 @@ SPIDER_GROUPS = {
     "arknights": [ArknightsHistorySpider],
     "endfield": [EndfieldRecruitmentSpider],
 }
+
+
+# 防止重试子进程再次重试导致无限循环。
+RETRY_FLAG_ENV = "RUN_SPIDER_RETRIED"
 
 
 def parse_args():
@@ -58,14 +65,10 @@ def resolve_spiders(games):
     return spider_list
 
 
-def ensure_spiders_produced_items(crawlers, allow_empty=()):
-    """所有已执行爬虫都必须产出数据，禁止以成功状态发布旧文件。
-
-    ``allow_empty`` 中的爬虫属于接口瞬时失败可容忍的场景（如终末地寻访，
-    认证失败时由 HistoryMetaPipeline 保留既有历史），只警告不判失败。
-    """
-    tolerated = []
+def partition_spider_output(crawlers, allow_empty=()):
+    """按产出把爬虫分为（未产出, 已容忍）两组。"""
     empty_spiders = []
+    tolerated = []
     for spider_name, crawler in crawlers:
         if crawler.stats.get_value("item_scraped_count", 0) != 0:
             continue
@@ -73,7 +76,10 @@ def ensure_spiders_produced_items(crawlers, allow_empty=()):
             tolerated.append(spider_name)
         else:
             empty_spiders.append(spider_name)
+    return empty_spiders, tolerated
 
+
+def warn_tolerated(tolerated):
     for spider_name in tolerated:
         # GitHub annotation：告警直接展示在运行摘要中，避免静默降级。
         print(
@@ -81,8 +87,27 @@ def ensure_spiders_produced_items(crawlers, allow_empty=()):
             f"已列入 --allow-empty 容忍名单，保留既有数据）"
         )
 
+
+def ensure_spiders_produced_items(crawlers, allow_empty=()):
+    """所有已执行爬虫都必须产出数据，禁止以成功状态发布旧文件。
+
+    ``allow_empty`` 中的爬虫属于接口瞬时失败可容忍的场景（如终末地寻访，
+    认证失败时由 HistoryMetaPipeline 保留既有历史），只警告不判失败。
+    """
+    empty_spiders, tolerated = partition_spider_output(crawlers, allow_empty)
+    warn_tolerated(tolerated)
     if empty_spiders:
         raise RuntimeError(f"以下爬虫未产出任何数据：{','.join(empty_spiders)}")
+
+
+def resolve_retry_groups(empty_spider_names):
+    """把 0 产出的爬虫名映射回需要重跑的游戏组。"""
+    targets = set(empty_spider_names)
+    return sorted(
+        game
+        for game, classes in SPIDER_GROUPS.items()
+        if {cls.name for cls in classes} & targets
+    )
 
 
 def main():
@@ -102,6 +127,30 @@ def main():
         process.crawl(crawler)
         crawlers.append((spider_class.name, crawler))
     process.start()
+    empty_spiders, tolerated = partition_spider_output(crawlers, allow_empty)
+    warn_tolerated(tolerated)
+
+    # CI runner 到国内源（米哈游/kurobbs/库街区等）的瞬时超时是红叉的主要来源。
+    # 只重跑 0 产出的游戏组一次：瞬时故障大概率恢复，确定性 bug（如配置漏项）
+    # 重试后依旧失败、job 保持红叉，严格性不降级。
+    if empty_spiders and not os.environ.get(RETRY_FLAG_ENV):
+        retry_groups = resolve_retry_groups(empty_spiders)
+        print(f"以下爬虫未产出任何数据，疑似瞬时网络故障，自动重试一次：{','.join(retry_groups)}")
+        env = dict(os.environ, RETRY_FLAG_ENV="1")
+        exit_code = subprocess.call(
+            [
+                sys.executable,
+                os.path.abspath(__file__),
+                "--games",
+                ",".join(retry_groups),
+                "--allow-empty",
+                args.allow_empty,
+            ],
+            env=env,
+        )
+        # 其余游戏首轮已产出并写好数据文件，重试子进程只补写失败组的文件。
+        sys.exit(exit_code)
+
     ensure_spiders_produced_items(crawlers, allow_empty)
 
 
