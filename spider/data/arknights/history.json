@@ -1,5 +1,120 @@
 [
     {
+        "img": "https://media.prts.wiki/thumb/2/24/%E6%B5%B7%E6%B8%8A%E5%B7%A1%E6%B8%B8.jpg/600px-%E6%B5%B7%E6%B8%8A%E5%B7%A1%E6%B8%B8.jpg?v=gsk59yyv530yz9y3dcifus7s7flqbhq",
+        "title": "海渊巡游",
+        "type": "角色",
+        "version": "2026-10-09 卡池一览",
+        "timer": "2026-10-09 12:00 ~ 2026-10-23 03:59",
+        "s": "克莱门莎",
+        "a": [
+            "德·托莱多",
+            "火哨"
+        ],
+        "img_path": "img/arknights/history/海渊巡游.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "Mon3tr",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "圣聆初雪",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "烛煌",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "真言",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "贝洛内",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/2/20/%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG/600px-%E5%AE%9A%E5%90%91%E7%94%84%E9%80%8908.JPG?v=jss26dyd1hsqwq7driaqe8r9eyh8rpl",
+        "title": "定向甄选08",
+        "type": "角色",
+        "version": "2026-09-29 卡池一览",
+        "timer": "2026-09-29 16:00 ~ 2026-10-13 03:59",
+        "s": "锏",
+        "a": [
+            "吉星",
+            "响石",
+            "复奏",
+            "寻澜",
+            "明椒",
+            "渡桥"
+        ],
+        "img_path": "img/arknights/history/定向甄选08.png"
+    },
+    {
         "img": "https://media.prts.wiki/thumb/e/e6/%E7%9F%B3%E7%99%BD%E6%B7%B1%E8%93%9D%E4%B9%8B%E5%A4%9C.jpg/600px-%E7%9F%B3%E7%99%BD%E6%B7%B1%E8%93%9D%E4%B9%8B%E5%A4%9C.jpg?v=dgid3x3tbx0499x03vq2ha84n9v7ox4",
         "title": "石白深蓝之夜",
         "type": "角色",
@@ -1348,6 +1463,34 @@
         "img_path": "img/arknights/history/证实，完成，指引 复刻.png"
     },
     {
+        "img": "https://media.prts.wiki/thumb/5/54/%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0195.png/600px-%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0195.png?v=ndct32mug52aze5w2z1b28epjtxtmu5",
+        "title": "干员轮换卡池195",
+        "type": "角色",
+        "version": "2026-10-08 卡池一览",
+        "timer": "2026-10-08 04:00 ~ 2026-10-22 03:59",
+        "s": "左乐",
+        "a": [
+            "和弦",
+            "寒檀",
+            "聆音"
+        ],
+        "img_path": "img/arknights/history/干员轮换卡池195.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/5/54/%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0195.png/600px-%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0195.png?v=ndct32mug52aze5w2z1b28epjtxtmu5",
+        "title": "干员轮换卡池195",
+        "type": "角色",
+        "version": "2026-10-08 卡池一览",
+        "timer": "2026-10-08 04:00 ~ 2026-10-22 03:59",
+        "s": "斥罪",
+        "a": [
+            "和弦",
+            "寒檀",
+            "聆音"
+        ],
+        "img_path": "img/arknights/history/干员轮换卡池195.png"
+    },
+    {
         "img": "https://media.prts.wiki/thumb/f/f9/%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0194.jpg/600px-%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A0194.jpg?v=ho4s7ryve0cgrsbmqpp92hl2okfyxbs",
         "title": "干员轮换卡池194",
         "type": "角色",
@@ -1906,6 +2049,62 @@
             "铎铃"
         ],
         "img_path": "img/arknights/history/干员轮换卡池175.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/1/12/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A076.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A076.jpg?v=34u8rempzekaeecdmzouza8l4fhs4h2",
+        "title": "中坚干员轮换卡池76",
+        "type": "角色",
+        "version": "2026-10-15 卡池一览",
+        "timer": "2026-10-15 04:00 ~ 2026-10-29 03:59",
+        "s": "凯尔希",
+        "a": [
+            "四月",
+            "灰喉",
+            "诗怀雅"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池76.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/1/12/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A076.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A076.jpg?v=34u8rempzekaeecdmzouza8l4fhs4h2",
+        "title": "中坚干员轮换卡池76",
+        "type": "角色",
+        "version": "2026-10-15 卡池一览",
+        "timer": "2026-10-15 04:00 ~ 2026-10-29 03:59",
+        "s": "棘刺",
+        "a": [
+            "四月",
+            "灰喉",
+            "诗怀雅"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池76.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/e/e7/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A075.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A075.jpg?v=53m8wqi9yo3vaenfi8696rqwoyi4wg1",
+        "title": "中坚干员轮换卡池75",
+        "type": "角色",
+        "version": "2026-10-01 卡池一览",
+        "timer": "2026-10-01 04:00 ~ 2026-10-15 03:59",
+        "s": "灵知",
+        "a": [
+            "可颂",
+            "惊蛰",
+            "梅尔"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池75.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/e/e7/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A075.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A075.jpg?v=53m8wqi9yo3vaenfi8696rqwoyi4wg1",
+        "title": "中坚干员轮换卡池75",
+        "type": "角色",
+        "version": "2026-10-01 卡池一览",
+        "timer": "2026-10-01 04:00 ~ 2026-10-15 03:59",
+        "s": "银灰",
+        "a": [
+            "可颂",
+            "惊蛰",
+            "梅尔"
+        ],
+        "img_path": "img/arknights/history/中坚干员轮换卡池75.png"
     },
     {
         "img": "https://media.prts.wiki/thumb/c/cf/%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A074.jpg/600px-%E4%B8%AD%E5%9D%9A%E5%B9%B2%E5%91%98%E8%BD%AE%E6%8D%A2%E5%8D%A1%E6%B1%A074.jpg?v=5gx7pxinf82k1dps5kxumwcfoksvf20",

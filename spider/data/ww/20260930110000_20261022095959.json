@@ -1,5 +1,39 @@
 [
     {
+        "title": "但愿长圆如此夜",
+        "type": "角色",
+        "timer": [
+            "2026-09-30 11:00:00",
+            "2026-10-22 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "心",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0f4fed3eb580400f985f132778776c3020260929.png",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/34ee6a88ddc34abd87733dbeeb2e62a520260930.png",
+                "img_path": ""
+            },
+            {
+                "title": "卜灵",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/9b01acf89fc844af9d177f839ffba7e620251019.png",
+                "largeImg": "",
+                "img_path": "img/ww/卜灵.png"
+            },
+            {
+                "title": "桃祈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2e45019732624c049e3c6aa60b2f431420260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/桃祈.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/f95443b9fc6a4d5abb44767a14d20c3720260929.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            }
+        ]
+    },
+    {
         "title": "曙暮一线之间",
         "type": "角色",
         "timer": [
@@ -76,10 +110,10 @@
         ],
         "gachas": [
             {
-                "title": "千般渡",
+                "title": "玉阙玄华",
                 "img": "https://prod-alicdn-community.kurobbs.com/forum/484af067e07d479c9854236da505f25020260929.png",
                 "largeImg": "",
-                "img_path": "img/ww/千般渡.png"
+                "img_path": "img/ww/玉阙玄华.png"
             },
             {
                 "title": "核熔星盘",

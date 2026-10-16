@@ -1,0 +1,126 @@
+[
+    {
+        "title": "「烬夜安眠」",
+        "type": "角色",
+        "timer": [
+            "2026/09/30 12:00:00",
+            "2026/10/20 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "洛克茜",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/2fceac681717e64b0202b587b3eda1f8_7959437950864828201.png",
+                "img_path": "img/zzz/洛克茜.png",
+                "display_img_path": "img/zzz/display-three/洛克茜.png"
+            },
+            {
+                "title": "可琳",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/90abac5b57bd5b48fa79e9efb5254360_3082657690734917205.png",
+                "img_path": "img/zzz/可琳.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "比利",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/149feef57a5210d07d646ff3dec3581f_7416801011406184706.png",
+                "img_path": "img/zzz/比利.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「绯月银棺」",
+        "type": "武器",
+        "timer": [
+            "2026/09/30 12:00:00",
+            "2026/10/20 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "绯月银棺",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/c843ccad0378664d7ca686ff869673d1_913157600941610629.png",
+                "img_path": "img/zzz/绯月银棺.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "家政员",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/c5e3277e051b5ad10ec568c8ed62e472_6684561845250556651.png",
+                "img_path": "img/zzz/家政员.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "仿制星徽引擎",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/7a2092bf3e5d51bd8f0d425f21b4a5a2_781687017409022847.png",
+                "img_path": "img/zzz/仿制星徽引擎.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「冷雨将尽之夜」",
+        "type": "角色",
+        "timer": [
+            "2026/09/30 12:00:00",
+            "2026/10/20 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "普罗米娅",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/c2b836e8d8f127bdb2c528cd1e4adbd0_7827170261676531976.png",
+                "img_path": "img/zzz/普罗米娅.png",
+                "display_img_path": "img/zzz/display-three/普罗米娅.png"
+            },
+            {
+                "title": "可琳",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/90abac5b57bd5b48fa79e9efb5254360_5436772774033967833.png",
+                "img_path": "img/zzz/可琳.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "比利",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/149feef57a5210d07d646ff3dec3581f_5853146578627617975.png",
+                "img_path": "img/zzz/比利.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「朔月裁霜」",
+        "type": "武器",
+        "timer": [
+            "2026/09/30 12:00:00",
+            "2026/10/20 14:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "朔月裁霜",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/39c79cd0e48bff218c74eec559e116f2_1251193613190900736.png",
+                "img_path": "img/zzz/朔月裁霜.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "家政员",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/c5e3277e051b5ad10ec568c8ed62e472_2993399273722990334.png",
+                "img_path": "img/zzz/家政员.png",
+                "display_img_path": ""
+            },
+            {
+                "title": "仿制星徽引擎",
+                "rank": "A",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/10/76099754/7a2092bf3e5d51bd8f0d425f21b4a5a2_3211280788062877591.png",
+                "img_path": "img/zzz/仿制星徽引擎.png",
+                "display_img_path": ""
+            }
+        ]
+    }
+]
