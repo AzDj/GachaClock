@@ -218,8 +218,10 @@ export default function IndexPage() {
     let hasNewPool = false;
 
     try {
-      // 绝区零、崩铁与原神使用官方当前池文件，避免历史数据覆盖独立的大图字段。
-      if (key === 'zzz' || key === 'sr' || key === 'ys') {
+      // 绝区零、崩铁、原神与鸣潮使用官方当前池文件，避免历史数据覆盖独立的大图字段。
+      // 鸣潮的 history.json 为静态导入且长期不更新，若命中“保留最近历史记录”兜底，
+      // 首页将永远显示过期的 2025 年卡池，因此与 zzz/sr/ys 一致直接走 meta 来源。
+      if (key === 'zzz' || key === 'sr' || key === 'ys' || key === 'ww') {
         throw new Error(`${key} 使用 meta 当前卡池来源`);
       }
       roleKey = 's';
