@@ -1,102 +1,619 @@
 [
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/8/8e/kpuqn1mlus35mw8oazzfmcjf7rawvug.jpg/750px-%E8%A7%92%E8%89%B2%E5%94%A4%E5%8F%96_2025%E5%B9%B42%E6%9C%8813%E6%97%A5.jpg",
-        "title": "角色唤取 2025年2月13日",
+        "img": "https://assets.bannerhistory.app/temp/wuwa/3.7-2-suoming-livestream-ko.webp",
+        "title": "角色唤取 3.7下半",
         "type": "角色",
-        "version": "2025年2月13日 菲比",
-        "timer": "2025年2月13日 ~ 2025年3月6日",
-        "s": "菲比",
+        "version": "3.7下半",
+        "timer": "2026-10-21 10:00:00 ~ 2026-11-10 11:59:00",
+        "s": [
+            "锁暝",
+            "琳奈",
+            "洛瑟菈"
+        ],
         "a": [],
-        "img_path": "img/ww/history/角色唤取 2025年2月13日.png"
+        "img_path": "img/ww/history/角色唤取 3.7下半.png"
     },
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/c/c4/41vsj468i94hekdjor4x4txpcbqzv2e.jpg/750px-%E6%AD%A6%E5%99%A8%E5%94%A4%E5%8F%96_2025%E5%B9%B42%E6%9C%8813%E6%97%A5.jpg",
-        "title": "武器唤取 2025年2月13日",
-        "type": "武器",
-        "version": "2025年2月13日 菲比",
-        "timer": "2025年2月13日 ~ 2025年3月6日",
-        "s": "武器唤取 2025年2月13日",
-        "a": [],
-        "img_path": "img/ww/history/武器唤取 2025年2月13日.png"
-    },
-    {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/5/53/9r9ajoubj9v4xhesepk55tcazp3edjh.jpg/750px-%E8%A7%92%E8%89%B2%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%8823%E6%97%A5_1.jpg",
-        "title": "角色唤取 2025年1月23日 1",
+        "img": "https://assets.bannerhistory.app/temp/wuwa/3.7-1-hsin-livestream-ko.webp",
+        "title": "角色唤取 3.7上半",
         "type": "角色",
-        "version": "2025年1月23日 洛可可",
-        "timer": "2025年1月23日 ~ 2025年2月12日",
-        "s": "洛可可",
+        "version": "3.7上半",
+        "timer": "2026-09-30 11:00:00 ~ 2026-10-21 09:59:00",
+        "s": [
+            "心",
+            "尤诺",
+            "千咲"
+        ],
         "a": [],
-        "img_path": "img/ww/history/角色唤取 2025年1月23日 1.png"
+        "img_path": "img/ww/history/角色唤取 3.7上半.png"
     },
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/3/30/67pgnyddcd5zpeymox94gk64jruw89d.jpg/750px-%E6%AD%A6%E5%99%A8%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%8823%E6%97%A5_1.jpg",
-        "title": "武器唤取 2025年1月23日 1",
-        "type": "武器",
-        "version": "2025年1月23日 洛可可",
-        "timer": "2025年1月23日 ~ 2025年2月12日",
-        "s": "武器唤取 2025年1月23日 1",
-        "a": [],
-        "img_path": "img/ww/history/武器唤取 2025年1月23日 1.png"
-    },
-    {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/5/55/9h84h0w66m6wdicjeik6yl516odib90.jpg/750px-%E8%A7%92%E8%89%B2%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%8823%E6%97%A5_2.jpg",
-        "title": "角色唤取 2025年1月23日 2",
+        "img": "https://pbs.twimg.com/media/HRsEwy9bIAAcueo?format=jpg&name=orig",
+        "title": "角色唤取 3.6下半",
         "type": "角色",
-        "version": "2025年1月23日 今汐",
-        "timer": "2025年1月23日 ~ 2025年2月12日",
-        "s": "今汐",
+        "version": "3.6下半",
+        "timer": "2026-09-10 10:00:00 ~ 2026-09-29 11:59:00",
+        "s": [
+            "景燃",
+            "绯雪",
+            "莫宁"
+        ],
         "a": [],
-        "img_path": "img/ww/history/角色唤取 2025年1月23日 2.png"
+        "img_path": ""
     },
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/b/b8/cxtuezd47afv3qqkmtx4is59wj44s0g.jpg/750px-%E6%AD%A6%E5%99%A8%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%8823%E6%97%A5_2.jpg",
-        "title": "武器唤取 2025年1月23日 2",
-        "type": "武器",
-        "version": "2025年1月23日 今汐",
-        "timer": "2025年1月23日 ~ 2025年2月12日",
-        "s": "武器唤取 2025年1月23日 2",
-        "a": [],
-        "img_path": "img/ww/history/武器唤取 2025年1月23日 2.png"
-    },
-    {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/d/db/qbxhaup756odf5fu75uqsmafas796z2.jpg/750px-%E8%A7%92%E8%89%B2%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%882%E6%97%A5_1.jpg",
-        "title": "角色唤取 2025年1月2日 1",
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1787068800000/jiueimtxsgg8x1np2u-1787121746717.jpg",
+        "title": "角色唤取 3.6上半",
         "type": "角色",
-        "version": "2025年1月2日 珂莱塔",
-        "timer": "2025年1月2日 ~ 2025年1月23日",
-        "s": "珂莱塔",
+        "version": "3.6上半",
+        "timer": "2026-08-20 11:00:00 ~ 2026-09-10 09:59:00",
+        "s": [
+            "清宵",
+            "达妮娅"
+        ],
         "a": [],
-        "img_path": "img/ww/history/角色唤取 2025年1月2日 1.png"
+        "img_path": "img/ww/history/角色唤取 3.6上半.png"
     },
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/e/e5/0sxh836zxrfi004d16pf17gdnwksngu.jpg/750px-%E6%AD%A6%E5%99%A8%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%882%E6%97%A5_1.jpg",
-        "title": "武器唤取 2025年1月2日 1",
-        "type": "武器",
-        "version": "2025年1月2日 珂莱塔",
-        "timer": "2025年1月2日 ~ 2025年1月23日",
-        "s": "武器唤取 2025年1月2日 1",
-        "a": [],
-        "img_path": "img/ww/history/武器唤取 2025年1月2日 1.png"
-    },
-    {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/1/1f/576504fa39l65q26dmnt1iuhov34tse.jpg/750px-%E8%A7%92%E8%89%B2%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%882%E6%97%A5_2.jpg",
-        "title": "角色唤取 2025年1月2日 2",
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1785254400000/a54ek839a2wlpo0r3j-1785315495269.jpg",
+        "title": "角色唤取 3.5下半",
         "type": "角色",
-        "version": "2025年1月2日 折枝",
-        "timer": "2025年1月2日 ~ 2025年1月23日",
-        "s": "折枝",
+        "version": "3.5下半",
+        "timer": "2026-07-30 10:00:00 ~ 2026-08-19 11:59:00",
+        "s": [
+            "穗穗",
+            "爱弥斯"
+        ],
         "a": [],
-        "img_path": "img/ww/history/角色唤取 2025年1月2日 2.png"
+        "img_path": "img/ww/history/角色唤取 3.5下半.png"
     },
     {
-        "img": "https://patchwiki.biligame.com/images/wutheringwaves/thumb/d/d2/1344lkykpypmhqvvovrntoa231rughc.jpg/750px-%E6%AD%A6%E5%99%A8%E5%94%A4%E5%8F%96_2025%E5%B9%B41%E6%9C%882%E6%97%A5_2.jpg",
-        "title": "武器唤取 2025年1月2日 2",
-        "type": "武器",
-        "version": "2025年1月2日 折枝",
-        "timer": "2025年1月2日 ~ 2025年1月23日",
-        "s": "武器唤取 2025年1月2日 2",
+        "img": "https://bannerhistory.app/icons/wuwa/characters/Jiyan.png",
+        "title": "角色唤取 3.5复刻",
+        "type": "角色",
+        "version": "3.5复刻",
+        "timer": "2026-07-10 11:00:00 ~ 2026-08-19 11:59:00",
+        "s": [
+            "忌炎",
+            "吟霖",
+            "今汐",
+            "长离",
+            "折枝",
+            "相里要"
+        ],
         "a": [],
-        "img_path": "img/ww/history/武器唤取 2025年1月2日 2.png"
+        "img_path": "img/ww/history/角色唤取 3.5复刻.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1783526400000/cb94tx1404k688n3mv-1783567451886.jpg",
+        "title": "角色唤取 3.5上半",
+        "type": "角色",
+        "version": "3.5上半",
+        "timer": "2026-07-10 11:00:00 ~ 2026-07-30 09:59:00",
+        "s": [
+            "秧秧·玄翎",
+            "琳奈",
+            "陆·赫斯"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.5上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1781193600000/7n9r5skh3q79xmlv0u-1781231798288.jpg",
+        "title": "角色唤取 3.4下半",
+        "type": "角色",
+        "version": "3.4下半",
+        "timer": "2026-06-13 10:00:00 ~ 2026-07-09 11:59:00",
+        "s": [
+            "洛瑟菈",
+            "卡提希娅"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.4下半.png"
+    },
+    {
+        "img": "https://bannerhistory.app/icons/wuwa/characters/Lucy.png",
+        "title": "角色唤取 3.4联动上半",
+        "type": "角色",
+        "version": "3.4联动上半",
+        "timer": "2026-06-08 11:00:00 ~ 2026-07-09 11:59:00",
+        "s": [
+            "露西",
+            "丽贝卡"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.4联动上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1779206400000/o16uabrq63wqs5qev1-1779249883519.jpg",
+        "title": "角色唤取 3.3下半",
+        "type": "角色",
+        "version": "3.3下半",
+        "timer": "2026-05-21 10:00:00 ~ 2026-06-07 11:59:00",
+        "s": [
+            "达妮娅",
+            "千咲",
+            "弗洛洛"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.3下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1777305600000/mr8njd9bdonmhxv73m-1777381046608.jpg",
+        "title": "角色唤取 3.3上半",
+        "type": "角色",
+        "version": "3.3上半",
+        "timer": "2026-04-30 11:00:00 ~ 2026-05-21 09:59:00",
+        "s": [
+            "绯雪",
+            "莫宁",
+            "尤诺"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.3上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1775491200000/a55uoj6n8otp87beyh-1775557292284.jpg",
+        "title": "角色唤取 3.2下半",
+        "type": "角色",
+        "version": "3.2下半",
+        "timer": "2026-04-09 10:00:00 ~ 2026-04-29 11:59:00",
+        "s": [
+            "琳奈",
+            "赞妮",
+            "菲比"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.2下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1773763200000/z4gyxqcbshvz6ph2nf-1773839426595.png",
+        "title": "角色唤取 3.2上半",
+        "type": "角色",
+        "version": "3.2上半",
+        "timer": "2026-03-19 11:00:00 ~ 2026-04-09 09:59:00",
+        "s": [
+            "西格莉卡",
+            "仇远"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.2上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1771948800000/h70s0ys49exf4vpwq2-1772000288011.jpg",
+        "title": "角色唤取 3.1下半",
+        "type": "角色",
+        "version": "3.1下半",
+        "timer": "2026-02-26 10:00:00 ~ 2026-03-18 11:59:00",
+        "s": [
+            "陆·赫斯",
+            "嘉贝莉娜"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.1下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1770134400000/8amix5hqtjhlbwzlj1-1770217232736.jpg",
+        "title": "角色唤取 3.1上半",
+        "type": "角色",
+        "version": "3.1上半",
+        "timer": "2026-02-05 11:00:00 ~ 2026-02-26 09:59:00",
+        "s": [
+            "爱弥斯",
+            "千咲",
+            "露帕"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.1上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1768320000000/u79h4yyfyda58hn2me-1768358245407.jpg",
+        "title": "角色唤取 3.0下半",
+        "type": "角色",
+        "version": "3.0下半",
+        "timer": "2026-01-15 10:00:00 ~ 2026-02-04 11:59:00",
+        "s": [
+            "莫宁",
+            "卡提希娅",
+            "夏空"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.0下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1766505600000/4pcrkf6n4r7wvjp4gz-1766549125682.jpg",
+        "title": "角色唤取 3.0上半",
+        "type": "角色",
+        "version": "3.0上半",
+        "timer": "2025-12-25 11:00:00 ~ 2026-01-15 09:59:00",
+        "s": [
+            "琳奈",
+            "尤诺",
+            "奥古斯塔"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 3.0上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1765296000000/jzen23vjggu22wjg49-1765332280265.jpg",
+        "title": "角色唤取 2.8下半",
+        "type": "角色",
+        "version": "2.8下半",
+        "timer": "2025-12-11 10:00:00 ~ 2025-12-24 11:59:00",
+        "s": [
+            "弗洛洛",
+            "坎特蕾拉"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.8下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1763481600000/alol7tdeppuhk6xejy-1763520543500.jpg",
+        "title": "角色唤取 2.8上半",
+        "type": "角色",
+        "version": "2.8上半",
+        "timer": "2025-11-20 11:00:00 ~ 2025-12-11 09:59:00",
+        "s": [
+            "千咲",
+            "菲比"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.8上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1761667200000/rw360uk2f38cm2wk7w-1761723024942.jpg",
+        "title": "角色唤取 2.7下半",
+        "type": "角色",
+        "version": "2.7下半",
+        "timer": "2025-10-30 10:00:00 ~ 2025-11-19 11:59:00",
+        "s": [
+            "仇远",
+            "赞妮"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.7下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1759680000000/elbgnvmq300h20xto8-1759735342637.jpg",
+        "title": "角色唤取 2.7上半",
+        "type": "角色",
+        "version": "2.7上半",
+        "timer": "2025-10-09 11:00:00 ~ 2025-10-30 09:59:00",
+        "s": [
+            "嘉贝莉娜",
+            "露帕"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.7上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1757952000000/bsy0n2wo4pq1g51zqb-1757990969392.jpg",
+        "title": "角色唤取 2.6下半",
+        "type": "角色",
+        "version": "2.6下半",
+        "timer": "2025-09-17 10:00:00 ~ 2025-10-08 11:59:00",
+        "s": [
+            "尤诺",
+            "夏空"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.6下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1756224000000/9cxztxj3zt3lzqrt1p-1756262590286.jpg",
+        "title": "角色唤取 2.6上半",
+        "type": "角色",
+        "version": "2.6上半",
+        "timer": "2025-08-28 11:00:00 ~ 2025-09-17 09:59:00",
+        "s": [
+            "奥古斯塔",
+            "守岸人",
+            "珂莱塔"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.6上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1754928000000/n9anzpzelhi0c0y0af-1754993945437.jpg",
+        "title": "角色唤取 2.5下半",
+        "type": "角色",
+        "version": "2.5下半",
+        "timer": "2025-08-14 10:00:00 ~ 2025-08-27 11:59:00",
+        "s": [
+            "坎特蕾拉",
+            "布兰特"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.5下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1753200000000/svb0qcym9svysr7mj4-1753236272113.jpg",
+        "title": "角色唤取 2.5上半",
+        "type": "角色",
+        "version": "2.5上半",
+        "timer": "2025-07-24 11:00:00 ~ 2025-08-14 09:59:00",
+        "s": [
+            "弗洛洛",
+            "洛可可"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.5上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1751385600000/uim4gaz6v5fo924vsp-1751429032404.jpg",
+        "title": "角色唤取 2.4下半",
+        "type": "角色",
+        "version": "2.4下半",
+        "timer": "2025-07-03 10:00:00 ~ 2025-07-23 11:59:00",
+        "s": [
+            "露帕"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.4下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1749484800000/yom52jj33nd0fiz7kv-1749549866445.jpg",
+        "title": "角色唤取 2.4上半",
+        "type": "角色",
+        "version": "2.4上半",
+        "timer": "2025-06-12 11:00:00 ~ 2025-07-03 09:59:00",
+        "s": [
+            "卡提希娅"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.4上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1747756800000/s5xi04yrfq9at0v9gl-1747797124840.jpg",
+        "title": "角色唤取 2.3周年下半",
+        "type": "角色",
+        "version": "2.3周年下半",
+        "timer": "2025-05-22 10:00:00 ~ 2025-06-11 11:59:00",
+        "s": [
+            "今汐",
+            "长离",
+            "珂莱塔",
+            "洛可可",
+            "布兰特"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.3周年下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1747670400000/ah053z8u3tnh6a1buo-1747739790191.jpg",
+        "title": "角色唤取 2.3下半",
+        "type": "角色",
+        "version": "2.3下半",
+        "timer": "2025-05-22 10:00:00 ~ 2025-06-11 11:59:00",
+        "s": [
+            "夏空"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.3下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1745769600000/17258o1rykys0qezg4-1745835400552.jpg",
+        "title": "角色唤取 2.3周年上半",
+        "type": "角色",
+        "version": "2.3周年上半",
+        "timer": "2025-04-29 11:00:00 ~ 2025-05-22 09:59:00",
+        "s": [
+            "忌炎",
+            "吟霖",
+            "折枝",
+            "相里要",
+            "菲比"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.3周年上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1745769600000/dlv4701rnu1n19fv6a-1745835323743.jpg",
+        "title": "角色唤取 2.3上半",
+        "type": "角色",
+        "version": "2.3上半",
+        "timer": "2025-04-29 11:00:00 ~ 2025-05-22 09:59:00",
+        "s": [
+            "赞妮"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.3上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1744732800000/b9xt5bwhft5l6ks7us-1744786364184.jpg",
+        "title": "角色唤取 2.2下半",
+        "type": "角色",
+        "version": "2.2下半",
+        "timer": "2025-04-17 10:00:00 ~ 2025-04-28 11:59:00",
+        "s": [
+            "守岸人"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.2下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1742918400000/ycg6uchu0xqv7th4bb-1742952946057.jpg",
+        "title": "角色唤取 2.2上半",
+        "type": "角色",
+        "version": "2.2上半",
+        "timer": "2025-03-27 11:00:00 ~ 2025-04-17 09:59:00",
+        "s": [
+            "坎特蕾拉",
+            "椿"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.2上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1741104000000/2azqvmq4u89fk66quj-1741147879854.jpg",
+        "title": "角色唤取 2.1下半",
+        "type": "角色",
+        "version": "2.1下半",
+        "timer": "2025-03-06 10:00:00 ~ 2025-03-26 11:59:00",
+        "s": [
+            "布兰特",
+            "长离"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.1下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1739289600000/waj8ht5srhgh7364d3-1739354326471.jpg",
+        "title": "角色唤取 2.1上半",
+        "type": "角色",
+        "version": "2.1上半",
+        "timer": "2025-02-13 11:00:00 ~ 2025-03-06 09:59:00",
+        "s": [
+            "菲比"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.1上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1737388800000/autna0bf5oev6n3k9x-1737459625977.jpg",
+        "title": "角色唤取 2.0下半",
+        "type": "角色",
+        "version": "2.0下半",
+        "timer": "2025-01-23 10:00:00 ~ 2025-02-12 11:59:00",
+        "s": [
+            "洛可可",
+            "今汐"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.0下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1735574400000/445ba52y806g61iylc-1735651206552.jpg",
+        "title": "角色唤取 2.0上半",
+        "type": "角色",
+        "version": "2.0上半",
+        "timer": "2025-01-02 11:00:00 ~ 2025-01-23 09:59:00",
+        "s": [
+            "珂莱塔",
+            "折枝"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 2.0上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1733846400000/apl4i2eg1jp4ibr18c-1733883869579.jpg",
+        "title": "角色唤取 1.4下半",
+        "type": "角色",
+        "version": "1.4下半",
+        "timer": "2024-12-12 10:00:00 ~ 2025-01-01 11:59:00",
+        "s": [
+            "吟霖",
+            "相里要"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.4下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1731340800000/d72k0pfp98uof3thhd-1731404326754.jpg",
+        "title": "角色唤取 1.4上半",
+        "type": "角色",
+        "version": "1.4上半",
+        "timer": "2024-11-14 11:00:00 ~ 2024-12-12 09:59:00",
+        "s": [
+            "椿"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.4上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1729612800000/1wh1luzryp88y92t3e-1729647964108.jpg",
+        "title": "角色唤取 1.3下半",
+        "type": "角色",
+        "version": "1.3下半",
+        "timer": "2024-10-24 10:00:00 ~ 2024-11-13 11:59:00",
+        "s": [
+            "忌炎"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.3下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1727366400000/m1c4gvgrard5xa0wsc-1727430656221.jpg",
+        "title": "角色唤取 1.3上半",
+        "type": "角色",
+        "version": "1.3上半",
+        "timer": "2024-09-29 11:00:00 ~ 2024-10-24 09:59:00",
+        "s": [
+            "守岸人"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.3上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1725379200000/fld9x0jnb5j8wd8hu2-1725422371972.JPG",
+        "title": "角色唤取 1.2下半",
+        "type": "角色",
+        "version": "1.2下半",
+        "timer": "2024-09-07 10:00:00 ~ 2024-09-28 11:59:00",
+        "s": [
+            "相里要"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.2下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1723392000000/daald42jygytqexk5d-1723433337858.jpg",
+        "title": "角色唤取 1.2上半",
+        "type": "角色",
+        "version": "1.2上半",
+        "timer": "2024-08-15 13:00:00 ~ 2024-09-07 09:59:00",
+        "s": [
+            "折枝"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.2上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1721232000000/87gleii8j0vx2t36bm-1721299081568.jpg",
+        "title": "角色唤取 1.1下半",
+        "type": "角色",
+        "version": "1.1下半",
+        "timer": "2024-07-22 10:00:00 ~ 2024-08-14 11:59:00",
+        "s": [
+            "长离"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.1下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1719331200000/hc4gw44el4q9ntp954-1719387753394.jpg",
+        "title": "角色唤取 1.1上半",
+        "type": "角色",
+        "version": "1.1上半",
+        "timer": "2024-06-28 13:00:00 ~ 2024-07-22 09:59:00",
+        "s": [
+            "今汐"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.1上半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1717603200000/uuehvibs1s2q0go1lo-1717646370018.jpg",
+        "title": "角色唤取 1.0下半",
+        "type": "角色",
+        "version": "1.0下半",
+        "timer": "2024-06-06 10:00:00 ~ 2024-06-26 11:59:00",
+        "s": [
+            "吟霖"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.0下半.png"
+    },
+    {
+        "img": "https://hw-media-cdn-mingchao.kurogame.com/object/1716480000000/cbg5otodmjgawupul3-1716564842815.jpg",
+        "title": "角色唤取 1.0上半",
+        "type": "角色",
+        "version": "1.0上半",
+        "timer": "2024-05-23 10:00:00 ~ 2024-06-06 09:59:00",
+        "s": [
+            "忌炎"
+        ],
+        "a": [],
+        "img_path": "img/ww/history/角色唤取 1.0上半.png"
     }
 ]
