@@ -1,0 +1,70 @@
+[
+    {
+        "title": "「倾掷浮生」",
+        "type": "角色",
+        "timer": [
+            "2026/10/21 10:00:00",
+            "2026/11/11 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "菲欧妮·蕾法爱菈",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/21/76099754/0c6fe6449ebd56b87745a332ade80e1f_4420116601964202624.png",
+                "img_path": "img/zzz/菲欧妮·蕾法爱菈.png",
+                "display_img_path": "img/zzz/display-three/菲欧妮·蕾法爱菈.png"
+            }
+        ]
+    },
+    {
+        "title": "「涅槃初翎」",
+        "type": "武器",
+        "timer": [
+            "2026/10/21 10:00:00",
+            "2026/11/11 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "涅槃初翎",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/21/76099754/0d237081fd0f184e4fc22abbbf5a4641_1411606410307012891.png",
+                "img_path": "img/zzz/涅槃初翎.png",
+                "display_img_path": ""
+            }
+        ]
+    },
+    {
+        "title": "「凛风吟仪」",
+        "type": "角色",
+        "timer": [
+            "2026/10/21 10:00:00",
+            "2026/11/11 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "维琳娜·艾嘉德",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/21/76099754/11878922b3ca137a99bf3906b74cb5df_7104902883306354485.png",
+                "img_path": "img/zzz/维琳娜·艾嘉德.png",
+                "display_img_path": "img/zzz/display-three/维琳娜·艾嘉德.png"
+            }
+        ]
+    },
+    {
+        "title": "「琳琅鎏心」",
+        "type": "武器",
+        "timer": [
+            "2026/10/21 10:00:00",
+            "2026/11/11 11:59:00"
+        ],
+        "gachas": [
+            {
+                "title": "琳琅鎏心",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/10/21/76099754/46300e97a90161a412f9e1fcd9dded33_868574884861735415.png",
+                "img_path": "img/zzz/琳琅鎏心.png",
+                "display_img_path": ""
+            }
+        ]
+    }
+]

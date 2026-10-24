@@ -1,0 +1,206 @@
+[
+    {
+        "title": "余心所向九死未悔",
+        "type": "角色",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "锁暝",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/321cb886cb28422bb94b940ada4c790820260829.png",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/777e615e2792478085bf61778df4e8c120261022.png",
+                "img_path": "img/ww/锁暝.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2ea62ef4cf6d41fb9767a5b18eb6a65f20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "丹瑾",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/5d0ffc33299045c4988a22d98e10616e20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/丹瑾.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/629b487f6b9f48fb842b2e3facc6131420261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/炽霞.png"
+            }
+        ]
+    },
+    {
+        "title": "显影于明日",
+        "type": "角色",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "洛瑟菈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/509adfc9f3dd4c6aa7092184d719b6dd20261021.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/a661e9ee6123469fb243ded02586588420260613.png",
+                "img_path": "img/ww/洛瑟菈.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a7eaa4171bd84aca9cb470a48cacf0db20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "丹瑾",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/af999fac4d014ff69ff187929d907a8120261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/丹瑾.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/d8fb4db506784f68a725067993ccd96020261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/炽霞.png"
+            }
+        ]
+    },
+    {
+        "title": "非定义光谱",
+        "type": "角色",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "琳奈",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a51e63285b1446fd91e57d4c7f6277ff20251202.png",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/b83fd412531d481486e655de652159c120251225.png",
+                "img_path": "img/ww/琳奈.png"
+            },
+            {
+                "title": "灯灯",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/b7394cefbd8d46c1a5fd8bc2e6fbd36a20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/灯灯.png"
+            },
+            {
+                "title": "丹瑾",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/4b888e0eee3647c8b945b6a5a3db44a220261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/丹瑾.png"
+            },
+            {
+                "title": "炽霞",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/188b148711e2406e82eb86d4958a7c1620261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/炽霞.png"
+            }
+        ]
+    },
+    {
+        "title": "沉冥",
+        "type": "武器",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "沉冥",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/10989f8da9b84627bf59a0ac77a07acb20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/沉冥.png"
+            },
+            {
+                "title": "行进序曲",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e2d456a9f3074d5a8b7cc4433c3de2a720261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/行进序曲.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/66ae13a52c0b4bb0bb5d6964051ecff820261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/悖论喷流.png"
+            },
+            {
+                "title": "袍泽之固",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/595ceb04e77b46d4a842bce2c63c228120261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/袍泽之固.png"
+            }
+        ]
+    },
+    {
+        "title": "存帧",
+        "type": "武器",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "存帧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/79150694598d4f2ab0d849bfcea3529720261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/存帧.png"
+            },
+            {
+                "title": "行进序曲",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/f930b91774004abfb3e254eae5faabb520261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/行进序曲.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/598f2c57e0a146d1ad200693cae3a82020261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/悖论喷流.png"
+            },
+            {
+                "title": "袍泽之固",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/41bb88f148194bdd963d6439a8ee165c20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/袍泽之固.png"
+            }
+        ]
+    },
+    {
+        "title": "溢彩荧辉",
+        "type": "武器",
+        "timer": [
+            "2026-10-22 10:00:00",
+            "2026-11-11 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "溢彩荧辉",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0f2e0f84c73442dd84dd3d4c9b5d7ef220261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/溢彩荧辉.png"
+            },
+            {
+                "title": "行进序曲",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/37b8ad75d3a04ac9833f50e78601f94920261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/行进序曲.png"
+            },
+            {
+                "title": "悖论喷流",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/88da0281ab324d60937d52defcdd702720261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/悖论喷流.png"
+            },
+            {
+                "title": "袍泽之固",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1636acb8dbbc41c6ae58b8c22641d81d20261021.png",
+                "largeImg": "",
+                "img_path": "img/ww/袍泽之固.png"
+            }
+        ]
+    }
+]

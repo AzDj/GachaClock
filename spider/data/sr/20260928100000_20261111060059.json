@@ -30,17 +30,17 @@
         ]
     },
     {
-        "title": "「韶艾裁英」角色活动跃迁",
+        "title": "「我身即刃」角色活动跃迁",
         "type": "角色",
         "timer": [
-            "2026/09/28 10:00:00",
-            "2026/10/21 11:59:59"
+            "2026/10/21 12:00:00",
+            "2026/11/11 06:00:59"
         ],
         "gachas": [
             {
-                "title": "绯英",
-                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/eb/cxbonjd73t3awbiv7w19iyztg8nim9k.png/112px-%E7%BB%AF%E8%8B%B1.png",
-                "img_path": "img/sr/绯英.png"
+                "title": "千冶•刃",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/6d/fmmvaxj6k2orw5zbw9y3ur7z6b7cdag.png/112px-%E5%8D%83%E5%86%B6%E2%80%A2%E5%88%83.png",
+                "img_path": "img/sr/千冶•刃.png"
             },
             {
                 "title": "青雀",
@@ -93,14 +93,14 @@
         "title": "「溯回忆象」光锥活动跃迁",
         "type": "武器",
         "timer": [
-            "2026/09/28 10:00:00",
-            "2026/10/21 11:59:59"
+            "2026/10/21 12:00:00",
+            "2026/11/11 06:00:59"
         ],
         "gachas": [
             {
-                "title": "邂逅于下一个花季",
-                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/65/k5qsoohh4xowa112314irudnbp2d0rde.png/112px-%E9%82%82%E9%80%85%E4%BA%8E%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%B1%E5%AD%A3.png",
-                "img_path": ""
+                "title": "灼尽炼狱的新骸",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/d4/n4cu3qdsxorat732t0eow0aiu4ty6ea.png/112px-%E7%81%BC%E5%B0%BD%E7%82%BC%E7%8B%B1%E7%9A%84%E6%96%B0%E9%AA%B8.png",
+                "img_path": "img/sr/灼尽炼狱的新骸.png"
             },
             {
                 "title": "一场术后对话",
