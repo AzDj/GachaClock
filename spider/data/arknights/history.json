@@ -1,5 +1,29 @@
 [
     {
+        "img": "https://media.prts.wiki/thumb/e/e2/%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG/600px-%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG?v=k2jcucfejh3zsrqigiwzb728gj82ska",
+        "title": "将雪投火",
+        "type": "角色",
+        "version": "2026-11-01 卡池一览",
+        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "s": "冻河",
+        "a": [
+            "奥尔佳"
+        ],
+        "img_path": "img/arknights/history/将雪投火.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/e/e2/%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG/600px-%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG?v=k2jcucfejh3zsrqigiwzb728gj82ska",
+        "title": "将雪投火",
+        "type": "角色",
+        "version": "2026-11-01 卡池一览",
+        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "s": "塔露拉",
+        "a": [
+            "奥尔佳"
+        ],
+        "img_path": "img/arknights/history/将雪投火.png"
+    },
+    {
         "img": "https://media.prts.wiki/thumb/2/24/%E6%B5%B7%E6%B8%8A%E5%B7%A1%E6%B8%B8.jpg/600px-%E6%B5%B7%E6%B8%8A%E5%B7%A1%E6%B8%B8.jpg?v=gsk59yyv530yz9y3dcifus7s7flqbhq",
         "title": "海渊巡游",
         "type": "角色",
