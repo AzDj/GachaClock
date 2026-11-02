@@ -4,7 +4,7 @@
         "title": "将雪投火",
         "type": "角色",
         "version": "2026-11-01 卡池一览",
-        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "timer": "2026-11-01 12:00 ~ 2026-11-15 03:59",
         "s": "冻河",
         "a": [
             "奥尔佳"
@@ -16,7 +16,7 @@
         "title": "将雪投火",
         "type": "角色",
         "version": "2026-11-01 卡池一览",
-        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "timer": "2026-11-01 12:00 ~ 2026-11-15 03:59",
         "s": "塔露拉",
         "a": [
             "奥尔佳"
@@ -4421,5 +4421,29 @@
             "雷蛇"
         ],
         "img_path": "img/arknights/history/专属推荐干员寻访.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/e/e2/%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG/600px-%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG?v=k2jcucfejh3zsrqigiwzb728gj82ska",
+        "title": "将雪投火",
+        "type": "角色",
+        "version": "2026-11-01 卡池一览",
+        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "s": "冻河",
+        "a": [
+            "奥尔佳"
+        ],
+        "img_path": "img/arknights/history/将雪投火.png"
+    },
+    {
+        "img": "https://media.prts.wiki/thumb/e/e2/%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG/600px-%E5%B0%86%E9%9B%AA%E6%8A%95%E7%81%AB.JPG?v=k2jcucfejh3zsrqigiwzb728gj82ska",
+        "title": "将雪投火",
+        "type": "角色",
+        "version": "2026-11-01 卡池一览",
+        "timer": "2026-11-01 07:00 ~ 2026-11-15 03:59",
+        "s": "塔露拉",
+        "a": [
+            "奥尔佳"
+        ],
+        "img_path": "img/arknights/history/将雪投火.png"
     }
 ]
