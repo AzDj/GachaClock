@@ -1,0 +1,70 @@
+[
+    {
+        "title": "「万序衍盈」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-11-04 10:00:00",
+            "2026-11-24 17:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "米提亚",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/7e41e06b13a14260a28adc6be7307559_1788417882616588532.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/10/25/50494840/abf6801d06c40cea3f0d309ebdcf8333_3415791627906426989.png",
+                "img_path": "img/ys/米提亚.png"
+            },
+            {
+                "title": "瓦列里 ",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/727179ec9bc250c790a6b7ea63adec89_2954077747931923939.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/10/25/50494840/6d0ef95d02336751cd8f022cd560bd60_6906948468198909540.png",
+                "img_path": "img/ys/瓦列里 .png"
+            },
+            {
+                "title": "夏洛蒂",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/36006d0ad619b747c9df0f40dfd01c10_1275658439174302708.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/12/50494840/387749ba69a92def22d2243365c1ce05_4530539694228791399.png",
+                "img_path": "img/ys/夏洛蒂.png"
+            },
+            {
+                "title": "罗莎莉亚",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/bdec34acae15315368017c1dbc29e106_4710365216077310447.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/19/80663279/abd8d5a9f4fbf90188da978810f970b1_4647199271144705227.jpg",
+                "img_path": "img/ys/罗莎莉亚.png"
+            }
+        ]
+    },
+    {
+        "title": "「众水的颂诗」祈愿",
+        "type": "角色",
+        "timer": [
+            "2026-11-04 10:00:00",
+            "2026-11-24 17:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "芙宁娜",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/6053ad8e445c8daefe65c79ed54198dd_7291935885770819859.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/08/16649484/2848b6960daea4320be245e4e3443dfc_8025294059075829686.png",
+                "img_path": "img/ys/芙宁娜.png"
+            },
+            {
+                "title": "瓦列里 ",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/727179ec9bc250c790a6b7ea63adec89_7331835454940040690.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2026/10/25/50494840/6d0ef95d02336751cd8f022cd560bd60_6906948468198909540.png",
+                "img_path": "img/ys/瓦列里 .png"
+            },
+            {
+                "title": "夏洛蒂",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/36006d0ad619b747c9df0f40dfd01c10_6741185384471025202.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/12/50494840/387749ba69a92def22d2243365c1ce05_4530539694228791399.png",
+                "img_path": "img/ys/夏洛蒂.png"
+            },
+            {
+                "title": "罗莎莉亚",
+                "img": "https://act-upload.mihoyo.com/ys-obc/2026/11/04/141047435/bdec34acae15315368017c1dbc29e106_5861055358225528166.png",
+                "display_img": "https://act-upload.mihoyo.com/wiki-user-upload/2024/01/19/80663279/abd8d5a9f4fbf90188da978810f970b1_4647199271144705227.jpg",
+                "img_path": "img/ys/罗莎莉亚.png"
+            }
+        ]
+    }
+]
