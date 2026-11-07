@@ -1,5 +1,18 @@
 [
     {
+        "title": "烟火邀星河",
+        "type": "角色",
+        "version": "烟火邀星河",
+        "timer": "2026/11/05 12:00:00 ~ 2026/11/26 11:59:59",
+        "s": "明河",
+        "s_imgs": [
+            "https://bbs.hycdn.cn/image/common/20261105/736412/6aebfd4bf0311bbc88dfb4d1_e71aef33.webp"
+        ],
+        "a": [],
+        "img": "https://bbs.hycdn.cn/image/common/20261105/736412/6aebfd4bf0311bbc88dfb4d1_e71aef33.webp",
+        "img_path": ""
+    },
+    {
         "title": "万物更新",
         "type": "角色",
         "version": "万物更新",
