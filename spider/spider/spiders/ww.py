@@ -64,50 +64,64 @@ class WwSpider(scrapy.Spider):
 
             tabs = self.safe_get(content, 'tabs', default=[])
             for tab in tabs:
-                # 官方接口偶尔会返回残缺的角色页签（图片没有 entryId）。
-                # 这类页签不能被提升为独立限定卡池，否则首张图片会被误显示成角色卡。
-                imgs = self.safe_get(tab, 'imgs', default=[])
-                g = self.build_gachas(imgs)
-                if not g:
+                # 单个页签异常（详情接口超时、字段缺失等）只跳过该池，
+                # 不能因为一个坏池丢掉同页其他仍然有效的卡池。
+                try:
+                    item = self.build_tab_item(tab, title)
+                except Exception as exc:  # noqa: BLE001 - 按卡池隔离失败
                     logger.warning(
-                        "鸣潮页签[%s]无可用的角色图列表，跳过：imgs=%s",
-                        tab.get('name'),
-                        [
-                            {
-                                'entry_id': self.safe_get(i, 'linkConfig', 'entryId'),
-                                'img': bool(i.get('img')) if isinstance(i, dict) else False,
-                            }
-                            for i in imgs if isinstance(i, dict)
-                        ],
+                        "鸣潮页签[%s]解析失败，已跳过：%s", tab.get('name'), exc
                     )
                     continue
-                if not self.is_featured_role_pool(title, g):
-                    logger.warning(
-                        "鸣潮页签[%s]缺少主推海报立绘，按非限定池跳过：gachas=%s",
-                        tab.get('name'),
-                        [(x['title'], bool(x.get('largeImg'))) for x in g],
-                    )
-                    continue
-
-                timer = self.build_timer(tab)
-                if not timer:
-                    logger.warning(
-                        "鸣潮页签[%s]缺少有效时间范围，跳过：countDown=%s",
-                        tab.get('name'), self.safe_get(tab, 'countDown'),
-                    )
-                    continue
-                item = SpiderItem()
-                item["title"] = tab['name']
-                item["type"] =  '角色' if '角色' in title else '武器'
-                item["timer"] = timer
-                item["gachas"] = g
-                yield item
+                if item is not None:
+                    yield item
 
         # 模块整体消失说明页面结构变更或接口异常，必须显式报错，
         # 避免 run_spider.py 只给出笼统的“未产出任何数据”。
         if pool_modules == 0:
             titles = [str(m.get('title', '')).strip() for m in sideModules if isinstance(m, dict)]
             raise ValueError(f"鸣潮首页接口未找到卡池模块，当前模块标题：{titles}")
+
+    def build_tab_item(self, tab, module_title):
+        """解析单个卡池页签；不属于限定池时返回 None。"""
+        # 官方接口偶尔会返回残缺的角色页签（图片没有 entryId）。
+        # 这类页签不能被提升为独立限定卡池，否则首张图片会被误显示成角色卡。
+        imgs = self.safe_get(tab, 'imgs', default=[])
+        g = self.build_gachas(imgs)
+        if not g:
+            logger.warning(
+                "鸣潮页签[%s]无可用的角色图列表，跳过：imgs=%s",
+                tab.get('name'),
+                [
+                    {
+                        'entry_id': self.safe_get(i, 'linkConfig', 'entryId'),
+                        'img': bool(i.get('img')) if isinstance(i, dict) else False,
+                    }
+                    for i in imgs if isinstance(i, dict)
+                ],
+            )
+            return None
+        if not self.is_featured_role_pool(module_title, g):
+            logger.warning(
+                "鸣潮页签[%s]缺少主推海报立绘，按非限定池跳过：gachas=%s",
+                tab.get('name'),
+                [(x['title'], bool(x.get('largeImg'))) for x in g],
+            )
+            return None
+
+        timer = self.build_timer(tab)
+        if not timer:
+            logger.warning(
+                "鸣潮页签[%s]缺少有效时间范围，跳过：countDown=%s",
+                tab.get('name'), self.safe_get(tab, 'countDown'),
+            )
+            return None
+        item = SpiderItem()
+        item["title"] = tab['name']
+        item["type"] = '角色' if '角色' in module_title else '武器'
+        item["timer"] = timer
+        item["gachas"] = g
+        return item
 
     def build_gachas(self, images):
         """构造完整角色列表；任一图片缺少角色详情时丢弃整个页签。"""

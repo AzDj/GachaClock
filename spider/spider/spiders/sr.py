@@ -19,36 +19,48 @@ class SrSpider(scrapy.Spider):
         )
 
         for gacha in raw_gacha_list:
-            # banner_title
-            banner_title = gacha.xpath("./a//b/text()").extract_first()
-            if (
-                banner_title == None
-                or "跃迁" not in banner_title
-                # 排除一些特殊的卡池
-                or "圣剑辉烈之誓" in banner_title
-                or "此身剑所天成" in banner_title
-                or "王的诞生" in banner_title
-                or "冬木赤影" in banner_title
-            ):
+            # 单个卡池结构异常（缺 data-start、图片数量不匹配等）只跳过该池，
+            # 不能因为一个坏池丢掉同页其他仍然有效的卡池。
+            try:
+                item = self.parse_pool(gacha)
+            except Exception as exc:  # noqa: BLE001 - 按卡池隔离失败
+                banner_title = gacha.xpath("./a//b/text()").extract_first() or "未知卡池"
+                print(f"::warning::星穹铁道卡池[{banner_title}]解析失败，已跳过：{exc}")
                 continue
+            if item is not None:
+                yield item
 
-            # gacha
-            g = []
-            g_title = gacha.xpath("./p//img/@alt").extract()
-            g_img = gacha.xpath("./p//img/@src").extract()
-            for i in range(len(g_title)):
-                g.append({"title": g_title[i], "img": g_img[i].replace("56", "112")})
+    def parse_pool(self, gacha):
+        """解析单个卡池；不属于有效卡池时返回 None。"""
+        # banner_title
+        banner_title = gacha.xpath("./a//b/text()").extract_first()
+        if (
+            banner_title == None
+            or "跃迁" not in banner_title
+            # 排除一些特殊的卡池
+            or "圣剑辉烈之誓" in banner_title
+            or "此身剑所天成" in banner_title
+            or "王的诞生" in banner_title
+            or "冬木赤影" in banner_title
+        ):
+            return None
 
-            # time
-            eventTimer = [
-                gacha.xpath("./div/span/@data-start").extract_first() + ":00",
-                gacha.xpath("./div/span/@data-end").extract_first() + ":59",
-            ]
+        # gacha
+        g = []
+        g_title = gacha.xpath("./p//img/@alt").extract()
+        g_img = gacha.xpath("./p//img/@src").extract()
+        for i in range(len(g_title)):
+            g.append({"title": g_title[i], "img": g_img[i].replace("56", "112")})
 
-            item = SpiderItem()
-            item["title"] = banner_title
-            item["type"] = "角色" if "角色" in banner_title else "武器"
-            item["timer"] = eventTimer
-            item["gachas"] = g
-            yield item
-        pass
+        # time
+        eventTimer = [
+            gacha.xpath("./div/span/@data-start").extract_first() + ":00",
+            gacha.xpath("./div/span/@data-end").extract_first() + ":59",
+        ]
+
+        item = SpiderItem()
+        item["title"] = banner_title
+        item["type"] = "角色" if "角色" in banner_title else "武器"
+        item["timer"] = eventTimer
+        item["gachas"] = g
+        return item

@@ -42,16 +42,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: 维护卡池并构建静态站点
+  # 阶段一：判断本次是否需要抓取、要抓哪些游戏，并算出抓取矩阵。
+  prepare:
+    name: 准备维护窗口
     if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip pages]')
     runs-on: ubuntu-latest
     outputs:
-      should_run: ${{ steps.maintenance.outputs.should_run }}
-      should_crawl: ${{ steps.crawl_decision.outputs.should_crawl }}
-      should_build: ${{ steps.build_decision.outputs.should_build }}
-      games: ${{ steps.maintenance.outputs.games }}
-      reason: ${{ steps.maintenance.outputs.reason }}
+      should_crawl: ${{ steps.plan.outputs.should_crawl }}
+      should_build: ${{ steps.plan.outputs.should_build }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+      games: ${{ steps.plan.outputs.games }}
+      reason: ${{ steps.plan.outputs.reason }}
 
     steps:
       - name: 检出代码
@@ -77,59 +78,80 @@ jobs:
           SCHEDULE_CRON: ${{ github.event_name == 'schedule' && github.event.schedule || '' }}
         run: python should_update.py
 
-      - name: 判断是否执行爬虫
-        id: crawl_decision
+      - name: 计算抓取矩阵
+        id: plan
         env:
           EVENT_NAME: ${{ github.event_name }}
           SHOULD_RUN: ${{ steps.maintenance.outputs.should_run }}
+          GAMES: ${{ steps.maintenance.outputs.games }}
+          REASON: ${{ steps.maintenance.outputs.reason }}
         run: |
           if [ "$EVENT_NAME" = "push" ]; then
-            echo "should_crawl=false" >> "$GITHUB_OUTPUT"
+            should_crawl=false
+            should_build=true
             echo "push 事件只构建站点，跳过爬虫。"
-          elif [ "$SHOULD_RUN" = "true" ]; then
-            echo "should_crawl=true" >> "$GITHUB_OUTPUT"
-            echo "卡池进入维护窗口，执行爬虫。"
           else
-            echo "should_crawl=false" >> "$GITHUB_OUTPUT"
-            echo "卡池未进入维护窗口，跳过爬虫。"
+            should_crawl="${SHOULD_RUN:-false}"
+            if [ "$EVENT_NAME" != "schedule" ] || [ "$should_crawl" = "true" ]; then
+              should_build=true
+            else
+              should_build=false
+            fi
           fi
 
-      - name: 判断是否构建站点
-        id: build_decision
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          SHOULD_CRAWL: ${{ steps.crawl_decision.outputs.should_crawl }}
-        run: |
-          if [ "$EVENT_NAME" != "schedule" ] || [ "$SHOULD_CRAWL" = "true" ]; then
-            echo "should_build=true" >> "$GITHUB_OUTPUT"
-            echo "本次需要构建站点。"
-          else
-            echo "should_build=false" >> "$GITHUB_OUTPUT"
-            echo "定时任务未执行爬虫，跳过站点构建。"
-          fi
+          matrix=$(GAMES="$GAMES" python -c \
+            'import json, os; print(json.dumps([g.strip() for g in os.environ.get("GAMES", "").split(",") if g.strip()]))')
+          {
+            echo "should_crawl=$should_crawl"
+            echo "should_build=$should_build"
+            echo "matrix=$matrix"
+            echo "games=$GAMES"
+            echo "reason=$REASON"
+          } >> "$GITHUB_OUTPUT"
+          echo "should_crawl=$should_crawl should_build=$should_build matrix=$matrix"
+          echo "$REASON"
+
+  # 阶段二：按游戏并行抓取。每个游戏独立 runner、独立超时，
+  # fail-fast: false 保证某个游戏失败/卡住不会中断其他游戏的抓取。
+  crawl:
+    name: 抓取 ${{ matrix.game }}
+    needs: prepare
+    if: needs.prepare.outputs.should_crawl == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        game: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      # Secret 作为回退值；终末地步骤成功后会把自动获取的设备标识写入 GITHUB_ENV 覆盖它。
+      ENDFIELD_DEVICE_ID: ${{ secrets.ENDFIELD_DEVICE_ID }}
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+
+      - name: 设置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: spider/requirements.txt
 
       - name: 安装爬虫依赖
-        if: steps.crawl_decision.outputs.should_crawl == 'true'
         working-directory: spider
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install --with-deps chromium
 
-      - name: 检查爬虫语法
-        if: steps.crawl_decision.outputs.should_crawl == 'true'
+      - name: 安装 Playwright 浏览器
+        if: matrix.game == 'endfield'
         working-directory: spider
-        run: python -m compileall spider run_spider.py should_update.py
+        run: playwright install --with-deps chromium
 
-      - name: 抓取最新卡池数据
-        if: steps.crawl_decision.outputs.should_crawl == 'true'
-        # 兜底超时：正常一轮（含 run_spider 自动重跑一次）约 3~10 分钟。
-        # 上游接口不可用时该步骤曾被拖到 4~5 小时并占死 pages 并发组，
-        # 超时后 step 判失败，但下面 always() 的持久化仍会把已成功的数据落库。
-        timeout-minutes: 20
+      - name: 获取终末地设备标识
+        if: matrix.game == 'endfield'
         working-directory: spider
-        env:
-          ENDFIELD_DEVICE_ID: ${{ secrets.ENDFIELD_DEVICE_ID }}
         run: |
           # 优先自动获取设备标识；失败时保留 Secret 回退值。
           if device_id=$(python get_endfield_device_id.py); then
@@ -145,67 +167,127 @@ jobs:
             echo '{}' > "$avatar_map_file"
             echo "自动获取终末地角色头像映射失败，使用接口字段回退。"
           fi
-          python run_spider.py --games "${{ steps.maintenance.outputs.games }}" --allow-empty "endfield/history"
 
-      - name: 持久化定时维护数据
-        # 爬虫步骤部分失败时也要保存已成功抓取的数据：各爬虫独立写各自的
-        # 数据文件，失败方不会写文件，持久化不会污染成功方的成果。
-        # 任务保持失败状态（红叉告警），站点构建仍跳过，待下次全绿再部署。
-        # 手动运行默认同样落库（inputs.persist_data），避免验证成功后仍需等定时任务。
-        if: always() && steps.crawl_decision.outputs.should_crawl == 'true' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.persist_data))
+      - name: 检查爬虫语法
+        working-directory: spider
+        run: python -m compileall spider run_spider.py should_update.py crawl_artifacts.py
+
+      - name: 抓取 ${{ matrix.game }} 卡池
+        # 兜底超时：单个游戏正常 1~5 分钟。上游接口不可用时到点判失败，
+        # 不影响其他游戏的 job，也不会占死 pages 并发组数小时。
+        timeout-minutes: 20
+        working-directory: spider
+        run: python run_spider.py --games "${{ matrix.game }}" --allow-empty "endfield/history"
+
+      - name: 收集本次变更
+        if: always()
+        working-directory: spider
+        run: python crawl_artifacts.py collect --game "${{ matrix.game }}" --staging "$RUNNER_TEMP/crawl-out"
+
+      - name: 上传抓取产物
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawl-${{ matrix.game }}
+          path: ${{ runner.temp }}/crawl-out
+          if-no-files-found: warn
+          retention-days: 3
+
+  # 阶段三：处理数据。合并全部游戏产物、合并未知内容 ID 登记、更新 meta 指针，
+  # 最后只提交一次。任一游戏失败都不影响其他游戏的数据落库。
+  process:
+    name: 处理数据并落库
+    needs: [prepare, crawl]
+    if: always() && needs.prepare.outputs.should_crawl == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      commit_sha: ${{ steps.persist.outputs.commit_sha }}
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: 下载全部抓取产物
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: crawl-*
+          path: ${{ runner.temp }}/crawl-merged
+          merge-multiple: true
+
+      - name: 合并数据、更新 meta 与未知 ID 登记
+        working-directory: spider
+        run: python3 crawl_artifacts.py merge --staging "${{ runner.temp }}/crawl-merged"
+
+      - name: 提交数据
+        id: persist
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.persist_data)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add spider/data spider/img spider/config
-          if [ -n "$(git status --porcelain spider/data spider/img spider/config)" ]; then
-            target_branch="${GITHUB_REF_NAME:-main}"
-            git commit -m "更新卡池数据 [skip pages]"
-            if git push origin "HEAD:${target_branch}"; then
-              exit 0
-            fi
-
-            for attempt in 1 2; do
-              echo "远端分支已有新提交，执行 rebase 后重试推送：第 ${attempt} 次"
-              git pull --rebase origin "${target_branch}"
-              if git push origin "HEAD:${target_branch}"; then
-                exit 0
-              fi
-            done
-
-            echo "重试后仍无法推送，请检查远端分支是否持续有新提交或存在 rebase 冲突。"
-            exit 1
-          else
+          if [ -z "$(git status --porcelain spider/data spider/img spider/config)" ]; then
             echo "没有新的卡池数据需要提交。"
+            echo "commit_sha=" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
 
+          target_branch="${GITHUB_REF_NAME:-main}"
+          git commit -m "更新卡池数据 [skip pages]"
+          if git push origin "HEAD:${target_branch}"; then
+            echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          for attempt in 1 2; do
+            echo "远端分支已有新提交，执行 rebase 后重试推送：第 ${attempt} 次"
+            git pull --rebase origin "${target_branch}"
+            if git push origin "HEAD:${target_branch}"; then
+              echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+
+          echo "重试后仍无法推送，请检查远端分支是否持续有新提交或存在 rebase 冲突。"
+          exit 1
+
+  # 阶段四：构建站点。检出处理阶段刚推送的数据提交，保证页面用的就是本轮落库的数据。
+  build:
+    name: 构建静态站点
+    needs: [prepare, process]
+    if: always() && needs.prepare.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.process.outputs.commit_sha || github.sha }}
+
       - name: 设置 Node.js
-        if: steps.build_decision.outputs.should_build == 'true'
         uses: actions/setup-node@v6
         with:
           node-version: "24"
 
       - name: 安装前端依赖
-        if: steps.build_decision.outputs.should_build == 'true'
         working-directory: web
         run: npm install --no-audit --no-fund
 
       - name: 检查前端代码
-        if: steps.build_decision.outputs.should_build == 'true'
         working-directory: web
         run: npm run lint
 
       - name: 构建前端
-        if: steps.build_decision.outputs.should_build == 'true'
         working-directory: web
         run: npm run build
 
       - name: 生成 SPA 404
-        if: steps.build_decision.outputs.should_build == 'true'
         working-directory: web
         run: cp dist/index.html dist/404.html
 
       - name: 校验 Pages 产物
-        if: steps.build_decision.outputs.should_build == 'true'
         working-directory: web
         run: |
           test -f dist/index.html
@@ -215,20 +297,17 @@ jobs:
           test -d dist/img
 
       - name: 配置 GitHub Pages
-        if: steps.build_decision.outputs.should_build == 'true'
         uses: actions/configure-pages@v5
 
       - name: 上传 Pages Artifact
-        if: steps.build_decision.outputs.should_build == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: web/dist
 
   deploy:
     name: 发布到 GitHub Pages
-    if: needs.build.outputs.should_build == 'true'
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
