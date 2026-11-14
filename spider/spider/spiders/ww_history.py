@@ -69,9 +69,24 @@ class WwHistorySpider(scrapy.Spider):
                 seen_ids.add(banner_id)
                 banners.append(banner)
 
+        # 上游会插入缺结束时间、无角色的预告条目（startAt 为 ISO 字符串，
+        # 如 wuwa-3.8-preview），这类条目本就产不出 item，先剔除再排序，
+        # 避免 int 与 str 混合比较直接抛 TypeError 让整页解析失败。
+        banners = [
+            banner
+            for banner in banners
+            if banner.get("characters") and banner.get("endAt")
+        ]
+
         # 历史页与其他游戏的 history.json 保持一致，按开始时间倒序。
-        banners.sort(key=lambda banner: banner.get("startAt") or 0, reverse=True)
+        banners.sort(key=self.start_at_millis, reverse=True)
         return banners
+
+    @staticmethod
+    def start_at_millis(banner):
+        """取毫秒开始时间，非数值一律视为未知（排到最后）。"""
+        start_at = banner.get("startAt")
+        return start_at if isinstance(start_at, (int, float)) else 0
 
     def build_item(self, banner):
         names = [
@@ -83,6 +98,9 @@ class WwHistorySpider(scrapy.Spider):
         start_ms = banner.get("startAt")
         end_ms = banner.get("endAt")
         if not names or not start_ms or not end_ms:
+            return None
+        # 上游字段偶发改成字符串时间，此时跳过该条而不是让整页崩掉。
+        if not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)):
             return None
 
         version_label = self.build_version_label(banner)
