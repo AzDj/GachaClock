@@ -156,8 +156,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add spider/data spider/img
-          if [ -n "$(git status --porcelain spider/data spider/img)" ]; then
+          git add spider/data spider/img spider/config
+          if [ -n "$(git status --porcelain spider/data spider/img spider/config)" ]; then
             target_branch="${GITHUB_REF_NAME:-main}"
             git commit -m "更新卡池数据 [skip pages]"
             if git push origin "HEAD:${target_branch}"; then
