@@ -54,66 +54,93 @@ def build_frequency_items(
 
     result = []
     for pool in (payload.get("data") or {}).get("list") or []:
-        entries = []
-        pool_type = ""
-        for entry in pool.get("pool") or []:
-            url = entry.get("url", "")
-            entry_id = extract_content_id(url)
-            if entry_id is None:
-                # 结构异常只影响这一条，不让整次抓取失败。
-                print(f"::warning::绝区零调频内容 URL 无法识别，已跳过：{url}")
-                continue
-
-            content_meta = entries_meta.get(str(entry_id))
-            if content_meta is None:
-                entries_meta[str(entry_id)] = {
-                    "name": None,
-                    "type": None,
-                    "rank": None,
-                    "first_seen": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-                }
-                discovered = True
-                print(
-                    f"::warning::绝区零出现未配置的内容 ID {entry_id}，已跳过并写入 "
-                    f"{Path(meta_path).name}，请补全 name/type/rank"
-                )
-                continue
-
-            entry_type = str(content_meta.get("type") or "").strip()
-            if entry_type == "武器":
-                continue
-            name = str(content_meta.get("name") or "").strip()
-            if not name:
-                print(f"::warning::绝区零内容 ID {entry_id} 名称待补全，已跳过")
-                continue
-
-            rank = str(content_meta.get("rank") or "S").strip()
-            pool_type = pool_type or entry_type or "角色"
-            gacha = {
-                "title": name,
-                "rank": rank,
-                "img": entry.get("icon", ""),
-                "img_path": "",
-                "display_img_path": str(content_meta.get("display_path") or ""),
-            }
-            if fetch_display_images and entry_type == "角色" and rank == "S":
-                gacha["display_img"] = fetch_display_three_image(entry.get("url", ""))
-            entries.append(gacha)
-        if not entries:
+        pool_title = str(pool.get("title") or "").strip() or "未命名卡池"
+        try:
+            item, pool_discovered = _build_pool_item(
+                pool, entries_meta, fetch_display_images, Path(meta_path).name
+            )
+        except Exception as exc:  # noqa: BLE001 - 单池失败不能拖垮同批其他卡池
+            print(f"::warning::绝区零卡池[{pool_title}]解析失败，已跳过：{exc}")
             continue
-        result.append(
-            {
-                "title": str(pool.get("title") or "").strip(),
-                "type": pool_type,
-                "timer": [format_timer(pool.get("start_time")), format_timer(pool.get("end_time"))],
-                "gachas": entries,
-            }
-        )
+
+        discovered = discovered or pool_discovered
+        if item is not None:
+            result.append(item)
 
     if discovered:
         meta["entries"] = entries_meta
         save_entry_meta(meta, meta_path)
     return result
+
+
+def _build_pool_item(
+    pool: dict,
+    entries_meta: dict,
+    fetch_display_images: bool,
+    meta_file_name: str,
+) -> tuple[dict | None, bool]:
+    """构造单个卡池。返回（卡池数据, 是否登记了未知 ID）；无可用条目时返回 None。
+
+    任何异常都由调用方按「跳过该池」处理，保证一个坏池不影响同批其他池。
+    """
+    entries = []
+    pool_type = ""
+    discovered = False
+    for entry in pool.get("pool") or []:
+        url = entry.get("url", "")
+        entry_id = extract_content_id(url)
+        if entry_id is None:
+            # 结构异常只影响这一条，不让整次抓取失败。
+            print(f"::warning::绝区零调频内容 URL 无法识别，已跳过：{url}")
+            continue
+
+        content_meta = entries_meta.get(str(entry_id))
+        if content_meta is None:
+            entries_meta[str(entry_id)] = {
+                "name": None,
+                "type": None,
+                "rank": None,
+                "first_seen": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            }
+            discovered = True
+            print(
+                f"::warning::绝区零出现未配置的内容 ID {entry_id}，已跳过并写入 "
+                f"{meta_file_name}，请补全 name/type/rank"
+            )
+            continue
+
+        entry_type = str(content_meta.get("type") or "").strip()
+        if entry_type == "武器":
+            continue
+        name = str(content_meta.get("name") or "").strip()
+        if not name:
+            print(f"::warning::绝区零内容 ID {entry_id} 名称待补全，已跳过")
+            continue
+
+        rank = str(content_meta.get("rank") or "S").strip()
+        pool_type = pool_type or entry_type or "角色"
+        gacha = {
+            "title": name,
+            "rank": rank,
+            "img": entry.get("icon", ""),
+            "img_path": "",
+            "display_img_path": str(content_meta.get("display_path") or ""),
+        }
+        if fetch_display_images and entry_type == "角色" and rank == "S":
+            gacha["display_img"] = fetch_display_three_image(url)
+        entries.append(gacha)
+
+    if not entries:
+        return None, discovered
+    return (
+        {
+            "title": str(pool.get("title") or "").strip(),
+            "type": pool_type,
+            "timer": [format_timer(pool.get("start_time")), format_timer(pool.get("end_time"))],
+            "gachas": entries,
+        },
+        discovered,
+    )
 
 
 def extract_content_id(url: str) -> int | None:

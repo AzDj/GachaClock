@@ -11,6 +11,8 @@ import requests
 import base64
 from datetime import datetime
 
+from scrapy.exceptions import DropItem
+
 from spider.history_merge import merge_history_items
 from spider.pool_time import LOCAL_TIMEZONE
 
@@ -78,7 +80,6 @@ class SpiderPipeline:
     def open_spider(self, spider):
         # 爬虫启动时初始化数据列表和打开文件
         self.items = []
-        self.failed = False
 
     def process_item(self, item, spider):
         # print(f"==================> {item}")
@@ -106,8 +107,12 @@ class SpiderPipeline:
                     and gacha.get("rank") == "S"
                     and not gacha.get("display_img_path")
                 ):
-                    self.failed = True
-                    raise ValueError(f"绝区零 S 级角色缺少“影画展示3”大图：{gacha.get('title', '')}")
+                    # 只丢弃这一个卡池，其余卡池照常写文件：
+                    # 单个角色详情页异常不应让整期数据全部作废。
+                    raise DropItem(
+                        f"绝区零 S 级角色缺少“影画展示3”大图：{gacha.get('title', '')}"
+                        f"（已跳过卡池「{item.get('title', '')}」）"
+                    )
 
                 # display_img 仅是下载输入，不写入最终数据文件。
                 gacha.pop("display_img", None)
@@ -116,10 +121,6 @@ class SpiderPipeline:
         return item
 
     def close_spider(self, spider):
-
-        if getattr(self, "failed", False):
-            print(f"{spider.name} 存在未满足的图片约束，跳过数据文件发布")
-            return
 
         if not self.items:
             # 爬虫 0 产出时没有卡池时间可用于命名文件，无法写数据文件；
