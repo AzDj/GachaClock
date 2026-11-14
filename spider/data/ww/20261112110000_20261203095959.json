@@ -1,0 +1,206 @@
+[
+    {
+        "title": "盛放于昨日梦土的",
+        "type": "角色",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "莉莉",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/28e0112b3c5647138cfe6c68e46d40de20261111.png",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/53308a12b6c54b0f8994bc3582b19d2720261112.png",
+                "img_path": "img/ww/莉莉.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ee13497e982246bb99835400108c9b8720261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/0f587dbc3ef34e548d12a3d4228cccb720261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/f19e90bc5ac245a6b5af20578478d19820261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秧秧.png"
+            }
+        ]
+    },
+    {
+        "title": "符文烁醒之刻",
+        "type": "角色",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "西格莉卡",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/98ab40c1bfaa470ca21f42c376524e1620261111.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/db5b77e7b73f482dbddb4b5545bf3dc120260306.png",
+                "img_path": "img/ww/西格莉卡.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1ffd522b802044be8e7e882772e713fb20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e3d08825bdd446d6872177c27e2f98b920261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/88757bb94dfa4c3994449b5a08bbfa4220261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秧秧.png"
+            }
+        ]
+    },
+    {
+        "title": "倦客不知身近远",
+        "type": "角色",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "仇远",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ac519865dd5f4510919eab8449ef424420261111.jpg",
+                "largeImg": "https://prod-alicdn-community.kurobbs.com/forum/c6665d4e730e491599a9ce71328d274220251030.png",
+                "img_path": "img/ww/仇远.png"
+            },
+            {
+                "title": "釉瑚",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/5608a5c40105427e8b3d02d3bd37adab20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/釉瑚.png"
+            },
+            {
+                "title": "秋水",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/ca45d1c711aa49e09f0e82e54834248e20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秋水.png"
+            },
+            {
+                "title": "秧秧",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/356a75a1492e44d5b833da686c2333e120261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/秧秧.png"
+            }
+        ]
+    },
+    {
+        "title": "安魂",
+        "type": "武器",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "安魂",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/3727236fc53240059952ac08c1d1622520261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/安魂.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/2a67e674bd8f4d90a35a34e535e63c0820261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "尘云旋臂",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/7cd7e15e20b0406598d3198b835525c320261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/尘云旋臂.png"
+            },
+            {
+                "title": "异度",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/899051b2a0904ad2959a037ff839a31a20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/异度.png"
+            }
+        ]
+    },
+    {
+        "title": "昭日译注",
+        "type": "武器",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "昭日译注",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/c0d01a8fa6e3409f821c86997ac6d6c820261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/昭日译注.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/4ecf623a92024a61a547e7fc3bc8d49f20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "尘云旋臂",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/83503d82fed343409e29ae5ba535309720261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/尘云旋臂.png"
+            },
+            {
+                "title": "异度",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/556435c5447d4b42a8a3be994f0d277320261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/异度.png"
+            }
+        ]
+    },
+    {
+        "title": "裁竹",
+        "type": "武器",
+        "timer": [
+            "2026-11-12 11:00:00",
+            "2026-12-03 09:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "裁竹",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/1734d937c1fb410ead795f63a1a3db8b20261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/裁竹.png"
+            },
+            {
+                "title": "华彩乐段",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/343573f09c194ce8b65014fe0a97d3c620261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/华彩乐段.png"
+            },
+            {
+                "title": "尘云旋臂",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/a175085402584c088ca833dabae53e5920261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/尘云旋臂.png"
+            },
+            {
+                "title": "异度",
+                "img": "https://prod-alicdn-community.kurobbs.com/forum/e0db947d67534f11b2246f2f0282f95320261111.png",
+                "largeImg": "",
+                "img_path": "img/ww/异度.png"
+            }
+        ]
+    }
+]

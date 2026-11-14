@@ -1,15 +1,145 @@
 [
     {
         "img": "",
+        "title": "「铭心之萃」角色活动跃迁",
+        "type": "角色",
+        "version": "4.7下半",
+        "timer": "2026/12/02 12:00 ~ 2026/12/22 15:00",
+        "s": [
+            "黄泉",
+            "丹恒•饮月",
+            "景元"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e8/7s1eiyi9q7kjk4ow4wcov33bjiokhwx.png/45px-%E9%BB%84%E6%B3%89.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/5/5e/hdu1w3gwyaqtfi8ztdu3f13kjfta8rh.png/45px-%E4%B8%B9%E6%81%92%E2%80%A2%E9%A5%AE%E6%9C%88.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/1/11/0s6m58osylvmhiqxpqbqlinww9sxvl0.png/45px-%E6%99%AF%E5%85%83.png"
+        ],
+        "a": [
+            "艾丝妲",
+            "玲可",
+            "驭空"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.7下半",
+        "timer": "2026/12/02 12:00 ~ 2026/12/22 15:00",
+        "s": [
+            "行于流逝的岸",
+            "比阳光更明亮的",
+            "拂晓之前"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/c/cd/aibtuk0o5dt19zp72g0v3ni27ynxxbl.png/45px-%E8%A1%8C%E4%BA%8E%E6%B5%81%E9%80%9D%E7%9A%84%E5%B2%B8.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/4/40/ap3fv056aaq2yd07ieac6ezv20w8r2h.png/45px-%E6%AF%94%E9%98%B3%E5%85%89%E6%9B%B4%E6%98%8E%E4%BA%AE%E7%9A%84.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/8/81/e3yukm7phvszpq69oo727ppjaqtyefu.png/45px-%E6%8B%82%E6%99%93%E4%B9%8B%E5%89%8D.png"
+        ],
+        "a": [
+            "宇宙市场趋势",
+            "天才们的休憩",
+            "黑夜如影随行"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「愚戏众星」角色活动跃迁",
+        "type": "角色",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2026/12/22 15:00",
+        "s": "星神★阿哈",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/6/6b/fwqzg2ervaee095z8k94oxc673cygq6.png/45px-%E6%98%9F%E7%A5%9E%E2%98%85%E9%98%BF%E5%93%88.png"
+        ],
+        "a": [
+            "艾丝妲",
+            "玲可",
+            "驭空"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2026/12/22 15:00",
+        "s": "当第一声「阿哈」响起",
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/5/58/s44x0diy91sdsjv9ublhtb3mk2u78co.png/45px-%E5%BD%93%E7%AC%AC%E4%B8%80%E5%A3%B0%E3%80%8C%E9%98%BF%E5%93%88%E3%80%8D%E5%93%8D%E8%B5%B7.png"
+        ],
+        "a": [
+            "宇宙市场趋势",
+            "天才们的休憩",
+            "黑夜如影随行"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「铭心之萃」角色活动跃迁",
+        "type": "角色",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2026/12/02 11:59",
+        "s": [
+            "银狼LV.999",
+            "火花",
+            "爻光"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/e/e5/f70nc18yogu7nw1v4xrmgrc3b5t801j.png/45px-%E9%93%B6%E7%8B%BCLV.999.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/1/1d/guxpvan8rcg0hoy9rv9upi4kw60kd8z.png/45px-%E7%81%AB%E8%8A%B1.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/d/dd/g9zc7p0op80hxgy12p7pgbot8wof7bt.png/45px-%E7%88%BB%E5%85%89.png"
+        ],
+        "a": [
+            "艾丝妲",
+            "玲可",
+            "驭空"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "version": "4.7上半",
+        "timer": "4.7版本更新后 ~ 2026/12/02 11:59",
+        "s": [
+            "欢迎来到银河城",
+            "花花世界迷人眼",
+            "当她决定看见"
+        ],
+        "s_imgs": [
+            "https://patchwiki.biligame.com/images/sr/thumb/b/bf/ksdznitvv9hb45s8hmg3xlip4eilxfs.png/45px-%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%93%B6%E6%B2%B3%E5%9F%8E.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/f/f3/cgd7w378smjzdhfvjgrrgzctwj64zur.png/45px-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E8%BF%B7%E4%BA%BA%E7%9C%BC.png",
+            "https://patchwiki.biligame.com/images/sr/thumb/1/14/n0ysea89xw6wdsu4utz3tuj8wumfjmx.png/45px-%E5%BD%93%E5%A5%B9%E5%86%B3%E5%AE%9A%E7%9C%8B%E8%A7%81.png"
+        ],
+        "a": [
+            "宇宙市场趋势",
+            "天才们的休憩",
+            "黑夜如影随行"
+        ],
+        "img_path": ""
+    },
+    {
+        "img": "",
         "title": "「我身即刃」角色活动跃迁",
         "type": "角色",
         "version": "4.6下半",
-        "timer": "2026/10/21 12:00 ~ 2026/11/11 06:00",
+        "timer": "2026/10/21 12:00 ~ 2026/11/10 15:00",
         "s": "千冶•刃",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/6/6d/fmmvaxj6k2orw5zbw9y3ur7z6b7cdag.png/45px-%E5%8D%83%E5%86%B6%E2%80%A2%E5%88%83.png"
         ],
-        "a": [],
+        "a": [
+            "青雀",
+            "雪衣",
+            "米沙"
+        ],
         "img_path": ""
     },
     {
@@ -17,12 +147,16 @@
         "title": "「溯回忆象」光锥活动跃迁",
         "type": "武器",
         "version": "4.6下半",
-        "timer": "2026/10/21 12:00 ~ 2026/11/11 06:00",
+        "timer": "2026/10/21 12:00 ~ 2026/11/10 15:00",
         "s": "灼尽炼狱的新骸",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/d/d4/n4cu3qdsxorat732t0eow0aiu4ty6ea.png/45px-%E7%81%BC%E5%B0%BD%E7%82%BC%E7%8B%B1%E7%9A%84%E6%96%B0%E9%AA%B8.png"
         ],
-        "a": [],
+        "a": [
+            "一场术后对话",
+            "与行星相会",
+            "无边曼舞"
+        ],
         "img_path": ""
     },
     {
@@ -30,7 +164,7 @@
         "title": "「沧海萃珠」角色活动跃迁",
         "type": "角色",
         "version": "4.6上半",
-        "timer": "4.6版本更新后 ~ 2026/11/11 06:00",
+        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
         "s": "真珠",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/6/64/7q3uk831907lwvw9tc3l53mr8qg6mf2.png/45px-%E7%9C%9F%E7%8F%A0.png"
@@ -47,7 +181,7 @@
         "title": "「流光定影」光锥活动跃迁",
         "type": "武器",
         "version": "4.6上半",
-        "timer": "4.6版本更新后 ~ 2026/11/11 06:00",
+        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
         "s": "献给明日的色彩",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/f/f4/oytd1wtozjyq3pgmwwqlfqgi4rtkb7b.png/45px-%E7%8C%AE%E7%BB%99%E6%98%8E%E6%97%A5%E7%9A%84%E8%89%B2%E5%BD%A9.png"
@@ -4010,7 +4144,7 @@
         "title": "「沧海萃珠」角色活动跃迁",
         "type": "角色",
         "version": "4.6上半",
-        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
+        "timer": "4.6版本更新后 ~ 2026/11/11 06:00",
         "s": "真珠",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/6/64/7q3uk831907lwvw9tc3l53mr8qg6mf2.png/45px-%E7%9C%9F%E7%8F%A0.png"
@@ -4027,7 +4161,7 @@
         "title": "「流光定影」光锥活动跃迁",
         "type": "武器",
         "version": "4.6上半",
-        "timer": "4.6版本更新后 ~ 2026/11/10 15:00",
+        "timer": "4.6版本更新后 ~ 2026/11/11 06:00",
         "s": "献给明日的色彩",
         "s_imgs": [
             "https://patchwiki.biligame.com/images/sr/thumb/f/f4/oytd1wtozjyq3pgmwwqlfqgi4rtkb7b.png/45px-%E7%8C%AE%E7%BB%99%E6%98%8E%E6%97%A5%E7%9A%84%E8%89%B2%E5%BD%A9.png"

@@ -583,6 +583,22 @@
         "chara_size": "男青年"
     },
     {
+        "title": "星神★阿哈",
+        "simple_img": "https://patchwiki.biligame.com/images/sr/1/1b/fhgn54qmp2j22xqq2t6a7nxpth4hgz5.png",
+        "promotion_img": [
+            "https://patchwiki.biligame.com/images/sr/thumb/3/31/hjjggc1f3c2ux46ynbp6rnbugip0mb2.png/900px-%E6%98%9F%E7%A5%9E%E2%98%85%E9%98%BF%E5%93%88%E7%AB%8B%E7%BB%98.png",
+            "https://patchwiki.biligame.com/images/sr/7/77/4hdly74yamixwthldqcoun9w9v800sy.png",
+            "https://patchwiki.biligame.com/images/sr/5/58/rxc6lpfkxua1pgzp93ishsktsfmzxtk.jpg",
+            "https://patchwiki.biligame.com/images/sr/4/42/9mhpe4lpcvhc1xso32bvr852v3ngqll.jpg"
+        ],
+        "display_img": "https://patchwiki.biligame.com/images/sr/7/77/4hdly74yamixwthldqcoun9w9v800sy.png",
+        "chara_rarity": "5星",
+        "chara_type": "欢愉",
+        "chara_element": "量子",
+        "chara_load_version": "4.7",
+        "chara_size": ""
+    },
+    {
         "title": "景元",
         "simple_img": "https://patchwiki.biligame.com/images/sr/0/08/pveenzc88gdslg14opkac9o85qpkdz9.png",
         "promotion_img": [

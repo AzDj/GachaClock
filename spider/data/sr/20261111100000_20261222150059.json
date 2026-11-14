@@ -1,0 +1,142 @@
+[
+    {
+        "title": "「愚戏众星」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/11/11 10:00:00",
+            "2026/12/22 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "星神★阿哈",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/6b/fwqzg2ervaee095z8k94oxc673cygq6.png/112px-%E6%98%9F%E7%A5%9E%E2%98%85%E9%98%BF%E5%93%88.png",
+                "img_path": "img/sr/星神★阿哈.png"
+            },
+            {
+                "title": "艾丝妲",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/b/bf/st0z27ry91aovv8okirwqtbhwygaex7.png/112px-%E8%89%BE%E4%B8%9D%E5%A6%B2.png",
+                "img_path": "img/sr/艾丝妲.png"
+            },
+            {
+                "title": "玲可",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/8/82/01xva2wa5fwbvlcbq3gfe8r2g8jpq2z.png/112px-%E7%8E%B2%E5%8F%AF.png",
+                "img_path": "img/sr/玲可.png"
+            },
+            {
+                "title": "驭空",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/44/3n1jlyek8fscf4peqpttg615pvamwj0.png/112px-%E9%A9%AD%E7%A9%BA.png",
+                "img_path": "img/sr/驭空.png"
+            }
+        ]
+    },
+    {
+        "title": "「铭心之萃•银狼LV.999、火花、爻光」角色活动跃迁",
+        "type": "角色",
+        "timer": [
+            "2026/11/11 10:00:00",
+            "2026/12/02 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "银狼LV.999",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/e5/f70nc18yogu7nw1v4xrmgrc3b5t801j.png/112px-%E9%93%B6%E7%8B%BCLV.999.png",
+                "img_path": "img/sr/银狼LV.999.png"
+            },
+            {
+                "title": "火花",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/1d/guxpvan8rcg0hoy9rv9upi4kw60kd8z.png/112px-%E7%81%AB%E8%8A%B1.png",
+                "img_path": "img/sr/火花.png"
+            },
+            {
+                "title": "爻光",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/d/dd/g9zc7p0op80hxgy12p7pgbot8wof7bt.png/112px-%E7%88%BB%E5%85%89.png",
+                "img_path": "img/sr/爻光.png"
+            },
+            {
+                "title": "艾丝妲",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/b/bf/st0z27ry91aovv8okirwqtbhwygaex7.png/112px-%E8%89%BE%E4%B8%9D%E5%A6%B2.png",
+                "img_path": "img/sr/艾丝妲.png"
+            },
+            {
+                "title": "玲可",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/8/82/01xva2wa5fwbvlcbq3gfe8r2g8jpq2z.png/112px-%E7%8E%B2%E5%8F%AF.png",
+                "img_path": "img/sr/玲可.png"
+            },
+            {
+                "title": "驭空",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/4/44/3n1jlyek8fscf4peqpttg615pvamwj0.png/112px-%E9%A9%AD%E7%A9%BA.png",
+                "img_path": "img/sr/驭空.png"
+            }
+        ]
+    },
+    {
+        "title": "「流光定影」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/11/11 10:00:00",
+            "2026/12/22 15:00:59"
+        ],
+        "gachas": [
+            {
+                "title": "当第一声「阿哈」响起",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/5/58/s44x0diy91sdsjv9ublhtb3mk2u78co.png/112px-%E5%BD%93%E7%AC%AC%E4%B8%80%E5%A3%B0%E3%80%8C%E9%98%BF%E5%93%88%E3%80%8D%E5%93%8D%E8%B5%B7.png",
+                "img_path": "img/sr/当第一声「阿哈」响起.png"
+            },
+            {
+                "title": "宇宙市场趋势",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/e9/svwdk3yfbv6mvpn7ev4ajj3ew152e52.png/112px-%E5%AE%87%E5%AE%99%E5%B8%82%E5%9C%BA%E8%B6%8B%E5%8A%BF.png",
+                "img_path": "img/sr/宇宙市场趋势.png"
+            },
+            {
+                "title": "天才们的休憩",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/fc/e6gnq6fn1jtby4oblk9vs4qull8ot0j.png/112px-%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E4%BC%91%E6%86%A9.png",
+                "img_path": "img/sr/天才们的休憩.png"
+            },
+            {
+                "title": "黑夜如影随行",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/62/s0xr2i4njbtkpzbgl16vkg26kb5c47l.png/112px-%E9%BB%91%E5%A4%9C%E5%A6%82%E5%BD%B1%E9%9A%8F%E8%A1%8C.png",
+                "img_path": "img/sr/黑夜如影随行.png"
+            }
+        ]
+    },
+    {
+        "title": "「溯回忆象」光锥活动跃迁",
+        "type": "武器",
+        "timer": [
+            "2026/11/11 10:00:00",
+            "2026/12/02 11:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "欢迎来到银河城",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/b/bf/ksdznitvv9hb45s8hmg3xlip4eilxfs.png/112px-%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%93%B6%E6%B2%B3%E5%9F%8E.png",
+                "img_path": "img/sr/欢迎来到银河城.png"
+            },
+            {
+                "title": "花花世界迷人眼",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/f3/cgd7w378smjzdhfvjgrrgzctwj64zur.png/112px-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E8%BF%B7%E4%BA%BA%E7%9C%BC.png",
+                "img_path": "img/sr/花花世界迷人眼.png"
+            },
+            {
+                "title": "当她决定看见",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/1/14/n0ysea89xw6wdsu4utz3tuj8wumfjmx.png/112px-%E5%BD%93%E5%A5%B9%E5%86%B3%E5%AE%9A%E7%9C%8B%E8%A7%81.png",
+                "img_path": "img/sr/当她决定看见.png"
+            },
+            {
+                "title": "宇宙市场趋势",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/e/e9/svwdk3yfbv6mvpn7ev4ajj3ew152e52.png/112px-%E5%AE%87%E5%AE%99%E5%B8%82%E5%9C%BA%E8%B6%8B%E5%8A%BF.png",
+                "img_path": "img/sr/宇宙市场趋势.png"
+            },
+            {
+                "title": "天才们的休憩",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/f/fc/e6gnq6fn1jtby4oblk9vs4qull8ot0j.png/112px-%E5%A4%A9%E6%89%8D%E4%BB%AC%E7%9A%84%E4%BC%91%E6%86%A9.png",
+                "img_path": "img/sr/天才们的休憩.png"
+            },
+            {
+                "title": "黑夜如影随行",
+                "img": "https://patchwiki.biligame.com/images/sr/thumb/6/62/s0xr2i4njbtkpzbgl16vkg26kb5c47l.png/112px-%E9%BB%91%E5%A4%9C%E5%A6%82%E5%BD%B1%E9%9A%8F%E8%A1%8C.png",
+                "img_path": "img/sr/黑夜如影随行.png"
+            }
+        ]
+    }
+]
