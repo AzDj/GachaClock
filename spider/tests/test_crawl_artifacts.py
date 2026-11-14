@@ -60,7 +60,7 @@ class CollectTest(unittest.TestCase):
         self.assertFalse((staging / "spider/data/meta.json").exists())
         self.assertEqual({"zzz": "data/zzz/new.json"}, summary["meta"])
         self.assertEqual({"zzz": "data/zzz/new.json"}, json.loads(
-            (staging / ".meta/zzz.json").read_text(encoding="utf-8")
+            (staging / "meta-fragments/zzz.json").read_text(encoding="utf-8")
         ))
 
     def test_collect_keeps_non_ascii_paths(self):
@@ -129,11 +129,11 @@ class MergeTest(unittest.TestCase):
     def test_meta_fragment_ignores_unowned_and_dangling_pointer(self):
         repo = make_repo()
         staging = repo / ".crawl-out"
-        (staging / ".meta").mkdir(parents=True)
-        (staging / ".meta/ys-history.json").write_text(
+        (staging / "meta-fragments").mkdir(parents=True)
+        (staging / "meta-fragments/ys-history.json").write_text(
             json.dumps({"ys": "data/ys/history.json"}), encoding="utf-8"
         )
-        (staging / ".meta/zzz.json").write_text(
+        (staging / "meta-fragments/zzz.json").write_text(
             json.dumps({"zzz": "data/zzz/not-exists.json"}), encoding="utf-8"
         )
 

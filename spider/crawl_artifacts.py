@@ -20,7 +20,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 META_PATH = Path("spider/data/meta.json")
 CONFIG_PATH = Path("spider/config/zzz_entry_meta.json")
-META_FRAGMENT_DIR = ".meta"
+# 注意：不能用点开头的目录名。upload-artifact 默认忽略隐藏文件，
+# 只有 meta 片段时会被判成「没有文件」而整包不上传。
+META_FRAGMENT_DIR = "meta-fragments"
 
 # 收集范围：只关心爬虫会写入的目录，避免把 httpcache 等临时文件带上。
 COLLECT_PATHS = ("spider/data", "spider/img", "spider/config")
