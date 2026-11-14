@@ -123,6 +123,10 @@ jobs:
 
       - name: 抓取最新卡池数据
         if: steps.crawl_decision.outputs.should_crawl == 'true'
+        # 兜底超时：正常一轮（含 run_spider 自动重跑一次）约 3~10 分钟。
+        # 上游接口不可用时该步骤曾被拖到 4~5 小时并占死 pages 并发组，
+        # 超时后 step 判失败，但下面 always() 的持久化仍会把已成功的数据落库。
+        timeout-minutes: 20
         working-directory: spider
         env:
           ENDFIELD_DEVICE_ID: ${{ secrets.ENDFIELD_DEVICE_ID }}
