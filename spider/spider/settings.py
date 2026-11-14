@@ -20,6 +20,14 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
+# 上游接口（米哈游 / kurobbs / 库街区等）偶发 TCP connect 卡住约 130 秒，
+# 默认 180 秒的下发超时叠加重试会把单次运行拖到小时级。收紧超时，
+# 配合 workflow 里「抓取最新卡池数据」的 timeout-minutes 兜底，
+# 让故障在几分钟内暴露，而不是占死 pages 并发组。
+DOWNLOAD_TIMEOUT = 30
+DNS_TIMEOUT = 30
+RETRY_TIMES = 2
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
