@@ -50,25 +50,36 @@ def _write_json(path: Path, payload: dict) -> None:
 
 
 def changed_files(repo_root: Path) -> list[Path]:
-    """返回本次爬虫改动过的文件（相对仓库根目录）。"""
+    """返回本次爬虫改动过的文件（相对仓库根目录）。
+
+    使用 ``-z``：路径按 NUL 分隔且不做八进制转义，
+    否则 ``spider/img/zzz/中文名.png`` 会被转义成 ``\\344\\270\\255`` 而漏收。
+    """
     result = subprocess.run(
-        ["git", "status", "--porcelain", "--untracked-files=all", "--", *COLLECT_PATHS],
+        [
+            "git",
+            "status",
+            "--porcelain",
+            "-z",
+            "--untracked-files=all",
+            "--",
+            *COLLECT_PATHS,
+        ],
         cwd=repo_root,
         check=True,
         capture_output=True,
         text=True,
     )
+    entries = [entry for entry in result.stdout.split("\0") if entry]
     files = []
-    for line in result.stdout.splitlines():
-        if len(line) < 4:
-            continue
-        raw_path = line[3:].strip()
-        # 重命名条目格式为 "旧路径 -> 新路径"，只收集新路径。
-        if " -> " in raw_path:
-            raw_path = raw_path.split(" -> ", 1)[1]
-        raw_path = raw_path.strip('"')
-        if raw_path:
-            files.append(Path(raw_path))
+    index = 0
+    while index < len(entries):
+        entry = entries[index]
+        status = entry[:2]
+        if len(entry) > 3:
+            files.append(Path(entry[3:]))
+        # 重命名/复制条目后面紧跟原路径，跳过它，只收集新路径。
+        index += 2 if status[:1] in {"R", "C"} else 1
     return files
 
 

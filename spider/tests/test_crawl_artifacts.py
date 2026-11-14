@@ -63,6 +63,17 @@ class CollectTest(unittest.TestCase):
             (staging / ".meta/zzz.json").read_text(encoding="utf-8")
         ))
 
+    def test_collect_keeps_non_ascii_paths(self):
+        repo = make_repo()
+        image = repo / "spider/img/zzz/测试角色.png"
+        image.parent.mkdir(parents=True)
+        image.write_bytes(b"png")
+
+        staging = repo / ".crawl-out"
+        collect("zzz", repo, staging)
+
+        self.assertTrue((staging / "spider/img/zzz/测试角色.png").exists())
+
     def test_collect_ys_history_has_no_meta_keys(self):
         repo = make_repo()
         (repo / "spider/data/ys/history.json").write_text("[]", encoding="utf-8")
