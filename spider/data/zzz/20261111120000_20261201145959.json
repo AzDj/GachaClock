@@ -1,0 +1,36 @@
+[
+    {
+        "title": "「答案在风中」",
+        "type": "角色",
+        "timer": [
+            "2026/11/11 12:00:00",
+            "2026/12/01 14:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "赛维里安·洛威尔",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/11/11/4885809/956820f33e2ec5a0a9d5ae220cad20f5_991661556778858618.png",
+                "img_path": "img/zzz/赛维里安·洛威尔.png",
+                "display_img_path": "img/zzz/display-three/赛维里安·洛威尔.png"
+            }
+        ]
+    },
+    {
+        "title": "「天才不等式」",
+        "type": "角色",
+        "timer": [
+            "2026/11/11 12:00:00",
+            "2026/12/01 14:59:59"
+        ],
+        "gachas": [
+            {
+                "title": "诺姆·霍洛维尔",
+                "rank": "S",
+                "img": "https://act-upload.mihoyo.com/nap-obc-indep/2026/11/11/4885809/88ab6fa91dc0e69c0d22780cb86b4db0_6740706678045618706.png",
+                "img_path": "img/zzz/诺姆·霍洛维尔.png",
+                "display_img_path": "img/zzz/display-three/诺姆·霍洛维尔.png"
+            }
+        ]
+    }
+]
