@@ -109,5 +109,37 @@ class ZzzMihoyoParserTest(unittest.TestCase):
         fetch.assert_called_once()
 
 
+    def test_build_frequency_items_skips_weapon_pools(self):
+        """站点只展示角色卡池：武器内容命中忽略名单时跳过，不判失败。"""
+        payload = {
+            "data": {
+                "list": [
+                    {
+                        "title": "「答案在风中」",
+                        "start_time": "2026-11-11 12:00:00",
+                        "end_time": "2026-12-01 14:59:59",
+                        "pool": [
+                            {"url": "https://baike.mihoyo.com/zzz/wiki/content/2217/detail"},
+                        ],
+                    },
+                    {
+                        "title": "「禁罪囚笼」",
+                        "start_time": "2026-11-11 12:00:00",
+                        "end_time": "2026-12-01 14:59:59",
+                        "pool": [
+                            {"url": "https://baike.mihoyo.com/zzz/wiki/content/2305/detail"},
+                        ],
+                    },
+                ]
+            }
+        }
+        items = build_frequency_items(payload)
+
+        self.assertEqual(1, len(items))
+        self.assertEqual("「答案在风中」", items[0]["title"])
+        self.assertEqual("角色", items[0]["type"])
+        self.assertEqual("赛维里安·洛威尔", items[0]["gachas"][0]["title"])
+
+
 if __name__ == "__main__":
     unittest.main()

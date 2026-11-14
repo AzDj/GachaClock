@@ -107,3 +107,30 @@ def test_parse_raises_on_empty_payload(spider):
 
     with pytest.raises(ValueError, match="bannerhistory"):
         list(spider.parse(response))
+
+
+def test_parse_tolerates_preview_banner_with_string_start_at(spider):
+    """上游预告条目 startAt 为 ISO 字符串且无角色，不应让整页解析失败。"""
+    preview = {
+        "id": "wuwa-3.8-preview",
+        "title": "Version 3.8 Preview",
+        "kind": None,
+        "version": "3.8",
+        "phase": None,
+        "startAt": "2026-11-06T11:00:00Z",
+        "endAt": None,
+        "characters": [],
+        "art": {"images": []},
+    }
+    older = make_banner(banner_id="wuwa-1.0-1", version="1.0", start_ms=1716429600000,
+                        end_ms=1717639140000, names=("忌炎",))
+    newer = make_banner(banner_id="wuwa-3.7-1", version="3.7")
+    response = HtmlResponse(
+        spider.source_url,
+        body=build_flight_html([preview, older, newer]),
+        encoding="utf-8",
+    )
+
+    items = list(spider.parse(response))
+
+    assert [item["version"] for item in items] == ["3.7上半", "1.0上半"]
